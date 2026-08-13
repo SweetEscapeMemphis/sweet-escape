@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yogurt Flavors | Sweet Escape</title>
+    <meta
+      name="description"
+      content="Browse the frozen yogurt flavors available from Sweet Escape."
+    >
+    <link rel="stylesheet" href="home.css">
+    <script defer src="data/yogurt-flavors.js?v=20260808-2"></script>
+    <script defer src="yogurt.js?v=20260806"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="home-topbar" id="top">
+      <a class="home-brand" href="index.html" aria-label="Sweet Escape home">
+        <img src="assets/sweet-escape-logo.svg" alt="" class="home-brand-mark">
+      </a>
+
+      <nav class="home-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="flavors.html#flavors">Scoop flavors</a>
+        <a class="is-current" href="#top">Yogurt flavors</a>
+        <a href="flavors.html#nutrition">Nutrition</a>
+        <a class="nav-menu-link" href="#yogurt-flavors">View menu</a>
+      </nav>
+    </header>
+
+    <main class="soft-serve-main" id="main-content">
+      <section class="soft-serve-hero" aria-labelledby="soft-serve-title">
+        <div class="soft-serve-copy">
+          <p class="eyebrow">Cool, creamy, and delicious</p>
+          <h1 id="soft-serve-title">Yogurt flavors</h1>
+          <p>
+            Discover Sweet Escape's creamy frozen yogurt lineup, complete with
+            nutrition facts and allergen notes.
+          </p>
+          <div class="soft-serve-actions">
+            <a class="home-button primary" href="#yogurt-flavors">Browse yogurt flavors</a>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="yogurt-menu" id="yogurt-flavors" aria-labelledby="yogurt-menu-title">
+        <div class="yogurt-menu-heading">
+          <div>
+            <p class="eyebrow">Frozen yogurt menu</p>
+            <h2 id="yogurt-menu-title">Find your favorite</h2>
+            <p>Nutrition facts, ingredients, and declared allergens for every flavor.</p>
+          </div>
+          <div class="yogurt-count" aria-label="Yogurt flavor count">
+            <strong id="yogurt-count">29</strong>
+            <span>flavors</span>
+          </div>
+        </div>
+
+        <div class="yogurt-tools">
+          <label class="yogurt-field">
+            <span>Search flavors</span>
+            <input id="yogurt-search" type="search" placeholder="Try chocolate, vanilla, or sorbet" autocomplete="off">
+          </label>
+
+          <div class="yogurt-filter-group">
+            <span>Category</span>
+            <div class="yogurt-segments" id="yogurt-category-filters" aria-label="Yogurt category"></div>
+          </div>
+
+          <label class="yogurt-field yogurt-field-compact">
+            <span>Declared allergen</span>
+            <select id="yogurt-allergen-filter">
+              <option value="All">All</option>
+              <option value="Milk">Milk</option>
+              <option value="Egg">Egg</option>
+              <option value="Wheat">Wheat</option>
+              <option value="Soy">Soy</option>
+              <option value="Tree nut">Tree nut</option>
+              <option value="Peanut">Peanut</option>
+              <option value="Sesame">Sesame</option>
+            </select>
+          </label>
+
+          <div class="yogurt-editor-tools">
+            <button class="yogurt-edit-toggle" id="yogurt-image-edit-toggle" type="button" aria-pressed="false">
+              Edit images
+            </button>
+            <output id="yogurt-editor-status" aria-live="polite"></output>
+          </div>
+        </div>
+
+        <div class="yogurt-grid" id="yogurt-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="home-footer">
+      <a href="#top" aria-label="Sweet Escape yogurt flavors">
+        <img src="assets/sweet-escape-logo.svg" alt="Sweet Escape" class="footer-mark">
+      </a>
+      <nav aria-label="Footer">
+        <a href="flavors.html#flavors">Scoop flavors</a>
+        <a href="#top">Yogurt</a>
+        <a href="flavors.html#nutrition">Nutrition</a>
+        <a href="assets/sweet-escape-nutrition-facts.pdf">PDF</a>
+      </nav>
+      <a class="back-top" href="#top">Back to top</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sweet Escape Ice Cream</title>
+    <meta
+      name="description"
+      content="Sweet Escape is your colorful stop for hand-dipped ice cream, joyful flavors, and easy-to-find nutrition and allergen information."
+    >
+    <link rel="stylesheet" href="home.css?v=20260808-4">
+    <script defer src="home.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="home-topbar" id="top">
+      <a class="home-brand" href="#top" aria-label="Sweet Escape home">
+        <img src="assets/sweet-escape-logo.svg" alt="" class="home-brand-mark">
+      </a>
+
+      <nav class="home-nav" aria-label="Primary">
+        <a class="is-current" href="#top">Home</a>
+        <a href="flavors.html#flavors">Scoop flavors</a>
+        <a href="yogurt.html">Yogurt flavors</a>
+        <a href="flavors.html#nutrition">Nutrition</a>
+        <a class="nav-menu-link" href="flavors.html#flavors">View menu</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="home-hero" aria-labelledby="home-title">
+        <div class="hero-message" data-reveal>
+          <p class="eyebrow">Hand-dipped happiness</p>
+          <h1 id="home-title">
+            <img
+              src="assets/sweet-escape-logo.svg"
+              alt="Sweet Escape"
+              class="home-title-logo"
+              data-logo-scroll
+            >
+          </h1>
+          <div class="hero-actions">
+            <a class="home-button primary" href="flavors.html#flavors">Eplore all 71 scoop flavors</a>
+            <a class="home-button secondary" href="#favorites">See favorites</a>
+          </div>
+        </div>
+
+        <div class="hero-scoop-scene" aria-hidden="true">
+          <img
+            class="hero-scoop scoop-anniversary"
+            src="assets/scoops/anniversary-cake.png"
+            alt=""
+            data-drift="0.12"
+          >
+          <img
+            class="hero-scoop scoop-amaretto"
+            src="assets/scoops/amaretto-cherry.png"
+            alt=""
+            data-drift="0.2"
+          >
+          <img
+            class="hero-scoop scoop-banana"
+            src="assets/scoops/banana-pudding.png"
+            alt=""
+            data-drift="0.08"
+          >
+          <img
+            class="hero-scoop scoop-apple"
+            src="assets/scoops/apple-crisp.png"
+            alt=""
+            data-drift="0.16"
+          >
+        </div>
+      </section>
+
+      <section
+        class="scroll-film"
+        id="cookie-dough-story"
+        data-scroll-film
+        data-frame-count="110"
+        data-frame-path="assets/media/cookie-dough-frames/frame-"
+        data-frame-version="2"
+        aria-labelledby="cookie-dough-title"
+      >
+        <div class="scroll-film-stage">
+          <div class="scroll-film-inner">
+            <div class="scroll-film-copy" data-reveal>
+              <p class="eyebrow">Made for the moment</p>
+              <h2 id="cookie-dough-title">Cookie dough, <span>scoop by scoop</span></h2>
+              <p>Cookie pieces, creamy vanilla, and one seriously happy ending.</p>
+            </div>
+
+            <div class="scroll-film-visual">
+              <canvas
+                id="cookie-dough-canvas"
+                class="scroll-film-canvas"
+                width="1080"
+                height="1440"
+                role="img"
+                aria-label="A Sweet Escape cookie dough dessert coming together"
+              >
+                A Sweet Escape cookie dough dessert coming together.
+              </canvas>
+              <p class="scroll-film-loader" id="cookie-dough-loader" role="status" aria-live="polite">
+                Preparing your scoop&hellip;
+              </p>
+              <noscript>
+                <img
+                  class="scroll-film-fallback"
+                  src="assets/media/cookie-dough-frames/frame-109.webp?v=2"
+                  alt="A finished Sweet Escape cookie dough dessert"
+                >
+              </noscript>
+            </div>
+          </div>
+
+          <div class="scroll-film-progress" aria-hidden="true">
+            <span></span>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="scroll-film cookie-sandwich-film"
+        id="cookie-ice-cream-story"
+        data-scroll-film
+        data-frame-count="132"
+        data-frame-path="assets/media/cookie-ice-cream-frames/frame-"
+        data-frame-version="1"
+        aria-labelledby="cookie-ice-cream-title"
+      >
+        <div class="scroll-film-stage">
+          <div class="scroll-film-inner">
+            <div class="scroll-film-copy" data-reveal>
+              <p class="eyebrow">Built layer by layer</p>
+              <h2 id="cookie-ice-cream-title">Cookie ice cream, <span>coming together</span></h2>
+              <p>Two chocolate-chip cookies, creamy vanilla, and one very sweet finish.</p>
+            </div>
+
+            <div class="scroll-film-visual">
+              <canvas
+                id="cookie-ice-cream-canvas"
+                class="scroll-film-canvas"
+                width="960"
+                height="1440"
+                role="img"
+                aria-label="A cookie ice-cream sandwich coming together"
+              >
+                A cookie ice-cream sandwich coming together.
+              </canvas>
+              <p class="scroll-film-loader" id="cookie-ice-cream-loader" role="status" aria-live="polite">
+                Preparing your sandwich&hellip;
+              </p>
+              <noscript>
+                <img
+                  class="scroll-film-fallback"
+                  src="assets/media/cookie-ice-cream-frames/frame-131.webp?v=1"
+                  alt="A finished cookie ice-cream sandwich"
+                >
+              </noscript>
+            </div>
+          </div>
+
+          <div class="scroll-film-progress" aria-hidden="true">
+            <span></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="favorites-section" id="favorites" aria-labelledby="favorites-title">
+        <div class="section-intro" data-reveal>
+          <div>
+            <p class="eyebrow">A few sweet escapes</p>
+            <h2 id="favorites-title">Start with a favorite</h2>
+          </div>
+          <a class="text-link" href="flavors.html#flavors">Browse every flavor <span aria-hidden="true">&#8594;</span></a>
+        </div>
+
+        <div class="favorite-grid">
+          <a class="favorite-card cherry-card" href="flavors.html#amaretto-cherry" data-reveal>
+            <div class="favorite-image-wrap">
+              <img src="assets/scoops/amaretto-cherry.png" alt="Amaretto Cherry ice cream scoop">
+            </div>
+            <div class="favorite-card-copy">
+              <span>Fruit & chocolate</span>
+              <h3>Amaretto Cherry</h3>
+            </div>
+          </a>
+
+          <a class="favorite-card cake-card" href="flavors.html#anniversary-cake" data-reveal>
+            <div class="favorite-image-wrap">
+              <img src="assets/scoops/anniversary-cake.png" alt="Anniversary Cake ice cream scoop">
+            </div>
+            <div class="favorite-card-copy">
+              <span>Cake & sprinkles</span>
+              <h3>Anniversary Cake</h3>
+            </div>
+          </a>
+
+          <a class="favorite-card apple-card" href="flavors.html#apple-crisp" data-reveal>
+            <div class="favorite-image-wrap">
+              <img src="assets/scoops/apple-crisp.png" alt="Apple Crisp ice cream scoop">
+            </div>
+            <div class="favorite-card-copy">
+              <span>Apple & cinnamon</span>
+              <h3>Apple Crisp</h3>
+            </div>
+          </a>
+
+          <a class="favorite-card banana-card" href="flavors.html#banana-pudding" data-reveal>
+            <div class="favorite-image-wrap">
+              <img src="assets/scoops/banana-pudding.png" alt="Banana Pudding ice cream scoop">
+            </div>
+            <div class="favorite-card-copy">
+              <span>Banana & cookies</span>
+              <h3>Banana Pudding</h3>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="menu-band" aria-labelledby="menu-band-title">
+        <div class="menu-band-copy" data-reveal>
+          <p class="eyebrow">There is more in the case</p>
+          <h2 id="menu-band-title"><strong>71</strong> ways to escape</h2>
+          <p>
+            From classic vanilla to tart sorbets, cake-filled scoops, minty favorites,
+            and no-sugar-added choices, your next order is waiting.
+          </p>
+          <a class="home-button light" href="flavors.html#flavors">Find your flavor</a>
+        </div>
+
+        <div class="category-stack" aria-label="Flavor categories" data-reveal>
+          <span>Ice cream</span>
+          <span>Sherbet</span>
+          <span>Sorbet</span>
+          <span>Yogurt</span>
+          <span>No sugar added</span>
+        </div>
+      </section>
+
+      <section class="nutrition-section" aria-labelledby="nutrition-title">
+        <div class="nutrition-art" data-reveal aria-hidden="true">
+          <img src="assets/scoops/banana-pudding.png" alt="">
+          <span>2/3 cup<br>serving</span>
+        </div>
+
+        <div class="nutrition-copy" data-reveal>
+          <p class="eyebrow">Know your scoop</p>
+          <h2 id="nutrition-title">The details are easy to find</h2>
+          <p>
+            See calories, nutrition facts, declared ingredients, and additional
+            allergen notes for every flavor before you choose.
+          </p>
+          <div class="nutrition-actions">
+            <a class="home-button primary" href="flavors.html#nutrition">Browse nutrition</a>
+            <a class="text-link" href="assets/sweet-escape-nutrition-facts.pdf">Open the PDF <span aria-hidden="true">&#8594;</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-callout" aria-labelledby="final-title">
+        <div data-reveal>
+          <p class="eyebrow">Your next scoop</p>
+          <h2 id="final-title">Make it a Sweet Escape</h2>
+          <a class="home-button dark" href="flavors.html#flavors">Choose a flavor</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="home-footer">
+      <a href="#top" aria-label="Sweet Escape home">
+        <img src="assets/sweet-escape-logo.svg" alt="Sweet Escape" class="footer-mark">
+      </a>
+      <nav aria-label="Footer">
+        <a href="flavors.html#flavors">Flavors</a>
+        <a href="yogurt.html">Yogurt</a>
+        <a href="flavors.html#nutrition">Nutrition</a>
+        <a href="assets/sweet-escape-nutrition-facts.pdf">PDF</a>
+      </nav>
+      <a class="back-top" href="#top">Back to top</a>
+    </footer>
+  </body>
+</html>
