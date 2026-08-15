@@ -166,7 +166,7 @@
       <div class="scoop-panel" data-flavor-id="${escapeHTML(flavor.id)}">
         <img
           class="scoop-image"
-          src="assets/scoops/${escapeHTML(flavor.id)}.png?v=20260808-2"
+          src="assets/scoops/${escapeHTML(flavor.id)}.webp?v=20260814-1"
           alt="Photo realistic scoop of ${escapeHTML(flavor.name)} ice cream"
           loading="lazy"
           decoding="async"
@@ -305,7 +305,7 @@
     const customUrl = customImageUrls.get(flavorId);
     const image = card.querySelector(".scoop-image");
     if (!image) return;
-    image.src = customUrl || `assets/scoops/${flavorId}.png`;
+    image.src = customUrl || `assets/scoops/${flavorId}.webp?v=20260814-1`;
     card.classList.toggle("has-custom-image", Boolean(customUrl));
   }
 
