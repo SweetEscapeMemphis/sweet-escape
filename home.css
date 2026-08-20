@@ -282,6 +282,10 @@ img {
   margin: 0;
 }
 
+.hero-message h1.eyebrow {
+  display: block;
+}
+
 .hero-lede {
   max-width: 26ch;
   margin: 1.25rem auto 0;
