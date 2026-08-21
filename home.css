@@ -2037,12 +2037,12 @@ body::before {
 }
 
 .hero-message h1.eyebrow {
-  max-width: 8.5ch;
+  max-width: 11ch;
   color: var(--pink);
-  font-family: var(--script-font);
-  font-size: clamp(4rem, 7.5vw, 7.8rem);
-  font-weight: 500;
-  line-height: 0.82;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3.4rem, 6vw, 6.2rem);
+  font-weight: 700;
+  line-height: 0.94;
   text-transform: none;
 }
 
@@ -2164,16 +2164,20 @@ body::before {
 
 .scroll-film,
 .scroll-film-stage {
-  background: #3d1c14;
+  background: #fffdfb;
+  color: var(--ink);
 }
 
-.scroll-film-copy .eyebrow,
+.scroll-film-copy .eyebrow {
+  color: #c83d68;
+}
+
 .menu-band .eyebrow {
   color: #ffb0c6;
 }
 
 .scroll-film-copy h2 {
-  color: #fff8f2;
+  color: var(--pink);
   font-family: var(--script-font);
   font-weight: 500;
   line-height: 0.88;
@@ -2184,9 +2188,25 @@ body::before {
   color: #f8b344;
 }
 
-.scroll-film-copy > p:not(.eyebrow),
+.scroll-film-copy > p:not(.eyebrow) {
+  color: var(--muted);
+}
+
 .menu-band-copy > p:not(.eyebrow) {
   color: #f4ddd4;
+}
+
+.scroll-film-canvas,
+.scroll-film-fallback {
+  background: #fffdfb;
+}
+
+.scroll-film-loader {
+  color: var(--muted);
+}
+
+.scroll-film-progress {
+  background: rgba(75, 36, 24, 0.16);
 }
 
 .scroll-film-progress span {
@@ -2363,7 +2383,7 @@ body::before {
   }
 
   .hero-message h1.eyebrow {
-    max-width: 9ch;
+    max-width: 11ch;
     margin-inline: auto;
   }
 
@@ -2383,7 +2403,7 @@ body::before {
   }
 
   .hero-message h1.eyebrow {
-    font-size: clamp(3.7rem, 18vw, 5rem);
+    font-size: clamp(3rem, 12vw, 3.8rem);
   }
 
   .home-hero::after,

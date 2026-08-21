@@ -205,7 +205,7 @@
       context.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
       context.imageSmoothingEnabled = true;
       context.imageSmoothingQuality = "high";
-      context.fillStyle = "#000";
+      context.fillStyle = "#fffdfb";
       context.fillRect(0, 0, width, height);
       context.drawImage(image, x, y, drawWidth, drawHeight);
       renderedFrame = safeIndex;
