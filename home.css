@@ -2093,6 +2093,66 @@ body::before {
   filter: drop-shadow(0 25px 24px rgba(75, 36, 24, 0.2));
 }
 
+.hero-scoop-scene {
+  min-height: clamp(440px, 42vw, 580px);
+}
+
+.scoop-anniversary {
+  --rotation: -3deg;
+  z-index: 4;
+  top: 5%;
+  left: 25%;
+  width: min(45%, 360px);
+}
+
+.scoop-amaretto {
+  --rotation: 7deg;
+  z-index: 7;
+  bottom: 1%;
+  left: -1%;
+  width: min(33%, 250px);
+}
+
+.scoop-banana {
+  --rotation: 8deg;
+  z-index: 6;
+  top: 3%;
+  right: -1%;
+  width: min(28%, 215px);
+}
+
+.scoop-apple {
+  --rotation: -7deg;
+  z-index: 7;
+  right: -2%;
+  bottom: 0;
+  width: min(33%, 255px);
+}
+
+.scoop-mint {
+  --rotation: -9deg;
+  z-index: 2;
+  top: 4%;
+  left: -2%;
+  width: min(27%, 205px);
+}
+
+.scoop-strawberry-cheesecake {
+  --rotation: 4deg;
+  z-index: 8;
+  bottom: 22%;
+  left: 29%;
+  width: min(28%, 215px);
+}
+
+.scoop-cookie-dough {
+  --rotation: -5deg;
+  z-index: 3;
+  top: 34%;
+  right: 24%;
+  width: min(26%, 200px);
+}
+
 .favorites-section,
 .yogurt-menu {
   background: var(--paper);
@@ -2266,6 +2326,15 @@ body::before {
   color: #bd365f;
 }
 
+.final-address {
+  max-width: 38ch;
+  margin: 1rem auto 0;
+  color: var(--muted);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  font-weight: 700;
+}
+
 .reviews-section {
   padding: clamp(3rem, 6vw, 5rem) clamp(1rem, 6vw, 5.5rem);
   overflow: hidden;
@@ -2275,15 +2344,19 @@ body::before {
 
 .reviews-heading {
   display: flex;
-  align-items: end;
+  align-items: center;
+  flex-direction: column;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 1.2rem;
   max-width: 1500px;
   margin: 0 auto clamp(1.5rem, 3vw, 2.4rem);
+  text-align: center;
 }
 
 .reviews-heading .eyebrow {
-  margin-bottom: 0.7rem;
+  margin: 0;
+  font-size: clamp(1.35rem, 3vw, 2.2rem);
+  font-weight: 700;
 }
 
 .reviews-heading h2 {
@@ -2627,8 +2700,7 @@ body::before {
   }
 
   .reviews-heading {
-    align-items: flex-start;
-    flex-direction: column;
+    align-items: center;
   }
 
   .reviews-heading h2 {
@@ -2640,14 +2712,71 @@ body::before {
   }
 }
 
+@media (max-width: 760px) {
+  .home-hero {
+    min-height: 650px;
+  }
+
+  .hero-scoop-scene {
+    height: 300px;
+    min-height: 0;
+  }
+
+  .scoop-anniversary {
+    top: -2%;
+    left: 20%;
+    width: min(32%, 210px);
+  }
+
+  .scoop-amaretto {
+    bottom: -8%;
+    left: -4%;
+    width: min(30%, 190px);
+  }
+
+  .scoop-banana {
+    top: 5%;
+    right: 18%;
+    width: min(23%, 150px);
+  }
+
+  .scoop-apple {
+    right: -4%;
+    bottom: -10%;
+    width: min(31%, 195px);
+  }
+
+  .scoop-mint {
+    top: 8%;
+    left: -5%;
+    width: min(25%, 155px);
+  }
+
+  .scoop-strawberry-cheesecake {
+    bottom: -12%;
+    left: 32%;
+    width: min(31%, 200px);
+  }
+
+  .scoop-cookie-dough {
+    top: 14%;
+    right: -4%;
+    width: min(24%, 155px);
+  }
+}
+
 @media (max-width: 520px) {
   .brand-wordmark {
     font-size: 1.8rem;
   }
 
   .home-hero {
-    min-height: 660px;
+    min-height: 620px;
     padding-top: 2.8rem;
+  }
+
+  .hero-scoop-scene {
+    height: 270px;
   }
 
   .reviews-section {
