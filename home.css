@@ -2267,7 +2267,7 @@ body::before {
 }
 
 .reviews-section {
-  padding: clamp(4rem, 8vw, 7rem) clamp(1rem, 6vw, 5.5rem);
+  padding: clamp(3rem, 6vw, 5rem) clamp(1rem, 6vw, 5.5rem);
   overflow: hidden;
   border-block: 1px solid #f4cec1;
   background: #fff7f1;
@@ -2279,7 +2279,7 @@ body::before {
   justify-content: space-between;
   gap: 2rem;
   max-width: 1500px;
-  margin: 0 auto clamp(2rem, 4vw, 3.4rem);
+  margin: 0 auto clamp(1.5rem, 3vw, 2.4rem);
 }
 
 .reviews-heading .eyebrow {
@@ -2291,7 +2291,7 @@ body::before {
   margin: 0;
   color: var(--pink);
   font-family: var(--script-font);
-  font-size: clamp(3.2rem, 7vw, 6.8rem);
+  font-size: clamp(2.6rem, 5.4vw, 5.2rem);
   font-weight: 500;
   line-height: 0.88;
 }
@@ -2302,10 +2302,10 @@ body::before {
   gap: 0 0.7rem;
   align-items: center;
   flex: 0 0 auto;
-  min-width: 230px;
+  min-width: 205px;
   border: 1px solid #e7a53f;
   border-radius: var(--radius);
-  padding: 0.85rem 1rem;
+  padding: 0.68rem 0.82rem;
   background: #fffefd;
   color: var(--ink);
   font-family: Georgia, "Times New Roman", serif;
@@ -2328,7 +2328,7 @@ body::before {
 .google-rating-score {
   grid-row: 1 / 3;
   color: var(--pink);
-  font-size: 2rem;
+  font-size: 1.65rem;
   font-weight: 700;
   line-height: 1;
 }
@@ -2353,7 +2353,7 @@ body::before {
 .reviews-track {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: minmax(320px, min(38vw, 510px));
+  grid-auto-columns: minmax(280px, min(31vw, 400px));
   gap: clamp(1rem, 2vw, 1.5rem);
   align-items: stretch;
   overflow-x: auto;
@@ -2381,11 +2381,12 @@ body::before {
 .google-review-card {
   position: relative;
   display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 510px;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  height: 430px;
+  min-height: 0;
   border: 1px solid #edc7b9;
   border-radius: var(--radius);
-  padding: clamp(1.35rem, 2.5vw, 2rem);
+  padding: clamp(1rem, 1.8vw, 1.4rem);
   overflow: hidden;
   background: #fffefd;
   box-shadow: 9px 9px 0 #f8dce5;
@@ -2407,7 +2408,7 @@ body::before {
   right: 1rem;
   color: rgba(239, 79, 127, 0.1);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 9rem;
+  font-size: 7rem;
   line-height: 1;
   pointer-events: none;
 }
@@ -2415,19 +2416,21 @@ body::before {
 .review-stars {
   position: relative;
   z-index: 1;
-  font-size: 1.08rem;
+  font-size: 0.92rem;
 }
 
 .google-review-card blockquote {
   position: relative;
   z-index: 1;
-  align-self: start;
-  margin: 1.25rem 0 2rem;
+  align-self: stretch;
+  margin: 0.8rem 0 1.1rem;
+  overflow-y: auto;
+  padding-right: 0.35rem;
   color: var(--ink);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1rem, 1.35vw, 1.16rem);
+  font-size: clamp(0.88rem, 1vw, 1rem);
   font-weight: 600;
-  line-height: 1.58;
+  line-height: 1.48;
 }
 
 .google-review-card footer {
@@ -2438,7 +2441,7 @@ body::before {
   justify-content: space-between;
   gap: 1rem;
   border-top: 1px solid #f1d8ce;
-  padding-top: 1rem;
+  padding-top: 0.75rem;
   font-family: Georgia, "Times New Roman", serif;
 }
 
@@ -2466,13 +2469,13 @@ body::before {
 .review-arrow {
   display: inline-grid;
   place-items: center;
-  width: 48px;
-  height: 48px;
+  width: 42px;
+  height: 42px;
   border: 1px solid #d94270;
   border-radius: 50%;
   background: var(--pink);
   color: white;
-  font-size: 1.35rem;
+  font-size: 1.15rem;
   line-height: 1;
   cursor: pointer;
 }
@@ -2633,7 +2636,7 @@ body::before {
   }
 
   .reviews-track {
-    grid-auto-columns: minmax(310px, 72vw);
+    grid-auto-columns: minmax(280px, 62vw);
   }
 }
 
@@ -2648,12 +2651,12 @@ body::before {
   }
 
   .reviews-section {
-    padding: 3.8rem 1rem;
+    padding: 3rem 1rem;
   }
 
   .reviews-heading h2 {
     max-width: 9ch;
-    font-size: clamp(3rem, 15vw, 4.4rem);
+    font-size: clamp(2.6rem, 13vw, 3.8rem);
   }
 
   .google-rating-link {
@@ -2662,11 +2665,11 @@ body::before {
   }
 
   .reviews-track {
-    grid-auto-columns: minmax(280px, 88vw);
+    grid-auto-columns: minmax(260px, 82vw);
   }
 
   .google-review-card {
-    min-height: 600px;
+    height: 460px;
   }
 
   .reviews-controls {
