@@ -4,10 +4,13 @@
   const driftItems = Array.from(document.querySelectorAll("[data-drift]"));
   const logo = document.querySelector("[data-logo-scroll]");
   const hero = document.querySelector(".home-hero");
+  const reviewCarousel = document.querySelector("[data-review-carousel]");
   const filmControllers = Array.from(document.querySelectorAll("[data-scroll-film]"))
     .map((root) => createScrollFilm(root, reduceMotion))
     .filter(Boolean);
   let scrollFrame = 0;
+
+  createReviewCarousel(reviewCarousel, reduceMotion);
 
   if (reduceMotion) {
     revealItems.forEach((item) => item.classList.add("is-visible"));
@@ -221,6 +224,93 @@
       }
 
       return null;
+    }
+  }
+
+  function createReviewCarousel(root, prefersReducedMotion) {
+    if (!root) return;
+
+    const track = root.querySelector("[data-review-track]");
+    const previousButton = root.querySelector("[data-review-prev]");
+    const nextButton = root.querySelector("[data-review-next]");
+    const currentLabel = root.querySelector("[data-review-current]");
+    const cards = Array.from(root.querySelectorAll(".google-review-card"));
+
+    if (!track || !previousButton || !nextButton || !currentLabel || !cards.length) return;
+
+    let activeIndex = 0;
+    let carouselFrame = 0;
+
+    previousButton.addEventListener("click", () => moveTo(activeIndex - 1));
+    nextButton.addEventListener("click", () => moveTo(activeIndex + 1));
+    track.addEventListener("scroll", scheduleCarouselUpdate, { passive: true });
+    track.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        moveTo(activeIndex - 1);
+      }
+
+      if (event.key === "ArrowRight") {
+        event.preventDefault();
+        moveTo(activeIndex + 1);
+      }
+    });
+
+    if ("ResizeObserver" in window) {
+      const resizeObserver = new ResizeObserver(scheduleCarouselUpdate);
+      resizeObserver.observe(track);
+    } else {
+      window.addEventListener("resize", scheduleCarouselUpdate);
+    }
+
+    updateControls();
+
+    function moveTo(index) {
+      activeIndex = Math.min(cards.length - 1, Math.max(0, index));
+      const firstOffset = cards[0].offsetLeft;
+      const maximumScroll = Math.max(0, track.scrollWidth - track.clientWidth);
+      const destination = Math.min(maximumScroll, cards[activeIndex].offsetLeft - firstOffset);
+
+      track.scrollTo({
+        left: destination,
+        behavior: prefersReducedMotion ? "auto" : "smooth",
+      });
+      updateControls();
+    }
+
+    function scheduleCarouselUpdate() {
+      if (carouselFrame) return;
+      carouselFrame = requestAnimationFrame(() => {
+        carouselFrame = 0;
+        updateActiveIndex();
+        updateControls();
+      });
+    }
+
+    function updateActiveIndex() {
+      const maximumScroll = Math.max(0, track.scrollWidth - track.clientWidth);
+
+      if (maximumScroll - track.scrollLeft <= 3) {
+        activeIndex = cards.length - 1;
+        return;
+      }
+
+      const firstOffset = cards[0].offsetLeft;
+      let nearestDistance = Infinity;
+
+      cards.forEach((card, index) => {
+        const distance = Math.abs(card.offsetLeft - firstOffset - track.scrollLeft);
+        if (distance < nearestDistance) {
+          nearestDistance = distance;
+          activeIndex = index;
+        }
+      });
+    }
+
+    function updateControls() {
+      currentLabel.textContent = String(activeIndex + 1);
+      previousButton.disabled = activeIndex === 0;
+      nextButton.disabled = activeIndex === cards.length - 1;
     }
   }
 })();
