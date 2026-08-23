@@ -684,6 +684,18 @@ button:focus-visible {
   font-weight: 900;
 }
 
+.site-footer .footer-contact {
+  margin: 0.3rem 0 0;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.site-footer .footer-contact a {
+  color: inherit;
+  font-weight: 750;
+  text-underline-offset: 0.2rem;
+}
+
 @media (max-width: 1060px) {
   .menu-tools,
   .filters {
