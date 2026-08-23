@@ -11,6 +11,7 @@
   let scrollFrame = 0;
 
   createReviewCarousel(reviewCarousel, reduceMotion);
+  trackStorefrontActions();
 
   if (reduceMotion) {
     revealItems.forEach((item) => item.classList.add("is-visible"));
@@ -75,6 +76,7 @@
     if (!canvas || !stage || !context || frameCount < 2) return null;
 
     const frames = new Array(frameCount);
+    const loadingFrames = new Array(frameCount);
     const lastFrame = frameCount - 1;
     let currentFrame = prefersReducedMotion ? lastFrame : 0;
     let targetFrame = currentFrame;
@@ -88,14 +90,14 @@
     }
 
     resizeCanvas();
-    preloadFrames();
+    initializeFrames();
 
     return {
       resize: resizeCanvas,
       update: updateFromScroll,
     };
 
-    async function preloadFrames() {
+    async function initializeFrames() {
       if (prefersReducedMotion) {
         await loadFrame(lastFrame);
         ready = true;
@@ -106,38 +108,52 @@
         return;
       }
 
-      await Promise.all([loadFrame(0), loadFrame(lastFrame)]);
-      renderFrame(0);
-
-      const queue = Array.from({ length: Math.max(0, frameCount - 2) }, (_, index) => index + 1);
-      const workerCount = Math.min(8, queue.length);
-
-      await Promise.all(
-        Array.from({ length: workerCount }, async () => {
-          while (queue.length) {
-            const index = queue.shift();
-            await loadFrame(index);
-          }
-        })
-      );
-
+      await loadFrame(0);
       ready = true;
+      renderFrame(0);
       root.classList.add("is-ready");
       if (loader) loader.setAttribute("aria-hidden", "true");
       updateFromScroll();
+      prefetchCoarseFrames();
     }
 
     function loadFrame(index) {
-      return new Promise((resolve) => {
+      if (index < 0 || index >= frameCount) return Promise.resolve(null);
+      if (frames[index]) return Promise.resolve(frames[index]);
+      if (loadingFrames[index]) return loadingFrames[index];
+
+      loadingFrames[index] = new Promise((resolve) => {
         const image = new Image();
         image.decoding = "async";
         image.onload = () => {
           frames[index] = image;
-          resolve();
+          resolve(image);
         };
-        image.onerror = resolve;
+        image.onerror = () => resolve(null);
         image.src = `${framePath}${String(index).padStart(3, "0")}.webp?v=${frameVersion}`;
+      }).finally(() => {
+        loadingFrames[index] = null;
       });
+
+      return loadingFrames[index];
+    }
+
+    function prefetchCoarseFrames() {
+      const step = Math.max(8, Math.ceil(frameCount / 14));
+      const indices = [];
+      for (let index = step; index < lastFrame; index += step) indices.push(index);
+      indices.push(lastFrame);
+
+      const loadNext = async () => {
+        while (indices.length) await loadFrame(indices.shift());
+      };
+
+      Promise.all([loadNext(), loadNext()]).then(requestFilmUpdate);
+    }
+
+    function prefetchFrameWindow(center) {
+      const nearby = [center, center + 1, center - 1, center + 2, center - 2, center + 3, center - 3];
+      Promise.all(nearby.map(loadFrame)).then(requestFilmUpdate);
     }
 
     function updateFromScroll() {
@@ -150,6 +166,7 @@
 
       root.style.setProperty("--film-progress", progress.toFixed(4));
       targetFrame = progress * lastFrame;
+      prefetchFrameWindow(Math.round(targetFrame));
       requestFilmUpdate();
     }
 
@@ -194,8 +211,9 @@
 
     function renderFrame(index) {
       const safeIndex = Math.min(lastFrame, Math.max(0, index));
-      const image = findNearestLoadedFrame(safeIndex);
-      if (!image || renderedFrame === safeIndex) return;
+      const loadedFrame = findNearestLoadedFrame(safeIndex);
+      if (!loadedFrame || renderedFrame === loadedFrame.index) return;
+      const image = loadedFrame.image;
 
       const width = canvas.width / pixelRatio;
       const height = canvas.height / pixelRatio;
@@ -211,16 +229,16 @@
       context.fillStyle = "#fffdfb";
       context.fillRect(0, 0, width, height);
       context.drawImage(image, x, y, drawWidth, drawHeight);
-      renderedFrame = safeIndex;
-      canvas.dataset.renderedFrame = String(safeIndex);
+      renderedFrame = loadedFrame.index;
+      canvas.dataset.renderedFrame = String(loadedFrame.index);
     }
 
     function findNearestLoadedFrame(index) {
-      if (frames[index]) return frames[index];
+      if (frames[index]) return { image: frames[index], index };
 
       for (let offset = 1; offset < frameCount; offset += 1) {
-        if (frames[index - offset]) return frames[index - offset];
-        if (frames[index + offset]) return frames[index + offset];
+        if (frames[index - offset]) return { image: frames[index - offset], index: index - offset };
+        if (frames[index + offset]) return { image: frames[index + offset], index: index + offset };
       }
 
       return null;
@@ -311,6 +329,18 @@
       currentLabel.textContent = String(activeIndex + 1);
       previousButton.disabled = activeIndex === 0;
       nextButton.disabled = activeIndex === cards.length - 1;
+    }
+  }
+
+  function trackStorefrontActions() {
+    for (const link of document.querySelectorAll("[data-track]")) {
+      link.addEventListener("click", () => {
+        if (typeof window.gtag !== "function") return;
+        window.gtag("event", "storefront_action", {
+          action_name: link.dataset.track,
+          link_url: link.href,
+        });
+      });
     }
   }
 })();
