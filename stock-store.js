@@ -1,6 +1,6 @@
 (function () {
   const stockUrl = "data/stock.json";
-  const fallbackStock = { updatedAt: null, scoops: "*", yogurt: "*" };
+  const fallbackStock = { updatedAt: null, scoops: "*", yogurt: "*", gelato: "*" };
   let stockPromise = null;
 
   function load(options = {}) {
@@ -25,6 +25,7 @@
       updatedAt: typeof value?.updatedAt === "string" ? value.updatedAt : null,
       scoops: normalizeGroup(value?.scoops),
       yogurt: normalizeGroup(value?.yogurt),
+      gelato: value?.gelato === undefined ? "*" : normalizeGroup(value.gelato),
     };
   }
 

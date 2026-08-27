@@ -1,6 +1,7 @@
 (async function () {
   const scoopFlavors = window.SWEET_ESCAPE_FLAVORS?.flavors || [];
   const yogurtFlavors = window.SWEET_ESCAPE_YOGURT_FLAVORS?.flavors || [];
+  const gelatoFlavors = window.SWEET_ESCAPE_GELATO_FLAVORS?.flavors || [];
   const stock = await window.SweetEscapeStock.load({ fresh: true });
   const scoopIds = window.SweetEscapeStock.idsFor(
     stock,
@@ -11,6 +12,11 @@
     stock,
     "yogurt",
     yogurtFlavors.map((flavor) => flavor.id)
+  );
+  const gelatoIds = window.SweetEscapeStock.idsFor(
+    stock,
+    "gelato",
+    gelatoFlavors.map((flavor) => flavor.id)
   );
   const items = [
     ...scoopFlavors
@@ -33,16 +39,27 @@
         image: flavor.image,
         href: `yogurt.html#yogurt-${flavor.id}`,
       })),
+    ...gelatoFlavors
+      .filter((flavor) => gelatoIds.has(flavor.id))
+      .map((flavor) => ({
+        id: flavor.id,
+        name: flavor.name,
+        category: flavor.category,
+        type: "Gelato",
+        image: flavor.image,
+        href: `gelato.html#gelato-${flavor.id}`,
+      })),
   ];
   const grid = document.querySelector("#stock-grid");
   const search = document.querySelector("#stock-search");
   const tabs = document.querySelector("#stock-tabs");
-  const types = ["All", "Scoops", "Yogurt"];
+  const types = ["All", "Scoops", "Yogurt", "Gelato"];
   const state = { query: "", type: "All" };
 
   document.querySelector("#stock-total").textContent = String(items.length);
   document.querySelector("#stock-scoop-count").textContent = String(scoopIds.size);
   document.querySelector("#stock-yogurt-count").textContent = String(yogurtIds.size);
+  document.querySelector("#stock-gelato-count").textContent = String(gelatoIds.size);
   document.querySelector("#stock-updated").textContent = stock.updatedAt
     ? `Availability updated ${formatDate(stock.updatedAt)}.`
     : "Availability is ready to browse.";

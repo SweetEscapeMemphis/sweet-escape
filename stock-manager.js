@@ -5,6 +5,7 @@
   const tokenStorageKey = "sweetEscapeStockManagerToken";
   const scoopFlavors = window.SWEET_ESCAPE_FLAVORS?.flavors || [];
   const yogurtFlavors = window.SWEET_ESCAPE_YOGURT_FLAVORS?.flavors || [];
+  const gelatoFlavors = window.SWEET_ESCAPE_GELATO_FLAVORS?.flavors || [];
   const currentStock = await window.SweetEscapeStock.load({ fresh: true });
   const selected = {
     scoops: window.SweetEscapeStock.idsFor(
@@ -17,6 +18,11 @@
       "yogurt",
       yogurtFlavors.map((flavor) => flavor.id)
     ),
+    gelato: window.SweetEscapeStock.idsFor(
+      currentStock,
+      "gelato",
+      gelatoFlavors.map((flavor) => flavor.id)
+    ),
   };
   const searchInput = document.querySelector("#manager-search");
   const tokenInput = document.querySelector("#github-token");
@@ -26,6 +32,7 @@
   const status = document.querySelector("#manager-status");
   const scoopGrid = document.querySelector("#manager-scoop-grid");
   const yogurtGrid = document.querySelector("#manager-yogurt-grid");
+  const gelatoGrid = document.querySelector("#manager-gelato-grid");
   let query = "";
   let tokenSaveTimer;
 
@@ -52,7 +59,7 @@
     const button = event.target.closest("[data-group][data-action]");
     if (!button) return;
     const group = button.dataset.group;
-    const flavors = group === "scoops" ? scoopFlavors : yogurtFlavors;
+    const flavors = flavorsForGroup(group);
     selected[group].clear();
     if (button.dataset.action === "all") {
       for (const flavor of flavors) selected[group].add(flavor.id);
@@ -75,6 +82,7 @@
   function renderAll() {
     renderGroup(scoopGrid, scoopFlavors, "scoops");
     renderGroup(yogurtGrid, yogurtFlavors, "yogurt");
+    renderGroup(gelatoGrid, gelatoFlavors, "gelato");
   }
 
   function renderGroup(container, flavors, group) {
@@ -86,8 +94,9 @@
     container.innerHTML = "";
     for (const flavor of filtered) {
       const checked = selected[group].has(flavor.id);
-      const image =
-        group === "scoops" ? `assets/scoops/${flavor.id}.webp?v=20260814-1` : flavor.image;
+      const image = group === "scoops"
+        ? `assets/scoops/${flavor.id}.webp?v=20260814-1`
+        : flavor.image;
       const label = document.createElement("label");
       label.className = `manager-item${checked ? " is-selected" : ""}`;
       label.innerHTML = `
@@ -103,10 +112,11 @@
   }
 
   function updateCounts() {
-    const total = selected.scoops.size + selected.yogurt.size;
+    const total = selected.scoops.size + selected.yogurt.size + selected.gelato.size;
     document.querySelector("#manager-selected-count").textContent = String(total);
     document.querySelector("#manager-scoop-count").textContent = `${selected.scoops.size} selected`;
     document.querySelector("#manager-yogurt-count").textContent = `${selected.yogurt.size} selected`;
+    document.querySelector("#manager-gelato-count").textContent = `${selected.gelato.size} selected`;
   }
 
   async function publishStock() {
@@ -137,6 +147,7 @@
         updatedAt: new Date().toISOString(),
         scoops: scoopFlavors.map((flavor) => flavor.id).filter((id) => selected.scoops.has(id)),
         yogurt: yogurtFlavors.map((flavor) => flavor.id).filter((id) => selected.yogurt.has(id)),
+        gelato: gelatoFlavors.map((flavor) => flavor.id).filter((id) => selected.gelato.has(id)),
       };
       const content = encodeBase64(`${JSON.stringify(nextStock, null, 2)}\n`);
       const updateResponse = await fetch(apiUrl, {
@@ -242,5 +253,11 @@
       const entities = { "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" };
       return entities[character];
     });
+  }
+
+  function flavorsForGroup(group) {
+    if (group === "scoops") return scoopFlavors;
+    if (group === "yogurt") return yogurtFlavors;
+    return gelatoFlavors;
   }
 })();

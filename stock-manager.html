@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="stock.css?v=20260826-2">
     <script defer src="data/flavors.js"></script>
     <script defer src="data/yogurt-flavors.js?v=20260808-2"></script>
-    <script defer src="stock-store.js?v=20260826-1"></script>
-    <script defer src="stock-manager.js?v=20260826-3"></script>
+    <script defer src="data/gelato-flavors.js?v=20260827-1"></script>
+    <script defer src="stock-store.js?v=20260827-1"></script>
+    <script defer src="stock-manager.js?v=20260827-1"></script>
   </head>
   <body class="manager-body">
     <a class="skip-link" href="#manager-list">Skip to stock controls</a>
@@ -72,7 +73,7 @@
           </div>
           <label class="manager-search">
             <span>Search items</span>
-            <input id="manager-search" type="search" placeholder="Search scoop or yogurt flavors" autocomplete="off">
+            <input id="manager-search" type="search" placeholder="Search scoop, yogurt, or gelato flavors" autocomplete="off">
           </label>
         </div>
 
@@ -93,6 +94,15 @@
           </div>
         </div>
         <div class="manager-grid" id="manager-yogurt-grid"></div>
+
+        <div class="manager-group-heading">
+          <div><h3>Gelato and sorbetto</h3><span id="manager-gelato-count">0 selected</span></div>
+          <div class="manager-group-actions">
+            <button type="button" data-group="gelato" data-action="all">Select all</button>
+            <button type="button" data-group="gelato" data-action="none">Clear all</button>
+          </div>
+        </div>
+        <div class="manager-grid" id="manager-gelato-grid"></div>
       </section>
     </main>
   </body>

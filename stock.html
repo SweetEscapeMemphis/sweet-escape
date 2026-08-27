@@ -13,10 +13,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="apple-touch-icon" href="assets/favicon.png">
-    <title>Ice Cream and Yogurt In Stock Today | Sweet Escape</title>
+    <title>Ice Cream, Yogurt, and Gelato In Stock Today | Sweet Escape</title>
     <meta
       name="description"
-      content="See the Sweet Escape ice cream and frozen yogurt flavors currently in stock at our Whitten Road shop in Memphis."
+      content="See the Sweet Escape ice cream, frozen yogurt, gelato, and sorbetto flavors currently in stock at our Whitten Road shop in Memphis."
     >
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.sweetescapememphis.com/stock.html">
@@ -30,8 +30,9 @@
     <link rel="stylesheet" href="stock.css?v=20260826-1">
     <script defer src="data/flavors.js"></script>
     <script defer src="data/yogurt-flavors.js?v=20260808-2"></script>
-    <script defer src="stock-store.js?v=20260826-1"></script>
-    <script defer src="stock-page.js?v=20260826-1"></script>
+    <script defer src="data/gelato-flavors.js?v=20260827-1"></script>
+    <script defer src="stock-store.js?v=20260827-1"></script>
+    <script defer src="stock-page.js?v=20260827-1"></script>
   </head>
   <body>
     <a class="skip-link" href="#stock-list">Skip to in-stock flavors</a>
@@ -44,6 +45,7 @@
         <a href="index.html">Home</a>
         <a href="flavors.html#flavors">Scoop flavors</a>
         <a href="yogurt.html">Yogurt flavors</a>
+        <a href="gelato.html">Gelato</a>
         <a class="is-current" href="#top">In stock</a>
         <a href="flavors.html#nutrition">Nutrition</a>
         <a class="nav-menu-link" href="#stock-list">View today</a>
@@ -54,11 +56,12 @@
       <section class="stock-intro" aria-labelledby="stock-title">
         <p class="eyebrow">Available at the shop</p>
         <h1 id="stock-title">In stock today</h1>
-        <p>These are the scoop and frozen yogurt flavors currently available at Sweet Escape.</p>
+        <p>These are the scoop, frozen yogurt, gelato, and sorbetto flavors currently available at Sweet Escape.</p>
         <div class="stock-summary" aria-label="Current availability summary">
           <div><strong id="stock-total">0</strong><span>Total items</span></div>
           <div><strong id="stock-scoop-count">0</strong><span>Scoop flavors</span></div>
           <div><strong id="stock-yogurt-count">0</strong><span>Yogurt flavors</span></div>
+          <div><strong id="stock-gelato-count">0</strong><span>Gelato flavors</span></div>
         </div>
         <p class="stock-updated" id="stock-updated" aria-live="polite"></p>
       </section>
@@ -87,6 +90,7 @@
       <nav aria-label="Footer">
         <a href="flavors.html#flavors">Scoop flavors</a>
         <a href="yogurt.html">Yogurt</a>
+        <a href="gelato.html">Gelato</a>
         <a href="#top">In stock</a>
         <a href="flavors.html#nutrition">Nutrition</a>
       </nav>

@@ -1,0 +1,558 @@
+.gelato-main {
+  min-height: calc(100svh - 78px);
+  background: #fffdf9;
+}
+
+.gelato-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr);
+  align-items: center;
+  min-height: min(760px, calc(100svh - 78px));
+  overflow: hidden;
+  border-bottom: 1px solid rgba(38, 22, 34, 0.12);
+  background: #f5ecff;
+}
+
+.gelato-hero-copy {
+  position: relative;
+  z-index: 2;
+  padding: clamp(4rem, 8vw, 8rem) clamp(1rem, 7vw, 6rem);
+}
+
+.gelato-hero-copy h1 {
+  max-width: 9ch;
+  margin: 0;
+  color: #e94782;
+  font-family: var(--display-font);
+  font-size: clamp(4rem, 8vw, 7.5rem);
+  line-height: 0.9;
+}
+
+.gelato-hero-copy > p:not(.eyebrow) {
+  max-width: 48ch;
+  margin: 1.5rem 0 2rem;
+  color: #674f5e;
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  font-weight: 650;
+}
+
+.gelato-hero-scoops {
+  position: relative;
+  align-self: stretch;
+  min-height: 540px;
+  background: #dff5ff;
+}
+
+.gelato-hero-scoops::before {
+  content: "";
+  position: absolute;
+  inset: 8% 6%;
+  border: 2px solid rgba(233, 71, 130, 0.3);
+  border-radius: 50%;
+}
+
+.gelato-hero-scoops img {
+  position: absolute;
+  width: clamp(220px, 31vw, 440px);
+  aspect-ratio: 1;
+  object-fit: contain;
+  filter: drop-shadow(0 26px 22px rgba(74, 37, 58, 0.14));
+}
+
+.gelato-hero-scoops img:nth-child(1) {
+  top: 8%;
+  left: 3%;
+  transform: rotate(-8deg);
+}
+
+.gelato-hero-scoops img:nth-child(2) {
+  right: -3%;
+  top: 24%;
+  transform: rotate(8deg);
+}
+
+.gelato-hero-scoops img:nth-child(3) {
+  bottom: -6%;
+  left: 17%;
+  transform: rotate(-2deg);
+}
+
+.gelato-menu {
+  padding: clamp(3.5rem, 7vw, 7rem) clamp(1rem, 5vw, 4.5rem);
+}
+
+.gelato-menu-heading,
+.gelato-tools,
+.gelato-safety-note,
+.gelato-grid {
+  max-width: 1320px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.gelato-menu-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 2rem;
+}
+
+.gelato-menu-heading h2 {
+  max-width: 12ch;
+  margin: 0;
+  font-family: var(--display-font);
+  font-size: clamp(3rem, 6vw, 5.4rem);
+  line-height: 0.95;
+}
+
+.gelato-menu-heading > div:first-child > p:last-child {
+  max-width: 58ch;
+  margin: 1rem 0 0;
+  color: #6d5b66;
+  font-weight: 650;
+}
+
+.gelato-count {
+  min-width: 150px;
+  border: 2px solid var(--ink);
+  border-radius: 6px;
+  background: var(--lemon);
+  padding: 1rem 1.25rem;
+  box-shadow: 8px 8px 0 #ff66c4;
+  text-align: center;
+}
+
+.gelato-count strong,
+.gelato-count span {
+  display: block;
+}
+
+.gelato-count strong {
+  font-family: var(--display-font);
+  font-size: 2.6rem;
+  line-height: 1;
+}
+
+.gelato-count span {
+  margin-top: 0.35rem;
+  color: #7b2058;
+  font-size: 0.76rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.gelato-tools {
+  display: grid;
+  grid-template-columns: minmax(240px, 1.1fr) minmax(330px, 1.4fr) minmax(210px, 0.7fr);
+  gap: 1rem;
+  align-items: end;
+  margin-top: 3rem;
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.gelato-field,
+.gelato-filter-group {
+  display: grid;
+  gap: 0.45rem;
+  color: #674f5e;
+  font-size: 0.76rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.gelato-field input,
+.gelato-field select {
+  width: 100%;
+  min-height: 48px;
+  border: 2px solid rgba(38, 22, 34, 0.2);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--ink);
+  padding: 0.7rem 0.85rem;
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.gelato-field input:focus,
+.gelato-field select:focus {
+  border-color: #e94782;
+  outline: 3px solid rgba(233, 71, 130, 0.16);
+}
+
+.gelato-segments {
+  display: flex;
+  min-height: 48px;
+  overflow: hidden;
+  border: 2px solid rgba(38, 22, 34, 0.2);
+  border-radius: 6px;
+  background: #fff;
+}
+
+.gelato-segments button {
+  flex: 1;
+  border: 0;
+  border-right: 1px solid rgba(38, 22, 34, 0.14);
+  background: transparent;
+  color: #674f5e;
+  padding: 0.65rem 0.8rem;
+  font: inherit;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.gelato-segments button:last-child {
+  border-right: 0;
+}
+
+.gelato-segments button[aria-pressed="true"] {
+  background: #e94782;
+  color: #fff;
+}
+
+.gelato-safety-note {
+  margin-top: 1.25rem;
+  border-left: 5px solid #f39a18;
+  background: #fff5d7;
+  color: #674f5e;
+  padding: 1rem 1.15rem;
+  font-size: 0.9rem;
+}
+
+.gelato-safety-note strong {
+  color: var(--ink);
+}
+
+.gelato-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
+  margin-top: 2rem;
+}
+
+.gelato-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid rgba(38, 22, 34, 0.16);
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 8px 8px 0 #f7dce9;
+}
+
+.gelato-card:nth-child(3n + 2) {
+  box-shadow: 8px 8px 0 #d9f2ff;
+}
+
+.gelato-card:nth-child(3n) {
+  box-shadow: 8px 8px 0 #e7dcff;
+}
+
+.gelato-image-panel {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 330px;
+  overflow: hidden;
+  background: #fff6fa;
+}
+
+.gelato-card:nth-child(3n + 2) .gelato-image-panel {
+  background: #eefaff;
+}
+
+.gelato-card:nth-child(3n) .gelato-image-panel {
+  background: #f6f1ff;
+}
+
+.gelato-image-panel img {
+  width: min(90%, 330px);
+  aspect-ratio: 1;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 16px rgba(74, 37, 58, 0.14));
+  transition: transform 220ms ease;
+}
+
+.gelato-card:hover .gelato-image-panel img {
+  transform: translateY(-6px) rotate(2deg);
+}
+
+.gelato-number {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  min-width: 48px;
+  border-radius: 6px;
+  background: var(--ink);
+  color: #fff;
+  padding: 0.65rem 0.75rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.gelato-card-copy {
+  padding: 1.35rem;
+}
+
+.gelato-category {
+  color: #9a286f;
+  font-size: 0.76rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.gelato-card h3 {
+  margin: 0.45rem 0 0;
+  font-family: var(--display-font);
+  font-size: clamp(1.8rem, 3vw, 2.7rem);
+  line-height: 0.98;
+}
+
+.gelato-description {
+  min-height: 4.5em;
+  margin: 0.85rem 0 1.25rem;
+  color: #6d5b66;
+  font-weight: 650;
+}
+
+.gelato-allergen-summary {
+  border-left: 4px solid #ff66c4;
+  padding-left: 0.85rem;
+}
+
+.gelato-allergen-summary > strong {
+  display: block;
+  margin-bottom: 0.55rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+}
+
+.gelato-allergen-summary div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.gelato-allergen-summary span {
+  border-radius: 999px;
+  background: #ffe3f4;
+  color: #7b2058;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.gelato-allergen-summary .is-unverified {
+  background: #fff1cb;
+  color: #795218;
+}
+
+.gelato-details {
+  margin-top: 1.2rem;
+  border-top: 1px solid var(--line);
+}
+
+.gelato-details + .gelato-details {
+  margin-top: 0;
+}
+
+.gelato-details summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 58px;
+  list-style: none;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.gelato-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.gelato-details summary span:last-child {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  background: var(--lemon);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.gelato-details[open] summary span:last-child {
+  transform: rotate(45deg);
+}
+
+.gelato-details-body {
+  padding: 0 0 1.15rem;
+  color: #674f5e;
+  font-size: 0.9rem;
+}
+
+.gelato-serving {
+  margin: 0 0 0.75rem;
+  font-weight: 800;
+}
+
+.gelato-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.gelato-facts div {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: #fffdf9;
+  padding: 0.7rem;
+}
+
+.gelato-facts strong,
+.gelato-facts span {
+  display: block;
+}
+
+.gelato-facts strong {
+  color: var(--ink);
+  font-size: 1.05rem;
+}
+
+.gelato-facts span {
+  margin-top: 0.15rem;
+  font-size: 0.66rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.gelato-label-pending {
+  margin-top: 0;
+}
+
+.gelato-source-link,
+.gelato-source-links a {
+  color: #9a286f;
+  font-weight: 850;
+}
+
+.gelato-source-links {
+  display: grid;
+  gap: 0.45rem;
+  margin-top: 0.9rem;
+}
+
+.gelato-empty {
+  grid-column: 1 / -1;
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 2rem;
+  text-align: center;
+  font-weight: 750;
+}
+
+@media (max-width: 980px) {
+  .gelato-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .gelato-hero-copy {
+    text-align: center;
+  }
+
+  .gelato-hero-copy h1,
+  .gelato-hero-copy > p:not(.eyebrow) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .gelato-hero-scoops {
+    min-height: 480px;
+  }
+
+  .gelato-tools {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gelato-filter-group {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .gelato-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 660px) {
+  .gelato-hero-copy {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+
+  .gelato-hero-copy h1 {
+    font-size: clamp(3.6rem, 18vw, 5.4rem);
+  }
+
+  .gelato-hero-scoops {
+    min-height: 360px;
+  }
+
+  .gelato-hero-scoops img {
+    width: min(64vw, 270px);
+  }
+
+  .gelato-menu-heading {
+    grid-template-columns: 1fr;
+  }
+
+  .gelato-count {
+    justify-self: start;
+  }
+
+  .gelato-tools {
+    grid-template-columns: 1fr;
+  }
+
+  .gelato-filter-group {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .gelato-segments {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gelato-segments button {
+    border-right: 1px solid rgba(38, 22, 34, 0.14);
+    border-bottom: 1px solid rgba(38, 22, 34, 0.14);
+  }
+
+  .gelato-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gelato-image-panel {
+    min-height: 300px;
+  }
+
+  .gelato-description {
+    min-height: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gelato-image-panel img {
+    transition: none;
+  }
+
+  .gelato-card:hover .gelato-image-panel img {
+    transform: none;
+  }
+}
