@@ -163,6 +163,21 @@
   margin: 0 auto;
 }
 
+.stock-group-heading {
+  grid-column: 1 / -1;
+  margin: 1.5rem 0 0;
+  padding-bottom: 0.65rem;
+  border-bottom: 3px solid #e94782;
+  color: #7f285d;
+  font-family: var(--display-font);
+  font-size: clamp(1.45rem, 3vw, 2.2rem);
+  line-height: 1;
+}
+
+.stock-group-heading:first-child {
+  margin-top: 0;
+}
+
 .stock-card {
   min-width: 0;
   overflow: hidden;

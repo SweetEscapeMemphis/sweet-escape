@@ -108,7 +108,16 @@
       return;
     }
 
+    let lastType = "";
     for (const item of filtered) {
+      if (item.type !== lastType) {
+        const heading = document.createElement("h3");
+        heading.className = "stock-group-heading";
+        heading.textContent = item.type === "Scoops" ? "Scoop flavors" : `${item.type} flavors`;
+        grid.append(heading);
+        lastType = item.type;
+      }
+
       const card = document.createElement("a");
       card.className = "stock-card";
       card.href = item.href;
