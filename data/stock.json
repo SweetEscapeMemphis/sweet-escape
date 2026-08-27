@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-27T03:52:48.867Z",
+  "updatedAt": "2026-08-27T07:04:35.958Z",
   "scoops": [
     "blue-moon",
     "butter-pecan",
@@ -32,5 +32,10 @@
     "valencia-orange-sorbet",
     "watermelon-sorbet"
   ],
-  "gelato": "*"
+  "gelato": [
+    "birthday-cake",
+    "maple-roasted-butter-pecan",
+    "ny-strawberry-cheesecake",
+    "roasted-banana-dulce-de-leche"
+  ]
 }
