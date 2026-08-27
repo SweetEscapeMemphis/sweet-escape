@@ -10,6 +10,7 @@
     .filter(Boolean);
   let scrollFrame = 0;
 
+  initializeHomeStock();
   createReviewCarousel(reviewCarousel, reduceMotion);
   trackStorefrontActions();
 
@@ -34,6 +35,38 @@
   window.addEventListener("scroll", scheduleScrollUpdate, { passive: true });
   window.addEventListener("resize", handleResize);
   scheduleScrollUpdate();
+
+  async function initializeHomeStock() {
+    if (!window.SweetEscapeStock) return;
+    const scoopFlavors = window.SWEET_ESCAPE_FLAVORS?.flavors || [];
+    const yogurtFlavors = window.SWEET_ESCAPE_YOGURT_FLAVORS?.flavors || [];
+    const stock = await window.SweetEscapeStock.load();
+    const scoopIds = window.SweetEscapeStock.idsFor(
+      stock,
+      "scoops",
+      scoopFlavors.map((flavor) => flavor.id)
+    );
+    const yogurtIds = window.SweetEscapeStock.idsFor(
+      stock,
+      "yogurt",
+      yogurtFlavors.map((flavor) => flavor.id)
+    );
+    const total = scoopIds.size + yogurtIds.size;
+    const stockCount = document.querySelector("#home-stock-count");
+    const stockCta = document.querySelector("[data-stock-cta]");
+    const favoritesSection = document.querySelector(".favorites-section");
+
+    if (stockCount) stockCount.textContent = String(total);
+    if (stockCta) stockCta.textContent = `${scoopIds.size} scoop flavors in stock`;
+
+    let visibleFavorites = 0;
+    for (const card of document.querySelectorAll(".favorite-card[data-flavor-id]")) {
+      const isAvailable = scoopIds.has(card.dataset.flavorId);
+      card.hidden = !isAvailable;
+      if (isAvailable) visibleFavorites += 1;
+    }
+    if (favoritesSection) favoritesSection.hidden = visibleFavorites === 0;
+  }
 
   function handleResize() {
     filmControllers.forEach((controller) => controller.resize());

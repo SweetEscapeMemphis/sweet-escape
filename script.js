@@ -1,6 +1,12 @@
-(function () {
+(async function () {
   const payload = window.SWEET_ESCAPE_FLAVORS;
   const flavors = payload.flavors;
+  const stock = await window.SweetEscapeStock.load();
+  const inStockFlavorIds = window.SweetEscapeStock.idsFor(
+    stock,
+    "scoops",
+    flavors.map((flavor) => flavor.id)
+  );
   const list = document.querySelector("#flavors");
   const searchInput = document.querySelector("#search-input");
   const categoryFilters = document.querySelector("#category-filters");
@@ -23,7 +29,7 @@
   let imageEditing = false;
   let imageDatabasePromise = null;
 
-  countLabel.textContent = String(payload.count);
+  countLabel.textContent = String(inStockFlavorIds.size);
   buildCategoryButtons();
   render();
   scrollToRequestedFlavor();
@@ -122,12 +128,13 @@
 
   function render() {
     const filtered = flavors.filter((flavor) => {
+      const matchesStock = inStockFlavorIds.has(flavor.id);
       const haystack = `${flavor.name} ${flavor.category} ${flavor.allergens.contains}`.toLowerCase();
       const matchesQuery = !state.query || haystack.includes(state.query);
       const matchesCategory = state.category === "All" || flavor.category === state.category;
       const matchesAllergen =
         state.allergen === "All" || flavor.allergens.containsFlags.includes(state.allergen);
-      return matchesQuery && matchesCategory && matchesAllergen;
+      return matchesStock && matchesQuery && matchesCategory && matchesAllergen;
     });
 
     list.innerHTML = "";
@@ -136,7 +143,7 @@
     if (!filtered.length) {
       const empty = document.createElement("div");
       empty.className = "empty-state";
-      empty.textContent = "No flavors match those filters.";
+      empty.textContent = "No in-stock flavors match those filters.";
       list.append(empty);
       return;
     }

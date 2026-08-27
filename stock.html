@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H90X0LXRD3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-H90X0LXRD3");
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
+    <title>Ice Cream and Yogurt In Stock Today | Sweet Escape</title>
+    <meta
+      name="description"
+      content="See the Sweet Escape ice cream and frozen yogurt flavors currently in stock at our Whitten Road shop in Memphis."
+    >
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.sweetescapememphis.com/stock.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Sweet Escape">
+    <meta property="og:title" content="In Stock Today | Sweet Escape">
+    <meta property="og:description" content="See the flavors currently available at Sweet Escape in Memphis.">
+    <meta property="og:url" content="https://www.sweetescapememphis.com/stock.html">
+    <meta property="og:image" content="https://www.sweetescapememphis.com/assets/scoops/cookie-dough.webp">
+    <link rel="stylesheet" href="home.css?v=20260822-7">
+    <link rel="stylesheet" href="stock.css?v=20260826-1">
+    <script defer src="data/flavors.js"></script>
+    <script defer src="data/yogurt-flavors.js?v=20260808-2"></script>
+    <script defer src="stock-store.js?v=20260826-1"></script>
+    <script defer src="stock-page.js?v=20260826-1"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#stock-list">Skip to in-stock flavors</a>
+
+    <header class="home-topbar" id="top">
+      <a class="home-brand" href="index.html" aria-label="Sweet Escape home">
+        <span class="brand-wordmark"><span>Sweet</span> Escape</span>
+      </a>
+      <nav class="home-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="flavors.html#flavors">Scoop flavors</a>
+        <a href="yogurt.html">Yogurt flavors</a>
+        <a class="is-current" href="#top">In stock</a>
+        <a href="flavors.html#nutrition">Nutrition</a>
+        <a class="nav-menu-link" href="#stock-list">View today</a>
+      </nav>
+    </header>
+
+    <main class="stock-main">
+      <section class="stock-intro" aria-labelledby="stock-title">
+        <p class="eyebrow">Available at the shop</p>
+        <h1 id="stock-title">In stock today</h1>
+        <p>These are the scoop and frozen yogurt flavors currently available at Sweet Escape.</p>
+        <div class="stock-summary" aria-label="Current availability summary">
+          <div><strong id="stock-total">0</strong><span>Total items</span></div>
+          <div><strong id="stock-scoop-count">0</strong><span>Scoop flavors</span></div>
+          <div><strong id="stock-yogurt-count">0</strong><span>Yogurt flavors</span></div>
+        </div>
+        <p class="stock-updated" id="stock-updated" aria-live="polite"></p>
+      </section>
+
+      <section class="stock-browser" id="stock-list" aria-labelledby="stock-browser-title">
+        <div class="stock-browser-heading">
+          <div>
+            <p class="eyebrow">Pick your next treat</p>
+            <h2 id="stock-browser-title">What is available</h2>
+          </div>
+          <label class="stock-search">
+            <span>Search in-stock flavors</span>
+            <input id="stock-search" type="search" placeholder="Try chocolate, mint, or sorbet" autocomplete="off">
+          </label>
+        </div>
+
+        <div class="stock-tabs" id="stock-tabs" aria-label="Stock type"></div>
+        <div class="stock-grid" id="stock-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="home-footer">
+      <a href="#top" aria-label="Sweet Escape in-stock menu">
+        <span class="footer-wordmark"><span>Sweet</span> Escape</span>
+      </a>
+      <nav aria-label="Footer">
+        <a href="flavors.html#flavors">Scoop flavors</a>
+        <a href="yogurt.html">Yogurt</a>
+        <a href="#top">In stock</a>
+        <a href="flavors.html#nutrition">Nutrition</a>
+      </nav>
+      <address class="footer-contact">
+        <a href="https://share.google/4KF1GDH3zOARV0nm1" target="_blank" rel="noopener noreferrer">1674 Whitten Rd, Suite 106, Memphis, TN 38134</a>
+        <a href="tel:+19017185812">(901) 718-5812</a>
+        <span>Mon–Thu 12–9 PM · Fri–Sun 12–10 PM</span>
+      </address>
+      <a class="back-top" href="#top">Back to top</a>
+    </footer>
+  </body>
+</html>

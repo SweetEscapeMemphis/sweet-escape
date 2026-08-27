@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <title>Stock Manager | Sweet Escape</title>
+    <link rel="stylesheet" href="home.css?v=20260822-7">
+    <link rel="stylesheet" href="stock.css?v=20260826-1">
+    <script defer src="data/flavors.js"></script>
+    <script defer src="data/yogurt-flavors.js?v=20260808-2"></script>
+    <script defer src="stock-store.js?v=20260826-1"></script>
+    <script defer src="stock-manager.js?v=20260826-1"></script>
+  </head>
+  <body class="manager-body">
+    <a class="skip-link" href="#manager-list">Skip to stock controls</a>
+
+    <header class="home-topbar" id="top">
+      <a class="home-brand" href="index.html" aria-label="Sweet Escape home">
+        <span class="brand-wordmark"><span>Sweet</span> Escape</span>
+      </a>
+      <nav class="home-nav" aria-label="Stock manager navigation">
+        <a href="index.html">Home</a>
+        <a href="stock.html">View in-stock menu</a>
+      </nav>
+    </header>
+
+    <main class="manager-main">
+      <section class="manager-intro" aria-labelledby="manager-title">
+        <p class="eyebrow">Owner publishing tool</p>
+        <h1 id="manager-title">Stock manager</h1>
+        <p>Choose the products currently available, then publish the selection to the customer menu.</p>
+      </section>
+
+      <section class="manager-publish" aria-labelledby="publish-title">
+        <div>
+          <p class="eyebrow">GitHub authorization</p>
+          <h2 id="publish-title">Publish live stock</h2>
+          <p>Your access token is used only for this save and is never stored by the page.</p>
+        </div>
+        <label class="manager-token">
+          <span>GitHub access token</span>
+          <input
+            id="github-token"
+            type="password"
+            placeholder="github_pat_..."
+            autocomplete="off"
+            autocapitalize="none"
+            spellcheck="false"
+          >
+        </label>
+        <button class="manager-publish-button" id="publish-stock" type="button">Publish stock</button>
+        <output class="manager-status" id="manager-status" aria-live="polite"></output>
+      </section>
+
+      <section class="manager-workspace" id="manager-list" aria-labelledby="manager-list-title">
+        <div class="manager-toolbar">
+          <div>
+            <p class="eyebrow">Current selection</p>
+            <h2 id="manager-list-title"><span id="manager-selected-count">0</span> items in stock</h2>
+          </div>
+          <label class="manager-search">
+            <span>Search items</span>
+            <input id="manager-search" type="search" placeholder="Search scoop or yogurt flavors" autocomplete="off">
+          </label>
+        </div>
+
+        <div class="manager-group-heading">
+          <div><h3>Scoop flavors</h3><span id="manager-scoop-count">0 selected</span></div>
+          <div class="manager-group-actions">
+            <button type="button" data-group="scoops" data-action="all">Select all</button>
+            <button type="button" data-group="scoops" data-action="none">Clear all</button>
+          </div>
+        </div>
+        <div class="manager-grid" id="manager-scoop-grid"></div>
+
+        <div class="manager-group-heading">
+          <div><h3>Yogurt flavors</h3><span id="manager-yogurt-count">0 selected</span></div>
+          <div class="manager-group-actions">
+            <button type="button" data-group="yogurt" data-action="all">Select all</button>
+            <button type="button" data-group="yogurt" data-action="none">Clear all</button>
+          </div>
+        </div>
+        <div class="manager-grid" id="manager-yogurt-grid"></div>
+      </section>
+    </main>
+  </body>
+</html>

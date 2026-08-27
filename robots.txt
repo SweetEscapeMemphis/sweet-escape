@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /stock-manager.html
 
 Sitemap: https://www.sweetescapememphis.com/sitemap.xml

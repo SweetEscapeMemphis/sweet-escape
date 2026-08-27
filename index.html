@@ -107,7 +107,10 @@
       }
     </script>
     <link rel="stylesheet" href="home.css?v=20260822-7">
-    <script defer src="home.js?v=20260822-3"></script>
+    <script defer src="data/flavors.js"></script>
+    <script defer src="data/yogurt-flavors.js?v=20260808-2"></script>
+    <script defer src="stock-store.js?v=20260826-1"></script>
+    <script defer src="home.js?v=20260826-1"></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -121,8 +124,9 @@
         <a class="is-current" href="#top">Home</a>
         <a href="flavors.html#flavors">Scoop flavors</a>
         <a href="yogurt.html">Yogurt flavors</a>
+        <a href="stock.html">In stock</a>
         <a href="flavors.html#nutrition">Nutrition</a>
-        <a class="nav-menu-link" href="flavors.html#flavors">View menu</a>
+        <a class="nav-menu-link" href="stock.html">View menu</a>
       </nav>
     </header>
 
@@ -135,7 +139,7 @@
             milkshakes, and loaded treats at 1674 Whitten Rd, Suite 106.
           </p>
           <div class="hero-actions">
-            <a class="home-button primary" href="flavors.html#flavors" data-track="view_scoop_flavors">Explore 71 scoop flavors</a>
+            <a class="home-button primary" href="stock.html" data-track="view_scoop_flavors" data-stock-cta>See today&apos;s flavors</a>
             <a
               class="home-button secondary"
               href="https://share.google/4KF1GDH3zOARV0nm1"
@@ -555,17 +559,17 @@
         </div>
       </section>
 
-      <section class="favorites-section" id="favorites" aria-labelledby="favorites-title">
+      <section class="favorites-section" id="favorites" aria-labelledby="favorites-title" hidden>
         <div class="section-intro" data-reveal>
           <div>
             <p class="eyebrow">A few sweet escapes</p>
             <h2 id="favorites-title">Start with a favorite</h2>
           </div>
-          <a class="text-link" href="flavors.html#flavors">Browse every flavor <span aria-hidden="true">&#8594;</span></a>
+          <a class="text-link" href="stock.html">Browse in-stock flavors <span aria-hidden="true">&#8594;</span></a>
         </div>
 
         <div class="favorite-grid">
-          <a class="favorite-card cherry-card" href="flavors.html#amaretto-cherry" data-reveal>
+          <a class="favorite-card cherry-card" href="flavors.html#amaretto-cherry" data-flavor-id="amaretto-cherry" data-reveal>
             <div class="favorite-image-wrap">
               <img src="assets/scoops/amaretto-cherry.webp" alt="Amaretto Cherry ice cream scoop">
             </div>
@@ -575,7 +579,7 @@
             </div>
           </a>
 
-          <a class="favorite-card cake-card" href="flavors.html#anniversary-cake" data-reveal>
+          <a class="favorite-card cake-card" href="flavors.html#anniversary-cake" data-flavor-id="anniversary-cake" data-reveal>
             <div class="favorite-image-wrap">
               <img src="assets/scoops/anniversary-cake.webp" alt="Anniversary Cake ice cream scoop">
             </div>
@@ -585,7 +589,7 @@
             </div>
           </a>
 
-          <a class="favorite-card apple-card" href="flavors.html#apple-crisp" data-reveal>
+          <a class="favorite-card apple-card" href="flavors.html#apple-crisp" data-flavor-id="apple-crisp" data-reveal>
             <div class="favorite-image-wrap">
               <img src="assets/scoops/apple-crisp.webp" alt="Apple Crisp ice cream scoop">
             </div>
@@ -595,7 +599,7 @@
             </div>
           </a>
 
-          <a class="favorite-card banana-card" href="flavors.html#banana-pudding" data-reveal>
+          <a class="favorite-card banana-card" href="flavors.html#banana-pudding" data-flavor-id="banana-pudding" data-reveal>
             <div class="favorite-image-wrap">
               <img src="assets/scoops/banana-pudding.webp" alt="Banana Pudding ice cream scoop">
             </div>
@@ -610,12 +614,12 @@
       <section class="menu-band" aria-labelledby="menu-band-title">
         <div class="menu-band-copy" data-reveal>
           <p class="eyebrow">There is more in the case</p>
-          <h2 id="menu-band-title"><strong>71</strong> ways to escape</h2>
+          <h2 id="menu-band-title"><strong id="home-stock-count">0</strong> treats in stock</h2>
           <p>
             From classic vanilla to tart sorbets, cake-filled scoops, minty favorites,
             and no-sugar-added choices, your next order is waiting.
           </p>
-          <a class="home-button light" href="flavors.html#flavors">Find your flavor</a>
+          <a class="home-button light" href="stock.html">Find your flavor</a>
         </div>
 
         <div class="category-stack" aria-label="Flavor categories" data-reveal>
@@ -677,6 +681,7 @@
       <nav aria-label="Footer">
         <a href="flavors.html#flavors">Flavors</a>
         <a href="yogurt.html">Yogurt</a>
+        <a href="stock.html">In stock</a>
         <a href="flavors.html#nutrition">Nutrition</a>
         <a href="assets/sweet-escape-nutrition-facts.pdf">PDF</a>
       </nav>
