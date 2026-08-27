@@ -31,5 +31,6 @@
     "pink-lemonade-sorbet",
     "valencia-orange-sorbet",
     "watermelon-sorbet"
-  ]
+  ],
+  "gelato": "*"
 }
