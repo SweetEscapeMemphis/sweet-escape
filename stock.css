@@ -291,6 +291,51 @@
   opacity: 0.58;
 }
 
+.manager-token-field {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.manager-token-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.manager-token-options label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: #674f5e;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.manager-token-options input {
+  width: 18px;
+  height: 18px;
+  accent-color: #e94782;
+}
+
+.manager-token-options button {
+  border: 0;
+  background: transparent;
+  color: #b3264d;
+  padding: 0.2rem;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 850;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.manager-token-options button:disabled {
+  color: #9b8e96;
+  cursor: default;
+  text-decoration: none;
+}
+
 .manager-status {
   grid-column: 1 / -1;
   min-height: 1.5rem;
@@ -437,6 +482,11 @@
 
   .manager-publish-button {
     grid-column: auto;
+  }
+
+  .manager-token-options {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .manager-publish,

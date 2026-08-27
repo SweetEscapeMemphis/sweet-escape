@@ -2,6 +2,7 @@
   const repository = "SweetEscapeMemphis/sweet-escape";
   const stockPath = "data/stock.json";
   const branch = "main";
+  const tokenStorageKey = "sweetEscapeStockManagerToken";
   const scoopFlavors = window.SWEET_ESCAPE_FLAVORS?.flavors || [];
   const yogurtFlavors = window.SWEET_ESCAPE_YOGURT_FLAVORS?.flavors || [];
   const currentStock = await window.SweetEscapeStock.load({ fresh: true });
@@ -19,12 +20,16 @@
   };
   const searchInput = document.querySelector("#manager-search");
   const tokenInput = document.querySelector("#github-token");
+  const rememberTokenInput = document.querySelector("#remember-token");
+  const forgetTokenButton = document.querySelector("#forget-token");
   const publishButton = document.querySelector("#publish-stock");
   const status = document.querySelector("#manager-status");
   const scoopGrid = document.querySelector("#manager-scoop-grid");
   const yogurtGrid = document.querySelector("#manager-yogurt-grid");
   let query = "";
+  let tokenSaveTimer;
 
+  restoreSavedToken();
   renderAll();
   updateCounts();
 
@@ -57,6 +62,15 @@
   });
 
   publishButton.addEventListener("click", publishStock);
+  forgetTokenButton.addEventListener("click", forgetSavedToken);
+  tokenInput.addEventListener("input", () => {
+    clearTimeout(tokenSaveTimer);
+    tokenSaveTimer = setTimeout(saveTokenPreference, 250);
+  });
+  rememberTokenInput.addEventListener("change", () => {
+    if (rememberTokenInput.checked) saveTokenPreference();
+    else removeStoredToken();
+  });
 
   function renderAll() {
     renderGroup(scoopGrid, scoopFlavors, "scoops");
@@ -137,13 +151,64 @@
       });
       if (!updateResponse.ok) throw await githubError(updateResponse);
 
-      tokenInput.value = "";
+      saveTokenPreference(token);
       setStatus("Published. The customer menu will update in about one minute.", "success");
     } catch (error) {
       setStatus(error.message || "Stock could not be published.", "error");
     } finally {
       publishButton.disabled = false;
     }
+  }
+
+  function restoreSavedToken() {
+    try {
+      const savedToken = localStorage.getItem(tokenStorageKey);
+      if (!savedToken) return;
+      tokenInput.value = savedToken;
+      rememberTokenInput.checked = true;
+      forgetTokenButton.disabled = false;
+    } catch (error) {
+      rememberTokenInput.checked = false;
+      rememberTokenInput.disabled = true;
+    }
+  }
+
+  function saveTokenPreference(providedToken) {
+    const hasProvidedToken = typeof providedToken === "string";
+    const token = hasProvidedToken ? providedToken : tokenInput.value.trim();
+    try {
+      if (rememberTokenInput.checked && token) {
+        localStorage.setItem(tokenStorageKey, token);
+        tokenInput.value = token;
+        forgetTokenButton.disabled = false;
+      } else {
+        removeStoredToken();
+        if (hasProvidedToken) tokenInput.value = "";
+      }
+    } catch (error) {
+      rememberTokenInput.checked = false;
+      rememberTokenInput.disabled = true;
+      forgetTokenButton.disabled = true;
+    }
+  }
+
+  function removeStoredToken() {
+    try {
+      localStorage.removeItem(tokenStorageKey);
+    } catch (error) {
+      // The token remains available in the field for this page session.
+    }
+    forgetTokenButton.disabled = true;
+  }
+
+  function forgetSavedToken() {
+    clearTimeout(tokenSaveTimer);
+    removeStoredToken();
+    tokenInput.value = "";
+    rememberTokenInput.checked = false;
+    forgetTokenButton.disabled = true;
+    setStatus("Saved token removed from this browser.", "success");
+    tokenInput.focus();
   }
 
   async function githubError(response) {

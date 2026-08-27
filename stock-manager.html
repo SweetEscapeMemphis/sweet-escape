@@ -8,11 +8,11 @@
     <meta name="robots" content="noindex, nofollow, noarchive">
     <title>Stock Manager | Sweet Escape</title>
     <link rel="stylesheet" href="home.css?v=20260822-7">
-    <link rel="stylesheet" href="stock.css?v=20260826-1">
+    <link rel="stylesheet" href="stock.css?v=20260826-2">
     <script defer src="data/flavors.js"></script>
     <script defer src="data/yogurt-flavors.js?v=20260808-2"></script>
     <script defer src="stock-store.js?v=20260826-1"></script>
-    <script defer src="stock-manager.js?v=20260826-1"></script>
+    <script defer src="stock-manager.js?v=20260826-3"></script>
   </head>
   <body class="manager-body">
     <a class="skip-link" href="#manager-list">Skip to stock controls</a>
@@ -38,19 +38,28 @@
         <div>
           <p class="eyebrow">GitHub authorization</p>
           <h2 id="publish-title">Publish live stock</h2>
-          <p>Your access token is used only for this save and is never stored by the page.</p>
+          <p>Save your access token on this private device so it is ready whenever stock changes.</p>
         </div>
-        <label class="manager-token">
-          <span>GitHub access token</span>
-          <input
-            id="github-token"
-            type="password"
-            placeholder="github_pat_..."
-            autocomplete="off"
-            autocapitalize="none"
-            spellcheck="false"
-          >
-        </label>
+        <div class="manager-token-field">
+          <label class="manager-token">
+            <span>GitHub access token</span>
+            <input
+              id="github-token"
+              type="password"
+              placeholder="github_pat_..."
+              autocomplete="off"
+              autocapitalize="none"
+              spellcheck="false"
+            >
+          </label>
+          <div class="manager-token-options">
+            <label>
+              <input id="remember-token" type="checkbox" checked>
+              <span>Remember on this device</span>
+            </label>
+            <button id="forget-token" type="button" disabled>Forget saved token</button>
+          </div>
+        </div>
         <button class="manager-publish-button" id="publish-stock" type="button">Publish stock</button>
         <output class="manager-status" id="manager-status" aria-live="polite"></output>
       </section>
