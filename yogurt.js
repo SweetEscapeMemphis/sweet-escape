@@ -8,12 +8,6 @@
   const countLabel = document.querySelector("#yogurt-count");
   const imageEditToggle = document.querySelector("#yogurt-image-edit-toggle");
   const editorStatus = document.querySelector("#yogurt-editor-status");
-  const stock = await window.SweetEscapeStock.load();
-  const inStockFlavorIds = window.SweetEscapeStock.idsFor(
-    stock,
-    "yogurt",
-    flavors.map((flavor) => flavor.id)
-  );
   const categories = ["All", "Nonfat", "No Sugar Added", "Yogurt", "Sorbet", "Seasonal"];
   const state = { query: "", category: "All", allergen: "All" };
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -110,7 +104,6 @@
 
   function render() {
     const filtered = flavors.filter((flavor) => {
-      const matchesStock = inStockFlavorIds.has(flavor.id);
       const haystack = `${flavor.name} ${flavor.category} ${flavor.description}`.toLowerCase();
       const matchesQuery = !state.query || haystack.includes(state.query);
       const matchesCategory =
@@ -118,7 +111,7 @@
         (state.category === "Seasonal" ? flavor.seasonal : flavor.category === state.category);
       const matchesAllergen =
         state.allergen === "All" || flavor.allergenStatus[state.allergen] === "Yes";
-      return matchesStock && matchesQuery && matchesCategory && matchesAllergen;
+      return matchesQuery && matchesCategory && matchesAllergen;
     });
 
     countLabel.textContent = String(filtered.length);

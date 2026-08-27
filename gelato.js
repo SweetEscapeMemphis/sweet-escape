@@ -9,14 +9,7 @@
   const categories = ["All", "Gelato", "Sorbetto", "Vegan"];
   const state = { query: "", category: "All", allergen: "All" };
 
-  if (!grid || !payload || !window.SweetEscapeStock) return;
-
-  const stock = await window.SweetEscapeStock.load();
-  const inStockIds = window.SweetEscapeStock.idsFor(
-    stock,
-    "gelato",
-    flavors.map((flavor) => flavor.id)
-  );
+  if (!grid || !payload) return;
 
   buildCategoryButtons();
   render();
@@ -51,13 +44,12 @@
   function render() {
     const filtered = flavors.filter((flavor) => {
       const haystack = `${flavor.name} ${flavor.category} ${flavor.description}`.toLowerCase();
-      const matchesStock = inStockIds.has(flavor.id);
       const matchesQuery = !state.query || haystack.includes(state.query);
       const matchesCategory = state.category === "All" || flavor.category === state.category;
       const allergens = [...(flavor.allergens || []), ...(flavor.mayContain || [])].join(" ").toLowerCase();
       const matchesAllergen =
         state.allergen === "All" || allergens.includes(state.allergen.toLowerCase());
-      return matchesStock && matchesQuery && matchesCategory && matchesAllergen;
+      return matchesQuery && matchesCategory && matchesAllergen;
     });
 
     countLabel.textContent = String(filtered.length);

@@ -1,12 +1,6 @@
 (async function () {
   const payload = window.SWEET_ESCAPE_FLAVORS;
   const flavors = payload.flavors;
-  const stock = await window.SweetEscapeStock.load();
-  const inStockFlavorIds = window.SweetEscapeStock.idsFor(
-    stock,
-    "scoops",
-    flavors.map((flavor) => flavor.id)
-  );
   const list = document.querySelector("#flavors");
   const searchInput = document.querySelector("#search-input");
   const categoryFilters = document.querySelector("#category-filters");
@@ -29,7 +23,7 @@
   let imageEditing = false;
   let imageDatabasePromise = null;
 
-  countLabel.textContent = String(inStockFlavorIds.size);
+  countLabel.textContent = String(flavors.length);
   buildCategoryButtons();
   render();
   scrollToRequestedFlavor();
@@ -128,13 +122,12 @@
 
   function render() {
     const filtered = flavors.filter((flavor) => {
-      const matchesStock = inStockFlavorIds.has(flavor.id);
       const haystack = `${flavor.name} ${flavor.category} ${flavor.allergens.contains}`.toLowerCase();
       const matchesQuery = !state.query || haystack.includes(state.query);
       const matchesCategory = state.category === "All" || flavor.category === state.category;
       const matchesAllergen =
         state.allergen === "All" || flavor.allergens.containsFlags.includes(state.allergen);
-      return matchesStock && matchesQuery && matchesCategory && matchesAllergen;
+      return matchesQuery && matchesCategory && matchesAllergen;
     });
 
     list.innerHTML = "";
