@@ -1,5 +1,35 @@
 {
-  "updatedAt": null,
-  "scoops": "*",
-  "yogurt": "*"
+  "updatedAt": "2026-08-27T03:33:28.089Z",
+  "scoops": [
+    "blue-moon",
+    "butter-pecan",
+    "chocolate",
+    "cool-mint-cookie",
+    "cotton-candy-twist",
+    "mackinac-island-fudge",
+    "michigan-pot-hole",
+    "mint-chip",
+    "o-o-oreo",
+    "puppy-chow",
+    "rainbow-sherbet",
+    "strawberry",
+    "superman",
+    "tennessee-toffee",
+    "vanilla-bean",
+    "yellow-cake-batter"
+  ],
+  "yogurt": [
+    "birthday-cake",
+    "cheesecake",
+    "dreamy-dark-chocolate",
+    "southern-butter-pecan",
+    "tahitian-vanilla-nsa",
+    "cookie-monster",
+    "cookies-n-cream",
+    "strawberry-sensations",
+    "white-chocolate-mousse",
+    "pink-lemonade-sorbet",
+    "valencia-orange-sorbet",
+    "watermelon-sorbet"
+  ]
 }
