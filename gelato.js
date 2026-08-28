@@ -91,7 +91,7 @@
 
     return `
       <div class="gelato-image-panel">
-        <img src="${escapeHTML(flavor.image)}" alt="${escapeHTML(flavor.name)} ${escapeHTML(flavor.category.toLowerCase())} scoop" loading="lazy" decoding="async">
+        <img src="${escapeHTML(flavor.image)}" alt="${escapeHTML(flavor.name)} ${escapeHTML(flavor.category.toLowerCase())} scoop" width="512" height="512" loading="lazy" decoding="async">
         <span class="gelato-number">${String(index + 1).padStart(2, "0")}</span>
       </div>
       <div class="gelato-card-copy">

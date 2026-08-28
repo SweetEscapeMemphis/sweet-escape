@@ -11,8 +11,8 @@
     </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <link rel="apple-touch-icon" href="assets/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <title>Ice Cream Flavors &amp; Nutrition in Memphis | Sweet Escape</title>
     <meta
       name="description"
@@ -28,27 +28,33 @@
     <meta property="og:url" content="https://www.sweetescapememphis.com/flavors.html">
     <meta property="og:image" content="https://www.sweetescapememphis.com/assets/scoops/cookie-dough.webp">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ice Cream Flavors &amp; Nutrition in Memphis | Sweet Escape">
+    <meta name="twitter:description" content="Browse 71 Sweet Escape flavors with nutrition and allergen details.">
+    <meta name="twitter:image" content="https://www.sweetescapememphis.com/assets/scoops/cookie-dough.webp">
     <link rel="stylesheet" href="styles.css?v=20260820-1">
+    <link rel="stylesheet" href="site-actions.css?v=20260827-1">
     <script defer src="data/flavors.js"></script>
     <script defer src="stock-store.js?v=20260826-1"></script>
-    <script defer src="script.js?v=20260827-2"></script>
+    <script defer src="script.js?v=20260827-3"></script>
+    <script defer src="analytics.js?v=20260827-1"></script>
   </head>
   <body>
     <a class="skip-link" href="#flavors">Skip to flavors</a>
 
     <header class="topbar" id="top">
-      <a class="brand-link" href="index.html" aria-label="Sweet Escape home">
+      <a class="brand-link" href="/" aria-label="Sweet Escape home">
         <span class="brand-wordmark"><span>Sweet</span> Escape</span>
       </a>
 
       <nav class="site-nav" aria-label="Primary">
-        <a href="index.html">Home</a>
+        <a href="/">Home</a>
         <a href="stock.html">In stock</a>
         <a href="#flavors">Flavors</a>
         <a href="yogurt.html">Yogurt flavors</a>
         <a href="gelato.html">Gelato</a>
+        <a href="visit.html">Visit</a>
         <a href="#nutrition">Nutrition</a>
-        <a href="assets/sweet-escape-nutrition-facts.pdf">PDF</a>
+        <a href="https://share.google/4KF1GDH3zOARV0nm1" target="_blank" rel="noopener noreferrer">Directions</a>
       </nav>
     </header>
 
@@ -80,7 +86,7 @@
         <div class="quick-stats" aria-label="Flavor menu summary">
           <div>
             <strong id="flavor-count">71</strong>
-            <span>in stock</span>
+            <span>flavors</span>
           </div>
           <div>
             <strong>2/3 cup</strong>
@@ -123,12 +129,13 @@
     </main>
 
     <footer class="site-footer">
-      <a class="footer-wordmark" href="index.html" aria-label="Sweet Escape home"><span>Sweet</span> Escape</a>
+      <a class="footer-wordmark" href="/" aria-label="Sweet Escape home"><span>Sweet</span> Escape</a>
       <div>
         <strong>Sweet Escape</strong>
         <p><a href="stock.html">See what is in stock today</a></p>
+        <p><a href="visit.html">Plan your visit</a></p>
         <address class="footer-contact">
-          <a href="https://share.google/4KF1GDH3zOARV0nm1" target="_blank" rel="noopener noreferrer">1674 Whitten Rd, Suite 106, Memphis, TN 38134</a><br>
+          <a href="https://share.google/4KF1GDH3zOARV0nm1" target="_blank" rel="noopener noreferrer">Get directions: 1674 Whitten Rd, Suite 106, Memphis, TN 38134</a><br>
           <a href="tel:+19017185812">(901) 718-5812</a><br>
           <span>Mon–Thu 12–9 PM · Fri–Sun 12–10 PM</span>
         </address>
@@ -139,5 +146,11 @@
       </div>
       <a href="#top">Back to top</a>
     </footer>
+
+    <nav class="mobile-action-bar" aria-label="Quick actions">
+      <a href="https://share.google/4KF1GDH3zOARV0nm1" target="_blank" rel="noopener noreferrer">Directions</a>
+      <a href="tel:+19017185812">Call</a>
+      <a href="#flavors">Menu</a>
+    </nav>
   </body>
 </html>

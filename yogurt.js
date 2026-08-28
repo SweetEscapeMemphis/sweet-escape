@@ -168,6 +168,8 @@
           src="${escapeHTML(flavor.image)}"
           data-default-src="${escapeHTML(flavor.image)}"
           alt="Flavor image for ${escapeHTML(flavor.name)} yogurt"
+          width="600"
+          height="600"
           loading="lazy"
           decoding="async"
         >

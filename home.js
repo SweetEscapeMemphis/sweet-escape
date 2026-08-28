@@ -12,7 +12,6 @@
 
   initializeHomeStock();
   createReviewCarousel(reviewCarousel, reduceMotion);
-  trackStorefrontActions();
 
   if (reduceMotion) {
     revealItems.forEach((item) => item.classList.add("is-visible"));
@@ -40,6 +39,7 @@
     if (!window.SweetEscapeStock) return;
     const scoopFlavors = window.SWEET_ESCAPE_FLAVORS?.flavors || [];
     const yogurtFlavors = window.SWEET_ESCAPE_YOGURT_FLAVORS?.flavors || [];
+    const gelatoFlavors = window.SWEET_ESCAPE_GELATO_FLAVORS?.flavors || [];
     const stock = await window.SweetEscapeStock.load();
     const scoopIds = window.SweetEscapeStock.idsFor(
       stock,
@@ -51,13 +51,18 @@
       "yogurt",
       yogurtFlavors.map((flavor) => flavor.id)
     );
-    const total = scoopIds.size + yogurtIds.size;
+    const gelatoIds = window.SweetEscapeStock.idsFor(
+      stock,
+      "gelato",
+      gelatoFlavors.map((flavor) => flavor.id)
+    );
+    const total = scoopIds.size + yogurtIds.size + gelatoIds.size;
     const stockCount = document.querySelector("#home-stock-count");
     const stockCta = document.querySelector("[data-stock-cta]");
     const favoritesSection = document.querySelector(".favorites-section");
 
     if (stockCount) stockCount.textContent = String(total);
-    if (stockCta) stockCta.textContent = `${scoopIds.size} scoop flavors in stock`;
+    if (stockCta) stockCta.textContent = `See ${total} treats in stock`;
 
     let visibleFavorites = 0;
     for (const card of document.querySelectorAll(".favorite-card[data-flavor-id]")) {
@@ -389,15 +394,4 @@
     }
   }
 
-  function trackStorefrontActions() {
-    for (const link of document.querySelectorAll("[data-track]")) {
-      link.addEventListener("click", () => {
-        if (typeof window.gtag !== "function") return;
-        window.gtag("event", "storefront_action", {
-          action_name: link.dataset.track,
-          link_url: link.href,
-        });
-      });
-    }
-  }
 })();

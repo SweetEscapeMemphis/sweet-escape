@@ -25,7 +25,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Peanut": "No",
         "Sesame": "No"
       },
-      "image": "assets/yogurt/source/birthday-cake-transparent.png",
+      "image": "assets/yogurt/scoops-webp/birthday-cake-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/c49175a878a60cea.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=6663455d25e4b.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/nonfat-yogurts"
@@ -46,7 +46,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Tree nut": "No",
         "Peanut": "No"
       },
-      "image": "assets/yogurt/source/blue-cotton-candy-transparent.png",
+      "image": "assets/yogurt/scoops-webp/blue-cotton-candy-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/c75a3371645bedef.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=6663454226a31.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/nonfat-yogurts"
@@ -68,7 +68,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Peanut": "No",
         "Sesame": "No"
       },
-      "image": "assets/yogurt/source/cheesecake-transparent.png",
+      "image": "assets/yogurt/scoops-webp/cheesecake-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/91e5a98ab8ed0ccd.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=6663454d73e32.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/nonfat-yogurts"
@@ -90,7 +90,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Peanut": "No",
         "Sesame": "No"
       },
-      "image": "assets/yogurt/source/cherry-amaretto-transparent.png",
+      "image": "assets/yogurt/scoops-webp/cherry-amaretto-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/df47bbbc12fd4dd0.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=666345600efa7.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/nonfat-yogurts"
@@ -112,7 +112,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Peanut": "No",
         "Sesame": "No"
       },
-      "image": "assets/yogurt/source/dreamy-dark-chocolate-transparent.png",
+      "image": "assets/yogurt/scoops-webp/dreamy-dark-chocolate-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/a0bad21abdf3560f.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=6663453e74740.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/nonfat-yogurts"
@@ -134,7 +134,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Peanut": "No",
         "Sesame": "No"
       },
-      "image": "assets/yogurt/source/mint-chocolate-chip-transparent.png",
+      "image": "assets/yogurt/scoops-webp/mint-chocolate-chip-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/06363ed8a3c4f36d.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=6663456ed816c.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/nonfat-yogurts"
@@ -156,7 +156,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Peanut": "No",
         "Sesame": "No"
       },
-      "image": "assets/yogurt/source/southern-butter-pecan-transparent.png",
+      "image": "assets/yogurt/scoops-webp/southern-butter-pecan-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/b6f04b177b729461.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=6663454838e5f.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/nonfat-yogurts"
@@ -178,7 +178,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Peanut": "No",
         "Sesame": "No"
       },
-      "image": "assets/yogurt/source/tahitian-vanilla-transparent.png",
+      "image": "assets/yogurt/scoops-webp/tahitian-vanilla-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/fa5f20774aee47d6.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=6663454ca7b9c.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/nonfat-yogurts"
@@ -200,7 +200,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Peanut": "No",
         "Sesame": "No"
       },
-      "image": "assets/yogurt/source/chocolate-transparent.png",
+      "image": "assets/yogurt/scoops-webp/chocolate-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/65d66bbe71e7e703.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=66634545aceee.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/no-sugar-added"
@@ -222,7 +222,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Peanut": "No",
         "Sesame": "No"
       },
-      "image": "assets/yogurt/source/tahitian-vanilla-transparent.png",
+      "image": "assets/yogurt/scoops-webp/tahitian-vanilla-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/64743ec8266930cf.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=66634567060c9.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/no-sugar-added"
@@ -244,7 +244,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Peanut": "No",
         "Sesame": "No"
       },
-      "image": "assets/yogurt/source/wild-strawberry-transparent.png",
+      "image": "assets/yogurt/scoops-webp/wild-strawberry-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/ce3e741eb32716cc.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=6663455c5ddd8.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/no-sugar-added"
@@ -266,7 +266,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Peanut": "No",
         "Sesame": "No"
       },
-      "image": "assets/yogurt/source/cake-batter-transparent.png",
+      "image": "assets/yogurt/scoops-webp/cake-batter-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/1d0c4c7cb1646432.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=6663455f2e9fe.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/yogurt"
@@ -288,7 +288,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Peanut": "No",
         "Sesame": "No"
       },
-      "image": "assets/yogurt/source/cookie-monster-transparent.png",
+      "image": "assets/yogurt/scoops-webp/cookie-monster-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/3f3f89e5e69a61ef.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=6663455624281.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/yogurt"
@@ -310,7 +310,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Peanut": "No",
         "Sesame": "No"
       },
-      "image": "assets/yogurt/source/cookies-n-cream-transparent.png",
+      "image": "assets/yogurt/scoops-webp/cookies-n-cream-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/36dab6b28b5ab9be.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=6663454be5266.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/yogurt"
@@ -332,7 +332,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Peanut": "No",
         "Sesame": "No"
       },
-      "image": "assets/yogurt/source/espresso-transparent.png",
+      "image": "assets/yogurt/scoops-webp/espresso-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/c459aad3ee2d141a.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=66634544e1db6.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/yogurt"
@@ -354,7 +354,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Peanut": "No",
         "Sesame": "No"
       },
-      "image": "assets/yogurt/source/french-vanilla-transparent.png",
+      "image": "assets/yogurt/scoops-webp/french-vanilla-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/1f48b6f8af85fea5.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=6663454b40a61.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/yogurt"
@@ -376,7 +376,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Peanut": "No",
         "Sesame": "No"
       },
-      "image": "assets/yogurt/source/home-churn-vanilla-transparent.png",
+      "image": "assets/yogurt/scoops-webp/home-churn-vanilla-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/22a19fcd8c1f12ea.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=6663456b81917.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/yogurt"
@@ -398,7 +398,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Peanut": "Yes",
         "Sesame": "No"
       },
-      "image": "assets/yogurt/source/old-fashioned-peanut-butter-transparent.png",
+      "image": "assets/yogurt/scoops-webp/old-fashioned-peanut-butter-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/d0a28f8cf67d1e2a.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=666345441e354.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/yogurt"
@@ -419,7 +419,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Tree nut": "No",
         "Sesame": "No"
       },
-      "image": "assets/yogurt/source/ooey-gooey-cinnamon-bun-transparent.png",
+      "image": "assets/yogurt/scoops-webp/ooey-gooey-cinnamon-bun-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/a4dbee13b32effe8.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=666345572b91e.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/yogurt"
@@ -441,7 +441,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Peanut": "No",
         "Sesame": "No"
       },
-      "image": "assets/yogurt/source/pumpkin-pie-transparent.png",
+      "image": "assets/yogurt/scoops-webp/pumpkin-pie-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/964e9aafc58425e9.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=6663454668b7f.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/yogurt"
@@ -463,7 +463,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Peanut": "No",
         "Sesame": "No"
       },
-      "image": "assets/yogurt/source/sea-salt-caramel-pretzel-transparent.png",
+      "image": "assets/yogurt/scoops-webp/sea-salt-caramel-pretzel-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/2e8c6c511216cfbd.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=666345411c5ae.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/yogurt"
@@ -485,7 +485,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Peanut": "No",
         "Sesame": "No"
       },
-      "image": "assets/yogurt/source/spiced-apple-pie-transparent.png",
+      "image": "assets/yogurt/scoops-webp/spiced-apple-pie-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/74a7820bd397b3c7.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=66634562296f0.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/yogurt"
@@ -507,7 +507,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Peanut": "No",
         "Sesame": "No"
       },
-      "image": "assets/yogurt/source/wild-strawberry-transparent.png",
+      "image": "assets/yogurt/scoops-webp/wild-strawberry-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/d56ad61f8786f227.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=6663454fb5b35.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/yogurt"
@@ -529,7 +529,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Peanut": "No",
         "Sesame": "No"
       },
-      "image": "assets/yogurt/source/triple-chocolate-transparent.png",
+      "image": "assets/yogurt/scoops-webp/triple-chocolate-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/52b1b861c762617d.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=6663456ac428d.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/yogurt"
@@ -551,7 +551,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Peanut": "No",
         "Sesame": "No"
       },
-      "image": "assets/yogurt/source/white-chocolate-mousse-transparent.png",
+      "image": "assets/yogurt/scoops-webp/white-chocolate-mousse-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/f5f55746a69a3c9c.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=6663454a77e18.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/yogurt"
@@ -573,7 +573,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Peanut": "No",
         "Sesame": "No"
       },
-      "image": "assets/yogurt/source/mango-sorbet-transparent.png",
+      "image": "assets/yogurt/scoops-webp/mango-sorbet-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/c691f1b91c92d282.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=666345662fa12.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/sorbets"
@@ -595,7 +595,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Peanut": "No",
         "Sesame": "No"
       },
-      "image": "assets/yogurt/source/pink-lemonade-sorbet-transparent.png",
+      "image": "assets/yogurt/scoops-webp/pink-lemonade-sorbet-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/9109d4944acbd1fc.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=6663455103b9f.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/sorbets"
@@ -617,7 +617,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Peanut": "No",
         "Sesame": "No"
       },
-      "image": "assets/yogurt/source/valencia-orange-sorbet-transparent.png",
+      "image": "assets/yogurt/scoops-webp/valencia-orange-sorbet-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/95ee56493138fe06.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=66634570ce8bc.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/sorbets"
@@ -639,7 +639,7 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
         "Peanut": "No",
         "Sesame": "No"
       },
-      "image": "assets/yogurt/source/watermelon-sorbet-transparent.png",
+      "image": "assets/yogurt/scoops-webp/watermelon-sorbet-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/d5c96b8601d99d73.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=666345585e623.pdf",
       "sourceUrl": "https://thehoneyhillfarms.com/sorbets"

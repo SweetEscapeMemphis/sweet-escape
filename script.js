@@ -166,7 +166,11 @@
       <div class="scoop-panel" data-flavor-id="${escapeHTML(flavor.id)}">
         <img
           class="scoop-image"
-          src="assets/scoops/${escapeHTML(flavor.id)}.webp?v=20260814-1"
+          src="assets/scoops/responsive/${escapeHTML(flavor.id)}-300.webp"
+          srcset="assets/scoops/responsive/${escapeHTML(flavor.id)}-300.webp 300w, assets/scoops/responsive/${escapeHTML(flavor.id)}-600.webp 600w"
+          sizes="(max-width: 720px) 78vw, 38vw"
+          width="600"
+          height="600"
           alt="Photo realistic scoop of ${escapeHTML(flavor.name)} ice cream"
           loading="lazy"
           decoding="async"
@@ -305,7 +309,15 @@
     const customUrl = customImageUrls.get(flavorId);
     const image = card.querySelector(".scoop-image");
     if (!image) return;
-    image.src = customUrl || `assets/scoops/${flavorId}.webp?v=20260814-1`;
+    if (customUrl) {
+      image.src = customUrl;
+      image.removeAttribute("srcset");
+      image.removeAttribute("sizes");
+    } else {
+      image.src = `assets/scoops/responsive/${flavorId}-300.webp`;
+      image.srcset = `assets/scoops/responsive/${flavorId}-300.webp 300w, assets/scoops/responsive/${flavorId}-600.webp 600w`;
+      image.sizes = "(max-width: 720px) 78vw, 38vw";
+    }
     card.classList.toggle("has-custom-image", Boolean(customUrl));
   }
 

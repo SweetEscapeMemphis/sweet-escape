@@ -26,7 +26,10 @@
         name: flavor.name,
         category: flavor.category,
         type: "Scoops",
-        image: `assets/scoops/${flavor.id}.webp?v=20260814-1`,
+        image: `assets/scoops/responsive/${flavor.id}-300.webp`,
+        srcset: `assets/scoops/responsive/${flavor.id}-300.webp 300w, assets/scoops/responsive/${flavor.id}-600.webp 600w`,
+        width: 600,
+        height: 600,
         href: `flavors.html#${flavor.id}`,
       })),
     ...yogurtFlavors
@@ -37,6 +40,8 @@
         category: flavor.category,
         type: "Yogurt",
         image: flavor.image,
+        width: 600,
+        height: 600,
         href: `yogurt.html#yogurt-${flavor.id}`,
       })),
     ...gelatoFlavors
@@ -47,6 +52,8 @@
         category: flavor.category,
         type: "Gelato",
         image: flavor.image,
+        width: 512,
+        height: 512,
         href: `gelato.html#gelato-${flavor.id}`,
       })),
   ];
@@ -123,7 +130,7 @@
       card.href = item.href;
       card.innerHTML = `
         <div class="stock-card-image">
-          <img src="${escapeHTML(item.image)}" alt="${escapeHTML(item.name)}" loading="lazy" decoding="async">
+          <img src="${escapeHTML(item.image)}"${item.srcset ? ` srcset="${escapeHTML(item.srcset)}" sizes="(max-width: 720px) 42vw, 210px"` : ""} alt="${escapeHTML(item.name)}" width="${item.width}" height="${item.height}" loading="lazy" decoding="async">
         </div>
         <div class="stock-card-copy">
           <span class="stock-status"><i aria-hidden="true"></i>In stock</span>
