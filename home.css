@@ -287,10 +287,10 @@ img {
 }
 
 .hero-lede {
-  max-width: 31ch;
-  margin: 1rem auto 0;
+  max-width: 26ch;
+  margin: 1.25rem auto 0;
   color: #503040;
-  font-size: clamp(1.05rem, 1.65vw, 1.35rem);
+  font-size: clamp(1.18rem, 2.4vw, 1.65rem);
   font-weight: 720;
   line-height: 1.38;
   text-align: center;
@@ -768,6 +768,8 @@ img {
   position: relative;
   z-index: 1;
   width: min(510px, 92%);
+  max-height: 78%;
+  object-fit: contain;
   filter: drop-shadow(0 30px 24px rgba(38, 22, 34, 0.24));
   transform: rotate(3deg);
 }
@@ -1880,14 +1882,6 @@ img {
   line-height: 1.55;
 }
 
-.final-area {
-  max-width: 46ch;
-  margin: 0.75rem auto 0;
-  color: var(--muted);
-  font-size: clamp(0.9rem, 1.3vw, 1rem);
-  line-height: 1.55;
-}
-
 .final-address a,
 .footer-contact a {
   color: inherit;
@@ -1903,18 +1897,6 @@ img {
   font-size: 0.86rem;
   font-style: normal;
   line-height: 1.45;
-}
-
-.footer-contact .footer-social {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 0.2rem;
-}
-
-.footer-contact .footer-social a {
-  font-weight: 800;
-  text-underline-offset: 0.2rem;
 }
 
 .yogurt-editor-tools[hidden] {
@@ -2143,17 +2125,17 @@ body::before {
 }
 
 .hero-message h1.eyebrow {
-  max-width: 14ch;
+  max-width: 11ch;
   color: var(--pink);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(3rem, 4.7vw, 4.8rem);
+  font-size: clamp(3.4rem, 6vw, 6.2rem);
   font-weight: 700;
   line-height: 0.94;
   text-transform: none;
 }
 
 .hero-actions {
-  margin-top: clamp(1.4rem, 2.5vw, 2.2rem);
+  margin-top: clamp(2rem, 4vw, 3.2rem);
 }
 
 .home-button {
@@ -2200,7 +2182,6 @@ body::before {
 }
 
 .hero-scoop-scene {
-  height: clamp(440px, 42vw, 580px);
   min-height: clamp(440px, 42vw, 580px);
 }
 
@@ -2314,9 +2295,6 @@ body::before {
   inset: auto;
   z-index: 1;
   width: 112%;
-  height: auto;
-  min-width: 0;
-  min-height: 0;
   max-width: 112%;
   transform: translate3d(0, var(--scroll-shift), 0);
 }
@@ -2535,15 +2513,6 @@ body::before {
   font-size: clamp(2.6rem, 5.4vw, 5.2rem);
   font-weight: 500;
   line-height: 0.88;
-}
-
-.reviews-intro {
-  max-width: 54ch;
-  margin: -0.35rem 0 0;
-  color: var(--muted);
-  font-size: 1.02rem;
-  font-weight: 680;
-  line-height: 1.55;
 }
 
 .google-rating-link {
