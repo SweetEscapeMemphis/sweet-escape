@@ -1,0 +1,160 @@
+/* Blog layout — reuses home.css design tokens */
+
+.blog-main {
+  background: #fffdfb;
+}
+
+.blog-hero {
+  padding: clamp(2.5rem, 6vw, 5rem) clamp(1.2rem, 7vw, 7rem) clamp(1.5rem, 3vw, 2.5rem);
+  max-width: 60rem;
+}
+
+.blog-kicker {
+  margin: 0 0 0.4rem;
+  color: var(--accent, #e75480);
+  font-size: 0.85rem;
+  font-weight: 850;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.blog-hero h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  line-height: 1.12;
+}
+
+.blog-hero p {
+  margin: 0.9rem 0 0;
+  max-width: 58ch;
+  color: var(--muted, #6b5c55);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Post list */
+.blog-list {
+  display: grid;
+  gap: 1.2rem;
+  padding: 0 clamp(1.2rem, 7vw, 7rem) clamp(3rem, 6vw, 5rem);
+  max-width: 60rem;
+  list-style: none;
+  margin: 0;
+}
+
+.blog-card {
+  border: 1px solid var(--line, #f0e3dc);
+  border-radius: 14px;
+  background: #fff;
+  padding: 1.4rem 1.6rem;
+}
+
+.blog-card time {
+  color: var(--muted, #6b5c55);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.blog-card h2 {
+  margin: 0.35rem 0 0.5rem;
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.blog-card h2 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.blog-card h2 a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+.blog-card p {
+  margin: 0;
+  color: var(--muted, #6b5c55);
+  line-height: 1.55;
+}
+
+.blog-card .blog-more {
+  display: inline-block;
+  margin-top: 0.7rem;
+  font-weight: 850;
+}
+
+/* Single post */
+.post-main {
+  background: #fffdfb;
+}
+
+.post-article {
+  max-width: 46rem;
+  padding: clamp(2.5rem, 6vw, 4.5rem) clamp(1.2rem, 6vw, 3rem) clamp(3rem, 6vw, 5rem);
+  margin: 0 auto;
+}
+
+.post-article header h1 {
+  margin: 0.3rem 0 0;
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  line-height: 1.15;
+}
+
+.post-meta {
+  margin: 0.7rem 0 0;
+  color: var(--muted, #6b5c55);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.post-article h2 {
+  margin: 2.2rem 0 0.6rem;
+  font-size: 1.45rem;
+  line-height: 1.25;
+}
+
+.post-article p,
+.post-article li {
+  color: #46372f;
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.post-article ul,
+.post-article ol {
+  padding-left: 1.3rem;
+}
+
+.post-article a {
+  text-underline-offset: 0.2rem;
+}
+
+.post-cta {
+  margin-top: 2.5rem;
+  border: 1px solid var(--line, #f0e3dc);
+  border-radius: 14px;
+  background: #fff0f3;
+  padding: 1.4rem 1.6rem;
+}
+
+.post-cta h2 {
+  margin: 0 0 0.4rem;
+}
+
+.post-cta p {
+  margin: 0 0 0.9rem;
+}
+
+.post-backlink {
+  display: inline-block;
+  margin-bottom: 1.2rem;
+  font-weight: 850;
+}
+
+@media (max-width: 640px) {
+  .blog-card {
+    padding: 1.1rem 1.2rem;
+  }
+}
