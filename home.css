@@ -1880,6 +1880,14 @@ img {
   line-height: 1.55;
 }
 
+.final-area {
+  max-width: 46ch;
+  margin: 0.75rem auto 0;
+  color: var(--muted);
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  line-height: 1.55;
+}
+
 .final-address a,
 .footer-contact a {
   color: inherit;
@@ -1895,6 +1903,18 @@ img {
   font-size: 0.86rem;
   font-style: normal;
   line-height: 1.45;
+}
+
+.footer-contact .footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.2rem;
+}
+
+.footer-contact .footer-social a {
+  font-weight: 800;
+  text-underline-offset: 0.2rem;
 }
 
 .yogurt-editor-tools[hidden] {
