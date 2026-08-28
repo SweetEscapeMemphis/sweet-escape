@@ -117,13 +117,15 @@
     let pixelRatio = 1;
     let animationFrame = 0;
     let ready = false;
+    let started = false;
+    let filmObserver = null;
 
     if (prefersReducedMotion) {
       root.classList.add("is-reduced-motion");
     }
 
     resizeCanvas();
-    initializeFrames();
+    startWhenNearby();
 
     return {
       resize: resizeCanvas,
@@ -171,6 +173,27 @@
       return loadingFrames[index];
     }
 
+    function startWhenNearby() {
+      if (started) return;
+      if ("IntersectionObserver" in window) {
+        filmObserver = new IntersectionObserver((entries) => {
+          if (!entries.some((entry) => entry.isIntersecting)) return;
+          filmObserver.disconnect();
+          filmObserver = null;
+          startFilm();
+        }, { rootMargin: "120% 0px" });
+        filmObserver.observe(root);
+      } else {
+        startFilm();
+      }
+    }
+
+    function startFilm() {
+      if (started) return;
+      started = true;
+      initializeFrames();
+    }
+
     function prefetchCoarseFrames() {
       const step = Math.max(8, Math.ceil(frameCount / 14));
       const indices = [];
@@ -191,6 +214,7 @@
 
     function updateFromScroll() {
       if (prefersReducedMotion) return;
+      if (!started) return;
 
       const bounds = root.getBoundingClientRect();
       const stickyTop = Number.parseFloat(window.getComputedStyle(stage).top) || 0;
