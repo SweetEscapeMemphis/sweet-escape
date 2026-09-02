@@ -154,7 +154,7 @@
       root.classList.add("is-ready");
       if (loader) loader.setAttribute("aria-hidden", "true");
       updateFromScroll();
-      prefetchCoarseFrames();
+      scheduleCoarsePrefetch();
     }
 
     function loadFrame(index) {
@@ -186,7 +186,7 @@
           filmObserver.disconnect();
           filmObserver = null;
           startFilm();
-        }, { rootMargin: "120% 0px" });
+        }, { rootMargin: "75% 0px" });
         filmObserver.observe(root);
       } else {
         startFilm();
@@ -210,6 +210,22 @@
       };
 
       Promise.all([loadNext(), loadNext()]).then(requestFilmUpdate);
+    }
+
+    function scheduleCoarsePrefetch() {
+      const queuePrefetch = () => {
+        if ("requestIdleCallback" in window) {
+          window.requestIdleCallback(prefetchCoarseFrames, { timeout: 2500 });
+        } else {
+          window.setTimeout(prefetchCoarseFrames, 500);
+        }
+      };
+
+      if (document.readyState === "complete") {
+        queuePrefetch();
+      } else {
+        window.addEventListener("load", queuePrefetch, { once: true });
+      }
     }
 
     function prefetchFrameWindow(center) {

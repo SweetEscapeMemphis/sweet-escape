@@ -2,12 +2,14 @@
 
 This file guides the recurring blog-post task. Read it fully before writing any post.
 
-## Business facts (never contradict these)
-- Sweet Escape, 1674 Whitten Rd, Suite 106, Memphis, TN 38134 (Goodlett Commons shopping center, minutes from Bartlett)
+## Verified business facts (never contradict these)
+- Sweet Escape, 1674 Whitten Rd, Suite 106, Memphis, TN 38134
 - Phone: (901) 718-5812 · Hours: Mon–Thu 12–9 PM, Fri–Sun 12–10 PM
-- Products: hand-dipped scoop ice cream, self-serve frozen yogurt with toppings, gelato, sorbetto/sorbet, milkshakes, warm cookie treats/loaded creations. Pay-by-weight pricing. Samples on request.
+- Products: hand-dipped ice cream, self-serve frozen yogurt with toppings, gelato, sorbetto/sorbet, milkshakes, cookie-based loaded treats, no-sugar-added choices, and vegan gelato choices
+- Service-area context: Memphis and nearby Bartlett
 - Socials: TikTok @sweetescape901 · Instagram @sweet_escape901 · Facebook "Sweet Escape"
-- NEVER invent: prices, party packages, catering services, delivery promises, new products, events, or discounts. If a topic needs a fact not listed here or on the site, write around it or pick another topic.
+- Current availability must come from the live stock data. Nutrition, ingredient, and allergen statements must match the published product data and retain any cautions shown there.
+- NEVER invent or infer: prices or pricing method, free samples, parking, accessibility, entrance details, payment methods, crowd patterns, party/group capacity, reservations, catering, delivery, staff capabilities, manufacturing methods, health benefits, dietary suitability, cross-contact safety, events, offers, or discounts. If a topic needs an unverified fact, write around it or pick another topic.
 
 ## Cadence and format
 - 2–3 posts per week (task runs Mon/Wed/Fri).
@@ -18,22 +20,17 @@ This file guides the recurring blog-post task. Read it fully before writing any 
 - Local SEO: naturally include Memphis and/or Bartlett in the title or first paragraph when it fits. Never keyword-stuff.
 
 ## Topic backlog (work down this list; mark used topics with [x] and the date)
-- [ ] Best dessert stop after a Bartlett ballgame: late-night hours explained
-- [ ] How we keep our shop spotless (reviewers' favorite thing about us)
-- [ ] Building the perfect froyo cup: topping strategy from the pros
-- [ ] What is sorbetto? The dairy-free option most people walk past
-- [ ] Date night in northeast Memphis: dinner ideas near Goodlett Commons + dessert at ours
-- [ ] Why samples are always free at Sweet Escape
-- [ ] Kids' first ice cream visit: a parent's cheat sheet
-- [ ] Milkshakes 101: how we make them thick
-- [ ] No-sugar-added options at Sweet Escape, honestly explained
-- [ ] Meet the case: how our flavor rotation works and how to catch your favorite
-- [ ] Cookie + scoop: the loaded treat order regulars swear by
-- [ ] A short history of gelato (and how ours is served)
-- [ ] Rainy-day Memphis: why ice cream weather is a myth
-- [ ] How to read our nutrition and allergen notes before you visit
-- [ ] Fall flavors we're excited about (only if actually in the live menu — check stock data files)
-- After the backlog runs out: seasonal angles (holidays, school events, Memphis weather), new flavor spotlights grounded in `data/` stock files, and expansions of review themes. Repeat a theme no sooner than 90 days with a fresh angle.
+- [ ] How to check the live menu before a Memphis or Bartlett dessert stop
+- [ ] Building a froyo cup: a simple guide to flavors and toppings
+- [ ] What is sorbetto? How it appears in the Sweet Escape catalog
+- [ ] Kids' first ice cream visit: how to compare the current choices
+- [ ] No-sugar-added catalog options and what the labels say
+- [ ] Meet the case: how to use the rotating in-stock menu
+- [ ] Cookie-based loaded treats: what the site currently lists
+- [ ] A short, sourced history of gelato and a guide to the current catalog
+- [ ] How to read our nutrition, ingredient, and allergen notes before you visit
+- [ ] A current flavor spotlight grounded in `data/stock.json` and the product data files
+- After the backlog runs out: seasonal search themes and flavor spotlights grounded in current first-party data. Do not state that a seasonal flavor, event, offer, or service exists unless it is verified in the repository or by the owner. Repeat a theme no sooner than 90 days with a fresh angle.
 
 ## Definition of done for each run
 1. New post file in `blog/` matching the template structure exactly.
