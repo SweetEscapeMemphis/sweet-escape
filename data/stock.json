@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03T22:17:47.985Z",
+  "updatedAt": "2026-09-03T22:33:55.433Z",
   "scoops": [
     "blue-moon",
     "blueberry-burst",
@@ -33,38 +33,9 @@
     "watermelon-sorbet"
   ],
   "gelato": [
-    "coffee-chocolate-chip",
-    "caribbean-coconut",
-    "green-tea",
-    "belgian-dark-chocolate",
-    "madagascar-vanilla-bean",
-    "sicilian-blood-orange",
-    "piemonte-hazelnut-chocolate-crunch",
-    "italian-espresso",
     "alphonso-mango",
-    "argentine-sea-salt-caramel",
-    "pure-sicilian-pistachio",
-    "old-world-spumoni",
-    "cherry-chocolate-chip-almonds",
-    "cookie-butter-speculaas",
     "torta-al-limone",
     "birthday-cake",
-    "bourbon-vanilla-apple-crisp",
-    "maple-roasted-butter-pecan",
-    "mint-chocolate-chip",
-    "ny-strawberry-cheesecake",
-    "roasted-banana-dulce-de-leche",
-    "stracciatella",
-    "tiramisu",
-    "traditional-cookies-cream",
-    "ube-purple-yam",
-    "wild-strawberry-swirl",
-    "passion-fruit",
-    "rosanna-raspberry",
-    "wild-strawberry",
-    "zesty-lemon",
-    "vegan-vanilla",
-    "vegan-chocolate",
-    "limoncello"
+    "traditional-cookies-cream"
   ]
 }
