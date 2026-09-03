@@ -1,10 +1,8 @@
 {
-  "updatedAt": "2026-08-30T22:02:35.029Z",
+  "updatedAt": "2026-09-03T21:31:12.400Z",
   "scoops": [
-    "banana-pudding",
     "bear-claw",
     "blue-moon",
-    "butter-pecan",
     "carolina-peach",
     "chocolate",
     "cookie-dough",
@@ -12,31 +10,31 @@
     "cotton-candy-twist",
     "michigan-pot-hole",
     "mint-chip",
-    "o-o-oreo",
     "puppy-chow",
     "raspberry-chip-cheesecake",
     "rainbow-sherbet",
-    "signature-vanilla",
     "strawberry",
     "strawberry-cheesecake",
-    "superman"
+    "superman",
+    "tennessee-toffee",
+    "vanilla"
   ],
   "yogurt": [
     "birthday-cake",
-    "cheesecake",
     "cherry-amaretto",
-    "dreamy-dark-chocolate",
-    "mint-chocolate-chip",
     "southern-butter-pecan",
     "tahitian-vanilla-nsa",
+    "cookies-n-cream",
+    "espresso",
     "strawberry-sensations",
+    "triple-chocolate",
     "white-chocolate-mousse",
     "valencia-orange-sorbet"
   ],
   "gelato": [
     "alphonso-mango",
     "torta-al-limone",
-    "roasted-banana-dulce-de-leche",
-    "rosanna-raspberry"
+    "birthday-cake",
+    "traditional-cookies-cream"
   ]
 }
