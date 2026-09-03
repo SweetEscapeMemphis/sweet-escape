@@ -3,7 +3,7 @@ window.SWEET_ESCAPE_FLAVORS = {
   "sourceUrl": "assets/sweet-escape-nutrition-facts.pdf",
   "sourceFile": "assets/sweet-escape-nutrition-facts.pdf",
   "extractedOn": "2026-05-13",
-  "count": 71,
+  "count": 72,
   "flavors": [
     {
       "id": "amaretto-cherry",
@@ -310,6 +310,46 @@ window.SWEET_ESCAPE_FLAVORS = {
         ]
       },
       "sourceDate": "Wednesday, June 12, 2019"
+    },
+    {
+      "id": "blueberry-burst",
+      "pdfPage": 72,
+      "name": "Blueberry Burst",
+      "sourceName": "Blueberry Burst",
+      "category": "Ice Cream",
+      "description": "Creamy mascarpone-style ice cream with blueberry swirl and blueberry pieces.",
+      "nutrition": {
+        "servingsPerContainer": "72.0",
+        "calories": "220",
+        "totalFatG": "12.0",
+        "saturatedFatG": "8",
+        "transFatG": "0",
+        "cholesterolMg": "45",
+        "sodiumMg": "35",
+        "totalCarbsG": "27",
+        "fiberG": "0",
+        "totalSugarsG": "22",
+        "addedSugarsG": "19",
+        "proteinG": "3",
+        "servingGrams": "95",
+        "servingSize": "2/3 cup (95g)"
+      },
+      "allergens": {
+        "contains": "Milk",
+        "equipment": "peanuts, tree nuts, wheat, soy and eggs",
+        "containsFlags": [
+          "Milk"
+        ],
+        "crossContactFlags": [
+          "Soy",
+          "Eggs",
+          "Wheat",
+          "Peanuts",
+          "Tree Nuts"
+        ]
+      },
+      "sourceDate": "Thursday, November 4, 2021",
+      "sourceFile": "Ashby-Blueberry-Burst-1241-NEW.pdf"
     },
     {
       "id": "butter-pecan",
