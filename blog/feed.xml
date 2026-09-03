@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sweet Escape Blog</title>
+    <link>https://www.sweetescapememphis.com/blog/</link>
+    <description>Frozen-dessert guides and shop updates from Sweet Escape in Memphis, Tennessee.</description>
+    <language>en-us</language>
+    <atom:link href="https://www.sweetescapememphis.com/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What to Order at Sweet Escape: A First-Timer&apos;s Guide</title>
+      <link>https://www.sweetescapememphis.com/blog/first-timers-guide.html</link>
+      <guid isPermaLink="true">https://www.sweetescapememphis.com/blog/first-timers-guide.html</guid>
+      <description>Compare hand-dipped ice cream, self-serve frozen yogurt, gelato, sorbetto, milkshakes, and loaded treats before a first visit.</description>
+    </item>
+    <item>
+      <title>Gelato vs. Ice Cream vs. Frozen Yogurt: What&apos;s the Difference?</title>
+      <link>https://www.sweetescapememphis.com/blog/gelato-vs-ice-cream-vs-froyo.html</link>
+      <guid isPermaLink="true">https://www.sweetescapememphis.com/blog/gelato-vs-ice-cream-vs-froyo.html</guid>
+      <description>Use Sweet Escape&apos;s catalogs, live menu, and published product details to compare frozen-dessert choices.</description>
+    </item>
+    <item>
+      <title>Planning a Group Dessert Stop at Sweet Escape</title>
+      <link>https://www.sweetescapememphis.com/blog/groups-and-celebrations.html</link>
+      <guid isPermaLink="true">https://www.sweetescapememphis.com/blog/groups-and-celebrations.html</guid>
+      <description>Compare current menus, review product details, and confirm visit logistics for a group dessert stop in Memphis.</description>
+    </item>
+  </channel>
+</rss>

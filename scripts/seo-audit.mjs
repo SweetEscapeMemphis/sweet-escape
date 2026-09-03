@@ -7,6 +7,9 @@ import process from "node:process";
 const root = path.resolve(import.meta.dirname, "..");
 const origin = "https://www.sweetescapememphis.com";
 const sitemapPath = path.join(root, "sitemap.xml");
+const feedUrl = `${origin}/blog/feed.xml`;
+const feedPath = path.join(root, "blog", "feed.xml");
+const indexNowKey = "c471a4f8e22b4dc7981a6f4d7b0e3912";
 const errors = [];
 const warnings = [];
 
@@ -65,6 +68,7 @@ for (const [index, file] of sitemapFiles.entries()) {
   const robots = getAttr(metas.find((tag) => getAttr(tag, "name").toLowerCase() === "robots") ?? "", "content").toLowerCase();
   const links = html.match(/<link\b[^>]*>/gi) ?? [];
   const canonical = getAttr(links.find((tag) => getAttr(tag, "rel").toLowerCase() === "canonical") ?? "", "href");
+  const rss = getAttr(links.find((tag) => getAttr(tag, "type").toLowerCase() === "application/rss+xml") ?? "", "href");
   const h1Count = (html.match(/<h1\b/gi) ?? []).length;
 
   if (/^blog\/.+\.html$/.test(file) && file !== "blog/index.html") {
@@ -79,6 +83,9 @@ for (const [index, file] of sitemapFiles.entries()) {
   if (!title) errors.push(`${file}: missing title`);
   if (!description) errors.push(`${file}: missing meta description`);
   if (!canonical) errors.push(`${file}: missing canonical`);
+  if ((file === "index.html" || file.startsWith("blog/")) && rss !== feedUrl) {
+    errors.push(`${file}: missing canonical RSS discovery link`);
+  }
   if (canonical && canonical !== sitemapUrls[index]) {
     errors.push(`${file}: canonical ${canonical} does not match sitemap URL ${sitemapUrls[index]}`);
   }
@@ -168,6 +175,41 @@ for (const [index, file] of sitemapFiles.entries()) {
 const robots = fs.readFileSync(path.join(root, "robots.txt"), "utf8");
 if (!robots.includes(`Sitemap: ${origin}/sitemap.xml`)) {
   errors.push("robots.txt does not declare the canonical sitemap URL");
+}
+if (!robots.includes(`Sitemap: ${feedUrl}`)) {
+  errors.push("robots.txt does not declare the blog RSS feed");
+}
+if (!/User-agent:\s*OAI-SearchBot[\s\S]*?Allow:\s*\//i.test(robots)) {
+  errors.push("robots.txt does not explicitly allow OAI-SearchBot");
+}
+if (!/User-agent:\s*Applebot[\s\S]*?Allow:\s*\//i.test(robots)) {
+  errors.push("robots.txt does not explicitly allow Applebot");
+}
+
+const indexNowKeyPath = path.join(root, `${indexNowKey}.txt`);
+if (!fs.existsSync(indexNowKeyPath) || fs.readFileSync(indexNowKeyPath, "utf8").trim() !== indexNowKey) {
+  errors.push("IndexNow ownership key file is missing or invalid");
+}
+
+if (!fs.existsSync(path.join(root, "llms.txt"))) {
+  errors.push("llms.txt does not exist");
+}
+
+if (!fs.existsSync(feedPath)) {
+  errors.push("blog/feed.xml does not exist");
+} else {
+  const feed = fs.readFileSync(feedPath, "utf8");
+  const feedLinks = [...feed.matchAll(/<item>[\s\S]*?<link>(.*?)<\/link>[\s\S]*?<\/item>/gi)]
+    .map((match) => decodeEntities(match[1]));
+  if (!feed.includes(`<atom:link href="${feedUrl}" rel="self" type="application/rss+xml"`)) {
+    errors.push("blog/feed.xml is missing its canonical self link");
+  }
+  if (!feedLinks.length) errors.push("blog/feed.xml does not contain any items");
+  if (feedLinks.length > 20) errors.push(`blog/feed.xml contains ${feedLinks.length} items; expected at most 20`);
+  if (new Set(feedLinks).size !== feedLinks.length) errors.push("blog/feed.xml contains duplicate item links");
+  for (const link of feedLinks) {
+    if (!sitemapUrls.includes(link)) errors.push(`blog/feed.xml item is missing from sitemap.xml: ${link}`);
+  }
 }
 
 console.log(`Audited ${sitemapFiles.length} indexable pages from sitemap.xml.`);

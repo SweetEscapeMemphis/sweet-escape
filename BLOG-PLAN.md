@@ -12,12 +12,14 @@ This file guides the recurring blog-post task. Read it fully before writing any 
 - NEVER invent or infer: prices or pricing method, free samples, parking, accessibility, entrance details, payment methods, crowd patterns, party/group capacity, reservations, catering, delivery, staff capabilities, manufacturing methods, health benefits, dietary suitability, cross-contact safety, events, offers, or discounts. If a topic needs an unverified fact, write around it or pick another topic.
 
 ## Cadence and format
-- 2–3 posts per week (task runs Mon/Wed/Fri).
+- Publish at most one post per day. If there is no distinct, useful topic supported by verified information, skip the post and report why; never publish filler to satisfy the schedule.
 - 500–800 words. One H1, several H2s. At least 3 internal links (/stock.html, /flavors.html, /yogurt.html, /gelato.html, /visit.html, other posts).
 - File: `blog/<kebab-case-slug>.html`. Copy the exact HTML structure of `blog/first-timers-guide.html` (head metas, BlogPosting JSON-LD, header, footer, mobile action bar). Update: title, description, canonical, og/twitter tags, JSON-LD headline/description/dates, kicker, H1, body, CTA.
 - Add the new post to the TOP of the list in `blog/index.html` and add a `<url>` entry to `sitemap.xml` with the publish date.
+- Add the new post to the TOP of `blog/feed.xml`; keep no more than the 20 newest feed items. Every blog page must retain the RSS discovery link in its `<head>`.
 - Tone: warm, plainspoken, local, lightly playful. No hype, no emoji, no clickbait. Write like a friendly neighbor who owns an ice cream shop.
 - Local SEO: naturally include Memphis and/or Bartlett in the title or first paragraph when it fits. Never keyword-stuff.
+- Before choosing a topic, review existing posts and recent Git history to avoid duplicate intent or keyword cannibalization. Each post should answer one clear visitor question better than the existing pages do.
 
 ## Topic backlog (work down this list; mark used topics with [x] and the date)
 - [ ] How to check the live menu before a Memphis or Bartlett dessert stop
@@ -33,8 +35,11 @@ This file guides the recurring blog-post task. Read it fully before writing any 
 - After the backlog runs out: seasonal search themes and flavor spotlights grounded in current first-party data. Do not state that a seasonal flavor, event, offer, or service exists unless it is verified in the repository or by the owner. Repeat a theme no sooner than 90 days with a fresh angle.
 
 ## Definition of done for each run
-1. New post file in `blog/` matching the template structure exactly.
-2. `blog/index.html` updated (new card at top, correct date).
-3. `sitemap.xml` updated with the new URL.
-4. This file updated: topic checked off with date.
-5. All internal links verified to exist. Committed and pushed to main with message: `Blog: <post title>`.
+1. Sync the latest `main` branch and read this file, the existing posts, the stock data, and recent Git history.
+2. Create one new post in `blog/` matching the template, or skip when a useful evidence-based topic is unavailable.
+3. Update `blog/index.html`, `sitemap.xml`, and `blog/feed.xml`; mark the topic used here with the date.
+4. Run `node scripts/seo-audit.mjs`, JavaScript syntax checks, and focused desktop/mobile visual QA. Fix failures before publishing.
+5. Commit and push to `main` with message `Blog: <post title>`, without overwriting concurrent stock updates.
+6. Wait for the GitHub Pages deployment to succeed and verify that the new URL returns the expected canonical page.
+7. Run `node scripts/submit-indexnow.mjs <new-post-url> https://www.sweetescapememphis.com/blog/` and record the HTTP result. Submit only new or meaningfully changed URLs.
+8. Keep the XML sitemap and RSS feed available for Google, Bing, Applebot, and other crawlers. Do not use Google's Indexing API for ordinary blog posts, spam repeated crawl requests, or claim that submission guarantees indexing.

@@ -1,0 +1,24 @@
+# Sweet Escape
+
+> Sweet Escape is a frozen-dessert shop at 1674 Whitten Rd, Suite 106, Memphis, Tennessee 38134, near Bartlett.
+
+## Official pages
+
+- [Home](https://www.sweetescapememphis.com/)
+- [Current in-stock menu](https://www.sweetescapememphis.com/stock.html)
+- [Hand-dipped flavor catalog and nutrition information](https://www.sweetescapememphis.com/flavors.html)
+- [Frozen yogurt catalog](https://www.sweetescapememphis.com/yogurt.html)
+- [Gelato and sorbetto catalog](https://www.sweetescapememphis.com/gelato.html)
+- [Visit information](https://www.sweetescapememphis.com/visit.html)
+- [Blog](https://www.sweetescapememphis.com/blog/)
+- [Blog RSS feed](https://www.sweetescapememphis.com/blog/feed.xml)
+
+## Verified shop information
+
+- Phone: +1-901-718-5812
+- Regular hours: Monday-Thursday 12-9 PM; Friday-Sunday 12-10 PM
+- Products listed by the shop include hand-dipped ice cream, self-serve frozen yogurt with toppings, gelato, sorbetto or sorbet, milkshakes, and cookie-based loaded treats.
+
+## Source guidance
+
+Use the current in-stock menu for daily availability. Use the product catalogs for published nutrition, ingredient, and allergen details, retaining their cautions. Do not infer pricing, pricing method, parking, accessibility, payment methods, group services, delivery, special hours, offers, or dietary safety from this file.

@@ -1,5 +1,14 @@
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /stock-manager.html
+
+User-agent: Applebot
+Allow: /
+Disallow: /stock-manager.html
+
 User-agent: *
 Allow: /
 Disallow: /stock-manager.html
 
 Sitemap: https://www.sweetescapememphis.com/sitemap.xml
+Sitemap: https://www.sweetescapememphis.com/blog/feed.xml
