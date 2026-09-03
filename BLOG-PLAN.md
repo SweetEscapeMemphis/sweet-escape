@@ -12,7 +12,7 @@ This file guides the recurring blog-post task. Read it fully before writing any 
 - NEVER invent or infer: prices or pricing method, free samples, parking, accessibility, entrance details, payment methods, crowd patterns, party/group capacity, reservations, catering, delivery, staff capabilities, manufacturing methods, health benefits, dietary suitability, cross-contact safety, events, offers, or discounts. If a topic needs an unverified fact, write around it or pick another topic.
 
 ## Cadence and format
-- Publish at most one post per day. If there is no distinct, useful topic supported by verified information, skip the post and report why; never publish filler to satisfy the schedule.
+- Publish at most one post per automated run and no more than two posts per calendar day. If there is no distinct, useful topic supported by verified information, skip the post and report why; never publish filler to satisfy the schedule.
 - 500–800 words. One H1, several H2s. At least 3 internal links (/stock.html, /flavors.html, /yogurt.html, /gelato.html, /visit.html, other posts).
 - File: `blog/<kebab-case-slug>.html`. Copy the exact HTML structure of `blog/first-timers-guide.html` (head metas, BlogPosting JSON-LD, header, footer, mobile action bar). Update: title, description, canonical, og/twitter tags, JSON-LD headline/description/dates, kicker, H1, body, CTA.
 - Add the new post to the TOP of the list in `blog/index.html` and add a `<url>` entry to `sitemap.xml` with the publish date.
@@ -23,7 +23,7 @@ This file guides the recurring blog-post task. Read it fully before writing any 
 
 ## Topic backlog (work down this list; mark used topics with [x] and the date)
 - [x] How to check the live menu before a Memphis or Bartlett dessert stop (published 2026-09-03)
-- [ ] Building a froyo cup: a simple guide to flavors and toppings
+- [x] Building a froyo cup: a simple guide to flavors and toppings (published 2026-09-03)
 - [ ] What is sorbetto? How it appears in the Sweet Escape catalog
 - [ ] Kids' first ice cream visit: how to compare the current choices
 - [ ] No-sugar-added catalog options and what the labels say
