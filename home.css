@@ -73,6 +73,7 @@ img {
   top: 0;
   z-index: 30;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
@@ -94,7 +95,10 @@ img {
 
 .home-nav {
   display: flex;
+  flex: 1 1 760px;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: flex-end;
   gap: clamp(0.25rem, 1.4vw, 0.9rem);
   font-size: 0.9rem;
   font-weight: 850;
@@ -1489,6 +1493,8 @@ img {
   }
 
   .home-nav {
+    flex: 0 0 auto;
+    flex-wrap: nowrap;
     width: 100%;
     justify-content: flex-start;
     gap: 0.2rem;
