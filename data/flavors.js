@@ -3,7 +3,7 @@ window.SWEET_ESCAPE_FLAVORS = {
   "sourceUrl": "assets/sweet-escape-nutrition-facts.pdf",
   "sourceFile": "assets/sweet-escape-nutrition-facts.pdf",
   "extractedOn": "2026-05-13",
-  "count": 72,
+  "count": 88,
   "flavors": [
     {
       "id": "amaretto-cherry",
@@ -2751,3 +2751,45 @@ window.SWEET_ESCAPE_FLAVORS = {
     }
   ]
 };
+
+window.SWEET_ESCAPE_FLAVORS.flavors.push(
+  ...[
+    ["oregon-strawberry", "Oregon Strawberry", "200", "10", "25", "24", "3", "Egg, Milk", ["Eggs", "Milk"]],
+    ["tillamook-mudslide", "Tillamook Mudslide", "260", "16", "26", "23", "4", "Egg, Milk, Soy", ["Eggs", "Milk", "Soy"]],
+    ["coffee-almond-fudge", "Coffee Almond Fudge", "220", "13", "23", "22", "4", "Almonds, Egg, Milk", ["Tree Nuts", "Eggs", "Milk"]],
+    ["oregon-dark-cherry", "Oregon Dark Cherry", "210", "12", "22", "22", "3", "Egg, Milk", ["Eggs", "Milk"]],
+    ["peaches-and-cream", "Peaches & Cream", "200", "10", "26", "22", "3", "Egg, Milk", ["Eggs", "Milk"]],
+    ["rocky-road", "Rocky Road", "230", "13", "24", "22", "4", "Almonds, Egg, Milk", ["Tree Nuts", "Eggs", "Milk"]],
+    ["chocolate-peanut-butter", "Chocolate Peanut Butter", "250", "16", "23", "21", "5", "Egg, Milk, Peanut", ["Eggs", "Milk", "Peanuts"]],
+    ["white-chocolate-raspberry", "White Chocolate Raspberry", "220", "12", "26", "25", "3", "Egg, Milk", ["Eggs", "Milk"]],
+    ["marionberry-pie", "Marionberry Pie", "210", "12", "24", "22", "3", "Egg, Milk, Wheat", ["Eggs", "Milk", "Wheat"]],
+    ["udderly-chocolate", "Udderly Chocolate", "230", "13", "26", "24", "4", "Egg, Milk, Soy", ["Eggs", "Milk", "Soy"]],
+    ["caramel-swirl", "Caramel Swirl", "220", "10", "28", "25", "4", "Egg, Milk", ["Eggs", "Milk"]],
+    ["campfire-peanut-butter", "Campfire Peanut Butter", "240", "15", "24", "23", "4", "Egg, Milk, Peanut", ["Eggs", "Milk", "Peanuts"]],
+    ["brownie-batter", "Brownie Batter", "220", "12", "27", "22", "5", "Egg, Milk, Wheat", ["Eggs", "Milk", "Wheat"]],
+    ["waffle-cone-swirl", "Waffle Cone Swirl", "230", "13", "25", "23", "4", "Egg, Milk, Wheat", ["Eggs", "Milk", "Wheat"]],
+    ["orange-and-cream", "Orange & Cream", "200", "12", "21", "21", "3", "Egg, Milk", ["Eggs", "Milk"]],
+    ["chocolate-hazelnut", "Chocolate Hazelnut", "240", "15", "25", "22", "6", "Egg, Hazelnuts, Milk", ["Eggs", "Tree Nuts", "Milk"]]
+  ].map(([id, name, calories, totalFatG, totalCarbsG, totalSugarsG, proteinG, contains, containsFlags]) => ({
+    id,
+    pdfPage: null,
+    name,
+    sourceName: name,
+    category: "Ice Cream",
+    nutrition: {
+      calories,
+      totalFatG,
+      totalCarbsG,
+      totalSugarsG,
+      proteinG,
+      servingSize: "2/3 cup"
+    },
+    allergens: {
+      contains,
+      equipment: "No additional allergen notes provided",
+      containsFlags,
+      crossContactFlags: []
+    },
+    sourceDate: "User-provided nutrition table"
+  }))
+);

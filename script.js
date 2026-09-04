@@ -162,6 +162,12 @@
     const nutrition = flavor.nutrition;
     const contains = escapeHTML(flavor.allergens.contains);
     const equipment = escapeHTML(flavor.allergens.equipment || "Not listed");
+    const sourceDetails = [`Serving: ${nutrition.servingSize}`];
+    if (nutrition.sodiumMg) sourceDetails.push(`Sodium ${nutrition.sodiumMg}mg`);
+    if (nutrition.addedSugarsG) sourceDetails.push(`Added sugars ${nutrition.addedSugarsG}g`);
+    const pagePill = flavor.pdfPage
+      ? `<span class="page-pill">PDF p. ${escapeHTML(flavor.pdfPage)}</span>`
+      : "";
     return `
       <div class="scoop-panel" data-flavor-id="${escapeHTML(flavor.id)}">
         <img
@@ -199,7 +205,7 @@
         <div class="flavor-topline">
           <span class="flavor-number">${String(index + 1).padStart(2, "0")}</span>
           <span class="category-pill">${escapeHTML(flavor.category)}</span>
-          <span class="page-pill">PDF p. ${flavor.pdfPage}</span>
+          ${pagePill}
         </div>
         <h3>${escapeHTML(flavor.name)}</h3>
         <div class="nutrition-grid" aria-label="Nutrition facts">
@@ -219,10 +225,7 @@
             <span>${equipment}</span>
           </div>
         </div>
-        <p class="source-line">
-          Serving: ${escapeHTML(nutrition.servingSize)} | Sodium ${escapeHTML(nutrition.sodiumMg)}mg |
-          Added sugars ${escapeHTML(nutrition.addedSugarsG)}g
-        </p>
+        <p class="source-line">${escapeHTML(sourceDetails.join(" | "))}</p>
       </div>
     `;
   }
