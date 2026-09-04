@@ -24,7 +24,7 @@ This file guides the recurring blog-post task. Read it fully before writing any 
 ## Topic backlog (work down this list; mark used topics with [x] and the date)
 - [x] How to check the live menu before a Memphis or Bartlett dessert stop (published 2026-09-03)
 - [x] Building a froyo cup: a simple guide to flavors and toppings (published 2026-09-03)
-- [ ] What is sorbetto? How it appears in the Sweet Escape catalog
+- [x] What is sorbetto? How it appears in the Sweet Escape catalog (published 2026-09-04)
 - [ ] Kids' first ice cream visit: how to compare the current choices
 - [ ] No-sugar-added catalog options and what the labels say
 - [ ] Meet the case: how to use the rotating in-stock menu

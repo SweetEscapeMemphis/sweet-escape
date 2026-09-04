@@ -50,9 +50,15 @@
   </url>
   <url>
     <loc>https://www.sweetescapememphis.com/blog/</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.sweetescapememphis.com/blog/what-is-sorbetto.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.sweetescapememphis.com/blog/build-a-frozen-yogurt-cup.html</loc>
