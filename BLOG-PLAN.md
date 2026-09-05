@@ -26,7 +26,7 @@ This file guides the recurring blog-post task. Read it fully before writing any 
 - [x] Building a froyo cup: a simple guide to flavors and toppings (published 2026-09-03)
 - [x] What is sorbetto? How it appears in the Sweet Escape catalog (published 2026-09-04)
 - [x] Kids' first ice cream visit: how to compare the current choices (published 2026-09-04)
-- [ ] No-sugar-added catalog options and what the labels say
+- [x] No-sugar-added catalog options and what the labels say (published 2026-09-05)
 - [ ] Meet the case: how to use the rotating in-stock menu
 - [ ] Cookie-based loaded treats: what the site currently lists
 - [ ] A short, sourced history of gelato and a guide to the current catalog
