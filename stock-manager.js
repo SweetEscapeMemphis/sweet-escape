@@ -6,6 +6,7 @@
   const scoopFlavors = window.SWEET_ESCAPE_FLAVORS?.flavors || [];
   const yogurtFlavors = window.SWEET_ESCAPE_YOGURT_FLAVORS?.flavors || [];
   const gelatoFlavors = window.SWEET_ESCAPE_GELATO_FLAVORS?.flavors || [];
+  const pngScoopIds = new Set(["udderly-chocolate", "rocky-road"]);
   const currentStock = await window.SweetEscapeStock.load({ fresh: true });
   const selected = {
     scoops: window.SweetEscapeStock.idsFor(
@@ -95,7 +96,7 @@
     for (const flavor of filtered) {
       const checked = selected[group].has(flavor.id);
       const image = group === "scoops"
-        ? `assets/scoops/${flavor.id}.webp?v=20260814-1`
+        ? `assets/scoops/${flavor.id}.${pngScoopIds.has(flavor.id) ? "png" : "webp"}?v=20260905-1`
         : flavor.image;
       const label = document.createElement("label");
       label.className = `manager-item${checked ? " is-selected" : ""}`;

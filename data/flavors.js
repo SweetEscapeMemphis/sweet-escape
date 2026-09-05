@@ -3,7 +3,7 @@ window.SWEET_ESCAPE_FLAVORS = {
   "sourceUrl": "assets/sweet-escape-nutrition-facts.pdf",
   "sourceFile": "assets/sweet-escape-nutrition-facts.pdf",
   "extractedOn": "2026-05-13",
-  "count": 88,
+  "count": 87,
   "flavors": [
     {
       "id": "amaretto-cherry",
@@ -2755,7 +2755,6 @@ window.SWEET_ESCAPE_FLAVORS = {
 window.SWEET_ESCAPE_FLAVORS.flavors.push(
   ...[
     ["oregon-strawberry", "Oregon Strawberry", "200", "10", "25", "24", "3", "Egg, Milk", ["Eggs", "Milk"]],
-    ["tillamook-mudslide", "Tillamook Mudslide", "260", "16", "26", "23", "4", "Egg, Milk, Soy", ["Eggs", "Milk", "Soy"]],
     ["coffee-almond-fudge", "Coffee Almond Fudge", "220", "13", "23", "22", "4", "Almonds, Egg, Milk", ["Tree Nuts", "Eggs", "Milk"]],
     ["oregon-dark-cherry", "Oregon Dark Cherry", "210", "12", "22", "22", "3", "Egg, Milk", ["Eggs", "Milk"]],
     ["peaches-and-cream", "Peaches & Cream", "200", "10", "26", "22", "3", "Egg, Milk", ["Eggs", "Milk"]],
