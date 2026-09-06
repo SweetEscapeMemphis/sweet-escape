@@ -124,7 +124,42 @@
 
 .specialty-image-sandwich img {
   object-fit: contain;
-  padding: 1rem;
+  padding: 0;
+}
+
+.sandwich-lineup {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: end;
+  gap: clamp(0.25rem, 1vw, 0.75rem);
+  width: 100%;
+  padding: clamp(1rem, 2.5vw, 2rem);
+}
+
+.sandwich-lineup figure {
+  display: grid;
+  align-content: end;
+  min-width: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.sandwich-lineup img {
+  width: 100%;
+  aspect-ratio: 1 / 0.92;
+  object-fit: contain;
+}
+
+.sandwich-lineup figure:first-child img {
+  aspect-ratio: 0.82 / 1;
+}
+
+.sandwich-lineup figcaption {
+  margin-top: 0.35rem;
+  color: #7a315c;
+  font-size: clamp(0.58rem, 1vw, 0.78rem);
+  font-weight: 850;
+  line-height: 1.1;
 }
 
 .specialty-copy {
