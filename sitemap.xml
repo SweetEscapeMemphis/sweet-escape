@@ -50,9 +50,15 @@
   </url>
   <url>
     <loc>https://www.sweetescapememphis.com/blog/</loc>
-    <lastmod>2026-09-05</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.sweetescapememphis.com/blog/nutrition-allergen-guide.html</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.sweetescapememphis.com/blog/cookie-desserts-memphis.html</loc>
