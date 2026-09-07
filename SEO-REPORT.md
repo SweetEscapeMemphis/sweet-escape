@@ -253,3 +253,16 @@ Data and image assets:
 - Review Core Web Vitals field data when enough Chrome UX data is available.
 - Audit citation consistency, local links earned, review velocity, and response coverage.
 - Keep nearby-area relevance on the single useful Visit page unless the business opens another staffed location.
+
+## Weekly audit — September 7, 2026
+
+- All 20 sitemap URLs returned HTTP 200, one H1, an index/follow directive, and a matching self-canonical on the live site.
+- Checked 35 internal live URLs; none returned an error. `robots.txt`, `sitemap.xml`, `blog/feed.xml`, and `llms.txt` returned HTTP 200 with the expected content types.
+- The local SEO audit passed with 20 unique titles, descriptions, and canonicals. JavaScript syntax, XML, JSON-LD, image-alt, duplicate-ID, and whitespace checks passed.
+- Removed the unverified `priceRange` value from the `IceCreamShop` markup and changed its `menu` property to the live in-stock menu.
+- Replaced 24 oversized homepage hero scoop sources with existing 600 px assets and added intrinsic dimensions. The combined hero scoop payload fell from 6,507,240 bytes to 2,085,986 bytes, a 67.9% reduction.
+- Added intrinsic dimensions to the remaining flagged public-page images, completed the Specialties page social metadata, shortened two overlong descriptions, and replaced public `index.html` links with the canonical `/` home URL.
+- Desktop and 390 px mobile checks passed for the homepage, Specialties, and Rewards pages with no horizontal overflow or missing tested images.
+- No recent blog URL appeared in the available unauthenticated search results. This is an observation, not proof of Google or Bing index status; authenticated Search Console or Bing Webmaster data was unavailable.
+- PageSpeed Insights returned HTTP 429 because its public daily quota was exhausted, so no Lighthouse or field Core Web Vitals score is claimed.
+- The HTTP `www` homepage still returns 200 instead of redirecting to HTTPS. Enforcing HTTPS remains an owner/hosting setting and was not changed.
