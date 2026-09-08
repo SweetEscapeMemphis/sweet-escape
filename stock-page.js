@@ -3,6 +3,7 @@
   const yogurtFlavors = window.SWEET_ESCAPE_YOGURT_FLAVORS?.flavors || [];
   const gelatoFlavors = window.SWEET_ESCAPE_GELATO_FLAVORS?.flavors || [];
   const stock = await window.SweetEscapeStock.load({ fresh: true });
+  const pngScoopIds = new Set(["udderly-chocolate", "rocky-road"]);
   const scoopIds = window.SweetEscapeStock.idsFor(
     stock,
     "scoops",
@@ -21,17 +22,20 @@
   const items = [
     ...scoopFlavors
       .filter((flavor) => scoopIds.has(flavor.id))
-      .map((flavor) => ({
-        id: flavor.id,
-        name: flavor.name,
-        category: flavor.category,
-        type: "Scoops",
-        image: `assets/scoops/responsive/${flavor.id}-300.webp`,
-        srcset: `assets/scoops/responsive/${flavor.id}-300.webp 300w, assets/scoops/responsive/${flavor.id}-600.webp 600w`,
-        width: 600,
-        height: 600,
-        href: `flavors.html#${flavor.id}`,
-      })),
+      .map((flavor) => {
+        const extension = pngScoopIds.has(flavor.id) ? "png" : "webp";
+        return {
+          id: flavor.id,
+          name: flavor.name,
+          category: flavor.category,
+          type: "Scoops",
+          image: `assets/scoops/responsive/${flavor.id}-300.${extension}`,
+          srcset: `assets/scoops/responsive/${flavor.id}-300.${extension} 300w, assets/scoops/responsive/${flavor.id}-600.${extension} 600w`,
+          width: 600,
+          height: 600,
+          href: `flavors.html#${flavor.id}`,
+        };
+      }),
     ...yogurtFlavors
       .filter((flavor) => yogurtIds.has(flavor.id))
       .map((flavor) => ({
