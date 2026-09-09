@@ -32,6 +32,7 @@ This file guides the recurring blog-post task. Read it fully before writing any 
 - [x] A short, sourced history of gelato and a guide to the current catalog (published 2026-09-08)
 - [x] How to read our nutrition, ingredient, and allergen notes before you visit (published 2026-09-06)
 - [x] A current flavor spotlight grounded in `data/stock.json` and the product data files (published 2026-09-06: current gelato and sorbetto lineup)
+- [x] How to find the vegan gelato catalog entries and check live availability (owner-requested; published 2026-09-09)
 - After the backlog runs out: seasonal search themes and flavor spotlights grounded in current first-party data. Do not state that a seasonal flavor, event, offer, or service exists unless it is verified in the repository or by the owner. Repeat a theme no sooner than 90 days with a fresh angle.
 
 ## Definition of done for each run
