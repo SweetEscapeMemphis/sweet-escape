@@ -36,6 +36,7 @@ This file guides the recurring blog-post task. Read it fully before writing any 
 - [x] A dated spotlight on the 20 scoop and sherbet flavors in the live stock data (published 2026-09-09)
 - [x] Twenty owner-requested evergreen menu and visit guides dated September 10–19 (published 2026-09-19)
 - [x] How to make a two-choice dessert shortlist before visiting (published 2026-09-20)
+- [x] September 19 live-menu changes compared with September 8 (published 2026-09-20)
 - After the backlog runs out: seasonal search themes and flavor spotlights grounded in current first-party data. Do not state that a seasonal flavor, event, offer, or service exists unless it is verified in the repository or by the owner. Repeat a theme no sooner than 90 days with a fresh angle.
 
 ## Definition of done for each run
