@@ -127,6 +127,28 @@
   padding-left: 1.3rem;
 }
 
+.post-article table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.post-article th,
+.post-article td {
+  border: 1px solid var(--line, #f0e3dc);
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.post-article thead th {
+  background: #fff0f3;
+}
+
+.post-article tbody th {
+  width: 24%;
+}
+
 .post-article a {
   text-underline-offset: 0.2rem;
 }
@@ -156,5 +178,40 @@
 @media (max-width: 640px) {
   .blog-card {
     padding: 1.1rem 1.2rem;
+  }
+
+  .post-article table,
+  .post-article thead,
+  .post-article tbody,
+  .post-article tr,
+  .post-article th,
+  .post-article td {
+    display: block;
+    width: 100%;
+  }
+
+  .post-article thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+  }
+
+  .post-article tr {
+    margin-bottom: 1rem;
+    border: 1px solid var(--line, #f0e3dc);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .post-article th,
+  .post-article td {
+    border: 0;
+  }
+
+  .post-article tbody th {
+    background: #fff0f3;
   }
 }
