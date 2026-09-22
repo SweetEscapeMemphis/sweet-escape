@@ -26,3 +26,14 @@ Checked dates record when claims were reviewed, not a promise that a third-party
 - Claims intentionally omitted: a specific Memphis Baskin-Robbins location, local inventory, prices, nutritional superiority, and universal quality rankings.
 - Image concept: Sweet Escape's own scoop photograph, `/assets/scoops/cookie-dough.webp`; no competitor marks or packaging.
 - Required disclaimer: Sweet Escape is not affiliated with or endorsed by Baskin-Robbins. All trademarks and brand names belong to their respective owners.
+
+## Sweet Escape vs. Dairy Queen
+
+- Published: 2026-09-22
+- Primary intent: compare Sweet Escape and Dairy Queen frozen-dessert formats before a Memphis visit.
+- Secondary intents: soft serve versus hand-dipped ice cream; Blizzard Treat alternative research; Memphis dessert menu comparison.
+- Primary sources checked 2026-09-22: https://www.dairyqueen.com/en-us/about-us/ ; https://www.dairyqueen.com/en-us/menu/oreo-cookie-blizzard-treat/ ; Sweet Escape's linked first-party product, stock, and visit pages.
+- Competitor claims used: first restaurant opened in 1940; shakes and malts debuted in 1949; Blizzard Treats were introduced in 1985; official product page describes soft serve blended with cookie pieces and states availability at participating locations.
+- Claims intentionally omitted: specific Memphis Dairy Queen locations, local inventory, prices, restaurant food availability, and quality rankings.
+- Image concept: Sweet Escape's own milkshake photograph, `/assets/specialties/milkshakes.webp`; no competitor marks, cups, or packaging.
+- Required disclaimer: Sweet Escape is not affiliated with or endorsed by Dairy Queen. All trademarks and brand names belong to their respective owners.
