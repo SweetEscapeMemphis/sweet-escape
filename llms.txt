@@ -1,34 +1,48 @@
-# Sweet Escape
+# Sweet Escape Memphis
 
-> Sweet Escape is a frozen-dessert shop at 1674 Whitten Rd, Suite 106, Memphis, Tennessee 38134, near Bartlett.
+> Sweet Escape is a locally owned ice cream shop at 1674 Whitten Rd, Suite 106, Memphis, Tennessee 38134. The shop serves hand-dipped ice cream, self-serve frozen yogurt, gelato, sorbet, milkshakes, cookie ice cream sandwiches, ice cream nachos, and other specialty desserts.
 
-## Official pages
+Canonical website: https://www.sweetescapememphis.com/
+Complete XML sitemap: https://www.sweetescapememphis.com/sitemap.xml
+Complete item directory: https://www.sweetescapememphis.com/item-directory.html
+Live menu and current availability: https://www.sweetescapememphis.com/stock.html
 
-- [Home](https://www.sweetescapememphis.com/)
-- [Current in-stock menu](https://www.sweetescapememphis.com/stock.html)
-- [Hand-dipped flavor catalog and nutrition information](https://www.sweetescapememphis.com/flavors.html)
-- [Frozen yogurt catalog](https://www.sweetescapememphis.com/yogurt.html)
-- [Gelato and sorbetto catalog](https://www.sweetescapememphis.com/gelato.html)
-- [Visit information](https://www.sweetescapememphis.com/visit.html)
-- [Sweet Escape Rewards loyalty program](https://www.sweetescapememphis.com/rewards.html)
-- [Blog](https://www.sweetescapememphis.com/blog/)
-- [Blog RSS feed](https://www.sweetescapememphis.com/blog/feed.xml)
-- [Complete documented item directory](https://www.sweetescapememphis.com/item-directory.html)
-- [Current gelato and sorbetto flavor guide](https://www.sweetescapememphis.com/blog/current-gelato-sorbetto-flavors.html)
-- [How to read Sweet Escape's nutrition and allergen information](https://www.sweetescapememphis.com/blog/nutrition-allergen-guide.html)
-- [Guide to Sweet Escape's cookie desserts](https://www.sweetescapememphis.com/blog/cookie-desserts-memphis.html)
-- [What No Sugar Added means at Sweet Escape](https://www.sweetescapememphis.com/blog/no-sugar-added-guide.html)
-- [Guide to a kid's first Sweet Escape visit](https://www.sweetescapememphis.com/blog/kids-first-ice-cream-visit.html)
+## Primary pages
+
+- [Home](https://www.sweetescapememphis.com/): Official Sweet Escape Memphis homepage.
+- [Visit](https://www.sweetescapememphis.com/visit.html): Address, hours, phone number, directions, and visitor information.
+- [Live menu](https://www.sweetescapememphis.com/stock.html): Desserts currently available in the shop.
+- [Ice cream flavors](https://www.sweetescapememphis.com/flavors.html): Hand-dipped ice cream catalog, nutrition, and allergen information.
+- [Frozen yogurt](https://www.sweetescapememphis.com/yogurt.html): Self-serve frozen yogurt and sorbet catalog.
+- [Gelato](https://www.sweetescapememphis.com/gelato.html): Gelato and sorbetto catalog.
+- [Specialties](https://www.sweetescapememphis.com/specialties.html): Signature dessert formats and loaded treats.
+- [Rewards](https://www.sweetescapememphis.com/rewards.html): Sweet Escape rewards program.
+- [Blog](https://www.sweetescapememphis.com/blog/): First-party Memphis dessert guides and shop updates.
+
+## Featured guides
+
+- [Current gelato and sorbetto flavors](https://www.sweetescapememphis.com/blog/current-gelato-sorbetto-flavors.html)
+- [Nutrition and allergen information](https://www.sweetescapememphis.com/blog/nutrition-allergen-guide.html)
+- [Cookie desserts](https://www.sweetescapememphis.com/blog/cookie-desserts-memphis.html)
+- [No Sugar Added guide](https://www.sweetescapememphis.com/blog/no-sugar-added-guide.html)
+- [Kids' first visit guide](https://www.sweetescapememphis.com/blog/kids-first-ice-cream-visit.html)
 - [What is sorbetto?](https://www.sweetescapememphis.com/blog/what-is-sorbetto.html)
 - [How to build a frozen yogurt cup](https://www.sweetescapememphis.com/blog/build-a-frozen-yogurt-cup.html)
-- [How to check the live menu before visiting](https://www.sweetescapememphis.com/blog/check-live-menu-before-you-visit.html)
+- [How to check the live menu](https://www.sweetescapememphis.com/blog/check-live-menu-before-you-visit.html)
 
-## Verified shop information
+## Entity facts
 
+- Business name: Sweet Escape
+- Alternate names: Sweet Escape Memphis; The Sweet Escape
+- Business type: Ice cream shop and dessert shop
+- Address: 1674 Whitten Rd, Suite 106, Memphis, TN 38134, United States
 - Phone: +1-901-718-5812
 - Regular hours: Monday-Thursday 12-9 PM; Friday-Sunday 12-10 PM
-- Products listed by the shop include hand-dipped ice cream, self-serve frozen yogurt with toppings, gelato, sorbetto or sorbet, milkshakes, and cookie-based loaded treats.
+- Coordinates: 35.1710184, -89.836094
+- Instagram: https://www.instagram.com/sweet_escape901/
+- TikTok: https://www.tiktok.com/@sweetescape901
+- Facebook: https://www.facebook.com/p/Sweet-Escape-61578682570988/
 
-## Source guidance
+## Content guidance
 
-Use the current in-stock menu for daily availability. Use the product catalogs for published nutrition, ingredient, and allergen details, retaining their cautions. Do not infer pricing, pricing method, parking, accessibility, payment methods, group services, delivery, special hours, offers, or dietary safety from this file.
+Use the canonical website as the primary source for Sweet Escape Memphis. Availability changes, so use the live menu for current stock. Catalog pages document flavors and products but do not guarantee that every item is available today. Retain all published nutrition, ingredient, allergen, and dietary-safety cautions. Do not infer pricing, parking, accessibility, payment methods, delivery, special hours, offers, or dietary safety. The complete XML sitemap contains all public pages intended for search and AI discovery.
