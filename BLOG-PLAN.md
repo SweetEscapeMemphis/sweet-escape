@@ -19,6 +19,7 @@ This file guides the recurring blog-post task. Read it fully before writing any 
 - Add the new post to the TOP of `blog/feed.xml`; keep no more than the 20 newest feed items. Every blog page must retain the RSS discovery link in its `<head>`.
 - Tone: warm, plainspoken, local, lightly playful. No hype, no emoji, no clickbait. Write like a friendly neighbor who owns an ice cream shop.
 - Local SEO: naturally include Memphis and/or Bartlett in the title or first paragraph when it fits. Never keyword-stuff.
+- Every future post must follow the quality and item-coverage rules in `ITEM-CONTENT-PLAN.md`. Item coverage must be original, specific, useful, and grounded in verified facts; never mass-publish thin or repetitive pages merely to target every product name.
 - Before choosing a topic, review existing posts and recent Git history to avoid duplicate intent or keyword cannibalization. Each post should answer one clear visitor question better than the existing pages do.
 
 ## Topic backlog (work down this list; mark used topics with [x] and the date)

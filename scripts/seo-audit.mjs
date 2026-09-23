@@ -163,7 +163,7 @@ for (const [index, file] of sitemapFiles.entries()) {
         .filter((source) => source.origin === origin)
         .map((source) => path.join(root, pageFile(source)))
         .filter((source) => fs.existsSync(source))
-        .some((source) => new RegExp(`["']id["']\\s*:\\s*["']${escaped}["']`, "i")
+        .some((source) => new RegExp(`(?:["']?id["']?\\s*:\\s*["']${escaped}["']|\\[\\s*["']${escaped}["']\\s*,)`, "i")
           .test(fs.readFileSync(source, "utf8")));
       if (!hasStaticTarget && !hasDataTarget) {
         errors.push(`${file}: missing fragment target ${reference}`);
