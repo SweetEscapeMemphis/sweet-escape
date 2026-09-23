@@ -48,3 +48,14 @@ Checked dates record when claims were reviewed, not a promise that a third-party
 - Claims intentionally omitted: specific Memphis-area Cold Stone locations, local inventory, prices, availability at any specific store, nutrition comparisons, and quality rankings.
 - Image concept: Sweet Escape's own scoop photograph, `/assets/scoops/cookie-dough.webp`; no competitor marks or packaging.
 - Required disclaimer: Sweet Escape is not affiliated with or endorsed by Cold Stone Creamery. All trademarks and brand names belong to their respective owners.
+
+## Sweet Escape vs. Häagen-Dazs Shops
+
+- Published: 2026-09-23
+- Primary intent: compare Sweet Escape and Häagen-Dazs Shops dessert formats before a Memphis visit.
+- Secondary intents: Häagen-Dazs shop menu comparison; ice cream and sorbet versus multiple frozen-dessert formats; Memphis dessert planning.
+- Primary sources checked 2026-09-23: https://www.icecream.com/us/en/brands/haagen-dazs/about/our-history ; https://www.icecream.com/us/en/brands/haagen-dazs/about/faq ; https://www.icecream.com/us/en/brands/haagen-dazs/shops/menu ; Sweet Escape's linked first-party product, directory, stock, and visit pages.
+- Competitor claims used: the brand began in the Bronx in 1960 with Vanilla, Chocolate, and Coffee; its FAQ says the wider collection exceeds 50 ice cream and sorbet flavors; shop menus and availability vary by location; shops list cups and cones, Dazzler sundaes, milkshakes, frozen drinks, and cakes at select locations.
+- Claims intentionally omitted: specific Memphis-area Häagen-Dazs locations, local inventory, prices, nutrition comparisons, ingredient-quality comparisons, and quality rankings.
+- Image concept: Sweet Escape's own Vanilla Bean scoop photograph, `/assets/scoops/vanilla-bean.webp`; no competitor marks or packaging.
+- Required disclaimer: Sweet Escape is not affiliated with or endorsed by Häagen-Dazs. All trademarks and brand names belong to their respective owners.
