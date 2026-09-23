@@ -41,6 +41,7 @@ This file guides the recurring blog-post task. Read it fully before writing any 
 - [x] Sweet Escape vs. Mixue factual comparison (owner-approved comparison series; published 2026-09-21)
 - [x] Sweet Escape vs. Baskin-Robbins factual comparison (owner-approved comparison series; published 2026-09-22)
 - [x] Sweet Escape vs. Dairy Queen factual comparison (owner-approved comparison series; published 2026-09-22)
+- [x] Sweet Escape vs. Cold Stone Creamery factual comparison (owner-approved comparison series; published 2026-09-23)
 - After the backlog runs out: seasonal search themes and flavor spotlights grounded in current first-party data. Do not state that a seasonal flavor, event, offer, or service exists unless it is verified in the repository or by the owner. Repeat a theme no sooner than 90 days with a fresh angle.
 
 ## Definition of done for each run

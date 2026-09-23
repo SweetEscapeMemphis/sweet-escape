@@ -37,3 +37,14 @@ Checked dates record when claims were reviewed, not a promise that a third-party
 - Claims intentionally omitted: specific Memphis Dairy Queen locations, local inventory, prices, restaurant food availability, and quality rankings.
 - Image concept: Sweet Escape's own milkshake photograph, `/assets/specialties/milkshakes.webp`; no competitor marks, cups, or packaging.
 - Required disclaimer: Sweet Escape is not affiliated with or endorsed by Dairy Queen. All trademarks and brand names belong to their respective owners.
+
+## Sweet Escape vs. Cold Stone Creamery
+
+- Published: 2026-09-23
+- Primary intent: compare Sweet Escape and Cold Stone Creamery dessert formats before a Memphis visit.
+- Secondary intents: mixed-in ice cream versus multiple frozen-dessert formats; customized ice cream; Memphis dessert menu comparison.
+- Primary sources checked 2026-09-23: https://www.coldstonecreamery.com/about-us/ ; https://www.coldstonecreamery.com/icecream/createyourown/ ; https://www.coldstonecreamery.com/menu/ice-cream/ ; Sweet Escape's linked first-party product, directory, stock, and visit pages.
+- Competitor claims used: custom ice cream is prepared on a frozen granite stone; Create Your Own Creations combine ice cream with mix-ins; Signature Creations are established ice cream and mix-in combinations; cakes, smoothies, and shakes are listed; some flavor selections vary by store.
+- Claims intentionally omitted: specific Memphis-area Cold Stone locations, local inventory, prices, availability at any specific store, nutrition comparisons, and quality rankings.
+- Image concept: Sweet Escape's own scoop photograph, `/assets/scoops/cookie-dough.webp`; no competitor marks or packaging.
+- Required disclaimer: Sweet Escape is not affiliated with or endorsed by Cold Stone Creamery. All trademarks and brand names belong to their respective owners.
