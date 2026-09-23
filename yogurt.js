@@ -196,6 +196,7 @@
         <span class="yogurt-category">${escapeHTML(flavor.category)}</span>
         <h3>${escapeHTML(flavor.name)}</h3>
         <p class="yogurt-description">${escapeHTML(flavor.description)}</p>
+        <a class="item-page-link" href="/yogurt/${encodeURIComponent(flavor.id)}/">View ${escapeHTML(flavor.name)} page <span aria-hidden="true">→</span></a>
 
         <div class="yogurt-declared" aria-label="Declared allergens">
           <strong>Allergens</strong>

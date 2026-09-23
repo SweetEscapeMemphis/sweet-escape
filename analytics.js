@@ -44,3 +44,21 @@
     return "";
   }
 })();
+
+(function loadSweetEscapeChat() {
+  if (document.querySelector('script[data-sweet-chat]')) return;
+
+  const source = document.currentScript?.src || window.location.href;
+  const root = new URL(".", source);
+  const stylesheet = document.createElement("link");
+  stylesheet.rel = "stylesheet";
+  stylesheet.href = new URL("chat.css?v=20260923-1", root).href;
+  stylesheet.dataset.sweetChat = "";
+
+  const script = document.createElement("script");
+  script.src = new URL("chat.js?v=20260923-1", root).href;
+  script.defer = true;
+  script.dataset.sweetChat = "";
+
+  document.head.append(stylesheet, script);
+})();

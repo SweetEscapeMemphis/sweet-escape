@@ -33,7 +33,7 @@
           srcset: `assets/scoops/responsive/${flavor.id}-300.${extension} 300w, assets/scoops/responsive/${flavor.id}-600.${extension} 600w`,
           width: 600,
           height: 600,
-          href: `flavors.html#${flavor.id}`,
+          href: `/scoops/${flavor.id}/`,
         };
       }),
     ...yogurtFlavors
@@ -46,7 +46,7 @@
         image: flavor.image,
         width: 600,
         height: 600,
-        href: `yogurt.html#yogurt-${flavor.id}`,
+        href: `/yogurt/${flavor.id}/`,
       })),
     ...gelatoFlavors
       .filter((flavor) => gelatoIds.has(flavor.id))
@@ -58,7 +58,7 @@
         image: flavor.image,
         width: 512,
         height: 512,
-        href: `gelato.html#gelato-${flavor.id}`,
+        href: `/gelato/${flavor.id}/`,
       })),
   ];
   const grid = document.querySelector("#stock-grid");

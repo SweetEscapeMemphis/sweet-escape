@@ -228,6 +228,7 @@
           </div>
         </div>
         <p class="source-line">${escapeHTML(sourceDetails.join(" | "))}</p>
+        <a class="item-page-link" href="/scoops/${encodeURIComponent(flavor.id)}/">View ${escapeHTML(flavor.name)} page <span aria-hidden="true">→</span></a>
       </div>
     `;
   }

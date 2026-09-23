@@ -29,6 +29,14 @@ body {
   line-height: 1.5;
 }
 
+.item-page-link {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: var(--accent, #d94270);
+  font-weight: 850;
+  text-underline-offset: 0.2rem;
+}
+
 body::before {
   content: "";
   position: fixed;

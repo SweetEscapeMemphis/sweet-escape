@@ -98,6 +98,7 @@
         <span class="gelato-category">${escapeHTML(flavor.category)}</span>
         <h3>${escapeHTML(flavor.name)}</h3>
         <p class="gelato-description">${escapeHTML(flavor.description)}</p>
+        <a class="item-page-link" href="/gelato/${encodeURIComponent(flavor.id)}/">View ${escapeHTML(flavor.name)} page <span aria-hidden="true">→</span></a>
 
         <div class="gelato-allergen-summary">
           <strong>Allergen guide</strong>
