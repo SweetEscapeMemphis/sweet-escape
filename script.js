@@ -209,7 +209,7 @@
           <span class="category-pill">${escapeHTML(flavor.category)}</span>
           ${pagePill}
         </div>
-        <h3>${escapeHTML(flavor.name)}</h3>
+        <h3><a class="product-name-link" href="/scoops/${encodeURIComponent(flavor.id)}/">${escapeHTML(flavor.name)}</a></h3>
         <div class="nutrition-grid" aria-label="Nutrition facts">
           ${nutritionItem(nutrition.calories, "Calories")}
           ${nutritionItem(`${nutrition.totalFatG}g`, "Fat")}

@@ -37,6 +37,21 @@ body {
   text-underline-offset: 0.2rem;
 }
 
+.product-name-link {
+  color: inherit;
+  text-decoration-line: underline;
+  text-decoration-color: color-mix(in srgb, var(--accent, #d94270) 42%, transparent);
+  text-decoration-thickness: 0.1em;
+  text-underline-offset: 0.13em;
+  transition: color 160ms ease, text-decoration-color 160ms ease;
+}
+
+.product-name-link:hover,
+.product-name-link:focus-visible {
+  color: var(--accent, #b82f69);
+  text-decoration-color: currentColor;
+}
+
 body::before {
   content: "";
   position: fixed;

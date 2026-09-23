@@ -243,7 +243,7 @@
     const first = best[0];
     return [
       textPart(lead),
-      linkPart(`View ${first.flavor.name}`, `${first.group.path}/${first.flavor.id}/`),
+      linkPart(first.flavor.name, `${first.group.path}/${first.flavor.id}/`),
       linkPart("See everything in stock", "stock.html"),
     ];
   }
