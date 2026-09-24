@@ -59,3 +59,14 @@ Checked dates record when claims were reviewed, not a promise that a third-party
 - Claims intentionally omitted: specific Memphis-area Häagen-Dazs locations, local inventory, prices, nutrition comparisons, ingredient-quality comparisons, and quality rankings.
 - Image concept: Sweet Escape's own Vanilla Bean scoop photograph, `/assets/scoops/vanilla-bean.webp`; no competitor marks or packaging.
 - Required disclaimer: Sweet Escape is not affiliated with or endorsed by Häagen-Dazs. All trademarks and brand names belong to their respective owners.
+
+## Sweet Escape vs. Ben & Jerry’s Scoop Shops
+
+- Published: 2026-09-24
+- Primary intent: compare Sweet Escape and Ben & Jerry’s Scoop Shops before a Memphis dessert visit.
+- Secondary intents: chunky ice cream flavor comparison; scoop shop versus multiple frozen-dessert formats; Memphis dessert planning.
+- Primary sources checked 2026-09-24: https://www.benjerry.com/about-us ; https://www.benjerry.com/scoop-shops ; Sweet Escape's linked first-party product, directory, stock, and visit pages.
+- Competitor claims used: the first shop opened in a renovated Burlington, Vermont, gas station in 1978; the first franchised shop followed in 1981; Scoop Shops emphasize brand flavors with chunks and swirls; the catering section identifies cups, cones, and sundaes; Chocolate Chip Cookie Dough originated from a 1984 Burlington shop suggestion before its 1991 pint release.
+- Claims intentionally omitted: specific Memphis-area Ben & Jerry’s locations, local inventory, prices, catering availability at any specific shop, ingredient-quality comparisons, and quality rankings.
+- Image concept: Sweet Escape's own Cookie Dough scoop photograph, `/assets/scoops/cookie-dough.webp`; no competitor marks or packaging.
+- Required disclaimer: Sweet Escape is not affiliated with or endorsed by Ben & Jerry’s. All trademarks and brand names belong to their respective owners.
