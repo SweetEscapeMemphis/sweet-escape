@@ -70,3 +70,14 @@ Checked dates record when claims were reviewed, not a promise that a third-party
 - Claims intentionally omitted: specific Memphis-area Ben & Jerry’s locations, local inventory, prices, catering availability at any specific shop, ingredient-quality comparisons, and quality rankings.
 - Image concept: Sweet Escape's own Cookie Dough scoop photograph, `/assets/scoops/cookie-dough.webp`; no competitor marks or packaging.
 - Required disclaimer: Sweet Escape is not affiliated with or endorsed by Ben & Jerry’s. All trademarks and brand names belong to their respective owners.
+
+## Sweet Escape vs. Carvel
+
+- Published: 2026-09-24
+- Primary intent: compare Sweet Escape and Carvel frozen-dessert formats before a Memphis visit.
+- Secondary intents: soft serve versus hand-dipped ice cream; ice cream cake brand comparison; Memphis frozen-dessert planning.
+- Primary sources checked 2026-09-24: https://www.carvel.com/about-us ; https://www.carvel.com/-/media/carvel/files/carvel-nutritional--allergen-guide-april-2025.pdf ; https://www.carvel.com/sundaes-and-shakes/shakes/brownie-batter-shake ; Sweet Escape's linked first-party product, directory, stock, and visit pages.
+- Competitor claims used: Carvel traces its Original Soft Serve story to a flat tire in 1934; its official guide lists soft serve, scooped ice cream, non-dairy sorbet, sundaes, shakes, Carvelanche and Sundae Dasher desserts, take-home treats, cakes, and pints and quarts; its materials warn of preparation and ingredient variations.
+- Claims intentionally omitted: specific Memphis-area Carvel locations, local inventory, prices, cake availability, ordering services, ingredient-quality comparisons, and quality rankings.
+- Image concept: Sweet Escape's own Strawberry scoop photograph, `/assets/scoops/strawberry.webp`; no competitor marks or packaging.
+- Required disclaimer: Sweet Escape is not affiliated with or endorsed by Carvel. All trademarks and brand names belong to their respective owners.
