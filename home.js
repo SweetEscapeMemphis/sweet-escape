@@ -124,6 +124,8 @@
     let ready = false;
     let started = false;
     let filmObserver = null;
+    const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+    const prefersReducedData = Boolean(connection?.saveData) || /(?:^|-)2g$/.test(connection?.effectiveType || "");
 
     if (prefersReducedMotion) {
       root.classList.add("is-reduced-motion");
@@ -186,7 +188,7 @@
           filmObserver.disconnect();
           filmObserver = null;
           startFilm();
-        }, { rootMargin: "75% 0px" });
+        }, { rootMargin: "20% 0px" });
         filmObserver.observe(root);
       } else {
         startFilm();
@@ -200,7 +202,8 @@
     }
 
     function prefetchCoarseFrames() {
-      const step = Math.max(8, Math.ceil(frameCount / 14));
+      if (prefersReducedData) return;
+      const step = Math.max(12, Math.ceil(frameCount / 7));
       const indices = [];
       for (let index = step; index < lastFrame; index += step) indices.push(index);
       indices.push(lastFrame);
