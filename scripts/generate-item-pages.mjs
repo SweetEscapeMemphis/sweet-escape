@@ -299,7 +299,7 @@ function unit(value, suffix) {
 }
 
 function header() {
-  return `<header class="home-topbar" id="top"><a class="home-brand" href="/" aria-label="Sweet Escape home"><span class="brand-wordmark"><span>Sweet</span> Escape</span></a><nav class="home-nav" aria-label="Primary"><a href="/">Home</a><a href="/stock.html">In stock</a><a href="/flavors.html#flavors">Scoop flavors</a><a href="/yogurt.html">Yogurt flavors</a><a href="/gelato.html">Gelato</a><a href="/specialties.html">Specialties</a><a href="/visit.html">Visit</a><a href="/rewards.html">Rewards</a><a href="/item-directory.html">All items</a></nav></header>`;
+  return `<header class="home-topbar" id="top"><a class="home-brand" href="/" aria-label="Sweet Escape home"><span class="brand-wordmark"><span>Sweet</span> Escape</span></a><nav class="home-nav" aria-label="Primary"><a href="/">Home</a><a href="/stock.html">In stock</a><a href="/flavors.html#flavors">Scoop flavors</a><a href="/yogurt.html">Yogurt flavors</a><a href="/gelato.html">Gelato</a><a href="/specialties.html">Specialties</a><a href="/about.html">About</a><a href="/visit.html">Visit</a><a href="/rewards.html">Rewards</a><a href="/item-directory.html">All items</a></nav></header>`;
 }
 
 function quickActions() {
@@ -307,7 +307,7 @@ function quickActions() {
 }
 
 function footer() {
-  return `<footer class="home-footer"><a href="/" aria-label="Sweet Escape home"><span class="footer-wordmark"><span>Sweet</span> Escape</span></a><nav aria-label="Footer"><a href="/stock.html">In stock</a><a href="/flavors.html#flavors">Scoops</a><a href="/yogurt.html">Yogurt</a><a href="/gelato.html">Gelato</a><a href="/specialties.html">Specialties</a><a href="/item-directory.html">All items</a><a href="/visit.html">Visit</a><a href="/blog/">Blog</a></nav><address class="footer-contact"><a href="https://share.google/4KF1GDH3zOARV0nm1" target="_blank" rel="noopener noreferrer">1674 Whitten Rd, Suite 106, Memphis, TN 38134</a><a href="tel:+19017185812">(901) 718-5812</a><span>Mon–Thu 12–9 PM · Fri–Sun 12–10 PM</span></address><a class="back-top" href="#top">Back to top</a></footer>`;
+  return `<footer class="home-footer"><a href="/" aria-label="Sweet Escape home"><span class="footer-wordmark"><span>Sweet</span> Escape</span></a><nav aria-label="Footer"><a href="/stock.html">In stock</a><a href="/flavors.html#flavors">Scoops</a><a href="/yogurt.html">Yogurt</a><a href="/gelato.html">Gelato</a><a href="/specialties.html">Specialties</a><a href="/about.html">About</a><a href="/item-directory.html">All items</a><a href="/visit.html">Visit</a><a href="/blog/">Blog</a></nav><address class="footer-contact"><a href="https://share.google/4KF1GDH3zOARV0nm1" target="_blank" rel="noopener noreferrer">1674 Whitten Rd, Suite 106, Memphis, TN 38134</a><a href="tel:+19017185812">(901) 718-5812</a><a href="mailto:sweetescape@usa.com">sweetescape@usa.com</a><span>Mon–Thu 12–9 PM · Fri–Sun 12–10 PM</span></address><a class="back-top" href="#top">Back to top</a></footer>`;
 }
 
 function updateSitemap(itemUrls) {

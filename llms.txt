@@ -10,6 +10,7 @@ Live menu and current availability: https://www.sweetescapememphis.com/stock.htm
 ## Primary pages
 
 - [Home](https://www.sweetescapememphis.com/): Official Sweet Escape Memphis homepage.
+- [About](https://www.sweetescapememphis.com/about.html): Official business overview, website standards, and contact information.
 - [Visit](https://www.sweetescapememphis.com/visit.html): Address, hours, phone number, directions, and visitor information.
 - [Live menu](https://www.sweetescapememphis.com/stock.html): Desserts currently available in the shop.
 - [Ice cream flavors](https://www.sweetescapememphis.com/flavors.html): Hand-dipped ice cream catalog, nutrition, and allergen information.
@@ -37,6 +38,7 @@ Live menu and current availability: https://www.sweetescapememphis.com/stock.htm
 - Business type: Ice cream shop and dessert shop
 - Address: 1674 Whitten Rd, Suite 106, Memphis, TN 38134, United States
 - Phone: +1-901-718-5812
+- Email: sweetescape@usa.com
 - Regular hours: Monday-Thursday 12-9 PM; Friday-Sunday 12-10 PM
 - Coordinates: 35.1710184, -89.836094
 - Instagram: https://www.instagram.com/sweet_escape901/
