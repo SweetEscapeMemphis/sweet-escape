@@ -81,3 +81,14 @@ Checked dates record when claims were reviewed, not a promise that a third-party
 - Claims intentionally omitted: specific Memphis-area Carvel locations, local inventory, prices, cake availability, ordering services, ingredient-quality comparisons, and quality rankings.
 - Image concept: Sweet Escape's own Strawberry scoop photograph, `/assets/scoops/strawberry.webp`; no competitor marks or packaging.
 - Required disclaimer: Sweet Escape is not affiliated with or endorsed by Carvel. All trademarks and brand names belong to their respective owners.
+
+## Sweet Escape vs. Yogen Früz
+
+- Published: 2026-09-25
+- Primary intent: compare Sweet Escape and Yogen Früz frozen-yogurt formats before a Memphis visit.
+- Secondary intents: made-to-order fruit froyo versus self-serve frozen yogurt; frozen yogurt shop comparison; Memphis dessert planning.
+- Primary sources checked 2026-09-25: https://yogenfruz.com/about/ ; https://yogenfruz.com/menu/ ; https://yogenfruz.com/u-serve/ ; Sweet Escape's linked first-party product, directory, stock, and visit pages.
+- Competitor claims used: the first shop opened in Toronto in 1986; the original concept pairs yogurt and fruit to order; the current menu lists Fruit Flavürs, Signatüres, Smoothies, Früz Tea, and Matcha; a separate Ü Serve menu lists self-serve flavor names; fruit varieties and availability may vary regionally.
+- Claims intentionally omitted: specific Memphis-area Yogen Früz locations, local inventory, prices, nutrition or health comparisons, ingredient-quality comparisons, and quality rankings.
+- Image concept: Sweet Escape's own self-serve frozen yogurt photograph, `/assets/specialties/self-serve-froyo.webp`; no competitor marks or packaging.
+- Required disclaimer: Sweet Escape is not affiliated with or endorsed by Yogen Früz. All trademarks and brand names belong to their respective owners.
