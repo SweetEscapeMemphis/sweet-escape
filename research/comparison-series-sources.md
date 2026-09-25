@@ -92,3 +92,14 @@ Checked dates record when claims were reviewed, not a promise that a third-party
 - Claims intentionally omitted: specific Memphis-area Yogen Früz locations, local inventory, prices, nutrition or health comparisons, ingredient-quality comparisons, and quality rankings.
 - Image concept: Sweet Escape's own self-serve frozen yogurt photograph, `/assets/specialties/self-serve-froyo.webp`; no competitor marks or packaging.
 - Required disclaimer: Sweet Escape is not affiliated with or endorsed by Yogen Früz. All trademarks and brand names belong to their respective owners.
+
+## Sweet Escape vs. Amorino
+
+- Published: 2026-09-25
+- Primary intent: compare Sweet Escape and Amorino gelato formats before a Memphis dessert visit.
+- Secondary intents: flower-shaped gelato versus a broader dessert menu; gelato and sorbet comparison; Memphis dessert planning.
+- Primary sources checked 2026-09-25: https://www.amorino.com/en/brands/our-story ; https://www.amorino.com/en-us/category/Flavors ; Sweet Escape's linked first-party product, directory, stock, and visit pages.
+- Competitor claims used: the first shop opened on Paris's Île Saint-Louis in 2002; gelato is shaped with a spatula into flower petals; cups, cones, gelato-filled macarons, beverages, milkshakes, and sorbet drinks are documented; the U.S. flavor directory separates gelato and vegan sorbets and publishes allergen markers.
+- Claims intentionally omitted: a specific Memphis-area Amorino location, local inventory, prices, ingredient-quality comparisons, dietary-safety conclusions, and quality rankings.
+- Image concept: Sweet Escape's own Madagascar Vanilla Bean gelato photograph, `/assets/gelato/scoops-webp/madagascar-vanilla-bean.webp`; no competitor marks or packaging.
+- Required disclaimer: Sweet Escape is not affiliated with or endorsed by Amorino. All trademarks and brand names belong to their respective owners.
