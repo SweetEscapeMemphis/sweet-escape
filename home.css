@@ -575,6 +575,49 @@ img {
   color: white;
 }
 
+.scroll-film-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  overflow: clip;
+  background: #000;
+}
+
+.scroll-film-pair .scroll-film + .scroll-film {
+  border-left: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.scroll-film-pair .scroll-film-inner {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: clamp(0.5rem, 1.5vw, 1.25rem);
+  padding-inline: clamp(1rem, 3vw, 3rem);
+}
+
+.scroll-film-pair .scroll-film-copy {
+  max-width: 560px;
+  justify-self: center;
+  text-align: center;
+}
+
+.scroll-film-pair .scroll-film-copy h2 {
+  max-width: 12ch;
+  margin-inline: auto;
+  font-size: clamp(2.5rem, 4.25vw, 5.25rem);
+}
+
+.scroll-film-pair .scroll-film-copy > p:not(.eyebrow) {
+  margin-inline: auto;
+}
+
+.scroll-film-pair .scroll-film-visual {
+  min-height: 0;
+}
+
+.scroll-film-pair .scroll-film-canvas,
+.scroll-film-pair .scroll-film-fallback {
+  width: min(100%, 56svh);
+}
+
 .scroll-film-stage {
   position: sticky;
   top: 78px;
@@ -1786,6 +1829,30 @@ img {
 }
 
 @media (max-width: 520px) {
+  .scroll-film-pair .scroll-film-inner {
+    padding: 0.8rem 0.35rem 1.5rem;
+  }
+
+  .scroll-film-pair .scroll-film-copy .eyebrow,
+  .scroll-film-pair .scroll-film-copy > p:not(.eyebrow) {
+    display: none;
+  }
+
+  .scroll-film-pair .scroll-film-copy h2 {
+    max-width: 11ch;
+    font-size: clamp(1.45rem, 7vw, 2.25rem);
+  }
+
+  .scroll-film-pair .scroll-film-canvas,
+  .scroll-film-pair .scroll-film-fallback {
+    width: 100%;
+  }
+
+  .scroll-film-pair .scroll-film-progress {
+    right: 0.35rem;
+    left: 0.35rem;
+  }
+
   .home-brand {
     align-self: center;
   }
