@@ -11,6 +11,7 @@ Live menu and current availability: https://www.sweetescapememphis.com/stock.htm
 
 - [Home](https://www.sweetescapememphis.com/): Official Sweet Escape Memphis homepage.
 - [About](https://www.sweetescapememphis.com/about.html): Official business overview, website standards, and contact information.
+- [Press kit](https://www.sweetescapememphis.com/press.html): Verified business facts, story angles, official media assets, and press contact information.
 - [Visit](https://www.sweetescapememphis.com/visit.html): Address, hours, phone number, directions, and visitor information.
 - [Live menu](https://www.sweetescapememphis.com/stock.html): Desserts currently available in the shop.
 - [Ice cream flavors](https://www.sweetescapememphis.com/flavors.html): Hand-dipped ice cream catalog, nutrition, and allergen information.
