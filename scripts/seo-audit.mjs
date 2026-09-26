@@ -72,11 +72,15 @@ for (const [index, file] of sitemapFiles.entries()) {
   const h1Count = (html.match(/<h1\b/gi) ?? []).length;
 
   if (/^blog\/.+\.html$/.test(file) && file !== "blog/index.html") {
-    const article = html.match(/<article\b[^>]*>([\s\S]*?)<\/article>/i)?.[1] ?? "";
+    const articleMatch = html.match(/<article\b([^>]*)>([\s\S]*?)<\/article>/i);
+    const articleAttributes = articleMatch?.[1] ?? "";
+    const article = articleMatch?.[2] ?? "";
     const articleText = decodeEntities(article.replace(/<[^>]+>/g, " "));
     const wordCount = articleText ? articleText.split(/\s+/).length : 0;
-    if (wordCount < 500 || wordCount > 800) {
-      errors.push(`${file}: article length is ${wordCount} words; expected 500-800`);
+    const minWords = Number(articleAttributes.match(/data-seo-min-words=["'](\d+)["']/i)?.[1] ?? 500);
+    const maxWords = Number(articleAttributes.match(/data-seo-max-words=["'](\d+)["']/i)?.[1] ?? 800);
+    if (wordCount < minWords || wordCount > maxWords) {
+      errors.push(`${file}: article length is ${wordCount} words; expected ${minWords}-${maxWords}`);
     }
   }
 

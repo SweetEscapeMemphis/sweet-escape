@@ -48,6 +48,7 @@ This file guides the recurring blog-post task. Read it fully before writing any 
 - [x] Sweet Escape vs. Yogen Früz factual comparison (owner-approved comparison series; published 2026-09-25)
 - [x] Sweet Escape vs. Amorino factual comparison (owner-approved comparison series; published 2026-09-25)
 - [x] Sweet Escape vs. Venchi factual comparison (owner-approved comparison series; published 2026-09-26)
+- [x] Expanded Cookie Dough Base vs. Brownie Base guide with original long-form copy (updated 2026-09-26)
 - After the backlog runs out: seasonal search themes and flavor spotlights grounded in current first-party data. Do not state that a seasonal flavor, event, offer, or service exists unless it is verified in the repository or by the owner. Repeat a theme no sooner than 90 days with a fresh angle.
 
 ## Definition of done for each run
