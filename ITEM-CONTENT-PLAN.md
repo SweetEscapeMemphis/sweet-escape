@@ -14,6 +14,7 @@ Make every verified catalog item crawlable and discoverable, then earn standalon
 
 ## Permanent copy standard
 
+- Future blogs target approximately 1,500 words of original, polished copy, with useful verified substance throughout. Follow the long-form validation settings in BLOG-PLAN.md. Do not copy or closely paraphrase third-party articles or claim copyright registration or guaranteed exclusive copyright protection.
 - Write for a real visitor question or decision; never publish filler merely to cover a keyword.
 - Use original, specific, polished copy with a clear local Memphis purpose.
 - Do not reuse paragraphs across item pages or articles.

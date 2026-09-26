@@ -13,7 +13,8 @@ This file guides the recurring blog-post task. Read it fully before writing any 
 
 ## Cadence and format
 - Publish at most one post per automated run and no more than two posts per calendar day. If there is no distinct, useful topic supported by verified information, skip the post and report why; never publish filler to satisfy the schedule.
-- 500–800 words. One H1, several H2s. At least 3 internal links (/stock.html, /flavors.html, /yogurt.html, /gelato.html, /visit.html, other posts).
+- Future posts target approximately 1,500 words (1,400–1,600 words of article content), per the owner's September 26 request. Use original, polished copy with verified details, useful answers, and natural calls to action. Avoid padding, repetitive cautions, and technical publishing language in customer-facing prose. Choose a richer topic or skip if verified substance is insufficient. Existing shorter posts may retain their original length.
+- Set `data-seo-min-words="1400"` and `data-seo-max-words="1700"` on new article elements for long-form validation. One H1, several H2s, and at least 3 natural internal links (/stock.html, /flavors.html, /yogurt.html, /gelato.html, /visit.html, other posts).
 - File: `blog/<kebab-case-slug>.html`. Copy the exact HTML structure of `blog/first-timers-guide.html` (head metas, BlogPosting JSON-LD, header, footer, mobile action bar). Update: title, description, canonical, og/twitter tags, JSON-LD headline/description/dates, kicker, H1, body, CTA.
 - Add the new post to the TOP of the list in `blog/index.html` and add a `<url>` entry to `sitemap.xml` with the publish date.
 - Add the new post to the TOP of `blog/feed.xml`; keep no more than the 20 newest feed items. Every blog page must retain the RSS discovery link in its `<head>`.
