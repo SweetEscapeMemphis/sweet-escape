@@ -103,3 +103,14 @@ Checked dates record when claims were reviewed, not a promise that a third-party
 - Claims intentionally omitted: a specific Memphis-area Amorino location, local inventory, prices, ingredient-quality comparisons, dietary-safety conclusions, and quality rankings.
 - Image concept: Sweet Escape's own Madagascar Vanilla Bean gelato photograph, `/assets/gelato/scoops-webp/madagascar-vanilla-bean.webp`; no competitor marks or packaging.
 - Required disclaimer: Sweet Escape is not affiliated with or endorsed by Amorino. All trademarks and brand names belong to their respective owners.
+
+## Sweet Escape vs. Venchi
+
+- Published: 2026-09-26
+- Primary intent: compare Sweet Escape and Venchi gelato formats before a Memphis dessert visit.
+- Secondary intents: chocolate-focused gelato versus a broader dessert menu; gelato shop comparison; Memphis dessert planning.
+- Primary sources checked 2026-09-26: https://us.venchi.com/pages/our-story ; https://us.venchi.com/pages/gelato-flavors ; Sweet Escape's linked first-party product, directory, stock, and visit pages.
+- Competitor claims used: Venchi traces its history to Silviano Venchi's 1878 Turin workshop; stores added fresh Italian gelato alongside chocolate in a Chocogelateria concept; the official gelato page lists chocolate-led, nut, fruit, and vegan-labeled choices as well as gelatoshakes, spreads, and crunchy toppings.
+- Claims intentionally omitted: a specific Memphis-area Venchi location, local inventory, prices, ingredient-quality comparisons, dietary-safety conclusions, and quality rankings.
+- Image concept: Sweet Escape's own Belgian Dark Chocolate gelato photograph, `/assets/gelato/scoops-webp/belgian-dark-chocolate.webp`; no competitor marks or packaging.
+- Required disclaimer: Sweet Escape is not affiliated with or endorsed by Venchi. All trademarks and brand names belong to their respective owners.
