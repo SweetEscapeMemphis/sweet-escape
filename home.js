@@ -10,6 +10,22 @@
     .filter(Boolean);
   let scrollFrame = 0;
 
+  // Wrapped navigation and browser zoom can change the sticky header height.
+  const filmHeader = document.querySelector(".home-topbar");
+  function updateFilmViewport() {
+    const headerHeight = filmHeader && getComputedStyle(filmHeader).position === "sticky"
+      ? filmHeader.getBoundingClientRect().height : 0;
+    document.documentElement.style.setProperty("--film-header-height", `${headerHeight}px`);
+    filmControllers.forEach((controller) => controller.resize());
+  }
+  updateFilmViewport();
+  if ("ResizeObserver" in window) {
+    const filmResizeObserver = new ResizeObserver(updateFilmViewport);
+    if (filmHeader) filmResizeObserver.observe(filmHeader);
+    document.querySelectorAll(".scroll-film-visual").forEach((visual) => filmResizeObserver.observe(visual));
+  }
+  window.addEventListener("resize", updateFilmViewport);
+
   initializeHomeStock();
   createReviewCarousel(reviewCarousel, reduceMotion);
 
