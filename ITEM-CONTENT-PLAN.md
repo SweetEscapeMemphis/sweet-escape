@@ -38,6 +38,8 @@ Make every verified catalog item crawlable and discoverable, then earn standalon
 
 ## Coverage ledger
 
+- 2026-09-27: `/blog/pumpkin-pie-frozen-yogurt-memphis.html` spotlights `pumpkin-pie`, with supporting comparisons to `ooey-gooey-cinnamon-bun` and `spiced-apple-pie`.
+
 Existing focused guides cover several specialties and flavor groups. Before each new article, search the blog and ledger to avoid duplicating intent or competing pages.
 
 - 2026-09-26: Expanded `/blog/cookie-dough-vs-brownie-base.html` into a high-quality comparison and ordering guide covering `cookie-dough-base` and `brownie-base`; retained the existing canonical rather than creating a competing URL.
