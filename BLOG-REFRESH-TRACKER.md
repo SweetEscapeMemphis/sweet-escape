@@ -4,7 +4,7 @@ Owner request: revise every existing blog to approximately 1,500 words of origin
 
 ## Progress
 
-49 articles inventoried. Nine rewritten across two batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 36 shorter articles remain to rewrite. This project is **not complete**.
+49 articles inventoried. Eleven rewritten across three batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 34 shorter articles remain to rewrite. This project is **not complete**.
 
 Word counts below use the article element, including headings, dates, and CTA. Target 1,400–1,600; repository validation ceiling 1,700. Update this tracker after each verified batch. A qualifying count is not by itself an editorial quality review.
 
@@ -33,9 +33,9 @@ Word counts below use the article element, including headings, dates, and CTA. T
 | [fruit-flavor-menu-guide.html](blog/fruit-flavor-menu-guide.html) | 1492 | Rewritten 2026-09-29 |
 | [gelato-catalog-filters.html](blog/gelato-catalog-filters.html) | 507 | Rewrite pending |
 | [gelato-vs-ice-cream-vs-froyo.html](blog/gelato-vs-ice-cream-vs-froyo.html) | 1444 | Rewritten 2026-09-29 |
-| [groups-and-celebrations.html](blog/groups-and-celebrations.html) | 506 | Rewrite pending |
+| [groups-and-celebrations.html](blog/groups-and-celebrations.html) | 1510 | Rewritten 2026-09-29 |
 | [ice-cream-nachos-memphis.html](blog/ice-cream-nachos-memphis.html) | 511 | Rewrite pending |
-| [kids-first-ice-cream-visit.html](blog/kids-first-ice-cream-visit.html) | 564 | Rewrite pending |
+| [kids-first-ice-cream-visit.html](blog/kids-first-ice-cream-visit.html) | 1549 | Rewritten 2026-09-29 |
 | [mint-ice-cream-flavors.html](blog/mint-ice-cream-flavors.html) | 1487 | Rewritten 2026-09-29 |
 | [no-sugar-added-guide.html](blog/no-sugar-added-guide.html) | 1477 | Rewritten 2026-09-29 |
 | [nut-named-flavor-allergen-guide.html](blog/nut-named-flavor-allergen-guide.html) | 510 | Rewrite pending |
