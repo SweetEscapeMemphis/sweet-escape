@@ -24,6 +24,7 @@ This file guides the recurring blog-post task. Read it fully before writing any 
 - Before choosing a topic, review existing posts and recent Git history to avoid duplicate intent or keyword cannibalization. Each post should answer one clear visitor question better than the existing pages do.
 
 ## Topic backlog (work down this list; mark used topics with [x] and the date)
+- [x] Cookie Monster vs. Cookies ’N Cream yogurt comparison (published 2026-09-29)
 - [x] How to check the live menu before a Memphis or Bartlett dessert stop (published 2026-09-03)
 - [x] Building a froyo cup: a simple guide to flavors and toppings (published 2026-09-03)
 - [x] What is sorbetto? How it appears in the Sweet Escape catalog (published 2026-09-04)
