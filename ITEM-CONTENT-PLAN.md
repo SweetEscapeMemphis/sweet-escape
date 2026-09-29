@@ -47,3 +47,5 @@ Make every verified catalog item crawlable and discoverable, then earn standalon
 Existing focused guides cover several specialties and flavor groups. Before each new article, search the blog and ledger to avoid duplicating intent or competing pages.
 
 - 2026-09-26: Expanded `/blog/cookie-dough-vs-brownie-base.html` into a high-quality comparison and ordering guide covering `cookie-dough-base` and `brownie-base`; retained the existing canonical rather than creating a competing URL.
+
+- 2026-09-29 existing-content refresh: expanded vanilla, mint, chocolate, fruit, cake/cheesecake, and no-sugar-added guides at their existing URLs. Coverage spans the named catalog groups; all examples distinguish catalog records from dated stock. See BLOG-REFRESH-TRACKER.md for exact URLs, counts, and remaining work.

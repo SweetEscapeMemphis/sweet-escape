@@ -4,7 +4,7 @@ Owner request: revise every existing blog to approximately 1,500 words of origin
 
 ## Progress
 
-49 articles inventoried. Three rewritten in the first batch; four previously long-form articles already meet the length target but still need a fresh editorial review. 42 shorter articles remain to rewrite. This project is **not complete**.
+49 articles inventoried. Nine rewritten across two batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 36 shorter articles remain to rewrite. This project is **not complete**.
 
 Word counts below use the article element, including headings, dates, and CTA. Target 1,400–1,600; repository validation ceiling 1,700. Update this tracker after each verified batch. A qualifying count is not by itself an editorial quality review.
 
@@ -16,31 +16,31 @@ Word counts below use the article element, including headings, dates, and CTA. T
 | [brief-history-of-gelato.html](blog/brief-history-of-gelato.html) | 595 | Rewrite pending |
 | [brownie-base-memphis.html](blog/brownie-base-memphis.html) | 509 | Rewrite pending |
 | [build-a-frozen-yogurt-cup.html](blog/build-a-frozen-yogurt-cup.html) | 573 | Rewrite pending |
-| [cake-dessert-flavor-guide.html](blog/cake-dessert-flavor-guide.html) | 509 | Rewrite pending |
+| [cake-dessert-flavor-guide.html](blog/cake-dessert-flavor-guide.html) | 1489 | Rewritten 2026-09-29 |
 | [check-live-menu-before-you-visit.html](blog/check-live-menu-before-you-visit.html) | 571 | Rewrite pending |
-| [chocolate-ice-cream-menu-guide.html](blog/chocolate-ice-cream-menu-guide.html) | 511 | Rewrite pending |
+| [chocolate-ice-cream-menu-guide.html](blog/chocolate-ice-cream-menu-guide.html) | 1499 | Rewritten 2026-09-29 |
 | [cookie-desserts-memphis.html](blog/cookie-desserts-memphis.html) | 524 | Rewrite pending |
 | [cookie-dough-vs-brownie-base.html](blog/cookie-dough-vs-brownie-base.html) | 1578 | Existing long-form; editorial review pending |
 | [cookie-ice-cream-sandwich-guide.html](blog/cookie-ice-cream-sandwich-guide.html) | 510 | Rewrite pending |
-| [cookie-monster-vs-cookies-n-cream-froyo.html](blog/cookie-monster-vs-cookies-n-cream-froyo.html) | 1457 | Existing long-form; editorial review pending |
+| [cookie-monster-vs-cookies-n-cream-froyo.html](blog/cookie-monster-vs-cookies-n-cream-froyo.html) | 1457 | Reviewed 2026-09-29; retained |
 | [current-gelato-sorbetto-flavors.html](blog/current-gelato-sorbetto-flavors.html) | 512 | Rewrite pending |
 | [current-ice-cream-flavors-september.html](blog/current-ice-cream-flavors-september.html) | 537 | Rewrite pending |
 | [dubai-dream-dessert-guide.html](blog/dubai-dream-dessert-guide.html) | 506 | Rewrite pending |
-| [espresso-frozen-yogurt-memphis.html](blog/espresso-frozen-yogurt-memphis.html) | 1498 | Existing long-form; editorial review pending |
+| [espresso-frozen-yogurt-memphis.html](blog/espresso-frozen-yogurt-memphis.html) | 1498 | Reviewed 2026-09-29; retained |
 | [first-timers-guide.html](blog/first-timers-guide.html) | 1434 | Rewritten 2026-09-29 |
 | [frozen-yogurt-catalog-filters.html](blog/frozen-yogurt-catalog-filters.html) | 508 | Rewrite pending |
 | [frozen-yogurt-sorbet-options.html](blog/frozen-yogurt-sorbet-options.html) | 508 | Rewrite pending |
-| [fruit-flavor-menu-guide.html](blog/fruit-flavor-menu-guide.html) | 513 | Rewrite pending |
+| [fruit-flavor-menu-guide.html](blog/fruit-flavor-menu-guide.html) | 1492 | Rewritten 2026-09-29 |
 | [gelato-catalog-filters.html](blog/gelato-catalog-filters.html) | 507 | Rewrite pending |
 | [gelato-vs-ice-cream-vs-froyo.html](blog/gelato-vs-ice-cream-vs-froyo.html) | 1444 | Rewritten 2026-09-29 |
 | [groups-and-celebrations.html](blog/groups-and-celebrations.html) | 506 | Rewrite pending |
 | [ice-cream-nachos-memphis.html](blog/ice-cream-nachos-memphis.html) | 511 | Rewrite pending |
 | [kids-first-ice-cream-visit.html](blog/kids-first-ice-cream-visit.html) | 564 | Rewrite pending |
-| [mint-ice-cream-flavors.html](blog/mint-ice-cream-flavors.html) | 515 | Rewrite pending |
-| [no-sugar-added-guide.html](blog/no-sugar-added-guide.html) | 516 | Rewrite pending |
+| [mint-ice-cream-flavors.html](blog/mint-ice-cream-flavors.html) | 1487 | Rewritten 2026-09-29 |
+| [no-sugar-added-guide.html](blog/no-sugar-added-guide.html) | 1477 | Rewritten 2026-09-29 |
 | [nut-named-flavor-allergen-guide.html](blog/nut-named-flavor-allergen-guide.html) | 510 | Rewrite pending |
 | [nutrition-allergen-guide.html](blog/nutrition-allergen-guide.html) | 1447 | Rewritten 2026-09-29 |
-| [pumpkin-pie-frozen-yogurt-memphis.html](blog/pumpkin-pie-frozen-yogurt-memphis.html) | 1484 | Existing long-form; editorial review pending |
+| [pumpkin-pie-frozen-yogurt-memphis.html](blog/pumpkin-pie-frozen-yogurt-memphis.html) | 1484 | Reviewed 2026-09-29; retained |
 | [rainbow-sherbet-guide.html](blog/rainbow-sherbet-guide.html) | 508 | Rewrite pending |
 | [scoop-flavor-filters-guide.html](blog/scoop-flavor-filters-guide.html) | 507 | Rewrite pending |
 | [september-19-live-menu-update.html](blog/september-19-live-menu-update.html) | 508 | Rewrite pending |
@@ -58,7 +58,7 @@ Word counts below use the article element, including headings, dates, and CTA. T
 | [sweet-escape-vs-venchi.html](blog/sweet-escape-vs-venchi.html) | 637 | Rewrite pending |
 | [sweet-escape-vs-yogen-fruz.html](blog/sweet-escape-vs-yogen-fruz.html) | 705 | Rewrite pending |
 | [two-choice-dessert-shortlist.html](blog/two-choice-dessert-shortlist.html) | 555 | Rewrite pending |
-| [vanilla-ice-cream-options.html](blog/vanilla-ice-cream-options.html) | 510 | Rewrite pending |
+| [vanilla-ice-cream-options.html](blog/vanilla-ice-cream-options.html) | 1493 | Rewritten 2026-09-29 |
 | [vegan-gelato-memphis-guide.html](blog/vegan-gelato-memphis-guide.html) | 578 | Rewrite pending |
 | [what-is-sorbetto.html](blog/what-is-sorbetto.html) | 526 | Rewrite pending |
 
@@ -71,3 +71,9 @@ Word counts below use the article element, including headings, dates, and CTA. T
 - External references checked September 29: https://www.fda.gov/food/nutrition-facts-label/serving-size-nutrition-facts-label ; https://www.fda.gov/consumers/consumer-updates/have-food-allergies-read-label ; https://villadolcegelato.com/product-attributes/ . Short source-supported explanations are linked within the relevant articles; prose is original.
 - Preserve the RSS feed's newest 20 original publication items; these three older updates do not displace newer posts or change original publication dates.
 
+
+## Second-batch scope and evidence
+
+Six individually rewritten guides: vanilla, mint, chocolate, fruit, cake/cheesecake, and no-sugar-added choices. Product-specific records replace the former shared boilerplate. Updated headlines and metadata reflect the broader evergreen scope; URLs and original publication dates remain unchanged. Stock observations checked September 29 against the live September 25 snapshot. Allergen declarations, equipment/facility cautions, incomplete-data limitations, and source-date context retained.
+
+Source: repository scoop/yogurt/gelato records and specialties descriptions. FDA added-sugars explanation checked September 29: https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label . No health recommendations, invented recipes, or copyright registration claims.
