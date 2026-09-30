@@ -4,7 +4,7 @@ Owner request: revise every existing blog to approximately 1,500 words of origin
 
 ## Progress
 
-49 articles inventoried. Eighteen rewritten across eight batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 27 shorter articles remain to rewrite. This project is **not complete**.
+49 articles inventoried. Nineteen rewritten across nine batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 26 shorter articles remain to rewrite. This project is **not complete**.
 
 Word counts below use the article element, including headings, dates, and CTA. Target 1,400–1,600; repository validation ceiling 1,700. Update this tracker after each verified batch. A qualifying count is not by itself an editorial quality review.
 
@@ -59,7 +59,7 @@ Word counts below use the article element, including headings, dates, and CTA. T
 | [sweet-escape-vs-yogen-fruz.html](blog/sweet-escape-vs-yogen-fruz.html) | 705 | Rewrite pending |
 | [two-choice-dessert-shortlist.html](blog/two-choice-dessert-shortlist.html) | 555 | Rewrite pending |
 | [vanilla-ice-cream-options.html](blog/vanilla-ice-cream-options.html) | 1493 | Rewritten 2026-09-29 |
-| [vegan-gelato-memphis-guide.html](blog/vegan-gelato-memphis-guide.html) | 578 | Rewrite pending |
+| [vegan-gelato-memphis-guide.html](blog/vegan-gelato-memphis-guide.html) | 1463 | Rewritten 2026-09-30 |
 | [what-is-sorbetto.html](blog/what-is-sorbetto.html) | 1489 | Rewritten 2026-09-30 |
 
 ## First-batch scope and evidence
@@ -98,3 +98,7 @@ The gelato-history article was expanded with cautious historical framing from Tr
 ## Eighth-batch scope and evidence
 
 The Sorbetto guide was grounded in Sweet Escape's product-category records, its live-menu/catalog distinction, and the separate caution that a complete major-allergen statement is not published online for every entry. Flavor examples match the published catalog and are explicitly not availability promises. The article avoids equating Sorbetto with vegan, dairy-free, or allergy-safe. Sources checked September 30, 2026: repository `data/gelato-flavors.js`; Villa Dolce's current flavor page at https://villadolcegelato.com/gelato-and-sorbetto-flavors/ ; Treccani's gelato entry at https://www.treccani.it/enciclopedia/gelato/ .
+
+## Ninth-batch scope and evidence
+
+The Vegan gelato guide covers the two catalog entries filed under Vegan, with descriptions and cautions matched to `data/gelato-flavors.js`. It separates product categorization from daily availability and avoids treating “vegan,” “non-dairy,” blank allergen fields, or supplier descriptions as an allergy-safety certification. Supplier pages checked September 30, 2026: https://villadolcegelato.com/gelato-and-sorbetto-flavors/vegan/vegan-vanilla-gelato/ ; https://villadolcegelato.com/gelato-and-sorbetto-flavors/vegan/vegan-chocolate-gelato/ .
