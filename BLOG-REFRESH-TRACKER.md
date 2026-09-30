@@ -4,7 +4,7 @@ Owner request: revise every existing blog to approximately 1,500 words of origin
 
 ## Progress
 
-49 articles inventoried. Twenty-four rewritten across fourteen batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 21 shorter articles remain to rewrite. This project is **not complete**.
+49 articles inventoried. Twenty-six rewritten across sixteen batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 19 shorter articles remain to rewrite. This project is **not complete**.
 
 Word counts below use the article element, including headings, dates, and CTA. Target 1,400–1,600; repository validation ceiling 1,700. Update this tracker after each verified batch. A qualifying count is not by itself an editorial quality review.
 
@@ -29,7 +29,7 @@ Word counts below use the article element, including headings, dates, and CTA. T
 | [espresso-frozen-yogurt-memphis.html](blog/espresso-frozen-yogurt-memphis.html) | 1498 | Reviewed 2026-09-29; retained |
 | [first-timers-guide.html](blog/first-timers-guide.html) | 1434 | Rewritten 2026-09-29 |
 | [frozen-yogurt-catalog-filters.html](blog/frozen-yogurt-catalog-filters.html) | 1575 | Rewritten 2026-09-30 |
-| [frozen-yogurt-sorbet-options.html](blog/frozen-yogurt-sorbet-options.html) | 508 | Rewrite pending |
+| [frozen-yogurt-sorbet-options.html](blog/frozen-yogurt-sorbet-options.html) | 1590 | Rewritten 2026-09-30 |
 | [fruit-flavor-menu-guide.html](blog/fruit-flavor-menu-guide.html) | 1492 | Rewritten 2026-09-29 |
 | [gelato-catalog-filters.html](blog/gelato-catalog-filters.html) | 507 | Rewrite pending |
 | [gelato-vs-ice-cream-vs-froyo.html](blog/gelato-vs-ice-cream-vs-froyo.html) | 1444 | Rewritten 2026-09-29 |
@@ -122,3 +122,11 @@ The live-menu walkthrough now explains the stock page's timestamp, counts, four 
 ## Fourteenth-batch scope and evidence
 
 The frozen-yogurt filter guide documents its actual search fields, categories, Seasonal flag, declared-allergen selector, live-stock separation, and expandable product details. While verifying the filter behavior, the empty-result messages in the scoop and yogurt catalogs were found to incorrectly say “in stock”; these are catalog filters, not stock lists. Their messages now accurately describe no matching catalog records, with asset versions updated on the two pages.
+
+## Fifteenth-batch scope and evidence
+
+The sorbet guide now covers all four current Sorbet-category entries in the yogurt catalog rather than relying on a dated two-item stock snapshot. Flavor and ingredient claims were matched against `data/yogurt-flavors.js` and linked product pages. Supplier category context was checked on Honey Hill Farms' official Sorbets page: https://thehoneyhillfarms.com/sorbets . Facility and in-store cross-contact cautions remain explicit; no availability or allergy-safety promise is made.
+
+## Sixteenth-batch scope and evidence
+
+The live-menu guide now covers all four actual stock tabs, the current timestamp, summary counts, searchable fields, item links, and how availability differs from product details. Verified against `stock.html`, `stock-page.js`, and `stock-store.js`; no static inventory list is presented as current.
