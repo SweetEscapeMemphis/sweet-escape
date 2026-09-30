@@ -4,7 +4,7 @@ Owner request: revise every existing blog to approximately 1,500 words of origin
 
 ## Progress
 
-49 articles inventoried. Fifteen rewritten across five batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 30 shorter articles remain to rewrite. This project is **not complete**.
+49 articles inventoried. Sixteen rewritten across six batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 29 shorter articles remain to rewrite. This project is **not complete**.
 
 Word counts below use the article element, including headings, dates, and CTA. Target 1,400–1,600; repository validation ceiling 1,700. Update this tracker after each verified batch. A qualifying count is not by itself an editorial quality review.
 
@@ -34,7 +34,7 @@ Word counts below use the article element, including headings, dates, and CTA. T
 | [gelato-catalog-filters.html](blog/gelato-catalog-filters.html) | 507 | Rewrite pending |
 | [gelato-vs-ice-cream-vs-froyo.html](blog/gelato-vs-ice-cream-vs-froyo.html) | 1444 | Rewritten 2026-09-29 |
 | [groups-and-celebrations.html](blog/groups-and-celebrations.html) | 1510 | Rewritten 2026-09-29 |
-| [ice-cream-nachos-memphis.html](blog/ice-cream-nachos-memphis.html) | 511 | Rewrite pending |
+| [ice-cream-nachos-memphis.html](blog/ice-cream-nachos-memphis.html) | 1566 | Rewritten 2026-09-30 |
 | [kids-first-ice-cream-visit.html](blog/kids-first-ice-cream-visit.html) | 1549 | Rewritten 2026-09-29 |
 | [mint-ice-cream-flavors.html](blog/mint-ice-cream-flavors.html) | 1487 | Rewritten 2026-09-29 |
 | [no-sugar-added-guide.html](blog/no-sugar-added-guide.html) | 1477 | Rewritten 2026-09-29 |
@@ -86,3 +86,7 @@ Three product and format guides: Brownie Base, self-serve frozen yogurt cup plan
 ## Fifth-batch scope and evidence
 
 Dubai Dream guide expanded using the specialty’s verified description (two chosen scoops layered with Dubai chocolate filling, pistachio cream, and crisp kataifi). The article distinguishes the stable format from changing scoop availability, compares the published structures of other specialties, and preserves the requirement to verify current labels and every component for dietary questions. No recipe, flavor pairing, or allergy-safety claim inferred.
+
+## Sixth-batch scope and evidence
+
+Ice Cream Nachos guide expanded from the exact published structure (two chosen scoops served with crisp round waffle chips for dipping). The article compares other specialty formats by their published components, explains the separation between catalog details and live availability, and preserves component-level label and cross-contact cautions. It avoids claims about recipes, sauces, serving size, or suitability for groups/allergies.
