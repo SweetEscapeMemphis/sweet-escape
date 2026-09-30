@@ -4,7 +4,7 @@ Owner request: revise every existing blog to approximately 1,500 words of origin
 
 ## Progress
 
-49 articles inventoried. Eleven rewritten across three batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 34 shorter articles remain to rewrite. This project is **not complete**.
+49 articles inventoried. Fourteen rewritten across four batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 31 shorter articles remain to rewrite. This project is **not complete**.
 
 Word counts below use the article element, including headings, dates, and CTA. Target 1,400–1,600; repository validation ceiling 1,700. Update this tracker after each verified batch. A qualifying count is not by itself an editorial quality review.
 
@@ -14,12 +14,12 @@ Word counts below use the article element, including headings, dates, and CTA. T
 | --- | ---: | --- |
 | [bartlett-dessert-stop-guide.html](blog/bartlett-dessert-stop-guide.html) | 509 | Rewrite pending |
 | [brief-history-of-gelato.html](blog/brief-history-of-gelato.html) | 595 | Rewrite pending |
-| [brownie-base-memphis.html](blog/brownie-base-memphis.html) | 509 | Rewrite pending |
-| [build-a-frozen-yogurt-cup.html](blog/build-a-frozen-yogurt-cup.html) | 573 | Rewrite pending |
+| [brownie-base-memphis.html](blog/brownie-base-memphis.html) | 1435 | Rewritten 2026-09-30 |
+| [build-a-frozen-yogurt-cup.html](blog/build-a-frozen-yogurt-cup.html) | 1563 | Rewritten 2026-09-30 |
 | [cake-dessert-flavor-guide.html](blog/cake-dessert-flavor-guide.html) | 1489 | Rewritten 2026-09-29 |
 | [check-live-menu-before-you-visit.html](blog/check-live-menu-before-you-visit.html) | 571 | Rewrite pending |
 | [chocolate-ice-cream-menu-guide.html](blog/chocolate-ice-cream-menu-guide.html) | 1499 | Rewritten 2026-09-29 |
-| [cookie-desserts-memphis.html](blog/cookie-desserts-memphis.html) | 524 | Rewrite pending |
+| [cookie-desserts-memphis.html](blog/cookie-desserts-memphis.html) | 1485 | Rewritten 2026-09-30 |
 | [cookie-dough-vs-brownie-base.html](blog/cookie-dough-vs-brownie-base.html) | 1578 | Existing long-form; editorial review pending |
 | [cookie-ice-cream-sandwich-guide.html](blog/cookie-ice-cream-sandwich-guide.html) | 510 | Rewrite pending |
 | [cookie-monster-vs-cookies-n-cream-froyo.html](blog/cookie-monster-vs-cookies-n-cream-froyo.html) | 1457 | Reviewed 2026-09-29; retained |
@@ -77,3 +77,8 @@ Word counts below use the article element, including headings, dates, and CTA. T
 Six individually rewritten guides: vanilla, mint, chocolate, fruit, cake/cheesecake, and no-sugar-added choices. Product-specific records replace the former shared boilerplate. Updated headlines and metadata reflect the broader evergreen scope; URLs and original publication dates remain unchanged. Stock observations checked September 29 against the live September 25 snapshot. Allergen declarations, equipment/facility cautions, incomplete-data limitations, and source-date context retained.
 
 Source: repository scoop/yogurt/gelato records and specialties descriptions. FDA added-sugars explanation checked September 29: https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label . No health recommendations, invented recipes, or copyright registration claims.
+
+
+## Fourth-batch scope and evidence
+
+Three product and format guides: Brownie Base, self-serve frozen yogurt cup planning, and the Cookie Dough Base/Cookie Ice Cream Sandwich comparison. Claims verified against current specialties descriptions, catalogs, and live stock source. Component ingredient limitations retained; no prices or substitutions inferred.
