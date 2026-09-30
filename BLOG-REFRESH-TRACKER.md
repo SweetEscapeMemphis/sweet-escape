@@ -4,7 +4,7 @@ Owner request: revise every existing blog to approximately 1,500 words of origin
 
 ## Progress
 
-49 articles inventoried. Sixteen rewritten across six batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 29 shorter articles remain to rewrite. This project is **not complete**.
+49 articles inventoried. Seventeen rewritten across seven batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 28 shorter articles remain to rewrite. This project is **not complete**.
 
 Word counts below use the article element, including headings, dates, and CTA. Target 1,400–1,600; repository validation ceiling 1,700. Update this tracker after each verified batch. A qualifying count is not by itself an editorial quality review.
 
@@ -13,7 +13,7 @@ Word counts below use the article element, including headings, dates, and CTA. T
 | Article | Words | Status |
 | --- | ---: | --- |
 | [bartlett-dessert-stop-guide.html](blog/bartlett-dessert-stop-guide.html) | 509 | Rewrite pending |
-| [brief-history-of-gelato.html](blog/brief-history-of-gelato.html) | 595 | Rewrite pending |
+| [brief-history-of-gelato.html](blog/brief-history-of-gelato.html) | 1505 | Rewritten 2026-09-30 |
 | [brownie-base-memphis.html](blog/brownie-base-memphis.html) | 1435 | Rewritten 2026-09-30 |
 | [build-a-frozen-yogurt-cup.html](blog/build-a-frozen-yogurt-cup.html) | 1563 | Rewritten 2026-09-30 |
 | [cake-dessert-flavor-guide.html](blog/cake-dessert-flavor-guide.html) | 1489 | Rewritten 2026-09-29 |
@@ -90,3 +90,7 @@ Dubai Dream guide expanded using the specialty’s verified description (two cho
 ## Sixth-batch scope and evidence
 
 Ice Cream Nachos guide expanded from the exact published structure (two chosen scoops served with crisp round waffle chips for dipping). The article compares other specialty formats by their published components, explains the separation between catalog details and live availability, and preserves component-level label and cross-contact cautions. It avoids claims about recipes, sauces, serving size, or suitability for groups/allergies.
+
+## Seventh-batch scope and evidence
+
+The gelato-history article was expanded with cautious historical framing from Treccani, the Carpigiani Gelato Museum, and Italia.it. The narrative distinguishes ancient frozen refreshments from modern gelato, describes attributed rather than uncontested Renaissance milestones, and connects the history to Sweet Escape's actual catalog workflow without suggesting the shop's production method. Sources checked September 30, 2026: https://www.treccani.it/enciclopedia/gelato/ ; https://www.gelatomuseum.com/en/history ; https://www.italia.it/en/italy/things-to-do/artisan-ice-cream .
