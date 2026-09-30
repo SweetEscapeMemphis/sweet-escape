@@ -4,7 +4,7 @@ Owner request: revise every existing blog to approximately 1,500 words of origin
 
 ## Progress
 
-49 articles inventoried. Nineteen rewritten across nine batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 26 shorter articles remain to rewrite. This project is **not complete**.
+49 articles inventoried. Twenty rewritten across ten batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 25 shorter articles remain to rewrite. This project is **not complete**.
 
 Word counts below use the article element, including headings, dates, and CTA. Target 1,400–1,600; repository validation ceiling 1,700. Update this tracker after each verified batch. A qualifying count is not by itself an editorial quality review.
 
@@ -38,7 +38,7 @@ Word counts below use the article element, including headings, dates, and CTA. T
 | [kids-first-ice-cream-visit.html](blog/kids-first-ice-cream-visit.html) | 1549 | Rewritten 2026-09-29 |
 | [mint-ice-cream-flavors.html](blog/mint-ice-cream-flavors.html) | 1487 | Rewritten 2026-09-29 |
 | [no-sugar-added-guide.html](blog/no-sugar-added-guide.html) | 1477 | Rewritten 2026-09-29 |
-| [nut-named-flavor-allergen-guide.html](blog/nut-named-flavor-allergen-guide.html) | 510 | Rewrite pending |
+| [nut-named-flavor-allergen-guide.html](blog/nut-named-flavor-allergen-guide.html) | 1578 | Rewritten 2026-09-30 |
 | [nutrition-allergen-guide.html](blog/nutrition-allergen-guide.html) | 1447 | Rewritten 2026-09-29 |
 | [pumpkin-pie-frozen-yogurt-memphis.html](blog/pumpkin-pie-frozen-yogurt-memphis.html) | 1484 | Reviewed 2026-09-29; retained |
 | [rainbow-sherbet-guide.html](blog/rainbow-sherbet-guide.html) | 508 | Rewrite pending |
@@ -102,3 +102,7 @@ The Sorbetto guide was grounded in Sweet Escape's product-category records, its 
 ## Ninth-batch scope and evidence
 
 The Vegan gelato guide covers the two catalog entries filed under Vegan, with descriptions and cautions matched to `data/gelato-flavors.js`. It separates product categorization from daily availability and avoids treating “vegan,” “non-dairy,” blank allergen fields, or supplier descriptions as an allergy-safety certification. Supplier pages checked September 30, 2026: https://villadolcegelato.com/gelato-and-sorbetto-flavors/vegan/vegan-vanilla-gelato/ ; https://villadolcegelato.com/gelato-and-sorbetto-flavors/vegan/vegan-chocolate-gelato/ .
+
+## Tenth-batch scope and evidence
+
+The nut-named gelato guide was rebuilt around the exact per-product allergen and “May contain” fields in `data/gelato-flavors.js`, how those fields are presented in the catalog, and the distinct role of the stock page. It retains the shop’s cross-contact and container-label cautions and does not interpret blank or partial records as safety claims. The FDA's packaged-food label guidance is carefully limited to that context: https://www.fda.gov/consumers/consumer-updates/have-food-allergies-read-label .
