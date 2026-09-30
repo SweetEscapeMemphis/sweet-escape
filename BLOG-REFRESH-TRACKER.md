@@ -4,7 +4,7 @@ Owner request: revise every existing blog to approximately 1,500 words of origin
 
 ## Progress
 
-49 articles inventoried. Twenty-two rewritten across twelve batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 23 shorter articles remain to rewrite. This project is **not complete**.
+49 articles inventoried. Twenty-three rewritten across thirteen batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 22 shorter articles remain to rewrite. This project is **not complete**.
 
 Word counts below use the article element, including headings, dates, and CTA. Target 1,400–1,600; repository validation ceiling 1,700. Update this tracker after each verified batch. A qualifying count is not by itself an editorial quality review.
 
@@ -17,7 +17,7 @@ Word counts below use the article element, including headings, dates, and CTA. T
 | [brownie-base-memphis.html](blog/brownie-base-memphis.html) | 1435 | Rewritten 2026-09-30 |
 | [build-a-frozen-yogurt-cup.html](blog/build-a-frozen-yogurt-cup.html) | 1563 | Rewritten 2026-09-30 |
 | [cake-dessert-flavor-guide.html](blog/cake-dessert-flavor-guide.html) | 1489 | Rewritten 2026-09-29 |
-| [check-live-menu-before-you-visit.html](blog/check-live-menu-before-you-visit.html) | 571 | Rewrite pending |
+| [check-live-menu-before-you-visit.html](blog/check-live-menu-before-you-visit.html) | 1612 | Rewritten 2026-09-30 |
 | [chocolate-ice-cream-menu-guide.html](blog/chocolate-ice-cream-menu-guide.html) | 1499 | Rewritten 2026-09-29 |
 | [cookie-desserts-memphis.html](blog/cookie-desserts-memphis.html) | 1485 | Rewritten 2026-09-30 |
 | [cookie-dough-vs-brownie-base.html](blog/cookie-dough-vs-brownie-base.html) | 1578 | Existing long-form; editorial review pending |
@@ -114,3 +114,7 @@ The Rainbow Sherbet guide now compares Sweet Escape's separate Rainbow and Orang
 ## Twelfth-batch scope and evidence
 
 The scoop-filter article now documents actual search fields, category options, supported category query strings, the declared-allergen selector’s scope, and how the filters combine. It calls out that the count is the loaded catalog total and that the empty-state message is not a live-stock signal. Verified against `flavors.html`, `script.js`, and `data/flavors.js`; allergen and stock cautions retained.
+
+## Thirteenth-batch scope and evidence
+
+The live-menu walkthrough now explains the stock page's timestamp, counts, four tabs, search fields, item links, and distinction from full catalog records. The copy avoids presenting a static availability list and directs readers to the current timestamp and direct shop confirmation for item-dependent plans. Verified against `stock.html`, `stock-page.js`, and `stock-store.js`.
