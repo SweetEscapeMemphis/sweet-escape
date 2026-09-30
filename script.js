@@ -137,7 +137,7 @@
     if (!filtered.length) {
       const empty = document.createElement("div");
       empty.className = "empty-state";
-      empty.textContent = "No in-stock flavors match those filters.";
+      empty.textContent = "No scoop catalog entries match those filters.";
       list.append(empty);
       return;
     }
@@ -171,8 +171,9 @@
       ? `<span class="page-pill">PDF p. ${escapeHTML(flavor.pdfPage)}</span>`
       : "";
     const scoopExtension = pngScoopIds.has(flavor.id) ? "png" : "webp";
-    const defaultImage = flavor.imageUrl || `assets/scoops/responsive/${flavor.id}-300.${scoopExtension}`;
-    const defaultSrcset = flavor.imageUrl ? "" : `assets/scoops/responsive/${flavor.id}-300.${scoopExtension} 300w, assets/scoops/responsive/${flavor.id}-600.${scoopExtension} 600w`;
+    const generatedImage = flavor.nutritionSource ? `assets/scoops/generated/${flavor.id}.png` : "";
+    const defaultImage = generatedImage || flavor.imageUrl || `assets/scoops/responsive/${flavor.id}-300.${scoopExtension}`;
+    const defaultSrcset = flavor.imageUrl || generatedImage ? "" : `assets/scoops/responsive/${flavor.id}-300.${scoopExtension} 300w, assets/scoops/responsive/${flavor.id}-600.${scoopExtension} 600w`;
     const nutritionGrid = nutrition.calories && nutrition.totalFatG && nutrition.totalCarbsG && nutrition.totalSugarsG && nutrition.proteinG
       ? `<div class="nutrition-grid" aria-label="Nutrition facts">${nutritionItem(nutrition.calories, "Calories")}${nutritionItem(`${nutrition.totalFatG}g`, "Fat")}${nutritionItem(`${nutrition.totalCarbsG}g`, "Carbs")}${nutritionItem(`${nutrition.totalSugarsG}g`, "Sugars")}${nutritionItem(`${nutrition.proteinG}g`, "Protein")}</div>`
       : "";

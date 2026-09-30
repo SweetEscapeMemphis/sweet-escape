@@ -122,7 +122,7 @@
     if (!filtered.length) {
       const empty = document.createElement("div");
       empty.className = "yogurt-empty";
-      empty.textContent = "No in-stock yogurt flavors match those filters.";
+      empty.textContent = "No yogurt catalog entries match those filters.";
       grid.append(empty);
       return;
     }

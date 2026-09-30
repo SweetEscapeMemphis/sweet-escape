@@ -4,7 +4,7 @@ Owner request: revise every existing blog to approximately 1,500 words of origin
 
 ## Progress
 
-49 articles inventoried. Twenty-three rewritten across thirteen batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 22 shorter articles remain to rewrite. This project is **not complete**.
+49 articles inventoried. Twenty-four rewritten across fourteen batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 21 shorter articles remain to rewrite. This project is **not complete**.
 
 Word counts below use the article element, including headings, dates, and CTA. Target 1,400–1,600; repository validation ceiling 1,700. Update this tracker after each verified batch. A qualifying count is not by itself an editorial quality review.
 
@@ -28,7 +28,7 @@ Word counts below use the article element, including headings, dates, and CTA. T
 | [dubai-dream-dessert-guide.html](blog/dubai-dream-dessert-guide.html) | 1457 | Rewritten 2026-09-30 |
 | [espresso-frozen-yogurt-memphis.html](blog/espresso-frozen-yogurt-memphis.html) | 1498 | Reviewed 2026-09-29; retained |
 | [first-timers-guide.html](blog/first-timers-guide.html) | 1434 | Rewritten 2026-09-29 |
-| [frozen-yogurt-catalog-filters.html](blog/frozen-yogurt-catalog-filters.html) | 508 | Rewrite pending |
+| [frozen-yogurt-catalog-filters.html](blog/frozen-yogurt-catalog-filters.html) | 1575 | Rewritten 2026-09-30 |
 | [frozen-yogurt-sorbet-options.html](blog/frozen-yogurt-sorbet-options.html) | 508 | Rewrite pending |
 | [fruit-flavor-menu-guide.html](blog/fruit-flavor-menu-guide.html) | 1492 | Rewritten 2026-09-29 |
 | [gelato-catalog-filters.html](blog/gelato-catalog-filters.html) | 507 | Rewrite pending |
@@ -118,3 +118,7 @@ The scoop-filter article now documents actual search fields, category options, s
 ## Thirteenth-batch scope and evidence
 
 The live-menu walkthrough now explains the stock page's timestamp, counts, four tabs, search fields, item links, and distinction from full catalog records. The copy avoids presenting a static availability list and directs readers to the current timestamp and direct shop confirmation for item-dependent plans. Verified against `stock.html`, `stock-page.js`, and `stock-store.js`.
+
+## Fourteenth-batch scope and evidence
+
+The frozen-yogurt filter guide documents its actual search fields, categories, Seasonal flag, declared-allergen selector, live-stock separation, and expandable product details. While verifying the filter behavior, the empty-result messages in the scoop and yogurt catalogs were found to incorrectly say “in stock”; these are catalog filters, not stock lists. Their messages now accurately describe no matching catalog records, with asset versions updated on the two pages.
