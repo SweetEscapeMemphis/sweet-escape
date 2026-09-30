@@ -92,6 +92,7 @@ const groups = [
     back: "/flavors.html#flavors",
     items: scoopPayload.flavors,
     image(item) {
+      if (item.nutritionSource) return { url: `${origin}/assets/scoops/generated/${item.id}.png`, width: 640, height: 640 };
       if (item.imageUrl) return { url: item.imageUrl, width: 600, height: 600 };
       const extension = pngScoops.has(item.id) ? "png" : "webp";
       return { path: `assets/scoops/responsive/${item.id}-600.${extension}`, width: 600, height: 600 };
@@ -225,7 +226,7 @@ function renderPage(group, item, previous, next) {
               <div class="item-actions"><a class="home-button primary" href="/stock.html">Check today’s menu</a><a class="home-button secondary" href="${group.back}">Browse all ${group.label.toLowerCase()}</a></div>
             </div>
           </div>
-          ${group.details(item)}
+          ${group.details(item).trim()}
         </article>
         <nav class="item-pagination" aria-label="More ${escape(group.label.toLowerCase())}">
           <a href="/${group.directory}/${encodeURIComponent(previous.id)}/"><span>Previous</span><strong>← ${escape(previous.name)}</strong></a>

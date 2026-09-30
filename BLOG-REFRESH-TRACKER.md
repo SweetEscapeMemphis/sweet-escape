@@ -4,7 +4,7 @@ Owner request: revise every existing blog to approximately 1,500 words of origin
 
 ## Progress
 
-49 articles inventoried. Twenty-seven rewritten across seventeen batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 18 shorter articles remain to rewrite. This project is **not complete**.
+49 articles inventoried. Twenty-eight rewritten across eighteen batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 17 shorter articles remain to rewrite. This project is **not complete**.
 
 Word counts below use the article element, including headings, dates, and CTA. Target 1,400–1,600; repository validation ceiling 1,700. Update this tracker after each verified batch. A qualifying count is not by itself an editorial quality review.
 
@@ -21,7 +21,7 @@ Word counts below use the article element, including headings, dates, and CTA. T
 | [chocolate-ice-cream-menu-guide.html](blog/chocolate-ice-cream-menu-guide.html) | 1499 | Rewritten 2026-09-29 |
 | [cookie-desserts-memphis.html](blog/cookie-desserts-memphis.html) | 1485 | Rewritten 2026-09-30 |
 | [cookie-dough-vs-brownie-base.html](blog/cookie-dough-vs-brownie-base.html) | 1578 | Existing long-form; editorial review pending |
-| [cookie-ice-cream-sandwich-guide.html](blog/cookie-ice-cream-sandwich-guide.html) | 510 | Rewrite pending |
+| [cookie-ice-cream-sandwich-guide.html](blog/cookie-ice-cream-sandwich-guide.html) | 1599 | Rewritten 2026-09-30 |
 | [cookie-monster-vs-cookies-n-cream-froyo.html](blog/cookie-monster-vs-cookies-n-cream-froyo.html) | 1457 | Reviewed 2026-09-29; retained |
 | [current-gelato-sorbetto-flavors.html](blog/current-gelato-sorbetto-flavors.html) | 512 | Rewrite pending |
 | [current-ice-cream-flavors-september.html](blog/current-ice-cream-flavors-september.html) | 537 | Rewrite pending |
@@ -134,3 +134,7 @@ The live-menu guide now covers all four actual stock tabs, the current timestamp
 ## Seventeenth-batch scope and evidence
 
 The gelato catalog guide documents the actual search fields, Gelato/Sorbetto/Vegan categories, five known-allergen filter options, and product-card limitations. Product examples are verified against `data/gelato-flavors.js`. The empty-result message was corrected because this page filters the product catalog, not live stock; the script asset version was updated.
+
+## Eighteenth-batch scope and evidence
+
+The Cookie Ice Cream Sandwich guide was expanded using the exact specialty description (chosen scoop pressed between two chocolate-chip cookies) and compared only with the published structures of Cookie Dough Base, Brownie Base, and Ice Cream Nachos. It retains current-label and cross-contact cautions for the multi-component dessert and preserves the original September 12 publication date.
