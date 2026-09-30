@@ -3,7 +3,7 @@ window.SWEET_ESCAPE_FLAVORS = {
   "sourceUrl": "assets/sweet-escape-nutrition-facts.pdf",
   "sourceFile": "assets/sweet-escape-nutrition-facts.pdf",
   "extractedOn": "2026-05-13",
-  "count": 87,
+  "count": 131,
   "flavors": [
     {
       "id": "amaretto-cherry",
@@ -2748,7 +2748,1867 @@ window.SWEET_ESCAPE_FLAVORS = {
         ]
       },
       "sourceDate": "Tuesday, June 18, 2019"
+    },
+    {
+      "id": "cactus-pearfection",
+    "name": "Cactus Pearfection",
+    "sourceName": "Cactus Pearfection",
+    "category": "Ice Cream",
+    "productLine": "Super-Premium",
+    "description": "Refreshing cactus pear ice cream",
+    "imageUrl": "https://www.sbicecream.com/images/products/super-premium/14-cactus-pearfection.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bernardo-escp-cactus-pearfection-6729.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=super-premium",
+    "allergens": {
+      "contains": "Milk",
+      "equipment": "Disclaimer: Produced on equipment that also processes: peanuts, tree nuts, wheat, soy and eggs.",
+      "containsFlags": [
+        "Milk"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Soy",
+        "Peanuts",
+        "Tree Nuts"
+      ]
     }
+  },
+  {
+    "id": "chocolatepeanutbuttercupswirl",
+    "name": "Chocolate Peanut Butter Cup Swirl",
+    "sourceName": "Chocolate Peanut Butter Cup Swirl",
+    "category": "Ice Cream",
+    "productLine": "Super-Premium",
+    "description": "Chocolate ice cream with peanut butter cups and swirl",
+    "imageUrl": "https://www.sbicecream.com/images/products/super-premium/14-chocolate-peanut-butter.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-escp-choc-pb-swirl.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=super-premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup (104g)",
+      "servingGrams": "104",
+      "calories": "300",
+      "totalFatG": "20.0",
+      "saturatedFatG": "12",
+      "transFatG": "0",
+      "cholesterolMg": "40",
+      "sodiumMg": "170",
+      "totalCarbsG": "35",
+      "fiberG": "0",
+      "totalSugarsG": "21",
+      "addedSugarsG": "17",
+      "proteinG": "8"
+    },
+    "allergens": {
+      "contains": "Milk, Peanut, Soy",
+      "equipment": "Produced on equipment that also processes: tree nuts, wheat and eggs.",
+      "containsFlags": [
+        "Milk",
+        "Soy",
+        "Peanuts"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "churro",
+    "name": "Churro",
+    "sourceName": "Churro",
+    "category": "Ice Cream",
+    "productLine": "Super-Premium",
+    "description": "Cinnamon-molasses ice cream with cinnamon streusel variegate, churro pieces and cinnamon swirl",
+    "imageUrl": "https://www.sbicecream.com/images/products/super-premium/14-churro.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/sb-churro-super-premium-nutrition.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=super-premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "213 Cup (104g)",
+      "servingGrams": "104",
+      "calories": "290",
+      "totalFatG": "15.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "45",
+      "sodiumMg": "65",
+      "totalCarbsG": "34",
+      "fiberG": "0",
+      "totalSugarsG": "27",
+      "addedSugarsG": "23",
+      "proteinG": "3"
+    },
+    "allergens": {
+      "contains": "Milk, Soy, Wheat, Eggs, Peanut",
+      "equipment": "Produced on equipment that also processes: tree nuts, wheat, soy and eggs.",
+      "containsFlags": [
+        "Milk",
+        "Soy",
+        "Eggs",
+        "Wheat",
+        "Peanuts"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Soy",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "coffee",
+    "name": "Coffee",
+    "sourceName": "Coffee",
+    "category": "Ice Cream",
+    "productLine": "Super-Premium",
+    "description": "Classic coffee ice cream",
+    "imageUrl": "https://www.sbicecream.com/images/products/super-premium/14-coffee.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-14p-coffee-7118.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=super-premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup (95g)",
+      "servingGrams": "95",
+      "calories": "210",
+      "totalFatG": "13.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "55",
+      "sodiumMg": "45",
+      "totalCarbsG": "0",
+      "fiberG": "18",
+      "totalSugarsG": "18",
+      "addedSugarsG": "14",
+      "proteinG": "3"
+    },
+    "allergens": {
+      "contains": "Milk",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts, wheat, soy and eggs.",
+      "containsFlags": [
+        "Milk"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Soy",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "espressobeanchip",
+    "name": "Espresso Bean Chip",
+    "sourceName": "Espresso Bean Chip",
+    "category": "Ice Cream",
+    "productLine": "Super-Premium",
+    "description": "Smooth coffee ice cream with crunchy chocolate-covered espresso beans.",
+    "imageUrl": "https://www.sbicecream.com/images/products/super-premium/14-espresso.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/sb-espresso-bean-chip-super-premium-nutrition.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=super-premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup (104g)",
+      "servingGrams": "104",
+      "calories": "260",
+      "totalFatG": "16.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "40",
+      "sodiumMg": "40",
+      "totalCarbsG": "0",
+      "fiberG": "23",
+      "totalSugarsG": "23",
+      "addedSugarsG": "20",
+      "proteinG": "3"
+    },
+    "allergens": {
+      "contains": "Milk, Soy",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts, wheat, and eggs.",
+      "containsFlags": [
+        "Milk",
+        "Soy"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "cookiemonster",
+    "name": "Cookie Monster",
+    "sourceName": "Cookie Monster",
+    "category": "Ice Cream",
+    "productLine": "Super-Premium",
+    "description": "Naturally colored vanilla ice cream with chocolate cookie wafers, cookie dough & brownie bites",
+    "imageUrl": "https://www.sbicecream.com/images/products/super-premium/14-cookie-monster.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-escp-cookie-monster.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=super-premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup (104g)",
+      "servingGrams": "104",
+      "calories": "280",
+      "totalFatG": "15.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "50",
+      "sodiumMg": "110",
+      "totalCarbsG": "32",
+      "fiberG": "0.5",
+      "totalSugarsG": "0.5",
+      "addedSugarsG": "19",
+      "proteinG": "4"
+    },
+    "allergens": {
+      "contains": "Milk, Soy, Wheat",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts and eggs.",
+      "containsFlags": [
+        "Milk",
+        "Soy",
+        "Wheat"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "cookiesandcream",
+    "name": "Cookies & Cream",
+    "sourceName": "Cookies & Cream",
+    "category": "Ice Cream",
+    "productLine": "Super-Premium",
+    "description": "Vanilla ice cream with chocolate cookie wafers",
+    "imageUrl": "https://www.sbicecream.com/images/products/super-premium/14-cookies-cream.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-14p-cookies-7106.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=super-premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup ( 95g )",
+      "servingGrams": "95",
+      "calories": "240",
+      "totalFatG": "14.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "50",
+      "sodiumMg": "90",
+      "totalCarbsG": "0",
+      "fiberG": "20",
+      "totalSugarsG": "20",
+      "addedSugarsG": "16",
+      "proteinG": "3"
+    },
+    "allergens": {
+      "contains": "Milk, Wheat, Soy",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts and eggs.",
+      "containsFlags": [
+        "Milk",
+        "Soy",
+        "Wheat"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "cookiesmorecookiesandcream",
+    "name": "Cookies, More Cookies & Cream",
+    "sourceName": "Cookies, More Cookies & Cream",
+    "category": "Ice Cream",
+    "productLine": "Super-Premium",
+    "description": "Vanilla ice cream with chocolate cookie wafers & cookie dough",
+    "imageUrl": "https://www.sbicecream.com/images/products/super-premium/14-cookies-more-cookies-cream.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-esc-cookies-more-cookies-7548.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=super-premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup (105 g)",
+      "servingGrams": "105",
+      "calories": "270",
+      "totalFatG": "15.0",
+      "saturatedFatG": "10",
+      "transFatG": "10",
+      "cholesterolMg": "55",
+      "sodiumMg": "90",
+      "totalCarbsG": "0",
+      "fiberG": "23",
+      "totalSugarsG": "23",
+      "addedSugarsG": "18",
+      "proteinG": "4"
+    },
+    "allergens": {
+      "contains": "Milk, Wheat, Soy",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts and eggs.",
+      "containsFlags": [
+        "Milk",
+        "Soy",
+        "Wheat"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "dulcedeleche",
+    "name": "Dulce de Leche",
+    "sourceName": "Dulce De Leche",
+    "category": "Ice Cream",
+    "productLine": "Super-Premium",
+    "description": "Caramel ice cream with caramel swirl",
+    "imageUrl": "https://www.sbicecream.com/images/products/super-premium/14-dulce-de-leche.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-14p-dulce-de-leche-7115.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=super-premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup ( 95g)",
+      "servingGrams": "95",
+      "calories": "230",
+      "totalFatG": "11.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "45",
+      "sodiumMg": "160",
+      "totalCarbsG": "26",
+      "fiberG": "0",
+      "totalSugarsG": "25",
+      "addedSugarsG": "21",
+      "proteinG": "3"
+    },
+    "allergens": {
+      "contains": "Milk",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts, wheat, soy and eggs.",
+      "containsFlags": [
+        "Milk"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Soy",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "doublefudgemintbrownie",
+    "name": "Double Fudge Mint Brownie",
+    "sourceName": "Double Fudge Mint Brownie",
+    "category": "Ice Cream",
+    "productLine": "Super-Premium",
+    "description": "Mint ice cream with fudge chunks and fudge swirl",
+    "imageUrl": "https://www.sbicecream.com/images/products/super-premium/14-fudge-mint.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-esc-dbl-fdg-mint-choc-brownie-7642.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=super-premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup (78 g)",
+      "servingGrams": "78",
+      "calories": "200",
+      "totalFatG": "11.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "35",
+      "sodiumMg": "55",
+      "totalCarbsG": "25",
+      "fiberG": "<1",
+      "totalSugarsG": "<1",
+      "addedSugarsG": "17",
+      "proteinG": "2"
+    },
+    "allergens": {
+      "contains": "Milk, Soy, Peanut, Wheat",
+      "equipment": "Produced on equipment that also processes: tree nuts and eggs.",
+      "containsFlags": [
+        "Milk",
+        "Soy",
+        "Wheat",
+        "Peanuts"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "guanabanahhh",
+    "name": "Guanaban-Ahhh",
+    "sourceName": "Guanaban-Ahhh",
+    "category": "Ice Cream",
+    "productLine": "Super-Premium",
+    "description": "Refreshingly tropical guanabana ice cream",
+    "imageUrl": "https://www.sbicecream.com/images/products/super-premium/14-guanaban-ahhh.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-esc-guanaban-ahhh-6674.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=super-premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup (104 g)",
+      "servingGrams": "104",
+      "calories": "200",
+      "totalFatG": "10.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "40",
+      "sodiumMg": "40",
+      "totalCarbsG": "25",
+      "fiberG": "<1",
+      "totalSugarsG": "<1",
+      "addedSugarsG": "14",
+      "proteinG": "3"
+    },
+    "allergens": {
+      "contains": "Milk",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts, wheat, soy and eggs.",
+      "containsFlags": [
+        "Milk"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Soy",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "guavahaveit",
+    "name": "Guava Have It",
+    "sourceName": "Guava Have It",
+    "category": "Ice Cream",
+    "productLine": "Super-Premium",
+    "description": "Mouth watering guava ice cream",
+    "imageUrl": "https://www.sbicecream.com/images/products/super-premium/14-guava-have-it.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-esc-guava-have-it.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=super-premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup (104g)",
+      "servingGrams": "104",
+      "calories": "210",
+      "totalFatG": "12.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "50",
+      "sodiumMg": "40",
+      "totalCarbsG": "24",
+      "fiberG": "0.5",
+      "totalSugarsG": "0.5",
+      "addedSugarsG": "15",
+      "proteinG": "3"
+    },
+    "allergens": {
+      "contains": "Milk",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts, wheat, soy and eggs.",
+      "containsFlags": [
+        "Milk"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Soy",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "italianraspberrycheesecake",
+    "name": "Italian Raspberry Cheesecake",
+    "sourceName": "Italian Raspberry Cheesecake",
+    "category": "Ice Cream",
+    "productLine": "Super-Premium",
+    "description": "Smooth, creamy Vanilla ice cream, made with mascarpone in the base and finished with a sweet touch of raspberry swirl. Nonna would be proud.",
+    "imageUrl": "https://www.sbicecream.com/images/products/super-premium/14-italian-cheesecake.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-esc-italian-cheeseck-w-raspb-6534.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=super-premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup (104 g)",
+      "servingGrams": "104",
+      "calories": "250",
+      "totalFatG": "13.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "50",
+      "sodiumMg": "45",
+      "totalCarbsG": "0",
+      "fiberG": "0",
+      "totalSugarsG": "26",
+      "addedSugarsG": "22",
+      "proteinG": "3"
+    },
+    "allergens": {
+      "contains": "Milk",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts, wheat, soy and eggs.",
+      "containsFlags": [
+        "Milk"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Soy",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "loco-4coco",
+    "name": "Loco 4 Coco",
+    "sourceName": "Loco 4 Coco",
+    "category": "Ice Cream",
+    "productLine": "Super-Premium",
+    "description": "Coconut ice cream with coconut flakes",
+    "imageUrl": "https://www.sbicecream.com/images/products/super-premium/14-loco4coco.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-esc-loco-4-coco-6731.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=super-premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup (104 g)",
+      "servingGrams": "104",
+      "calories": "240",
+      "totalFatG": "15.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "40",
+      "sodiumMg": "55",
+      "totalCarbsG": "22",
+      "fiberG": "<1",
+      "totalSugarsG": "<1",
+      "addedSugarsG": "14",
+      "proteinG": "3"
+    },
+    "allergens": {
+      "contains": "Milk, Coconut",
+      "equipment": "Produced on equipment that also processes: peanuts, other tree nuts, wheat, soy and eggs.",
+      "containsFlags": [
+        "Milk"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Soy",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "mameymagic",
+    "name": "Mamey Magic",
+    "sourceName": "Mamey Magic",
+    "category": "Ice Cream",
+    "productLine": "Super-Premium",
+    "description": "Tropical mamey ice cream",
+    "imageUrl": "https://www.sbicecream.com/images/products/super-premium/14-mamey-magic.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bernardo-escp-mamey-magic-6777.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=super-premium",
+    "nutrition": {
+      "servingsPerContainer": "",
+      "servingSize": "100 g",
+      "servingGrams": "100",
+      "calories": "190",
+      "totalFatG": "9",
+      "saturatedFatG": "6",
+      "transFatG": "0",
+      "cholesterolMg": "30",
+      "sodiumMg": "35",
+      "totalCarbsG": "26",
+      "fiberG": "2",
+      "totalSugarsG": "22",
+      "addedSugarsG": "16",
+      "proteinG": "2"
+    },
+    "allergens": {
+      "contains": "MILK",
+      "equipment": "Made in a facility that processes",
+      "containsFlags": [
+        "Milk"
+      ],
+      "crossContactFlags": []
+    }
+  },
+  {
+    "id": "mangofiesta",
+    "name": "Mango Fiesta",
+    "sourceName": "Mango Fiesta",
+    "category": "Ice Cream",
+    "productLine": "Super-Premium",
+    "description": "Mouthwatering, fresh mango ice cream",
+    "imageUrl": "https://www.sbicecream.com/images/products/super-premium/14-mango-fiesta.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-esc-mango-fiesta-6732.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=super-premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup (104 g)",
+      "servingGrams": "104",
+      "calories": "210",
+      "totalFatG": "10.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "40",
+      "sodiumMg": "40",
+      "totalCarbsG": "28",
+      "fiberG": "<1",
+      "totalSugarsG": "<1",
+      "addedSugarsG": "17",
+      "proteinG": "3"
+    },
+    "allergens": {
+      "contains": "Milk",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts, wheat, soy and eggs.",
+      "containsFlags": [
+        "Milk"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Soy",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "newyorkcheesecake",
+    "name": "New York Cheesecake",
+    "sourceName": "New York Cheesecake",
+    "category": "Ice Cream",
+    "productLine": "Super-Premium",
+    "description": "Cheesecake ice cream with graham cracker crust pieces",
+    "imageUrl": "https://www.sbicecream.com/images/products/super-premium/14-ny-cc.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-esc-ny-cheesecake.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=super-premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup (104g)",
+      "servingGrams": "104",
+      "calories": "250",
+      "totalFatG": "14.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "55",
+      "sodiumMg": "85",
+      "totalCarbsG": "0",
+      "fiberG": "23",
+      "totalSugarsG": "23",
+      "addedSugarsG": "18",
+      "proteinG": "3"
+    },
+    "allergens": {
+      "contains": "Milk, Wheat, Soy",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts and eggs.",
+      "containsFlags": [
+        "Milk",
+        "Soy",
+        "Wheat"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "pinacoolada",
+    "name": "Pina Coolada",
+    "sourceName": "Pina Coolada",
+    "category": "Ice Cream",
+    "productLine": "Super-Premium",
+    "description": "Coconut ice cream with pineapple chunks",
+    "imageUrl": "https://www.sbicecream.com/images/products/super-premium/14-pina-coolada.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-pina-coolada-7671.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=super-premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup ( 85g )",
+      "servingGrams": "85",
+      "calories": "180",
+      "totalFatG": "8.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "30",
+      "sodiumMg": "95",
+      "totalCarbsG": "0",
+      "fiberG": "18",
+      "totalSugarsG": "18",
+      "addedSugarsG": "13",
+      "proteinG": "2"
+    },
+    "allergens": {
+      "contains": "Milk, Coconut",
+      "equipment": "Produced on equipment that also processes: peanuts, other tree nuts, wheat, soy and eggs.",
+      "containsFlags": [
+        "Milk"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Soy",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "pistachiowithnuts",
+    "name": "Pistachio With Nuts",
+    "sourceName": "Pistachio With Nuts",
+    "category": "Ice Cream",
+    "productLine": "Super-Premium",
+    "description": "Pistachio ice cream with almond pieces",
+    "imageUrl": "https://www.sbicecream.com/images/products/super-premium/14-pistachio-nuts.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-14p-pistachio-4924.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=super-premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup ( 95g )",
+      "servingGrams": "95",
+      "calories": "240",
+      "totalFatG": "17.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "50",
+      "sodiumMg": "60",
+      "totalCarbsG": "<1",
+      "fiberG": "<1",
+      "totalSugarsG": "17",
+      "addedSugarsG": "13",
+      "proteinG": "4"
+    },
+    "allergens": {
+      "contains": "Milk, Almonds",
+      "equipment": "Produced on equipment that also processes: peanuts, other tree nuts, wheat, soy and eggs.",
+      "containsFlags": [
+        "Milk",
+        "Tree Nuts"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Soy",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "quadruplechocolate",
+    "name": "Quadruple Chocolate",
+    "sourceName": "Quadruple Chocolate",
+    "category": "Ice Cream",
+    "productLine": "Super-Premium",
+    "description": "Chocolate ice cream mixed with chocolate chunks, soft brownie bites and a sticky sweet fudge swirl. A little something for the chocolate lover in everyone.",
+    "imageUrl": "https://www.sbicecream.com/images/products/super-premium/14-quadruple-chocolate.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-esc-quad-chocolate-7549.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=super-premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup (105 g)",
+      "servingGrams": "105",
+      "calories": "250",
+      "totalFatG": "16.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "40",
+      "sodiumMg": "45",
+      "totalCarbsG": "3",
+      "fiberG": "19",
+      "totalSugarsG": "19",
+      "addedSugarsG": "16",
+      "proteinG": "4"
+    },
+    "allergens": {
+      "contains": "Milk, Wheat, Soy",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts and eggs.",
+      "containsFlags": [
+        "Milk",
+        "Soy",
+        "Wheat"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "seasaltcaramelpretzel",
+    "name": "Sea Salt Caramel Pretzel",
+    "sourceName": "Sea Salt Caramel Pretzel",
+    "category": "Ice Cream",
+    "productLine": "Super-Premium",
+    "description": "Vanilla ice cream with pretzel pieces and caramel swirl",
+    "imageUrl": "https://www.sbicecream.com/images/products/super-premium/14-caramel-pretzel.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-escp-salted-car-pret.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=super-premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "213 Сир (104g)",
+      "servingGrams": "104",
+      "calories": "260",
+      "totalFatG": "14.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "50",
+      "sodiumMg": "180",
+      "totalCarbsG": "0",
+      "fiberG": "26",
+      "totalSugarsG": "26",
+      "addedSugarsG": "21",
+      "proteinG": "3"
+    },
+    "allergens": {
+      "contains": "Milk, Wheat, Soy",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts and eggs.",
+      "containsFlags": [
+        "Milk",
+        "Soy",
+        "Wheat"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "seasaltcarameltruffle",
+    "name": "Sea Salt Caramel Truffle",
+    "sourceName": "Sea Salt Caramel Truffle",
+    "category": "Ice Cream",
+    "productLine": "Super-Premium",
+    "description": "Vanilla ice cream with caramel truffles and caramel swirl",
+    "imageUrl": "https://www.sbicecream.com/images/products/super-premium/14-sea-salt-caramel-truffle.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-esc-sea-salt-caramel-truffle-7643.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=super-premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup (105 g)",
+      "servingGrams": "105",
+      "calories": "280",
+      "totalFatG": "15.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "50",
+      "sodiumMg": "160",
+      "totalCarbsG": "0",
+      "fiberG": "0",
+      "totalSugarsG": "28",
+      "addedSugarsG": "24",
+      "proteinG": "3"
+    },
+    "allergens": {
+      "contains": "Milk, Soy",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts, wheat and eggs.",
+      "containsFlags": [
+        "Milk",
+        "Soy"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "smoreswtoastedcoconut",
+    "name": "S'Mores with Toasted Coconut",
+    "sourceName": "S'Mores W. Toasted Coconut",
+    "category": "Ice Cream",
+    "productLine": "Super-Premium",
+    "description": "Vanilla ice cream with chocolate chunks, graham cracker crumbs & toasted coconut",
+    "imageUrl": "https://www.sbicecream.com/images/products/super-premium/14-smores.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-escp-classic-s-mores.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=super-premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup (104g)",
+      "servingGrams": "104",
+      "calories": "270",
+      "totalFatG": "14.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "45",
+      "sodiumMg": "65",
+      "totalCarbsG": "35",
+      "fiberG": "<1",
+      "totalSugarsG": "<1",
+      "addedSugarsG": "23",
+      "proteinG": "3"
+    },
+    "allergens": {
+      "contains": "Milk, Wheat, Soy",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts and eggs.",
+      "containsFlags": [
+        "Milk",
+        "Soy",
+        "Wheat"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "soverystrawberry",
+    "name": "So Very Strawberry",
+    "sourceName": "So Very Strawberry",
+    "category": "Ice Cream",
+    "productLine": "Super-Premium",
+    "description": "Strawberry ice cream with strawberry pieces and strawberry swirl",
+    "imageUrl": "https://www.sbicecream.com/images/products/super-premium/14-so-very-strawberry.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-esc-so-very-strawberry-7644.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=super-premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup (105 g)",
+      "servingGrams": "105",
+      "calories": "220",
+      "totalFatG": "11.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "45",
+      "sodiumMg": "40",
+      "totalCarbsG": "0",
+      "fiberG": "0",
+      "totalSugarsG": "25",
+      "addedSugarsG": "21",
+      "proteinG": "2"
+    },
+    "allergens": {
+      "contains": "Milk",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts, wheat, soy and eggs.",
+      "containsFlags": [
+        "Milk"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Soy",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "tahitianvanilla",
+    "name": "Tahitian Vanilla",
+    "sourceName": "Tahitian Vanilla",
+    "category": "Ice Cream",
+    "productLine": "Super-Premium",
+    "description": "Tahitian vanilla bean ice cream",
+    "imageUrl": "https://www.sbicecream.com/images/products/super-premium/14-tahitian-vanilla.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-esc-tahitian-vanilla-7550.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=super-premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup (105 g)",
+      "servingGrams": "105",
+      "calories": "240",
+      "totalFatG": "15.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "60",
+      "sodiumMg": "50",
+      "totalCarbsG": "0",
+      "fiberG": "20",
+      "totalSugarsG": "20",
+      "addedSugarsG": "16",
+      "proteinG": "3"
+    },
+    "allergens": {
+      "contains": "Milk",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts, wheat, soy and eggs.",
+      "containsFlags": [
+        "Milk"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Soy",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "tiramisu",
+    "name": "Tiramisu",
+    "sourceName": "Tiramisu",
+    "category": "Ice Cream",
+    "productLine": "Super-Premium",
+    "description": "Chocolate tiramisu ice cream with chocolate fudge swirl",
+    "imageUrl": "https://www.sbicecream.com/images/products/super-premium/14-tiramisu.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-esc-tiramisu-italian-6537.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=super-premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup (104 g)",
+      "servingGrams": "104",
+      "calories": "220",
+      "totalFatG": "13.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "50",
+      "sodiumMg": "45",
+      "totalCarbsG": "0",
+      "fiberG": "19",
+      "totalSugarsG": "19",
+      "addedSugarsG": "15",
+      "proteinG": "3"
+    },
+    "allergens": {
+      "contains": "Milk",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts, wheat, soy and eggs.",
+      "containsFlags": [
+        "Milk"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Soy",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "banana",
+    "name": "Banana",
+    "sourceName": "Banana",
+    "category": "Ice Cream",
+    "productLine": "Premium",
+    "description": "Creamy, bold banana ice cream",
+    "imageUrl": "https://www.sbicecream.com/images/products/premium/12-banana.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-12p-banana-5143.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup ( 95g )",
+      "servingGrams": "95",
+      "calories": "200",
+      "totalFatG": "11.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "45",
+      "sodiumMg": "105",
+      "totalCarbsG": "0",
+      "fiberG": "17",
+      "totalSugarsG": "17",
+      "addedSugarsG": "13",
+      "proteinG": "3"
+    },
+    "allergens": {
+      "contains": "Milk",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts, wheat, soy and eggs.",
+      "containsFlags": [
+        "Milk"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Soy",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "birthdaycake",
+    "name": "Birthday Cake",
+    "sourceName": "Birthday Cake",
+    "category": "Ice Cream",
+    "productLine": "Premium",
+    "description": "Birthday cake ice cream with sprinkles and blue swirl",
+    "imageUrl": "https://www.sbicecream.com/images/products/premium/12-birthday-cake.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-12p-birthday-cake-7120.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=premium",
+    "allergens": {
+      "contains": "Milk, Soy, Eggs, Wheat",
+      "equipment": "Produced on equipment that also processes: peanuts and tree nuts.",
+      "containsFlags": [
+        "Milk",
+        "Soy",
+        "Eggs",
+        "Wheat"
+      ],
+      "crossContactFlags": [
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "coconut",
+    "name": "Coconut",
+    "sourceName": "Coconut",
+    "category": "Ice Cream",
+    "productLine": "Premium",
+    "description": "Creamy, coconut ice cream with coconut flakes",
+    "imageUrl": "https://www.sbicecream.com/images/products/premium/12-coconut.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-12p-coconut-5136.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup (95g)",
+      "servingGrams": "95",
+      "calories": "210",
+      "totalFatG": "12.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "45",
+      "sodiumMg": "110",
+      "totalCarbsG": "0",
+      "fiberG": "18",
+      "totalSugarsG": "18",
+      "addedSugarsG": "14",
+      "proteinG": "3"
+    },
+    "allergens": {
+      "contains": "Milk, Coconut",
+      "equipment": "Produced on equipment that also processes: peanuts, other tree nuts, wheat, soy and eggs.",
+      "containsFlags": [
+        "Milk"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Soy",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "macadamianut",
+    "name": "Macadamia Nut",
+    "sourceName": "Macadamia Nut",
+    "category": "Ice Cream",
+    "productLine": "Premium",
+    "description": "Macadamia nut ice cream with nut pieces",
+    "imageUrl": "https://www.sbicecream.com/images/products/premium/12-macadamia-nut.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-12p-macadamia-nut-5138.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup ( 95g )",
+      "servingGrams": "95",
+      "calories": "200",
+      "totalFatG": "11.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "45",
+      "sodiumMg": "120",
+      "totalCarbsG": "0",
+      "fiberG": "19",
+      "totalSugarsG": "19",
+      "addedSugarsG": "14",
+      "proteinG": "2"
+    },
+    "allergens": {
+      "contains": "Milk, Macadamia, Soy",
+      "equipment": "Produced on equipment that also processes: peanuts, other tree nuts, wheat and eggs.",
+      "containsFlags": [
+        "Milk",
+        "Soy",
+        "Tree Nuts"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "mintchocolatechunk",
+    "name": "Mint Chocolate Chunk",
+    "sourceName": "Mint Chocolate Chunk",
+    "category": "Ice Cream",
+    "productLine": "Premium",
+    "description": "Mint ice cream with chocolate chips",
+    "imageUrl": "https://www.sbicecream.com/images/products/premium/12-mint-chocolate.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-12p-mint-choc-chip-5139.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup (95g)",
+      "servingGrams": "95",
+      "calories": "220",
+      "totalFatG": "13.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "45",
+      "sodiumMg": "100",
+      "totalCarbsG": "<1",
+      "fiberG": "19",
+      "totalSugarsG": "19",
+      "addedSugarsG": "13",
+      "proteinG": "3"
+    },
+    "allergens": {
+      "contains": "Milk, Soy",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts, wheat and eggs.",
+      "containsFlags": [
+        "Milk",
+        "Soy"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "pistachio",
+    "name": "Pistachio",
+    "sourceName": "Pistachio",
+    "category": "Ice Cream",
+    "productLine": "Premium",
+    "description": "Pistachio ice cream with almonds",
+    "imageUrl": "https://www.sbicecream.com/images/products/premium/12-pistachio-nuts.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-12p-pistachio-w-nuts-5140.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup (95g)",
+      "servingGrams": "95",
+      "calories": "220",
+      "totalFatG": "13.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "45",
+      "sodiumMg": "110",
+      "totalCarbsG": "22",
+      "fiberG": "<1",
+      "totalSugarsG": "<1",
+      "addedSugarsG": "12",
+      "proteinG": "3"
+    },
+    "allergens": {
+      "contains": "Milk, Almonds",
+      "equipment": "Produced on equipment that also processes: peanuts, other tree nuts, wheat, soy and eggs.",
+      "containsFlags": [
+        "Milk",
+        "Tree Nuts"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Soy",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "pralinesandcream",
+    "name": "Pralines & Cream",
+    "sourceName": "Pralines & Cream",
+    "category": "Ice Cream",
+    "productLine": "Premium",
+    "description": "Vanilla ice cream with pralines and caramel swirl",
+    "imageUrl": "https://www.sbicecream.com/images/products/premium/12-pralines-cream.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-12p-praline-pecan-6328.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=premium",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup (95g)",
+      "servingGrams": "95",
+      "calories": "230",
+      "totalFatG": "12.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "40",
+      "sodiumMg": "125",
+      "totalCarbsG": "0",
+      "fiberG": "22",
+      "totalSugarsG": "22",
+      "addedSugarsG": "18",
+      "proteinG": "3"
+    },
+    "allergens": {
+      "contains": "Milk, Pecans",
+      "equipment": "Produced on equipment that also processes: peanuts, other tree nuts, wheat, soy and eggs.",
+      "containsFlags": [
+        "Milk",
+        "Tree Nuts"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Soy",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "rumraisin",
+    "name": "Rum Raisin",
+    "sourceName": "Rum Raisin",
+    "category": "Ice Cream",
+    "productLine": "Premium",
+    "description": "Rum ice cream with raisins",
+    "imageUrl": "https://www.sbicecream.com/images/products/premium/12-rum-raisin.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-12p-rum-raisin-5142.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=premium",
+    "nutrition": {
+      "servingsPerContainer": "12.0",
+      "servingSize": "2/3 Cup ( 95g)",
+      "servingGrams": "95",
+      "calories": "200",
+      "totalFatG": "10.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "40",
+      "sodiumMg": "90",
+      "totalCarbsG": "0",
+      "fiberG": "21",
+      "totalSugarsG": "21",
+      "addedSugarsG": "14",
+      "proteinG": "2"
+    },
+    "allergens": {
+      "contains": "Milk",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts, wheat, soy and eggs.",
+      "containsFlags": [
+        "Milk"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Soy",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "bubblegum",
+    "name": "Bubble Gum",
+    "sourceName": "Bubble Gum",
+    "category": "Ice Cream",
+    "productLine": "Kid-Friendly",
+    "description": "Bubble gum ice cream with candy pieces",
+    "imageUrl": "https://www.sbicecream.com/images/products/kids/10-bubble-gum.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-bubble-gum-6900.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=kids",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup ( 85g)",
+      "servingGrams": "85",
+      "calories": "170",
+      "totalFatG": "8.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "35",
+      "sodiumMg": "100",
+      "totalCarbsG": "0",
+      "fiberG": "18",
+      "totalSugarsG": "18",
+      "addedSugarsG": "13",
+      "proteinG": "2"
+    },
+    "allergens": {
+      "contains": "Milk, Soy",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts, wheat and eggs.",
+      "containsFlags": [
+        "Milk",
+        "Soy"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "cakebatter",
+    "name": "Cake Batter",
+    "sourceName": "Cake Batter",
+    "category": "Ice Cream",
+    "productLine": "Kid-Friendly",
+    "description": "Vanilla cake batter ice cream, marbled with chocolate cake batter",
+    "imageUrl": "https://www.sbicecream.com/images/products/kids/10-cake-batter.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-cake-batter-7720.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=kids",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup ( 85g)",
+      "servingGrams": "85",
+      "calories": "210",
+      "totalFatG": "11.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "30",
+      "sodiumMg": "120",
+      "totalCarbsG": "26",
+      "fiberG": "<1",
+      "totalSugarsG": "<1",
+      "addedSugarsG": "16",
+      "proteinG": "3"
+    },
+    "allergens": {
+      "contains": "Milk, Peanuts, Soy, Wheat, Eggs",
+      "equipment": "Produced on equipment that also processes: tree nuts",
+      "containsFlags": [
+        "Milk",
+        "Soy",
+        "Eggs",
+        "Wheat",
+        "Peanuts"
+      ],
+      "crossContactFlags": [
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "cottoncandy",
+    "name": "Cotton Candy",
+    "sourceName": "Cotton Candy",
+    "category": "Ice Cream",
+    "productLine": "Kid-Friendly",
+    "description": "Cotton candy ice cream with two-tone swirl",
+    "imageUrl": "https://www.sbicecream.com/images/products/kids/10-cotton-candy.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-cotton-candy-6898.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=kids",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup ( 85g)",
+      "servingGrams": "85",
+      "calories": "170",
+      "totalFatG": "8.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "30",
+      "sodiumMg": "95",
+      "totalCarbsG": "0",
+      "fiberG": "17",
+      "totalSugarsG": "17",
+      "addedSugarsG": "12",
+      "proteinG": "2"
+    },
+    "allergens": {
+      "contains": "Milk",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts, wheat, soy and eggs.",
+      "containsFlags": [
+        "Milk"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Soy",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "dietchocolateffsf",
+    "name": "Diet Chocolate (FF/SF)",
+    "sourceName": "Diet Chocolate (Ff/Sf)",
+    "category": "No Sugar Added",
+    "productLine": "Diet/NSA",
+    "description": "Fat Free / NSA chocolate ice cream",
+    "imageUrl": "https://www.sbicecream.com/images/products/diet/diet-chocolate.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-ff-nsa-chocolate-3849.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=diet",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup ( 85g )",
+      "servingGrams": "85",
+      "calories": "100",
+      "totalFatG": "0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "<5",
+      "sodiumMg": "70",
+      "totalCarbsG": "5",
+      "fiberG": "6",
+      "totalSugarsG": "6",
+      "addedSugarsG": "0",
+      "proteinG": "5"
+    },
+    "allergens": {
+      "contains": "Milk",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts, wheat, soy and eggs.",
+      "containsFlags": [
+        "Milk"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Soy",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "dietstrawberryffsf",
+    "name": "Diet Strawberry (FF/SF)",
+    "sourceName": "Diet Strawberry (Ff/Sf)",
+    "category": "No Sugar Added",
+    "productLine": "Diet/NSA",
+    "description": "Fat Free / NSA strawberry ice cream with strawberry chunks",
+    "imageUrl": "https://www.sbicecream.com/images/products/diet/diet-strawberry.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-ff-nsa-strawberry-3848.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=diet",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup ( 85g)",
+      "servingGrams": "85",
+      "calories": "100",
+      "totalFatG": "0.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "<5",
+      "sodiumMg": "70",
+      "totalCarbsG": "4",
+      "fiberG": "7",
+      "totalSugarsG": "7",
+      "addedSugarsG": "0",
+      "proteinG": "4"
+    },
+    "allergens": {
+      "contains": "Milk",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts, wheat, soy and eggs.",
+      "containsFlags": [
+        "Milk"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Soy",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "dietvanillaffsf",
+    "name": "Diet Vanilla (FF/SF)",
+    "sourceName": "Diet Vanilla (Ff/Sf)",
+    "category": "No Sugar Added",
+    "productLine": "Diet/NSA",
+    "description": "Fat Free / NSA vanilla ice cream",
+    "imageUrl": "https://www.sbicecream.com/images/products/diet/diet-vanilla.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-ff-nsa-vanilla-3847.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=diet",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup ( 85g)",
+      "servingGrams": "85",
+      "calories": "100",
+      "totalFatG": "0.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "<5",
+      "sodiumMg": "75",
+      "totalCarbsG": "4",
+      "fiberG": "7",
+      "totalSugarsG": "7",
+      "addedSugarsG": "0",
+      "proteinG": "4"
+    },
+    "allergens": {
+      "contains": "Milk",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts, wheat, soy and eggs.",
+      "containsFlags": [
+        "Milk"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Soy",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "chocolatechipnsa",
+    "name": "Chocolate Chip NSA",
+    "sourceName": "Chocolate Chip Nsa",
+    "category": "No Sugar Added",
+    "productLine": "Diet/NSA",
+    "description": "Chocolate chip ice cream with no sugar added",
+    "imageUrl": "https://www.sbicecream.com/images/products/diet/diet-nsa-chocolate-chip.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-nsa-chocolate-chip-4566.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=diet",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup ( 85g )",
+      "servingGrams": "85",
+      "calories": "140",
+      "totalFatG": "6.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "20",
+      "sodiumMg": "75",
+      "totalCarbsG": "0",
+      "fiberG": "7",
+      "totalSugarsG": "7",
+      "addedSugarsG": "0",
+      "proteinG": "4"
+    },
+    "allergens": {
+      "contains": "Milk, Soy",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts, wheat and eggs.",
+      "containsFlags": [
+        "Milk",
+        "Soy"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "coffeefudgensa",
+    "name": "Coffee Fudge NSA",
+    "sourceName": "Coffee Fudge Nsa",
+    "category": "No Sugar Added",
+    "productLine": "Diet/NSA",
+    "description": "Coffee ice cream with a fudge swirl and no sugar added",
+    "imageUrl": "https://www.sbicecream.com/images/products/diet/diet-nsa-coffee-fudge.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-nsa-coffee-fudge-3290.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=diet",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup ( 85g )",
+      "servingGrams": "85",
+      "calories": "130",
+      "totalFatG": "4.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "15",
+      "sodiumMg": "85",
+      "totalCarbsG": "22",
+      "fiberG": "<1",
+      "totalSugarsG": "<1",
+      "addedSugarsG": "0",
+      "proteinG": "4"
+    },
+    "allergens": {
+      "contains": "Milk",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts, wheat, soy and eggs.",
+      "containsFlags": [
+        "Milk"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Soy",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "mintchocolatensa",
+    "name": "Mint Chocolate NSA",
+    "sourceName": "Mint Chocolate Nsa",
+    "category": "No Sugar Added",
+    "productLine": "Diet/NSA",
+    "description": "Mint ice cream with chocolate chunks and no sugar added",
+    "imageUrl": "https://www.sbicecream.com/images/products/diet/diet-nsa-mint-chocolate.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-nsa-mint-chocolate-chip-4565.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=diet",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup ( 85g)",
+      "servingGrams": "85",
+      "calories": "140",
+      "totalFatG": "6.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "20",
+      "sodiumMg": "75",
+      "totalCarbsG": "0",
+      "fiberG": "7",
+      "totalSugarsG": "7",
+      "addedSugarsG": "0",
+      "proteinG": "4"
+    },
+    "allergens": {
+      "contains": "Milk, Soy",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts, wheat and eggs.",
+      "containsFlags": [
+        "Milk",
+        "Soy"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "neapolitannsa",
+    "name": "Neapolitan NSA",
+    "sourceName": "Neapolitan Nsa",
+    "category": "No Sugar Added",
+    "productLine": "Diet/NSA",
+    "description": "Tri-color strawberry, vanilla and chocolate ice cream with no sugar added",
+    "imageUrl": "https://www.sbicecream.com/images/products/diet/diet-nsa-neapolitan.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-nsa-neapolitan-3377.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=diet",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup ( 85g )",
+      "servingGrams": "85",
+      "calories": "120",
+      "totalFatG": "4.5",
+      "saturatedFatG": "3",
+      "transFatG": "0",
+      "cholesterolMg": "20",
+      "sodiumMg": "80",
+      "totalCarbsG": "21",
+      "fiberG": "<1",
+      "totalSugarsG": "<1",
+      "addedSugarsG": "0",
+      "proteinG": "4"
+    },
+    "allergens": {
+      "contains": "Milk",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts, wheat, soy and eggs.",
+      "containsFlags": [
+        "Milk"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Soy",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  },
+  {
+    "id": "triplechocolatensa",
+    "name": "Triple Chocolate NSA",
+    "sourceName": "Triple Chocolate Nsa",
+    "category": "No Sugar Added",
+    "productLine": "Diet/NSA",
+    "description": "Chocolate ice cream with brownie pieces and chocolate swirl and no sugar added",
+    "imageUrl": "https://www.sbicecream.com/images/products/diet/diet-nsa-triple-chocolate.jpg",
+    "nutritionSource": "San Bernardo Ice Cream",
+    "nutritionSourceUrl": "https://www.sbicecream.com/documents/nutrition/san-bern-nsa-triple-chocolate-5389.pdf",
+    "productSourceUrl": "https://www.sbicecream.com/products.php?category=diet",
+    "nutrition": {
+      "servingsPerContainer": "72.0",
+      "servingSize": "2/3 Cup ( 85g)",
+      "servingGrams": "85",
+      "calories": "140",
+      "totalFatG": "6.0",
+      "saturatedFatG": "0",
+      "transFatG": "0",
+      "cholesterolMg": "15",
+      "sodiumMg": "80",
+      "totalCarbsG": "2",
+      "fiberG": "5",
+      "totalSugarsG": "5",
+      "addedSugarsG": "0",
+      "proteinG": "4"
+    },
+    "allergens": {
+      "contains": "Milk, Soy",
+      "equipment": "Produced on equipment that also processes: peanuts, tree nuts, wheat and eggs.",
+      "containsFlags": [
+        "Milk",
+        "Soy"
+      ],
+      "crossContactFlags": [
+        "Eggs",
+        "Wheat",
+        "Peanuts",
+        "Tree Nuts"
+      ]
+    }
+  }
+
   ]
 };
 
@@ -2758,7 +4618,6 @@ window.SWEET_ESCAPE_FLAVORS.flavors.push(
     ["coffee-almond-fudge", "Coffee Almond Fudge", "220", "13", "23", "22", "4", "Almonds, Egg, Milk", ["Tree Nuts", "Eggs", "Milk"]],
     ["oregon-dark-cherry", "Oregon Dark Cherry", "210", "12", "22", "22", "3", "Egg, Milk", ["Eggs", "Milk"]],
     ["peaches-and-cream", "Peaches & Cream", "200", "10", "26", "22", "3", "Egg, Milk", ["Eggs", "Milk"]],
-    ["rocky-road", "Rocky Road", "230", "13", "24", "22", "4", "Almonds, Egg, Milk", ["Tree Nuts", "Eggs", "Milk"]],
     ["chocolate-peanut-butter", "Chocolate Peanut Butter", "250", "16", "23", "21", "5", "Egg, Milk, Peanut", ["Eggs", "Milk", "Peanuts"]],
     ["white-chocolate-raspberry", "White Chocolate Raspberry", "220", "12", "26", "25", "3", "Egg, Milk", ["Eggs", "Milk"]],
     ["marionberry-pie", "Marionberry Pie", "210", "12", "24", "22", "3", "Egg, Milk, Wheat", ["Eggs", "Milk", "Wheat"]],

@@ -127,7 +127,7 @@
       const matchesQuery = !state.query || haystack.includes(state.query);
       const matchesCategory = state.category === "All" || flavor.category === state.category;
       const matchesAllergen =
-        state.allergen === "All" || flavor.allergens.containsFlags.includes(state.allergen);
+        state.allergen === "All" || (flavor.allergens?.containsFlags || []).includes(state.allergen);
       return matchesQuery && matchesCategory && matchesAllergen;
     });
 
@@ -160,22 +160,29 @@
   }
 
   function cardTemplate(flavor, index) {
-    const nutrition = flavor.nutrition;
-    const contains = escapeHTML(flavor.allergens.contains);
-    const equipment = escapeHTML(flavor.allergens.equipment || "Not listed");
-    const sourceDetails = [`Serving: ${nutrition.servingSize}`];
+    const nutrition = flavor.nutrition || {};
+    const allergens = flavor.allergens || {};
+    const contains = escapeHTML(allergens.contains || "See manufacturer label");
+    const equipment = escapeHTML(allergens.equipment || "See manufacturer label");
+    const sourceDetails = [nutrition.servingSize ? `Serving: ${nutrition.servingSize}` : flavor.productLine].filter(Boolean);
     if (nutrition.sodiumMg) sourceDetails.push(`Sodium ${nutrition.sodiumMg}mg`);
     if (nutrition.addedSugarsG) sourceDetails.push(`Added sugars ${nutrition.addedSugarsG}g`);
     const pagePill = flavor.pdfPage
       ? `<span class="page-pill">PDF p. ${escapeHTML(flavor.pdfPage)}</span>`
       : "";
     const scoopExtension = pngScoopIds.has(flavor.id) ? "png" : "webp";
+    const defaultImage = flavor.imageUrl || `assets/scoops/responsive/${flavor.id}-300.${scoopExtension}`;
+    const defaultSrcset = flavor.imageUrl ? "" : `assets/scoops/responsive/${flavor.id}-300.${scoopExtension} 300w, assets/scoops/responsive/${flavor.id}-600.${scoopExtension} 600w`;
+    const nutritionGrid = nutrition.calories && nutrition.totalFatG && nutrition.totalCarbsG && nutrition.totalSugarsG && nutrition.proteinG
+      ? `<div class="nutrition-grid" aria-label="Nutrition facts">${nutritionItem(nutrition.calories, "Calories")}${nutritionItem(`${nutrition.totalFatG}g`, "Fat")}${nutritionItem(`${nutrition.totalCarbsG}g`, "Carbs")}${nutritionItem(`${nutrition.totalSugarsG}g`, "Sugars")}${nutritionItem(`${nutrition.proteinG}g`, "Protein")}</div>`
+      : "";
     return `
       <div class="scoop-panel" data-flavor-id="${escapeHTML(flavor.id)}">
         <img
           class="scoop-image"
-          src="assets/scoops/responsive/${escapeHTML(flavor.id)}-300.${scoopExtension}"
-          srcset="assets/scoops/responsive/${escapeHTML(flavor.id)}-300.${scoopExtension} 300w, assets/scoops/responsive/${escapeHTML(flavor.id)}-600.${scoopExtension} 600w"
+          src="${escapeHTML(defaultImage)}"
+          data-default-src="${escapeHTML(defaultImage)}"
+          ${defaultSrcset ? `srcset="${escapeHTML(defaultSrcset)}"` : ""}
           sizes="(max-width: 720px) 78vw, 38vw"
           width="600"
           height="600"
@@ -210,13 +217,7 @@
           ${pagePill}
         </div>
         <h3><a class="product-name-link" href="/scoops/${encodeURIComponent(flavor.id)}/">${escapeHTML(flavor.name)}</a></h3>
-        <div class="nutrition-grid" aria-label="Nutrition facts">
-          ${nutritionItem(nutrition.calories, "Calories")}
-          ${nutritionItem(`${nutrition.totalFatG}g`, "Fat")}
-          ${nutritionItem(`${nutrition.totalCarbsG}g`, "Carbs")}
-          ${nutritionItem(`${nutrition.totalSugarsG}g`, "Sugars")}
-          ${nutritionItem(`${nutrition.proteinG}g`, "Protein")}
-        </div>
+        ${nutritionGrid}
         <div class="allergen-layout">
           <div class="allergen-box">
             <strong>Contains</strong>
@@ -228,6 +229,7 @@
           </div>
         </div>
         <p class="source-line">${escapeHTML(sourceDetails.join(" | "))}</p>
+        ${flavor.nutritionSourceUrl ? `<p class="source-line">${escapeHTML(flavor.nutritionSource || "Manufacturer")}: <a href="${escapeHTML(flavor.nutritionSourceUrl)}" target="_blank" rel="noopener noreferrer">Official nutrition label (PDF)</a></p>` : ""}
         <a class="item-page-link" href="/scoops/${encodeURIComponent(flavor.id)}/">View ${escapeHTML(flavor.name)} page <span aria-hidden="true">→</span></a>
       </div>
     `;
@@ -321,8 +323,10 @@
       image.removeAttribute("sizes");
     } else {
       const extension = pngScoopIds.has(flavorId) ? "png" : "webp";
-      image.src = `assets/scoops/responsive/${flavorId}-300.${extension}`;
-      image.srcset = `assets/scoops/responsive/${flavorId}-300.${extension} 300w, assets/scoops/responsive/${flavorId}-600.${extension} 600w`;
+      image.src = image.dataset.defaultSrc || `assets/scoops/responsive/${flavorId}-300.${extension}`;
+      if (!image.dataset.defaultSrc || image.dataset.defaultSrc.startsWith("assets/")) {
+        image.srcset = `assets/scoops/responsive/${flavorId}-300.${extension} 300w, assets/scoops/responsive/${flavorId}-600.${extension} 600w`;
+      } else image.removeAttribute("srcset");
       image.sizes = "(max-width: 720px) 78vw, 38vw";
     }
     card.classList.toggle("has-custom-image", Boolean(customUrl));

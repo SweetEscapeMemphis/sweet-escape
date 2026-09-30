@@ -6,7 +6,7 @@ import vm from "node:vm";
 
 const root = path.resolve(import.meta.dirname, "..");
 const origin = "https://www.sweetescapememphis.com";
-const updated = "2026-09-23";
+const updated = "2026-09-30";
 
 function load(file) {
   const context = { window: {} };
@@ -92,6 +92,7 @@ const groups = [
     back: "/flavors.html#flavors",
     items: scoopPayload.flavors,
     image(item) {
+      if (item.imageUrl) return { url: item.imageUrl, width: 600, height: 600 };
       const extension = pngScoops.has(item.id) ? "png" : "webp";
       return { path: `assets/scoops/responsive/${item.id}-600.${extension}`, width: 600, height: 600 };
     },
@@ -152,8 +153,8 @@ console.log(`Generated ${urls.length} standalone item pages and updated sitemap.
 
 function renderPage(group, item, previous, next) {
   const image = group.image(item);
-  const relativeImage = `/${image.path}`;
-  const imageUrl = `${origin}${relativeImage}`;
+  const relativeImage = image.url || `/${image.path}`;
+  const imageUrl = image.url || `${origin}${relativeImage}`;
   const canonical = `${origin}/${group.directory}/${encodeURIComponent(item.id)}/`;
   const description = group.description(item);
   const detailedTitle = `${item.name} ${item.category} | Sweet Escape Memphis`;
@@ -248,12 +249,12 @@ function scoopDetails(item) {
     [unit(nutrition.totalSugarsG, "g"), "Total sugars"],
     [unit(nutrition.proteinG, "g"), "Protein"],
   ].filter(([value]) => value);
-  const pdfLink = item.pdfPage
+  const pdfLink = item.nutritionSourceUrl || (item.pdfPage
     ? `/assets/sweet-escape-nutrition-facts.pdf#page=${item.pdfPage}`
-    : "/assets/sweet-escape-nutrition-facts.pdf";
+    : "/assets/sweet-escape-nutrition-facts.pdf");
   return `
-          <section class="item-facts" aria-label="Published nutrition summary">${facts.map(([value, label]) => fact(value, label)).join("")}</section>
-          <section class="item-section"><h2>Serving and product details</h2><p>Published serving size: ${escape(nutrition.servingSize || "See current label")}.</p><p><a href="${pdfLink}">Open the published nutrition source${item.pdfPage ? ` on page ${escape(item.pdfPage)}` : ""}</a>.</p></section>
+          ${facts.length ? `<section class="item-facts" aria-label="Published nutrition summary">${facts.map(([value, label]) => fact(value, label)).join("")}</section>` : ""}
+          <section class="item-section"><h2>Serving and product details</h2><p>${item.productLine ? `${escape(item.productLine)} product line` : ""}${item.productLine && nutrition.servingSize ? " · " : ""}${nutrition.servingSize ? `Serving size: ${escape(nutrition.servingSize)}` : ""}</p><p><a href="${escape(pdfLink)}"${item.nutritionSourceUrl ? ' target="_blank" rel="noopener noreferrer"' : ""}>Open the ${item.nutritionSourceUrl ? "manufacturer" : "published"} nutrition label${item.pdfPage ? ` on page ${escape(item.pdfPage)}` : ""}${item.nutritionSourceUrl ? " (PDF)" : ""}</a>.</p></section>
           <section class="item-section item-callout"><h2>Allergen information</h2><p><strong>Contains:</strong> ${escape(item.allergens?.contains || "Not listed")}</p><p><strong>Shared equipment note:</strong> ${escape(item.allergens?.equipment || "Not listed")}</p><p>Recipes and labels can change. Ask the shop to verify the current container label before ordering when an allergy matters.</p></section>`;
 }
 
@@ -313,8 +314,9 @@ function footer() {
 function updateSitemap(itemUrls) {
   const file = path.join(root, "sitemap.xml");
   let sitemap = fs.readFileSync(file, "utf8");
+  const oldDates = new Map([...sitemap.matchAll(/<url>\s*<loc>(.*?)<\/loc>\s*<lastmod>(.*?)<\/lastmod>/g)].map((match) => [match[1], match[2]]));
   sitemap = sitemap.replace(/\s*<url>\s*<loc>https:\/\/www\.sweetescapememphis\.com\/(?:scoops|yogurt|gelato|specialties)\/[^<]+<\/loc>[\s\S]*?<\/url>/g, "");
-  const entries = itemUrls.map((url) => `  <url><loc>${url}</loc><lastmod>${updated}</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>`).join("\n");
+  const entries = itemUrls.map((url) => `  <url><loc>${url}</loc><lastmod>${oldDates.get(url) || updated}</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>`).join("\n");
   sitemap = sitemap.replace("</urlset>", `${entries}\n</urlset>`);
   fs.writeFileSync(file, sitemap);
 }
