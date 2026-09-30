@@ -58,7 +58,7 @@
     if (!filtered.length) {
       const empty = document.createElement("p");
       empty.className = "gelato-empty";
-      empty.textContent = "No in-stock gelato flavors match those filters.";
+      empty.textContent = "No gelato catalog entries match those filters.";
       grid.append(empty);
       return;
     }

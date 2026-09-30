@@ -4,7 +4,7 @@ Owner request: revise every existing blog to approximately 1,500 words of origin
 
 ## Progress
 
-49 articles inventoried. Twenty-six rewritten across sixteen batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 19 shorter articles remain to rewrite. This project is **not complete**.
+49 articles inventoried. Twenty-seven rewritten across seventeen batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 18 shorter articles remain to rewrite. This project is **not complete**.
 
 Word counts below use the article element, including headings, dates, and CTA. Target 1,400–1,600; repository validation ceiling 1,700. Update this tracker after each verified batch. A qualifying count is not by itself an editorial quality review.
 
@@ -31,7 +31,7 @@ Word counts below use the article element, including headings, dates, and CTA. T
 | [frozen-yogurt-catalog-filters.html](blog/frozen-yogurt-catalog-filters.html) | 1575 | Rewritten 2026-09-30 |
 | [frozen-yogurt-sorbet-options.html](blog/frozen-yogurt-sorbet-options.html) | 1590 | Rewritten 2026-09-30 |
 | [fruit-flavor-menu-guide.html](blog/fruit-flavor-menu-guide.html) | 1492 | Rewritten 2026-09-29 |
-| [gelato-catalog-filters.html](blog/gelato-catalog-filters.html) | 507 | Rewrite pending |
+| [gelato-catalog-filters.html](blog/gelato-catalog-filters.html) | 1593 | Rewritten 2026-09-30 |
 | [gelato-vs-ice-cream-vs-froyo.html](blog/gelato-vs-ice-cream-vs-froyo.html) | 1444 | Rewritten 2026-09-29 |
 | [groups-and-celebrations.html](blog/groups-and-celebrations.html) | 1510 | Rewritten 2026-09-29 |
 | [ice-cream-nachos-memphis.html](blog/ice-cream-nachos-memphis.html) | 1566 | Rewritten 2026-09-30 |
@@ -130,3 +130,7 @@ The sorbet guide now covers all four current Sorbet-category entries in the yogu
 ## Sixteenth-batch scope and evidence
 
 The live-menu guide now covers all four actual stock tabs, the current timestamp, summary counts, searchable fields, item links, and how availability differs from product details. Verified against `stock.html`, `stock-page.js`, and `stock-store.js`; no static inventory list is presented as current.
+
+## Seventeenth-batch scope and evidence
+
+The gelato catalog guide documents the actual search fields, Gelato/Sorbetto/Vegan categories, five known-allergen filter options, and product-card limitations. Product examples are verified against `data/gelato-flavors.js`. The empty-result message was corrected because this page filters the product catalog, not live stock; the script asset version was updated.
