@@ -4,7 +4,7 @@ Owner request: revise every existing blog to approximately 1,500 words of origin
 
 ## Progress
 
-49 articles inventoried. Twenty-one rewritten across eleven batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 24 shorter articles remain to rewrite. This project is **not complete**.
+49 articles inventoried. Twenty-two rewritten across twelve batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 23 shorter articles remain to rewrite. This project is **not complete**.
 
 Word counts below use the article element, including headings, dates, and CTA. Target 1,400–1,600; repository validation ceiling 1,700. Update this tracker after each verified batch. A qualifying count is not by itself an editorial quality review.
 
@@ -42,7 +42,7 @@ Word counts below use the article element, including headings, dates, and CTA. T
 | [nutrition-allergen-guide.html](blog/nutrition-allergen-guide.html) | 1447 | Rewritten 2026-09-29 |
 | [pumpkin-pie-frozen-yogurt-memphis.html](blog/pumpkin-pie-frozen-yogurt-memphis.html) | 1484 | Reviewed 2026-09-29; retained |
 | [rainbow-sherbet-guide.html](blog/rainbow-sherbet-guide.html) | 1578 | Rewritten 2026-09-30 |
-| [scoop-flavor-filters-guide.html](blog/scoop-flavor-filters-guide.html) | 507 | Rewrite pending |
+| [scoop-flavor-filters-guide.html](blog/scoop-flavor-filters-guide.html) | 1596 | Rewritten 2026-09-30 |
 | [september-19-live-menu-update.html](blog/september-19-live-menu-update.html) | 508 | Rewrite pending |
 | [september-frozen-yogurt-flavors.html](blog/september-frozen-yogurt-flavors.html) | 517 | Rewrite pending |
 | [september-gelato-menu-update.html](blog/september-gelato-menu-update.html) | 512 | Rewrite pending |
@@ -110,3 +110,7 @@ The nut-named gelato guide was rebuilt around the exact per-product allergen and
 ## Eleventh-batch scope and evidence
 
 The Rainbow Sherbet guide now compares Sweet Escape's separate Rainbow and Orange Sherbet catalog records on their common published serving basis. Nutrition and allergen details are attributed to the source date in the repository data (June 18, 2019); the copy asks readers to check current packaging rather than treating those archived values as a current formulation. Claims verified against `data/flavors.js` and the linked PDF pages 51–52. FDA label references: https://www.fda.gov/food/nutrition-facts-label/serving-size-nutrition-facts-label and https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label .
+
+## Twelfth-batch scope and evidence
+
+The scoop-filter article now documents actual search fields, category options, supported category query strings, the declared-allergen selector’s scope, and how the filters combine. It calls out that the count is the loaded catalog total and that the empty-state message is not a live-stock signal. Verified against `flavors.html`, `script.js`, and `data/flavors.js`; allergen and stock cautions retained.
