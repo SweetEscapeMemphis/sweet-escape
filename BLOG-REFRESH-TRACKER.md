@@ -4,7 +4,7 @@ Owner request: revise every existing blog to approximately 1,500 words of origin
 
 ## Progress
 
-49 articles inventoried. Fourteen rewritten across four batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 31 shorter articles remain to rewrite. This project is **not complete**.
+49 articles inventoried. Fifteen rewritten across five batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 30 shorter articles remain to rewrite. This project is **not complete**.
 
 Word counts below use the article element, including headings, dates, and CTA. Target 1,400–1,600; repository validation ceiling 1,700. Update this tracker after each verified batch. A qualifying count is not by itself an editorial quality review.
 
@@ -25,7 +25,7 @@ Word counts below use the article element, including headings, dates, and CTA. T
 | [cookie-monster-vs-cookies-n-cream-froyo.html](blog/cookie-monster-vs-cookies-n-cream-froyo.html) | 1457 | Reviewed 2026-09-29; retained |
 | [current-gelato-sorbetto-flavors.html](blog/current-gelato-sorbetto-flavors.html) | 512 | Rewrite pending |
 | [current-ice-cream-flavors-september.html](blog/current-ice-cream-flavors-september.html) | 537 | Rewrite pending |
-| [dubai-dream-dessert-guide.html](blog/dubai-dream-dessert-guide.html) | 506 | Rewrite pending |
+| [dubai-dream-dessert-guide.html](blog/dubai-dream-dessert-guide.html) | 1457 | Rewritten 2026-09-30 |
 | [espresso-frozen-yogurt-memphis.html](blog/espresso-frozen-yogurt-memphis.html) | 1498 | Reviewed 2026-09-29; retained |
 | [first-timers-guide.html](blog/first-timers-guide.html) | 1434 | Rewritten 2026-09-29 |
 | [frozen-yogurt-catalog-filters.html](blog/frozen-yogurt-catalog-filters.html) | 508 | Rewrite pending |
@@ -82,3 +82,7 @@ Source: repository scoop/yogurt/gelato records and specialties descriptions. FDA
 ## Fourth-batch scope and evidence
 
 Three product and format guides: Brownie Base, self-serve frozen yogurt cup planning, and the Cookie Dough Base/Cookie Ice Cream Sandwich comparison. Claims verified against current specialties descriptions, catalogs, and live stock source. Component ingredient limitations retained; no prices or substitutions inferred.
+
+## Fifth-batch scope and evidence
+
+Dubai Dream guide expanded using the specialty’s verified description (two chosen scoops layered with Dubai chocolate filling, pistachio cream, and crisp kataifi). The article distinguishes the stable format from changing scoop availability, compares the published structures of other specialties, and preserves the requirement to verify current labels and every component for dietary questions. No recipe, flavor pairing, or allergy-safety claim inferred.
