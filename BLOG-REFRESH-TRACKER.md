@@ -4,7 +4,7 @@ Owner request: revise every existing blog to approximately 1,500 words of origin
 
 ## Progress
 
-49 articles inventoried. Seventeen rewritten across seven batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 28 shorter articles remain to rewrite. This project is **not complete**.
+49 articles inventoried. Eighteen rewritten across eight batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 27 shorter articles remain to rewrite. This project is **not complete**.
 
 Word counts below use the article element, including headings, dates, and CTA. Target 1,400–1,600; repository validation ceiling 1,700. Update this tracker after each verified batch. A qualifying count is not by itself an editorial quality review.
 
@@ -60,7 +60,7 @@ Word counts below use the article element, including headings, dates, and CTA. T
 | [two-choice-dessert-shortlist.html](blog/two-choice-dessert-shortlist.html) | 555 | Rewrite pending |
 | [vanilla-ice-cream-options.html](blog/vanilla-ice-cream-options.html) | 1493 | Rewritten 2026-09-29 |
 | [vegan-gelato-memphis-guide.html](blog/vegan-gelato-memphis-guide.html) | 578 | Rewrite pending |
-| [what-is-sorbetto.html](blog/what-is-sorbetto.html) | 526 | Rewrite pending |
+| [what-is-sorbetto.html](blog/what-is-sorbetto.html) | 1489 | Rewritten 2026-09-30 |
 
 ## First-batch scope and evidence
 
@@ -94,3 +94,7 @@ Ice Cream Nachos guide expanded from the exact published structure (two chosen s
 ## Seventh-batch scope and evidence
 
 The gelato-history article was expanded with cautious historical framing from Treccani, the Carpigiani Gelato Museum, and Italia.it. The narrative distinguishes ancient frozen refreshments from modern gelato, describes attributed rather than uncontested Renaissance milestones, and connects the history to Sweet Escape's actual catalog workflow without suggesting the shop's production method. Sources checked September 30, 2026: https://www.treccani.it/enciclopedia/gelato/ ; https://www.gelatomuseum.com/en/history ; https://www.italia.it/en/italy/things-to-do/artisan-ice-cream .
+
+## Eighth-batch scope and evidence
+
+The Sorbetto guide was grounded in Sweet Escape's product-category records, its live-menu/catalog distinction, and the separate caution that a complete major-allergen statement is not published online for every entry. Flavor examples match the published catalog and are explicitly not availability promises. The article avoids equating Sorbetto with vegan, dairy-free, or allergy-safe. Sources checked September 30, 2026: repository `data/gelato-flavors.js`; Villa Dolce's current flavor page at https://villadolcegelato.com/gelato-and-sorbetto-flavors/ ; Treccani's gelato entry at https://www.treccani.it/enciclopedia/gelato/ .
