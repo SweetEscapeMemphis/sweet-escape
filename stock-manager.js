@@ -96,7 +96,9 @@
     for (const flavor of filtered) {
       const checked = selected[group].has(flavor.id);
       const image = group === "scoops"
-        ? `assets/scoops/${flavor.id}.${pngScoopIds.has(flavor.id) ? "png" : "webp"}?v=20260905-1`
+        ? flavor.nutritionSource
+          ? `assets/scoops/generated/${flavor.id}.png`
+          : `assets/scoops/${flavor.id}.${pngScoopIds.has(flavor.id) ? "png" : "webp"}?v=20260905-1`
         : flavor.image;
       const label = document.createElement("label");
       label.className = `manager-item${checked ? " is-selected" : ""}`;
