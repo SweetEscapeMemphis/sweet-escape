@@ -21,6 +21,56 @@ Live menu and current availability: https://www.sweetescapememphis.com/stock.htm
 - [Rewards](https://www.sweetescapememphis.com/rewards.html): Sweet Escape rewards program.
 - [Blog](https://www.sweetescapememphis.com/blog/): First-party Memphis dessert guides and shop updates.
 
+## Newly added scoop flavor pages
+
+These 45 standalone product pages contain the published flavor description and nutrition/allergen references where available. Availability is not guaranteed; consult the live menu.
+
+- [Cactus Pearfection](https://www.sweetescapememphis.com/scoops/cactus-pearfection/)
+- [Chocolate Peanut Butter Cup Swirl](https://www.sweetescapememphis.com/scoops/chocolate-peanut-butter-cup-swirl/)
+- [Churro](https://www.sweetescapememphis.com/scoops/churro/)
+- [Coffee](https://www.sweetescapememphis.com/scoops/coffee/)
+- [Espresso Bean Chip](https://www.sweetescapememphis.com/scoops/espresso-bean-chip/)
+- [Cookie Monster](https://www.sweetescapememphis.com/scoops/cookie-monster/)
+- [Cookies & Cream](https://www.sweetescapememphis.com/scoops/cookies-cream/)
+- [Cookies, More Cookies & Cream](https://www.sweetescapememphis.com/scoops/cookies-more-cookies-cream/)
+- [Dulce de Leche](https://www.sweetescapememphis.com/scoops/dulce-de-leche/)
+- [Double Fudge Mint Brownie](https://www.sweetescapememphis.com/scoops/double-fudge-mint-brownie/)
+- [Guanaban-Ahhh](https://www.sweetescapememphis.com/scoops/guanaban-ahhh/)
+- [Guava Have It](https://www.sweetescapememphis.com/scoops/guava-have-it/)
+- [Italian Raspberry Cheesecake](https://www.sweetescapememphis.com/scoops/italian-raspberry-cheesecake/)
+- [Loco 4 Coco](https://www.sweetescapememphis.com/scoops/loco-4-coco/)
+- [Mamey Magic](https://www.sweetescapememphis.com/scoops/mamey-magic/)
+- [Mango Fiesta](https://www.sweetescapememphis.com/scoops/mango-fiesta/)
+- [New York Cheesecake](https://www.sweetescapememphis.com/scoops/new-york-cheesecake/)
+- [Pina Coolada](https://www.sweetescapememphis.com/scoops/pina-coolada/)
+- [Pistachio With Nuts](https://www.sweetescapememphis.com/scoops/pistachio-with-nuts/)
+- [Quadruple Chocolate](https://www.sweetescapememphis.com/scoops/quadruple-chocolate/)
+- [Sea Salt Caramel Pretzel](https://www.sweetescapememphis.com/scoops/sea-salt-caramel-pretzel/)
+- [Sea Salt Caramel Truffle](https://www.sweetescapememphis.com/scoops/sea-salt-caramel-truffle/)
+- [S'Mores with Toasted Coconut](https://www.sweetescapememphis.com/scoops/s-mores-with-toasted-coconut/)
+- [So Very Strawberry](https://www.sweetescapememphis.com/scoops/so-very-strawberry/)
+- [Tahitian Vanilla](https://www.sweetescapememphis.com/scoops/tahitian-vanilla/)
+- [Tiramisu](https://www.sweetescapememphis.com/scoops/tiramisu/)
+- [Banana](https://www.sweetescapememphis.com/scoops/banana/)
+- [Birthday Cake](https://www.sweetescapememphis.com/scoops/birthday-cake/)
+- [Coconut](https://www.sweetescapememphis.com/scoops/coconut/)
+- [Macadamia Nut](https://www.sweetescapememphis.com/scoops/macadamia-nut/)
+- [Mint Chocolate Chunk](https://www.sweetescapememphis.com/scoops/mint-chocolate-chunk/)
+- [Pistachio](https://www.sweetescapememphis.com/scoops/pistachio/)
+- [Pralines & Cream](https://www.sweetescapememphis.com/scoops/pralines-cream/)
+- [Rum Raisin](https://www.sweetescapememphis.com/scoops/rum-raisin/)
+- [Bubble Gum](https://www.sweetescapememphis.com/scoops/bubble-gum/)
+- [Cake Batter](https://www.sweetescapememphis.com/scoops/cake-batter/)
+- [Cotton Candy](https://www.sweetescapememphis.com/scoops/cotton-candy/)
+- [Diet Chocolate (FF/SF)](https://www.sweetescapememphis.com/scoops/diet-chocolate-ff-sf/)
+- [Diet Strawberry (FF/SF)](https://www.sweetescapememphis.com/scoops/diet-strawberry-ff-sf/)
+- [Diet Vanilla (FF/SF)](https://www.sweetescapememphis.com/scoops/diet-vanilla-ff-sf/)
+- [Chocolate Chip NSA](https://www.sweetescapememphis.com/scoops/chocolate-chip-nsa/)
+- [Coffee Fudge NSA](https://www.sweetescapememphis.com/scoops/coffee-fudge-nsa/)
+- [Mint Chocolate NSA](https://www.sweetescapememphis.com/scoops/mint-chocolate-nsa/)
+- [Neapolitan NSA](https://www.sweetescapememphis.com/scoops/neapolitan-nsa/)
+- [Triple Chocolate NSA](https://www.sweetescapememphis.com/scoops/triple-chocolate-nsa/)
+
 ## Featured guides
 
 - [Cookie Monster vs. Cookies ’N Cream frozen yogurt](https://www.sweetescapememphis.com/blog/cookie-monster-vs-cookies-n-cream-froyo.html)
