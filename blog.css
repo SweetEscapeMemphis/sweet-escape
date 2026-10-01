@@ -149,6 +149,10 @@
   width: 24%;
 }
 
+.post-article td[data-label]::before {
+  display: none;
+}
+
 .post-article a {
   text-underline-offset: 0.2rem;
 }
@@ -213,5 +217,16 @@
 
   .post-article tbody th {
     background: #fff0f3;
+  }
+
+  .post-article td[data-label]::before {
+    display: block;
+    margin-bottom: 0.2rem;
+    color: #66554b;
+    content: attr(data-label);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
   }
 }

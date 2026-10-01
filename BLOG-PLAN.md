@@ -54,6 +54,7 @@ This file guides the recurring blog-post task. Read it fully before writing any 
 - [x] Pumpkin Pie frozen yogurt flavor spotlight (published 2026-09-27)
 - [x] Espresso frozen yogurt and coffee gelato guide (owner-approved draft; published 2026-09-28)
 - [x] Regular vs. Premium vs. Super-Premium ice cream explainer using federal standard-of-identity language and San Bernardo product-line specifications (published 2026-10-01)
+- [x] Compare Cherry Amaretto frozen yogurt with Amaretto Cherry ice cream using their separate product records, ingredient/nutrition statements, and cautions (published 2026-10-01)
 - After the backlog runs out: seasonal search themes and flavor spotlights grounded in current first-party data. Do not state that a seasonal flavor, event, offer, or service exists unless it is verified in the repository or by the owner. Repeat a theme no sooner than 90 days with a fresh angle.
 
 ## Definition of done for each run
