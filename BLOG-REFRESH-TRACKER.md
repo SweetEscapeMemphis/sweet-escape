@@ -1,10 +1,10 @@
-# Existing blog refresh — September 29, 2026
+# Existing blog refresh — September 30, 2026
 
 Owner request: revise every existing blog to approximately 1,500 words of original, high-quality copy. Preserve URLs and original publication dates. Do not pad, invent facts, or claim copyright registration.
 
 ## Progress
 
-49 articles inventoried. Twenty-eight rewritten across eighteen batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 17 shorter articles remain to rewrite. This project is **not complete**.
+49 articles inventoried. Thirty-one rewritten across nineteen batches; three existing long-form articles reviewed and retained. The cookie-dough/brownie comparison still needs an editorial tightening pass, and 18 shorter articles remain to rewrite. This project is **not complete**.
 
 Word counts below use the article element, including headings, dates, and CTA. Target 1,400–1,600; repository validation ceiling 1,700. Update this tracker after each verified batch. A qualifying count is not by itself an editorial quality review.
 
@@ -46,7 +46,7 @@ Word counts below use the article element, including headings, dates, and CTA. T
 | [september-19-live-menu-update.html](blog/september-19-live-menu-update.html) | 508 | Rewrite pending |
 | [september-frozen-yogurt-flavors.html](blog/september-frozen-yogurt-flavors.html) | 517 | Rewrite pending |
 | [september-gelato-menu-update.html](blog/september-gelato-menu-update.html) | 512 | Rewrite pending |
-| [sweet-escape-specialties-guide.html](blog/sweet-escape-specialties-guide.html) | 515 | Rewrite pending |
+| [sweet-escape-specialties-guide.html](blog/sweet-escape-specialties-guide.html) | 1524 | Rewritten 2026-09-30 |
 | [sweet-escape-vs-amorino.html](blog/sweet-escape-vs-amorino.html) | 658 | Rewrite pending |
 | [sweet-escape-vs-baskin-robbins.html](blog/sweet-escape-vs-baskin-robbins.html) | 702 | Rewrite pending |
 | [sweet-escape-vs-ben-and-jerrys.html](blog/sweet-escape-vs-ben-and-jerrys.html) | 699 | Rewrite pending |
@@ -138,3 +138,7 @@ The gelato catalog guide documents the actual search fields, Gelato/Sorbetto/Veg
 ## Eighteenth-batch scope and evidence
 
 The Cookie Ice Cream Sandwich guide was expanded using the exact specialty description (chosen scoop pressed between two chocolate-chip cookies) and compared only with the published structures of Cookie Dough Base, Brownie Base, and Ice Cream Nachos. It retains current-label and cross-contact cautions for the multi-component dessert and preserves the original September 12 publication date.
+
+## Nineteenth-batch scope and evidence
+
+The six-specialty guide was rebuilt as a format comparison using the current first-party descriptions on `specialties.html`: Cookie Dough Base, Brownie Base, Dubai Dream, Ice Cream Nachos, Cookie Ice Cream Sandwiches, and self-serve frozen yogurt with toppings. It distinguishes each structure, links to the relevant product catalogs and guides, and keeps changing availability separate from the documented menu. Ingredient, nutrition, and allergen cautions remain component-specific; no price, portion, or dietary-safety claim was added. The original September 12 publication date and URL remain unchanged.
