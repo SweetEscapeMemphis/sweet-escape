@@ -325,7 +325,7 @@
     } else {
       const extension = pngScoopIds.has(flavorId) ? "png" : "webp";
       image.src = image.dataset.defaultSrc || `assets/scoops/responsive/${flavorId}-300.${extension}`;
-      if (!image.dataset.defaultSrc || image.dataset.defaultSrc.startsWith("assets/")) {
+      if (!image.dataset.defaultSrc || (!image.dataset.defaultSrc.includes("/generated/") && image.dataset.defaultSrc.startsWith("assets/"))) {
         image.srcset = `assets/scoops/responsive/${flavorId}-300.${extension} 300w, assets/scoops/responsive/${flavorId}-600.${extension} 600w`;
       } else image.removeAttribute("srcset");
       image.sizes = "(max-width: 720px) 78vw, 38vw";
