@@ -1,45 +1,42 @@
 {
-  "updatedAt": "2026-09-25T19:12:28.248Z",
+  "updatedAt": "2026-10-01T18:50:24.545Z",
   "scoops": [
-    "amaretto-cherry",
-    "banana-pudding",
-    "blueberry-burst",
     "chocolate",
     "cookie-dough",
     "cool-mint-cookie",
-    "cotton-candy-twist",
     "cow-tippin",
-    "lemon-cheesecake-bar",
     "michigan-pot-hole",
+    "mint-chip",
+    "moose-tracks",
     "o-o-oreo",
     "peanut-butter-bullseye",
     "peanut-butter-cup",
     "pistachio-almond",
-    "praline-pecan",
-    "puppy-chow",
     "rush-hour",
+    "vanilla",
+    "vanilla-bean",
     "oregon-strawberry",
     "peaches-and-cream",
     "udderly-chocolate"
   ],
   "yogurt": [
+    "birthday-cake",
     "cherry-amaretto",
-    "cookie-monster",
-    "cookies-n-cream",
+    "southern-butter-pecan",
     "espresso",
-    "french-vanilla",
     "ooey-gooey-cinnamon-bun",
     "pumpkin-pie",
     "spiced-apple-pie",
+    "strawberry-sensations",
     "triple-chocolate",
     "white-chocolate-mousse",
-    "valencia-orange-sorbet",
+    "pink-lemonade-sorbet",
     "watermelon-sorbet"
   ],
   "gelato": [
-    "birthday-cake",
-    "mint-chocolate-chip",
-    "ny-strawberry-cheesecake",
-    "roasted-banana-dulce-de-leche"
+    "alphonso-mango",
+    "maple-roasted-butter-pecan",
+    "traditional-cookies-cream",
+    "rosanna-raspberry"
   ]
 }
