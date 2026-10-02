@@ -1,24 +1,26 @@
 {
-  "updatedAt": "2026-10-02T19:05:12.400Z",
+  "updatedAt": "2026-10-02T19:34:34.046Z",
   "scoops": [
+    "butter-pecan",
     "chocolate",
     "cookie-dough",
     "cool-mint-cookie",
-    "cow-tippin",
-    "michigan-pot-hole",
     "mint-chip",
     "moose-tracks",
+    "o-o-cheesecake",
     "o-o-oreo",
-    "peanut-butter-bullseye",
     "peanut-butter-cup",
     "pistachio-almond",
     "rush-hour",
+    "strawberry",
+    "strawberry-cheesecake",
+    "superman",
+    "ultimate-peanut-butter-brownie",
     "vanilla",
     "vanilla-bean",
-    "oregon-strawberry",
+    "cookies-more-cookies-cream",
     "peaches-and-cream",
-    "udderly-chocolate",
-    "cookies-cream"
+    "udderly-chocolate"
   ],
   "yogurt": [
     "birthday-cake",
@@ -36,8 +38,8 @@
   ],
   "gelato": [
     "alphonso-mango",
+    "torta-al-limone",
     "maple-roasted-butter-pecan",
-    "traditional-cookies-cream",
     "rosanna-raspberry"
   ]
 }
