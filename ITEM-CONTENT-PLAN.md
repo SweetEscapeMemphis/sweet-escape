@@ -52,6 +52,8 @@ Existing focused guides cover several specialties and flavor groups. Before each
 
 - 2026-10-02: `/blog/after-school-sweet-escape-dessert-ideas.html` is a family-oriented ordering guide, not a new product claim or availability promise. It uses documented formats for Ice Cream Nachos, Cookie Dough Base, Brownie Base, self-serve frozen yogurt with the topping station, and Cookie Ice Cream Sandwiches; directs readers to live stock and individual ingredient/allergen records.
 
+- 2026-10-02: `/blog/peanut-butter-bullseye-vs-peanut-butter-cup.html` compares `peanut-butter-bullseye` and `peanut-butter-cup`, both included in the stock snapshot timestamped 2026-10-02T19:05:12Z. Uses their separate 2/3 cup (95 g) nutrition records, dated 2019-06-18, and matching declared allergens/equipment cautions. The post does not invent sensory distinctions and directs readers to live availability and current-label verification.
+
 - 2026-09-26: Expanded `/blog/cookie-dough-vs-brownie-base.html` into a high-quality comparison and ordering guide covering `cookie-dough-base` and `brownie-base`; retained the existing canonical rather than creating a competing URL.
 
 - 2026-09-29 existing-content refresh: expanded vanilla, mint, chocolate, fruit, cake/cheesecake, and no-sugar-added guides at their existing URLs. Coverage spans the named catalog groups; all examples distinguish catalog records from dated stock. See BLOG-REFRESH-TRACKER.md for exact URLs, counts, and remaining work.

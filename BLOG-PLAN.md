@@ -57,6 +57,7 @@ This file guides the recurring blog-post task. Read it fully before writing any 
 - [x] Compare Cherry Amaretto frozen yogurt with Amaretto Cherry ice cream using their separate product records, ingredient/nutrition statements, and cautions (published 2026-10-01)
 - After the backlog runs out: seasonal search themes and flavor spotlights grounded in current first-party data. Do not state that a seasonal flavor, event, offer, or service exists unless it is verified in the repository or by the owner. Repeat a theme no sooner than 90 days with a fresh angle.
 - [x] An after-school Memphis family dessert guide focused on easy ordering and flexible combinations for different tastes (published 2026-10-02; formats verified against specialties, catalogs, and live-menu guidance)
+- [x] Peanut Butter Bullseye vs. Peanut Butter Cup comparison based on the separate published product records, equal serving basis, dated nutrition data, allergen notes, and current-stock snapshot (published 2026-10-02)
 
 ## Definition of done for each run
 1. Sync the latest `main` branch and read this file, the existing posts, the stock data, and recent Git history.
