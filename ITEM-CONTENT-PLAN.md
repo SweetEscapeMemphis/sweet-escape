@@ -56,6 +56,8 @@ Existing focused guides cover several specialties and flavor groups. Before each
 
 - 2026-10-03: `/blog/butter-pecan-flavors-sweet-escape.html` explains three distinct catalog entries: `butter-pecan`, `butter-pecan-no-sugar-added`, and `maple-roasted-butter-pecan`. Uses the two separate nutrition panels dated June 12 and June 18, 2019, the gelato's published description, and exact allergen/equipment cautions. Does not infer recipe equivalence, sensory qualities, or current availability; preserves the missing gelato nutrition limitation.
 
+- 2026-10-04: `/blog/apple-crisp-ice-cream-vs-gelato.html` compares `apple-crisp` ice cream with `bourbon-vanilla-apple-crisp` gelato. Uses the scoop panel dated June 12, 2019, the gelato's published component description, and separate allergen cautions. Explains that numeric nutrition is unavailable for the gelato and makes no taste ranking or current-availability claim.
+
 - 2026-09-26: Expanded `/blog/cookie-dough-vs-brownie-base.html` into a high-quality comparison and ordering guide covering `cookie-dough-base` and `brownie-base`; retained the existing canonical rather than creating a competing URL.
 
 - 2026-09-29 existing-content refresh: expanded vanilla, mint, chocolate, fruit, cake/cheesecake, and no-sugar-added guides at their existing URLs. Coverage spans the named catalog groups; all examples distinguish catalog records from dated stock. See BLOG-REFRESH-TRACKER.md for exact URLs, counts, and remaining work.
