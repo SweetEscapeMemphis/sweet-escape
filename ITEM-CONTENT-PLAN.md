@@ -50,6 +50,8 @@ Make every verified catalog item crawlable and discoverable, then earn standalon
 
 Existing focused guides cover several specialties and flavor groups. Before each new article, search the blog and ledger to avoid duplicating intent or competing pages.
 
+- 2026-10-04: `/blog/lemon-pie-gelato-vs-lemon-sorbetto.html` compares the distinct published records for Torta Al Limone, Zesty Lemon, and Limoncello. It uses the repository's descriptions and categories; preserves the listed milk, egg, wheat, soy, peanut, and tree-nut cautions for Torta Al Limone; and notes that the two sorbetto records lack complete online major-allergen statements. It does not infer alcohol content, dietary suitability, nutrition values, or current availability.
+
 - 2026-10-02: `/blog/after-school-sweet-escape-dessert-ideas.html` is a family-oriented ordering guide, not a new product claim or availability promise. It uses documented formats for Ice Cream Nachos, Cookie Dough Base, Brownie Base, self-serve frozen yogurt with the topping station, and Cookie Ice Cream Sandwiches; directs readers to live stock and individual ingredient/allergen records.
 
 - 2026-10-02: `/blog/peanut-butter-bullseye-vs-peanut-butter-cup.html` compares `peanut-butter-bullseye` and `peanut-butter-cup`, both included in the stock snapshot timestamped 2026-10-02T19:05:12Z. Uses their separate 2/3 cup (95 g) nutrition records, dated 2019-06-18, and matching declared allergens/equipment cautions. The post does not invent sensory distinctions and directs readers to live availability and current-label verification.

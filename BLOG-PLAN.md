@@ -60,6 +60,7 @@ This file guides the recurring blog-post task. Read it fully before writing any 
 - [x] Peanut Butter Bullseye vs. Peanut Butter Cup comparison based on the separate published product records, equal serving basis, dated nutrition data, allergen notes, and current-stock snapshot (published 2026-10-02)
 - [x] Explain how Butter Pecan, Butter Pecan - No Sugar Added, and Maple Roasted Butter Pecan differ across separate scoop and gelato records (published 2026-10-03; no same-day stock claim)
 - [x] Compare Apple Crisp ice cream with Bourbon Vanilla Apple Crisp gelato using their separate product records, published nutrition/allergen details, and current-label cautions (published 2026-10-04; no same-day stock claim)
+- [x] Compare Torta Al Limone, Zesty Lemon, and Limoncello using their separate categories, published descriptions, and exact allergen-label limitations; avoid inferring alcohol, dietary suitability, or same-day availability (published 2026-10-04)
 
 ## Definition of done for each run
 1. Sync the latest `main` branch and read this file, the existing posts, the stock data, and recent Git history.
