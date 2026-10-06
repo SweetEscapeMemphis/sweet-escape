@@ -71,3 +71,5 @@ This file guides the recurring blog-post task. Read it fully before writing any 
 6. Wait for the GitHub Pages deployment to succeed and verify that the new URL returns the expected canonical page.
 7. Run `node scripts/submit-indexnow.mjs <new-post-url> https://www.sweetescapememphis.com/blog/` and record the HTTP result. Submit only new or meaningfully changed URLs.
 8. Keep the XML sitemap and RSS feed available for Google, Bing, Applebot, and other crawlers. Do not use Google's Indexing API for ordinary blog posts, spam repeated crawl requests, or claim that submission guarantees indexing.
+
+- [x] Why ice cream gets icy: a distinct educational texture guide covering crystals, freezing point, air, and melting with ACS/Guelph sources; published 2026-10-06. No product manufacturing or availability claims.

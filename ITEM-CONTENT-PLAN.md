@@ -63,3 +63,5 @@ Existing focused guides cover several specialties and flavor groups. Before each
 - 2026-09-26: Expanded `/blog/cookie-dough-vs-brownie-base.html` into a high-quality comparison and ordering guide covering `cookie-dough-base` and `brownie-base`; retained the existing canonical rather than creating a competing URL.
 
 - 2026-09-29 existing-content refresh: expanded vanilla, mint, chocolate, fruit, cake/cheesecake, and no-sugar-added guides at their existing URLs. Coverage spans the named catalog groups; all examples distinguish catalog records from dated stock. See BLOG-REFRESH-TRACKER.md for exact URLs, counts, and remaining work.
+
+- 2026-10-06: `/blog/why-ice-cream-gets-icy.html` adds broad educational texture coverage and links the scoop catalog, item directory, and specialties. No new individual item claims; product data unchanged, so directory regeneration not required. Sources in research/ice-cream-texture-sources.md.
