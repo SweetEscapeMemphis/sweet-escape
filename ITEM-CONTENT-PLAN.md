@@ -65,3 +65,5 @@ Existing focused guides cover several specialties and flavor groups. Before each
 - 2026-09-29 existing-content refresh: expanded vanilla, mint, chocolate, fruit, cake/cheesecake, and no-sugar-added guides at their existing URLs. Coverage spans the named catalog groups; all examples distinguish catalog records from dated stock. See BLOG-REFRESH-TRACKER.md for exact URLs, counts, and remaining work.
 
 - 2026-10-06: `/blog/why-ice-cream-gets-icy.html` adds broad educational texture coverage and links the scoop catalog, item directory, and specialties. No new individual item claims; product data unchanged, so directory regeneration not required. Sources in research/ice-cream-texture-sources.md.
+
+- 2026-10-07: `/blog/vanilla-orchid-beans-extract.html` supports `madagascar-vanilla-bean` gelato with educational vanilla ingredient context. Exact published description, reference nutrition serving, and milk/current-label caution retained. No sourcing, production-method, supplier, alcohol-content, or availability inference. Product data unchanged.

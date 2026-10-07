@@ -73,3 +73,5 @@ This file guides the recurring blog-post task. Read it fully before writing any 
 8. Keep the XML sitemap and RSS feed available for Google, Bing, Applebot, and other crawlers. Do not use Google's Indexing API for ordinary blog posts, spam repeated crawl requests, or claim that submission guarantees indexing.
 
 - [x] Why ice cream gets icy: a distinct educational texture guide covering crystals, freezing point, air, and melting with ACS/Guelph sources; published 2026-10-06. No product manufacturing or availability claims.
+
+- [x] Vanilla’s botanical and ingredient story: orchids, cured pods, extract versus paste, and Bourbon terminology; published 2026-10-07. Distinct from existing vanilla menu-choice guide; sources in research/vanilla-ingredient-sources.md.
