@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T19:23:54.435Z",
+  "updatedAt": "2026-10-09T17:25:12.835Z",
   "scoops": [
     "amaretto-cherry",
     "chocolate",
@@ -23,23 +23,23 @@
     "peaches-and-cream"
   ],
   "yogurt": [
-    "birthday-cake",
     "cheesecake",
-    "cookie-monster",
+    "cherry-amaretto",
+    "southern-butter-pecan",
     "cookies-n-cream",
+    "espresso",
+    "home-churn-vanilla",
     "ooey-gooey-cinnamon-bun",
     "pumpkin-pie",
-    "spiced-apple-pie",
     "strawberry-sensations",
-    "triple-chocolate",
     "pink-lemonade-sorbet",
     "valencia-orange-sorbet",
     "watermelon-sorbet"
   ],
   "gelato": [
+    "coffee-chocolate-chip",
     "alphonso-mango",
     "torta-al-limone",
-    "ny-strawberry-cheesecake",
-    "rosanna-raspberry"
+    "ny-strawberry-cheesecake"
   ]
 }
