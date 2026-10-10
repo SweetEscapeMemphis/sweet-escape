@@ -76,3 +76,4 @@ This file guides the recurring blog-post task. Read it fully before writing any 
 - [x] Vanilla’s botanical and ingredient story: orchids, cured pods, extract versus paste, and Bourbon terminology; published 2026-10-07. Distinct from existing vanilla menu-choice guide; sources in research/vanilla-ingredient-sources.md.
 - [x] Compare the seasonal Pumpkin Pie and Spiced Apple Pie yogurt records, including their precise descriptions, ingredients, shared milk/facility cautions, and date-checked menu status (published 2026-10-07).
 - [x] Compare caramel-forward Sweet Escape catalog listings across ice cream, frozen yogurt, and gelato using only verified product descriptions and distinct allergen notes; no current-availability claim (published 2026-10-09).
+- [x] Compare Superman and Cotton Candy Twist using their matching serving basis, June 2019 nutrition records, shared-equipment cautions, and October 9 live-stock snapshot; no taste inference (published 2026-10-09).
