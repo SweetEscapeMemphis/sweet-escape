@@ -3185,3 +3185,19 @@ body::before {
     text-align: center;
   }
 }
+
+/* Display the supplied Sweet Escape logo while retaining accessible brand text. */
+.brand-wordmark,
+.footer-wordmark {
+  width: min(200px, 50vw);
+  aspect-ratio: 1853 / 721;
+  background: url("/assets/sweet-escape-logo.svg?v=20261012") center / contain no-repeat;
+  font-size: 0;
+  line-height: 0;
+  vertical-align: middle;
+  transform: none;
+}
+
+.brand-wordmark::after {
+  display: none;
+}
