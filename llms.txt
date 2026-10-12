@@ -9,6 +9,8 @@ Live menu and current availability: https://www.sweetescapememphis.com/stock.htm
 
 ## Primary pages
 
+- [Ice cream party calculator](https://www.sweetescapememphis.com/ice-cream-party-calculator/): Free planning tool for portions, containers, optional costs, and shopping lists, plus a separate Sweet Escape by-weight estimate at $0.80 per ounce. Assumptions are editable; estimates do not establish event services or bulk availability.
+
 - [Home](https://www.sweetescapememphis.com/): Official Sweet Escape Memphis homepage.
 - [About](https://www.sweetescapememphis.com/about.html): Official business overview, website standards, and contact information.
 - [Press kit](https://www.sweetescapememphis.com/press.html): Verified business facts, story angles, official media assets, and press contact information.

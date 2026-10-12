@@ -1,0 +1,53 @@
+import { WEIGHT_DEFAULTS, validateWeighted, calculateWeighted, weightedAssumptions, weightedText, loadWeightedPlan, weightedShareURL, volume, weightVolume, usd } from './ice-cream-calculator-core.js?v=20261012-2';
+const el = id => document.getElementById(id), form = el('weight-form'), fields = Object.keys(WEIGHT_DEFAULTS);
+let timer, current;
+const read = () => Object.fromEntries(fields.map(key => [key, el(key).value.trim()]));
+const write = raw => fields.forEach(key => { el(key).value = raw[key]; });
+function update(announce = true) {
+  clearTimeout(timer);
+  const raw = read(), errors = validateWeighted(raw), valid = !Object.keys(errors).length;
+  fields.forEach(key => { el(key).setAttribute('aria-invalid', errors[key] ? 'true' : 'false'); el(`${key}-error`).textContent = errors[key] || ''; });
+  el('weight-validation').textContent = valid ? '' : 'Correct the highlighted inputs to update your by-weight estimate.';
+  el('weight-results').hidden = !valid;
+  document.querySelectorAll('[data-weight-action]').forEach(button => { button.disabled = !valid; });
+  el('weight-copy-fallback').hidden = true; el('weight-share-output').hidden = true;
+  current = valid ? raw : null;
+  if (!valid) { if (announce) el('weight-result-status').textContent = Object.values(errors).join(' '); return false; }
+  const r = calculateWeighted(raw);
+  el('weight-total-oz').textContent = `${weightVolume(r.totalOz)} oz`;
+  el('weight-total-cost').textContent = usd(r.totalCents / 100);
+  el('weight-per-guest').textContent = `${usd(r.perGuest)} per guest`;
+  el('weight-assumptions').textContent = weightedAssumptions(raw);
+  if (announce) el('weight-result-status').textContent = `Updated Sweet Escape estimate: ${weightVolume(r.totalOz)} weight ounces, ${usd(r.totalCents / 100)} total, ${usd(r.perGuest)} per guest.`;
+  return true;
+}
+form.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(() => { el('weight-action-status').textContent = ''; update(); }, 500); });
+form.addEventListener('change', () => { el('weight-action-status').textContent = ''; update(); });
+form.addEventListener('submit', event => { event.preventDefault(); if (!update()) form.querySelector('[aria-invalid="true"]').focus(); });
+async function copy(text, success) {
+  try { await navigator.clipboard.writeText(text); el('weight-action-status').textContent = success; }
+  catch {
+    el('weight-copy-fallback').hidden = false; el('weight-copy-text').value = text;
+    el('weight-copy-text').focus(); el('weight-copy-text').select();
+    el('weight-action-status').textContent = 'Automatic copying is unavailable. Select or copy the text below using your device’s copy command.';
+  }
+}
+el('weight-copy').addEventListener('click', () => { if (update(false)) copy(weightedText(current), 'Sweet Escape weight estimate copied.'); });
+el('weight-share').addEventListener('click', async () => {
+  if (!update(false)) return;
+  const url = weightedShareURL(current, window.location.href);
+  await copy(url, 'Sweet Escape weight estimate link copied.');
+  el('weight-share-link').href = url; el('weight-share-output').hidden = false;
+});
+el('weight-print').addEventListener('click', () => { if (update(false)) { document.body.dataset.printPlan = 'weights'; window.print(); } });
+el('weight-reset').addEventListener('click', () => {
+  write(WEIGHT_DEFAULTS); update(); el('weight-url-warning').textContent = '';
+  const url = new URL(window.location.href); fields.forEach(key => url.searchParams.delete(key));
+  window.history.replaceState(null, '', url);
+  el('weight-action-status').textContent = 'Weight estimate reset to 20 guests, 6 oz per guest, and 10% extra.';
+});
+const loaded = loadWeightedPlan(window.location.search); write(loaded.raw); update(false);
+el('weight-reset').disabled = false;
+if (loaded.warnings.length) el('weight-url-warning').textContent = 'Some shared weight inputs were invalid or repeated. Default values were used; review the estimate.';
+window.addEventListener('beforeprint', () => update(false));
+window.addEventListener('afterprint', () => { delete document.body.dataset.printPlan; });
