@@ -221,7 +221,7 @@ Data and image assets:
 3. Update the profile website URL to the HTTPS Visit page with tracking, for example:
    `https://www.sweetescapememphis.com/visit.html?utm_source=google&utm_medium=organic&utm_campaign=gbp`
 4. Add current products, storefront/interior/product photos, accurate attributes, and holiday hours.
-5. Enable **Enforce HTTPS** in GitHub Pages and verify all HTTP/host variants redirect to `https://www.sweetescapememphis.com/`.
+5. HTTPS redirects were verified on October 13, 2026: both `http://www.sweetescapememphis.com/` and `http://sweetescapememphis.com/` now return 301 to `https://www.sweetescapememphis.com/`. Recheck periodically.
 6. Connect Google Search Console, submit `https://www.sweetescapememphis.com/sitemap.xml`, and request indexing for the homepage and Visit page after deployment.
 7. Confirm GA4 receives `directions_click`, `phone_click`, and `menu_view`; mark the events as key events when appropriate.
 8. Earn legitimate citations and links from relevant Memphis/Bartlett organizations, directories, events, chambers, and local media.
@@ -266,3 +266,12 @@ Data and image assets:
 - No recent blog URL appeared in the available unauthenticated search results. This is an observation, not proof of Google or Bing index status; authenticated Search Console or Bing Webmaster data was unavailable.
 - PageSpeed Insights returned HTTP 429 because its public daily quota was exhausted, so no Lighthouse or field Core Web Vitals score is claimed.
 - The HTTP `www` homepage still returns 200 instead of redirecting to HTTPS. Enforcing HTTPS remains an owner/hosting setting and was not changed.
+
+## Weekly SEO audit — October 13, 2026
+
+- Production homepage, blog archive, `robots.txt`, `sitemap.xml`, RSS feed, and `llms.txt` returned HTTP 200. `robots.txt` allows the listed major search and AI-discovery crawlers while excluding only `/stock-manager.html`.
+- Both HTTP host variants now redirect with HTTP 301 to the canonical HTTPS homepage. This resolves the prior September 7 observation that HTTP `www` returned 200; no hosting or account setting was changed in this audit.
+- Before today's publication, all 278 URLs then listed in the live sitemap returned successful responses. The local SEO audit validates unique titles, descriptions, canonicals, one H1, JSON-LD, image alternatives, duplicate IDs, local references, and sitemap structure across the current repository.
+- The local item-focused blog passed desktop visual review and a 390 px mobile viewport check; the document and article fit the viewport without horizontal page overflow. RSS contains the newest 20 entries in descending publication order.
+- A focused unauthenticated search for recent blog pages returned no results. This is not proof that Google or Bing have not indexed them; authenticated Search Console and Bing Webmaster coverage data was not available in this workflow.
+- No current PageSpeed Insights or field Core Web Vitals results were available, so no performance score or LCP/INP/CLS claim is made. Continue checking field data through authorized Search Console/CrUX tooling when available.
