@@ -61,6 +61,7 @@ This file guides the recurring blog-post task. Read it fully before writing any 
 - [x] Compare Apple Crisp ice cream with Bourbon Vanilla Apple Crisp gelato using their separate product records, published nutrition/allergen details, and current-label cautions (published 2026-10-04; no same-day stock claim)
 - [x] Compare Torta Al Limone, Zesty Lemon, and Limoncello using their separate categories, published descriptions, and exact allergen-label limitations; avoid inferring alcohol, dietary suitability, or same-day availability (published 2026-10-04)
 - [x] What is mamey? Explain mamey sapote’s distinct fruit identity and dessert uses, then distinguish that background from Sweet Escape’s documented Mamey Magic details; published 2026-10-13. No recipe, supplier, sensory-equivalence, or same-day-stock claims. Sources in `research/mamey-sources.md`.
+- [x] How does Sweet Escape’s S’Mores with Toasted Coconut listing compare with the familiar campfire dessert? Published 2026-10-13. Answers the marshmallow question carefully: it is not named in the short description, which is not a full ingredient statement. Uses the exact product description and allergy cautions, distinguishes documented history from invention claims, and makes no same-day-stock or taste promises. Sources in `research/smores-ice-cream-sources.md`.
 
 ## Definition of done for each run
 1. Sync the latest `main` branch and read this file, the existing posts, the stock data, and recent Git history.
