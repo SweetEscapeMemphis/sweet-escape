@@ -1,4 +1,4 @@
-import { DEFAULTS, calculate, volume, usd, validate, assumptions, costNote, checklist, shoppingText, loadPlan, shareURL } from './ice-cream-calculator-core.js?v=20261012-2';
+import { DEFAULTS, calculate, volume, usd, validate, assumptions, costNote, checklist, shoppingText, loadPlan, shareURL } from './ice-cream-calculator-core.js?v=20261014-1';
 const byId = id => document.getElementById(id);
 const form = byId('party-form');
 const fields = Object.keys(DEFAULTS);

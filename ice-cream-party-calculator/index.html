@@ -22,9 +22,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
   <link rel="stylesheet" href="/home.css?v=20260903-2">
-  <link rel="stylesheet" href="/ice-cream-calculator.css?v=20261012-2">
-  <script type="module" src="/ice-cream-calculator.js?v=20261012-2"></script>
-  <script type="module" src="/sweet-escape-weight-calculator.js?v=20261012-2"></script>
+  <link rel="stylesheet" href="/ice-cream-calculator.css?v=20261014-1">
+  <script type="module" src="/ice-cream-calculator.js?v=20261014-1"></script>
+  <script type="module" src="/sweet-escape-weight-calculator.js?v=20261014-1"></script>
   <script defer src="/analytics.js?v=20261007-2"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-H90X0LXRD3"></script>
   <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-H90X0LXRD3');</script>
@@ -134,14 +134,15 @@
       <div id="copy-fallback" hidden><label for="copy-text">Text to copy manually</label><textarea id="copy-text" readonly></textarea></div>
     </section>
     <section class="party-card weight-card" id="sweet-escape-weight-calculator" aria-labelledby="weight-heading">
-      <div class="weight-heading"><div><p class="party-kicker">Specifically for Sweet Escape</p><h2 id="weight-heading">Plan your treat by weight</h2><p>Estimate your Sweet Escape budget at <strong>$0.80 per ounce</strong> (80 cents/oz). Enter the weight you expect to purchase per guest.</p></div><span class="weight-rate">$0.80<span>per weight oz</span></span></div>
-      <noscript><p>Enable JavaScript to customize this estimate. The default is 20 guests × 6 oz each × 10% extra: 132 oz and $105.60 total, before tax and other expenses.</p></noscript>
+      <div class="weight-heading"><div><p class="party-kicker">Specifically for Sweet Escape</p><h2 id="weight-heading">Plan your treat by weight</h2><p>Estimate your Sweet Escape budget at <strong>$0.80 per ounce</strong> (80 cents/oz). Plan with <strong>5 oz per scoop</strong>. Add Cookie Dough Base or Brownie Base for <strong>4 oz per guest</strong>.</p></div><span class="weight-rate">$0.80<span>per weight oz</span></span></div>
+      <noscript><p>Enable JavaScript to customize this estimate. The default is 20 guests × one 5 oz scoop each × 10% extra, with no base: 110 oz and $88.00 total, before tax and other expenses.</p></noscript>
       <p id="weight-url-warning" class="field-error" role="status"></p>
       <div class="weight-layout">
         <form id="weight-form" novalidate>
           <div class="field-grid">
             <div class="party-field"><label for="weightGuests">Number of guests</label><input type="number" id="weightGuests" name="weightGuests" value="20" min="1" max="1000" step="1" required inputmode="numeric" aria-describedby="weightGuests-help weightGuests-error"><p class="field-help" id="weightGuests-help">1–1,000 people</p><p class="field-error" id="weightGuests-error"></p></div>
-            <div class="party-field"><label for="weightOz">Weight per guest (oz)</label><input type="number" id="weightOz" name="weightOz" value="6" min="0.01" max="64" step="0.01" required inputmode="decimal" aria-describedby="weightOz-help weightOz-error"><p class="field-help" id="weightOz-help">Your portion assumption, in weight ounces.</p><p class="field-error" id="weightOz-error"></p></div>
+            <div class="party-field"><label for="weightScoops">Scoops per guest</label><input type="number" id="weightScoops" name="weightScoops" value="1" min="1" max="12" step="1" required inputmode="numeric" aria-describedby="weightScoops-help weightScoops-error"><p class="field-help" id="weightScoops-help">Each scoop adds 5 oz. Choose 1–12 scoops.</p><p class="field-error" id="weightScoops-error"></p></div>
+            <div class="party-field"><label for="weightBase">Add a base</label><select id="weightBase" name="weightBase" aria-describedby="weightBase-help weightBase-error"><option value="none" selected>No base</option><option value="cookie-dough">Cookie Dough Base (+4 oz)</option><option value="brownie">Brownie Base (+4 oz)</option></select><p class="field-help" id="weightBase-help">Adds one 4 oz base per guest, regardless of scoop count. Included at $0.80/oz.</p><p class="field-error" id="weightBase-error"></p></div>
             <div class="party-field"><label for="weightExtra">Extra allowance (%)</label><input type="number" id="weightExtra" name="weightExtra" value="10" min="0" max="30" step="1" required inputmode="numeric" aria-describedby="weightExtra-help weightExtra-error"><p class="field-help" id="weightExtra-help">0–30% extra, included in weight and cost.</p><p class="field-error" id="weightExtra-error"></p></div>
           </div>
           <p id="weight-validation" class="field-error"></p>
@@ -149,10 +150,11 @@
         </form>
         <div class="weight-results" id="weight-results">
           <p class="step-label">Your Sweet Escape estimate</p>
-          <dl class="weight-metrics"><div><dt>Planned total weight</dt><dd id="weight-total-oz">132 oz</dd></div><div><dt>Estimated cost at $0.80/oz</dt><dd id="weight-total-cost">$105.60</dd></div></dl>
-          <p class="weight-per-guest" id="weight-per-guest">$5.28 per guest</p>
+          <p class="weight-portion" id="weight-portion">1 scoop × 5 oz = 5 oz, no base: 5 oz per guest before the extra allowance.</p>
+          <dl class="weight-metrics"><div><dt>Planned total weight</dt><dd id="weight-total-oz">110 oz</dd></div><div><dt>Estimated cost at $0.80/oz</dt><dd id="weight-total-cost">$88.00</dd></div></dl>
+          <p class="weight-per-guest" id="weight-per-guest">$4.40 per guest</p>
           <p class="field-help">Includes the extra allowance. Before tax and other expenses; actual cost depends on the purchased weight.</p>
-          <p class="assumptions" id="weight-assumptions">20 guests × 6 oz per guest × 1.1 = 132 oz planned. 10% extra included. Weight per guest is an editable planning assumption, not a verified Sweet Escape portion.</p>
+          <p class="assumptions" id="weight-assumptions">20 guests × 5 oz per guest × 1.1 = 110 oz planned. 10% extra included. Plan uses 5 oz per scoop and 4 oz for the selected base per guest; actual serving weights can vary.</p>
         </div>
       </div>
       <p class="weight-note">These are weight ounces, not fluid ounces. This estimate uses its own inputs; it does not convert the cups in your container plan to weight.</p>

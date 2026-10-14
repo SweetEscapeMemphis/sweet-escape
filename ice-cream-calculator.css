@@ -177,3 +177,6 @@
   body[data-print-plan="containers"] .weight-card { display: none !important; }
   body[data-print-plan="weights"] :is(.party-hero, .party-workspace, #shopping-plan) { display: none !important; }
 }
+
+.weight-portion { font-size: .9rem; margin: 0 0 18px; color: var(--muted); }
+@media print { .weight-portion { font-size: 9pt; margin-bottom: 10px; } }

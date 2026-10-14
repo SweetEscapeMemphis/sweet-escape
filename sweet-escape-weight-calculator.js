@@ -1,4 +1,4 @@
-import { WEIGHT_DEFAULTS, validateWeighted, calculateWeighted, weightedAssumptions, weightedText, loadWeightedPlan, weightedShareURL, volume, weightVolume, usd } from './ice-cream-calculator-core.js?v=20261012-2';
+import { WEIGHT_DEFAULTS, validateWeighted, calculateWeighted, weightedAssumptions, weightedPortion, weightedText, loadWeightedPlan, weightedShareURL, volume, weightVolume, usd } from './ice-cream-calculator-core.js?v=20261014-1';
 const el = id => document.getElementById(id), form = el('weight-form'), fields = Object.keys(WEIGHT_DEFAULTS);
 let timer, current;
 const read = () => Object.fromEntries(fields.map(key => [key, el(key).value.trim()]));
@@ -18,6 +18,7 @@ function update(announce = true) {
   el('weight-total-cost').textContent = usd(r.totalCents / 100);
   el('weight-per-guest').textContent = `${usd(r.perGuest)} per guest`;
   el('weight-assumptions').textContent = weightedAssumptions(raw);
+  el('weight-portion').textContent = weightedPortion(raw);
   if (announce) el('weight-result-status').textContent = `Updated Sweet Escape estimate: ${weightVolume(r.totalOz)} weight ounces, ${usd(r.totalCents / 100)} total, ${usd(r.perGuest)} per guest.`;
   return true;
 }
@@ -42,12 +43,12 @@ el('weight-share').addEventListener('click', async () => {
 el('weight-print').addEventListener('click', () => { if (update(false)) { document.body.dataset.printPlan = 'weights'; window.print(); } });
 el('weight-reset').addEventListener('click', () => {
   write(WEIGHT_DEFAULTS); update(); el('weight-url-warning').textContent = '';
-  const url = new URL(window.location.href); fields.forEach(key => url.searchParams.delete(key));
+  const url = new URL(window.location.href); fields.forEach(key => url.searchParams.delete(key)); url.searchParams.delete('weightOz');
   window.history.replaceState(null, '', url);
-  el('weight-action-status').textContent = 'Weight estimate reset to 20 guests, 6 oz per guest, and 10% extra.';
+  el('weight-action-status').textContent = 'Weight estimate reset to 20 guests, one 5 oz scoop each, no base, and 10% extra.';
 });
 const loaded = loadWeightedPlan(window.location.search); write(loaded.raw); update(false);
 el('weight-reset').disabled = false;
-if (loaded.warnings.length) el('weight-url-warning').textContent = 'Some shared weight inputs were invalid or repeated. Default values were used; review the estimate.';
+if (loaded.warnings.length) el('weight-url-warning').textContent = 'Some shared inputs were invalid, repeated, or used an older ounce portion that does not match 5 oz scoops. Defaults were used for those inputs; review the scoop and base selections.';
 window.addEventListener('beforeprint', () => update(false));
 window.addEventListener('afterprint', () => { delete document.body.dataset.printPlan; });

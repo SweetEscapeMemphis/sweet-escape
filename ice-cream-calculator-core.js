@@ -75,34 +75,45 @@ export function shareURL(raw, base) {
   return url.href;
 }
 
-// Weight ounces are entered directly; there is no cups-to-weight conversion.
+// Store planning weights are independent of the cups/container calculator.
 export const WEIGHT_RATE_CENTS = 80;
+export const SCOOP_WEIGHT_OZ = 5;
+export const BASE_WEIGHT_OZ = 4;
+export const WEIGHT_BASES = Object.freeze({ none: 'No base', 'cookie-dough': 'Cookie Dough Base', brownie: 'Brownie Base' });
 export const weightVolume = value => new Intl.NumberFormat('en-US', { maximumFractionDigits: 4 }).format(value);
-export const WEIGHT_DEFAULTS = Object.freeze({ weightGuests: '20', weightOz: '6', weightExtra: '10' });
+export const WEIGHT_DEFAULTS = Object.freeze({ weightGuests: '20', weightScoops: '1', weightBase: 'none', weightExtra: '10' });
 export function validateWeighted(raw) {
   const errors = {};
   if (!integer(raw.weightGuests, 1, 1000)) errors.weightGuests = 'Enter a whole guest count from 1 to 1,000.';
-  if (!/^(?:\d+(?:\.\d{1,2})?|\.\d{1,2})$/.test(String(raw.weightOz)) || Number(raw.weightOz) < .01 || Number(raw.weightOz) > 64) errors.weightOz = 'Enter a weight from 0.01 to 64 oz per guest, with up to two decimal places.';
+  if (!integer(raw.weightScoops, 1, 12)) errors.weightScoops = 'Enter 1 to 12 whole scoops per guest. Each scoop weighs 5 oz for this plan.';
+  if (!own(WEIGHT_BASES, raw.weightBase)) errors.weightBase = 'Choose no base, Cookie Dough Base, or Brownie Base.';
   if (!integer(raw.weightExtra, 0, 30)) errors.weightExtra = 'Enter a whole percentage from 0 to 30.';
   return errors;
 }
 export function calculateWeighted(raw) {
   const errors = validateWeighted(raw);
   if (Object.keys(errors).length) throw new RangeError(Object.values(errors).join(' '));
-  const guests = Number(raw.weightGuests), extra = Number(raw.weightExtra), ozPerGuest = Number(raw.weightOz);
-  // Hundredths of an ounce × a whole percentage keeps decimal portion inputs exact.
-  const numerator = guests * cents(raw.weightOz) * (100 + extra);
-  const totalOz = numerator / 10000;
-  const totalCents = Math.round(numerator * WEIGHT_RATE_CENTS / 10000);
-  return { guests, extra, ozPerGuest, totalOz, totalCents, perGuest: totalCents / (100 * guests) };
+  const guests = Number(raw.weightGuests), extra = Number(raw.weightExtra), scoops = Number(raw.weightScoops);
+  const scoopOzPerGuest = scoops * SCOOP_WEIGHT_OZ;
+  const baseOzPerGuest = raw.weightBase === 'none' ? 0 : BASE_WEIGHT_OZ;
+  const ozPerGuest = scoopOzPerGuest + baseOzPerGuest;
+  const numerator = guests * ozPerGuest * (100 + extra);
+  const totalOz = numerator / 100;
+  const totalCents = Math.round(numerator * WEIGHT_RATE_CENTS / 100);
+  return { guests, extra, scoops, scoopOzPerGuest, baseOzPerGuest, baseLabel: WEIGHT_BASES[raw.weightBase], ozPerGuest, totalOz, totalCents, perGuest: totalCents / (100 * guests) };
+}
+export function weightedPortion(raw) {
+  const r = calculateWeighted(raw);
+  const iceCream = `${volume(r.scoops)} ${r.scoops === 1 ? 'scoop' : 'scoops'} × 5 oz = ${volume(r.scoopOzPerGuest)} oz`;
+  return `${iceCream}${r.baseOzPerGuest ? ` + ${r.baseLabel} (4 oz)` : ', no base'}: ${volume(r.ozPerGuest)} oz per guest before the extra allowance.`;
 }
 export function weightedAssumptions(raw) {
   const r = calculateWeighted(raw);
-  return `${volume(r.guests)} guests × ${volume(r.ozPerGuest)} oz per guest × ${volume(1 + r.extra / 100)} = ${weightVolume(r.totalOz)} oz planned. ${r.extra}% extra included. Weight per guest is an editable planning assumption, not a verified Sweet Escape portion.`;
+  return `${volume(r.guests)} guests × ${volume(r.ozPerGuest)} oz per guest × ${volume(1 + r.extra / 100)} = ${weightVolume(r.totalOz)} oz planned. ${r.extra}% extra included. Plan uses 5 oz per scoop and 4 oz for the selected base per guest; actual serving weights can vary.`;
 }
 export function weightedText(raw) {
   const r = calculateWeighted(raw);
-  return ['SWEET ESCAPE — BY-WEIGHT ESTIMATE', weightedAssumptions(raw), `Rate: $0.80 per weight ounce (80 cents/oz).`, `Planned weight: ${weightVolume(r.totalOz)} oz.`, `Estimated cost: ${usd(r.totalCents / 100)} total; ${usd(r.perGuest)} per guest, including the extra allowance.`, 'Estimate is before tax and other expenses. Actual cost depends on the purchased weight. Weight ounces are separate from fluid ounces and the container plan.', 'https://www.sweetescapememphis.com/ice-cream-party-calculator/#sweet-escape-weight-calculator'].join('\n');
+  return ['SWEET ESCAPE — BY-WEIGHT ESTIMATE', weightedPortion(raw), weightedAssumptions(raw), 'Rate: $0.80 per weight ounce (80 cents/oz).', `Planned weight: ${weightVolume(r.totalOz)} oz.`, `Estimated cost: ${usd(r.totalCents / 100)} total; ${usd(r.perGuest)} per guest, including the extra allowance.`, 'Estimate is before tax and other expenses. Actual cost depends on the purchased weight. Weight ounces are separate from fluid ounces and the container plan.', 'https://www.sweetescapememphis.com/ice-cream-party-calculator/#sweet-escape-weight-calculator'].join('\n');
 }
 export function loadWeightedPlan(search) {
   const params = new URLSearchParams(search), raw = { ...WEIGHT_DEFAULTS }, warnings = [];
@@ -111,6 +122,13 @@ export function loadWeightedPlan(search) {
     const values = params.getAll(key);
     if (values.length !== 1 || validateWeighted({ ...WEIGHT_DEFAULTS, [key]: values[0] })[key]) warnings.push(key);
     else raw[key] = values[0];
+  }
+  // Preserve older shared plans when their ounce portion is an exact scoop count.
+  if (params.has('weightOz') && !params.has('weightScoops')) {
+    const old = params.getAll('weightOz');
+    const scoops = Number(old[0]) / SCOOP_WEIGHT_OZ;
+    if (old.length === 1 && /^(?:\d+(?:\.\d{1,2})?|\.\d{1,2})$/.test(old[0]) && Number.isInteger(scoops) && scoops >= 1 && scoops <= 12) raw.weightScoops = String(scoops);
+    else warnings.push('weightOz');
   }
   return { raw, warnings };
 }
