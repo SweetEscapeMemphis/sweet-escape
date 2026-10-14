@@ -1,32 +1,30 @@
 {
-  "updatedAt": "2026-10-09T17:25:12.835Z",
+  "updatedAt": "2026-10-14T18:43:43.183Z",
   "scoops": [
     "amaretto-cherry",
     "chocolate",
     "cookie-dough",
     "cool-mint-cookie",
-    "cotton-candy-twist",
     "mint-chip",
     "moose-tracks",
-    "o-o-oreo",
     "peanut-butter-cup",
     "pistachio-almond",
-    "strawberry-cheesecake",
-    "superman",
     "tennessee-toffee",
     "ultimate-peanut-butter-brownie",
     "vanilla-bean",
     "churro",
+    "cookie-monster",
+    "new-york-cheesecake",
     "pina-coolada",
+    "quadruple-chocolate",
     "banana",
+    "birthday-cake",
     "oregon-strawberry",
     "peaches-and-cream"
   ],
   "yogurt": [
-    "cheesecake",
     "cherry-amaretto",
     "southern-butter-pecan",
-    "cookies-n-cream",
     "espresso",
     "home-churn-vanilla",
     "ooey-gooey-cinnamon-bun",
@@ -38,8 +36,8 @@
   ],
   "gelato": [
     "coffee-chocolate-chip",
-    "alphonso-mango",
     "torta-al-limone",
-    "ny-strawberry-cheesecake"
+    "birthday-cake",
+    "wild-strawberry-swirl"
   ]
 }
