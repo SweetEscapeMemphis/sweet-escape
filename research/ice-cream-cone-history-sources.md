@@ -1,0 +1,11 @@
+# Ice Cream Cone History Sources
+
+Reviewed October 15, 2026 for `/blog/ice-cream-cone-history-memphis.html`.
+
+- Smithsonian Magazine, Kat Eschner, [“The Amazing, Portable, Edible Ice Cream Cone”](https://www.smithsonianmag.com/smart-news/amazing-portable-edible-ice-cream-cone-180964939/) (September 22, 2017). Explains that the inventor is uncertain, records competing 1904 World’s Fair claims, cites Agnes Marshall’s 1888 “Cornets with Cream,” and frames the fair as an important point in commercial popularization rather than a proven sole invention moment.
+- Library of Congress, [“One Scoop or Two”](https://blogs.loc.gov/loc/2013/07/one-scoop-or-two/) (July 23, 2013). Retells the Menches/Hamwi World’s Fair version as a popular legend and notes earlier paper and metal cones in Europe and edible cones in French cookbooks. The article does not establish one inventor.
+- Associated Press, Deep-Ann Durbin, [“Read our big scoop: Ice-cream cones, the ingenious invention of American immigrants”](https://apnews.com/article/ice-cream-cones-history-fair-5c942d2ad73d27a94c922abdb02ef94e) (September 2026). Reviews competing fair claims and earlier edible-container work, including Antonio Valvona’s biscuit-cup machinery. Used as secondary historical reporting; the article does not establish one universally accepted inventor.
+- United States Patent 746,971, [“Mold”](https://patents.google.com/patent/US746971A/en) (Italo Marchiony; granted December 15, 1903; application filed September 22, 1903). Primary patent record describes a mold for making ice-cream cups and similar goods. It is a documented edible-container patent, not conclusive proof of the modern cone’s invention.
+- Library of Congress, [“We Scream for Ice Cream: An Industry Guide — Patents”](https://guides.loc.gov/ice-cream-industry/patents). Identifies Marchiony’s US746971A as an ice-cream-cup mold patent.
+
+Sweet Escape facts were checked against its first-party Waffle Cone Swirl product page and scoop catalog. The catalog documents the flavor name and linked nutrition/allergen details, but does not establish cone-service availability, a recipe/history relationship, or current availability. The article therefore makes none of those claims.
