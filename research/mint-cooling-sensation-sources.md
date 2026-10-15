@@ -1,0 +1,9 @@
+# Mint Cooling Sensation Sources
+
+Reviewed October 15, 2026 for `/blog/mint-cooling-sensation-science.html`.
+
+- National Institute on Deafness and Other Communication Disorders, [“Taste Disorders”](https://www.nidcd.nih.gov/health/taste-disorders). Its overview distinguishes the five basic taste qualities from the common chemical sense; it identifies mint coolness as a chemical-sense sensation and explains that taste, chemical sense, heat/cold, texture, and aroma combine in flavor perception. Accessed October 15, 2026.
+- NCBI Bookshelf, [“TRPM8: The Cold and Menthol Receptor”](https://www.ncbi.nlm.nih.gov/books/NBK5238/). Review of TRPM8 as a cold- and menthol-responsive ion channel in sensory neurons. Used only to explain the general mechanism, not Sweet Escape recipes. Accessed October 15, 2026.
+- [“Menthol-induced activation of TRPM8 channels…”](https://pmc.ncbi.nlm.nih.gov/articles/PMC8791073/), peer-reviewed article available through PubMed Central. Used for the general explanation that menthol-related TRPM8 activation can contribute to cooling perception without treating that perception as a measured temperature decrease. Accessed October 15, 2026.
+
+Sweet Escape records checked: `data/flavors.js`; `/flavors.html#flavors`; `/scoops/cool-mint-cookie/`; `/scoops/mint-chip/`; `data/stock.json` (updated October 14, 2026 18:43:43 UTC). The stock snapshot listed Cool Mint Cookie and Mint Chip, but is not a current-day or future availability guarantee. Product pages provide distinct allergen and shared-equipment notes. No claim is made that a particular scoop contains menthol, peppermint oil, or a specific flavoring ingredient; names are not full ingredient statements. No taste ranking, recipe, manufacturing, health, dietary-suitability, or cross-contact guarantee is inferred.

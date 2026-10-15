@@ -75,6 +75,8 @@ These 45 standalone product pages contain the published flavor description and n
 
 ## Featured guides
 
+- [Why does mint feel cool in ice cream?](https://www.sweetescapememphis.com/blog/mint-cooling-sensation-science.html): Explains the common chemical sense and menthol-responsive TRPM8 research, distinguishes perceived cooling from actual temperature, and links the explanation carefully to Sweet Escape’s distinct mint scoop records and dated stock snapshot.
+
 - [Did the 1904 World’s Fair invent the ice cream cone?](https://www.sweetescapememphis.com/blog/ice-cream-cone-history-memphis.html): A sourced, careful history of earlier edible cornets, Marchiony’s 1903 ice-cream-cup mold patent, competing fair stories, and the documented Waffle Cone Swirl catalog entry.
 
 - [Ice cream by the cup or by weight? A Memphis planning guide](https://www.sweetescapememphis.com/blog/volume-vs-weight-ice-cream-calculator.html): Explains when to use the editable container-volume shopping plan versus Sweet Escape’s separate scoop-and-base weight estimate, including assumptions and limits.
