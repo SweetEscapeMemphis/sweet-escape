@@ -7,7 +7,7 @@ import vm from 'node:vm';
 const root = path.resolve(import.meta.dirname, '..');
 for (const all of [false, true]) {
   const nodes = new Map();
-  const element = () => ({ children: [], innerHTML: '', append(child) { this.children.push(child); }, addEventListener() {}, setAttribute() {} });
+  const element = () => ({ children: [], innerHTML: '', replaceChildren() { this.children = []; }, append(child) { this.children.push(child); }, addEventListener() {}, setAttribute() {} });
   const window = {};
   const context = vm.createContext({ window, document: {
     querySelector(selector) { if (!nodes.has(selector)) nodes.set(selector, element()); return nodes.get(selector); },
