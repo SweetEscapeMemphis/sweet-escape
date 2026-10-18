@@ -1,4 +1,5 @@
 # Sweet Escape Blog — Editorial Plan & Rules for Automated Posts
+- [x] 2026-10-18: Why Ice Cream Flavor Is More Than Sweetness: A Sweet Escape Tasting Guide; audience: Memphis customers; question: how to describe dessert preferences. Sources: NIH and NIDCD linked in article, Sweet Escape menu. No unconfirmed product facts.
 
 This file guides the recurring blog-post task. Read it fully before writing any post.
 
