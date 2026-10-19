@@ -1,4 +1,5 @@
 # Sweet Escape Blog — Editorial Plan & Rules for Automated Posts
+- [x] 2026-10-19: Do Astronauts Eat Real Ice Cream? A Sweet Escape Fun Fact. Reader: Memphis dessert customers. Question: do astronauts eat actual frozen ice cream? Rationale: new space-food history angle, separate from sensory and freezing-science guides. Sources: NASA Food on ISS, NASA Spinoff freeze-dried foods, NASA Space Food Systems; checked 2026-10-19. See research/space-ice-cream-sources.md. No individual product claims, stock claims, or product-data changes; directory regeneration not needed. Facts requiring confirmation: none for stated historical scope.
 - [x] 2026-10-18: Why Ice Cream Flavor Is More Than Sweetness: A Sweet Escape Tasting Guide; audience: Memphis customers; question: how to describe dessert preferences. Sources: NIH and NIDCD linked in article, Sweet Escape menu. No unconfirmed product facts.
 
 This file guides the recurring blog-post task. Read it fully before writing any post.
