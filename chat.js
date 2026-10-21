@@ -10,7 +10,7 @@
     phoneLabel: "(901) 718-5812",
     phoneHref: "tel:+19017185812",
     directions: "https://share.google/4KF1GDH3zOARV0nm1",
-    hours: "Monday–Thursday: 12–9 PM. Friday–Sunday: 12–10 PM.",
+    hours: "11 AM–10 PM every day.",
   };
   const GROUPS = [
     { key: "scoops", catalog: "SWEET_ESCAPE_FLAVORS", path: "scoops", label: "scoop" },
