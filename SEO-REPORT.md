@@ -275,3 +275,14 @@ Data and image assets:
 - The local item-focused blog passed desktop visual review and a 390 px mobile viewport check; the document and article fit the viewport without horizontal page overflow. RSS contains the newest 20 entries in descending publication order.
 - A focused unauthenticated search for recent blog pages returned no results. This is not proof that Google or Bing have not indexed them; authenticated Search Console and Bing Webmaster coverage data was not available in this workflow.
 - No current PageSpeed Insights or field Core Web Vitals results were available, so no performance score or LCP/INP/CLS claim is made. Continue checking field data through authorized Search Console/CrUX tooling when available.
+
+## Weekly technical/live SEO check — October 22, 2026
+
+- All 291 pre-publication canonical URLs in the live sitemap returned HTTP 200. Homepage, archive, robots, sitemap, RSS, and llms.txt also returned HTTP 200 without an X-Robots-Tag exclusion.
+- Both HTTP apex and HTTP www redirect HTTP 301 to the canonical HTTPS www homepage. No hosting or external account settings changed.
+- Live robots explicitly allows all 20 search/AI crawlers named in the publishing workflow; only /stock-manager.html is disallowed. Access does not guarantee crawling, indexing, training, ranking or citation.
+- Local SEO validation including the new article covers 292 unique titles, descriptions and canonicals with no errors. One pre-existing warning remains: the tasting-guide title is 73 characters. All 21 tracked JavaScript/module files passed syntax checks; sitemap and RSS parse, with 20 newest feed entries.
+- The new article passed desktop and 390 × 844 mobile visual review. Mobile document scroll width equals viewport width (390 px), one H1 and intended canonical confirmed. The CTA and footer remain readable.
+- Article external source-link checks found two background references unavailable to this client (Minnesota 403 and Illinois 503); replaced the customer-facing links with accessible corroborating PRI and NC State references, rather than publishing those failing links.
+- Corrected the outdated hours line in BLOG-PLAN.md to match the owner-approved October 21 site update (827f65a): 11 AM–10 PM daily. No new hours claim or external listing change.
+- Chrome's authenticated Search Console connection was unavailable in this run; no Google/Bing account change, repeated URL request or ordinary-blog Google Indexing API submission attempted. Public absence of a search result is not evidence of non-indexing. Current performance/field Core Web Vitals were not measured, so no scores are claimed.
