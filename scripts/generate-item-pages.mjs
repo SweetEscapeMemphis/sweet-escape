@@ -137,20 +137,27 @@ const groups = [
   },
 ];
 
+const selectedPages = new Set(process.argv.slice(2));
+const knownPages = new Set(groups.flatMap((group) => group.items.map((item) => `${group.directory}/${item.id}`)));
+for (const page of selectedPages) {
+  if (!knownPages.has(page)) throw new Error(`Unknown item page: ${page}`);
+}
 const urls = [];
 for (const group of groups) {
   group.items.forEach((item, index) => {
     const previous = group.items[(index - 1 + group.items.length) % group.items.length];
     const next = group.items[(index + 1) % group.items.length];
     const directory = path.join(root, group.directory, item.id);
-    fs.mkdirSync(directory, { recursive: true });
-    fs.writeFileSync(path.join(directory, "index.html"), renderPage(group, item, previous, next));
+    if (!selectedPages.size || selectedPages.has(`${group.directory}/${item.id}`)) {
+      fs.mkdirSync(directory, { recursive: true });
+      fs.writeFileSync(path.join(directory, "index.html"), renderPage(group, item, previous, next));
+    }
     urls.push(`${origin}/${group.directory}/${encodeURIComponent(item.id)}/`);
   });
 }
 
 updateSitemap(urls);
-console.log(`Generated ${urls.length} standalone item pages and updated sitemap.xml.`);
+console.log(`Generated ${selectedPages.size || urls.length} standalone item pages and updated sitemap.xml.`);
 
 function renderPage(group, item, previous, next) {
   const image = group.image(item);
@@ -159,14 +166,15 @@ function renderPage(group, item, previous, next) {
   const canonical = `${origin}/${group.directory}/${encodeURIComponent(item.id)}/`;
   const description = group.description(item);
   const detailedTitle = `${item.name} ${item.category} | Sweet Escape Memphis`;
-  const title = detailedTitle.length <= 65 ? detailedTitle : `${item.name} | Sweet Escape`;
-  const metaDescription = `See ${item.name} ${group.singular} details and current menu availability at Sweet Escape in Memphis, Tennessee.`;
+  const title = item.pageTitle || (detailedTitle.length <= 65 ? detailedTitle : `${item.name} | Sweet Escape`);
+  const metaDescription = item.metaDescription || `See ${item.name} ${group.singular} details and current menu availability at Sweet Escape in Memphis, Tennessee.`;
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: `${item.name} at Sweet Escape`,
     description,
     url: canonical,
+    ...(item.pageUpdated ? { dateModified: item.pageUpdated } : {}),
     isPartOf: { "@type": "WebSite", name: "Sweet Escape", url: `${origin}/` },
     about: {
       "@type": "MenuItem",
@@ -263,9 +271,15 @@ function yogurtDetails(item) {
   const declared = Object.entries(item.allergenStatus || {}).filter(([, status]) => status === "Yes").map(([name]) => name);
   return `
           <section class="item-section"><h2>Flavor details</h2><ul class="item-tags"><li>${escape(item.category)}</li>${item.seasonal ? "<li>Seasonal</li>" : ""}</ul></section>
+          ${renderDetailSections(item)}
           <section class="item-section"><h2>Ingredients</h2><p>${escape(item.ingredients || "Ask the shop to verify the current container label.")}</p></section>
           <section class="item-section item-callout"><h2>Allergen information</h2><p><strong>Declared allergens:</strong> ${declared.length ? escape(declared.join(", ")) : "No major allergens declared in the published record"}.</p><p>${escape(item.facilityNote || "Ask the shop to verify the current container label before ordering.")}</p></section>
           <section class="item-section"><h2>Published nutrition label</h2><p><a href="${escape(item.nutritionPdf)}" target="_blank" rel="noopener noreferrer">Open the official nutrition PDF</a>.</p><img class="item-label-image" src="/${escape(item.nutritionImage)}" alt="Nutrition Facts for ${escape(item.name)}" width="900" height="1400" loading="lazy"></section>`;
+}
+
+// Editorial product context lives in the catalog so regeneration preserves it.
+function renderDetailSections(item) {
+  return (item.detailSections || []).map((section) => `<section class="item-section"><h2>${escape(section.heading)}</h2><p>${escape(section.text)}</p>${section.links?.length ? `<ul>${section.links.map((link) => `<li><a href="${escape(link.href)}">${escape(link.label)}</a></li>`).join("")}</ul>` : ""}</section>`).join("\n          ");
 }
 
 function gelatoDetails(item) {
@@ -315,10 +329,17 @@ function footer() {
 function updateSitemap(itemUrls) {
   const file = path.join(root, "sitemap.xml");
   let sitemap = fs.readFileSync(file, "utf8");
-  const oldDates = new Map([...sitemap.matchAll(/<url>\s*<loc>(.*?)<\/loc>\s*<lastmod>(.*?)<\/lastmod>/g)].map((match) => [match[1], match[2]]));
-  sitemap = sitemap.replace(/\s*<url>\s*<loc>https:\/\/www\.sweetescapememphis\.com\/(?:scoops|yogurt|gelato|specialties)\/[^<]+<\/loc>[\s\S]*?<\/url>/g, "");
-  const entries = itemUrls.map((url) => `  <url><loc>${url}</loc><lastmod>${oldDates.get(url) || updated}</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>`).join("\n");
-  sitemap = sitemap.replace("</urlset>", `${entries}\n</urlset>`);
+  const remaining = new Set(itemUrls);
+  const itemDates = new Map(groups.flatMap((group) => group.items.filter((item) => item.pageUpdated).map((item) => [`${origin}/${group.directory}/${item.id}/`, item.pageUpdated])));
+  // Preserve existing ordering and dates; only real editorial changes get new dates.
+  sitemap = sitemap.replace(/<url>\s*<loc>(https:\/\/www\.sweetescapememphis\.com\/(?:scoops|yogurt|gelato|specialties)\/[^<]+)<\/loc>[\s\S]*?<\/url>/g, (entry, url) => {
+    if (!remaining.delete(url)) return "";
+    const date = itemDates.get(url);
+    if (!date) return entry;
+    return /<lastmod>/.test(entry) ? entry.replace(/<lastmod>[^<]*<\/lastmod>/, `<lastmod>${date}</lastmod>`) : entry.replace("</loc>", `</loc><lastmod>${date}</lastmod>`);
+  });
+  const entries = [...remaining].map((url) => `  <url><loc>${url}</loc><lastmod>${itemDates.get(url) || updated}</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>`).join("\n");
+  if (entries) sitemap = sitemap.replace("</urlset>", `${entries}\n</urlset>`);
   fs.writeFileSync(file, sitemap);
 }
 

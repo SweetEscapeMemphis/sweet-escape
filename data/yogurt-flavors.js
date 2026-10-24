@@ -181,7 +181,40 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
       "image": "assets/yogurt/scoops-webp/tahitian-vanilla-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/fa5f20774aee47d6.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=6663454ca7b9c.pdf",
-      "sourceUrl": "https://thehoneyhillfarms.com/nonfat-yogurts"
+      "sourceUrl": "https://thehoneyhillfarms.com/nonfat-yogurts",
+      "pageTitle": "Tahitian Vanilla Frozen Yogurt | Sweet Escape Memphis",
+      "metaDescription": "Explore Tahitian Vanilla nonfat frozen yogurt at Sweet Escape Memphis: ingredients, milk allergen, nutrition label, and the separate no-sugar-added option.",
+      "pageUpdated": "2026-10-24",
+      "detailSections": [
+        {
+          "heading": "Which Tahitian Vanilla is this?",
+          "text": "This is the Honey Hill Farms nonfat frozen yogurt in Sweet Escape’s yogurt catalog. The manufacturer describes it as smooth and creamy and suitable on its own or with toppings. Its ingredient list starts with nonfat milk and includes liquid sugar, corn syrup, whey, milk, and vanilla flavor. Nonfat describes its product category; this is not the no-sugar-added version."
+        },
+        {
+          "heading": "Compare the vanilla options",
+          "text": "Sweet Escape lists a separate Tahitian Vanilla (NSA) frozen yogurt with a different ingredient list and nutrition label. The scoop catalog also has a Tahitian Vanilla ice cream. Choose the page for the exact product you mean before comparing nutrition or allergens.",
+          "links": [
+            {
+              "label": "Tahitian Vanilla (NSA) frozen yogurt",
+              "href": "/yogurt/tahitian-vanilla-nsa/"
+            },
+            {
+              "label": "Tahitian Vanilla ice cream",
+              "href": "/scoops/tahitian-vanilla/"
+            }
+          ]
+        },
+        {
+          "heading": "Plan your frozen yogurt cup",
+          "text": "Use the live menu to check the latest posted flavor availability before visiting our Whitten Road shop. This catalog page stays available when a flavor is not listed. The label below applies to the yogurt; toppings have their own ingredients and allergen information.",
+          "links": [
+            {
+              "label": "How to build a frozen yogurt cup",
+              "href": "/blog/build-a-frozen-yogurt-cup.html"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "chocolate",
@@ -488,7 +521,38 @@ window.SWEET_ESCAPE_YOGURT_FLAVORS = {
       "image": "assets/yogurt/scoops-webp/spiced-apple-pie-transparent.webp",
       "nutritionImage": "assets/yogurt/nutrition/74a7820bd397b3c7.png",
       "nutritionPdf": "https://thehoneyhillfarms.com/file-manager/download?file=66634562296f0.pdf",
-      "sourceUrl": "https://thehoneyhillfarms.com/yogurt"
+      "sourceUrl": "https://thehoneyhillfarms.com/yogurt",
+      "pageTitle": "Spiced Apple Pie Frozen Yogurt | Sweet Escape Memphis",
+      "metaDescription": "Explore Honey Hill Farms Spiced Apple Pie frozen yogurt at Sweet Escape Memphis: cinnamon, ingredients, milk allergen, seasonal listing, and nutrition label.",
+      "pageUpdated": "2026-10-24",
+      "detailSections": [
+        {
+          "heading": "An apple-and-spice frozen yogurt",
+          "text": "Spiced Apple Pie is a Honey Hill Farms frozen yogurt listed in Sweet Escape’s seasonal catalog. The manufacturer describes an apple-and-spice flavor. The published ingredient statement below names cinnamon along with milk, cream, yogurt cultures, and natural and artificial flavors. This is a frozen yogurt flavor, rather than a slice of pie or an apple ice cream."
+        },
+        {
+          "heading": "Compare fall dessert flavors",
+          "text": "Choosing between apple and pumpkin? Compare this yogurt with Pumpkin Pie frozen yogurt, which has its own ingredient statement and nutrition label. Sweet Escape also catalogs Apple Crisp ice cream and Bourbon Vanilla Apple Crisp gelato. These are separate products, so use each item’s label and current menu listing.",
+          "links": [
+            {
+              "label": "Pumpkin Pie vs. Spiced Apple Pie guide",
+              "href": "/blog/pumpkin-pie-vs-spiced-apple-pie.html"
+            },
+            {
+              "label": "Apple Crisp ice cream",
+              "href": "/scoops/apple-crisp/"
+            },
+            {
+              "label": "Bourbon Vanilla Apple Crisp gelato",
+              "href": "/gelato/bourbon-vanilla-apple-crisp/"
+            }
+          ]
+        },
+        {
+          "heading": "Seasonal catalog and current availability",
+          "text": "A seasonal listing does not set a serving date or guarantee that this flavor is on a machine today. Check the live menu before visiting Sweet Escape in Memphis. Review the milk declaration and facility note below, and ask the shop to verify the current container label if an ingredient or allergy question affects your order."
+        }
+      ]
     },
     {
       "id": "strawberry-sensations",
