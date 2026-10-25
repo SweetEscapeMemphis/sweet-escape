@@ -20,7 +20,7 @@ Live menu and current availability: https://www.sweetescapememphis.com/stock.htm
 
 ## Primary pages
 
-- [Ice cream party calculator](https://www.sweetescapememphis.com/ice-cream-party-calculator/): Enter your guest count and choose 1 scoop (4oz), 2 scoops (8oz), or 3 scoops (12oz) per person. See how many whole pints or gallons you need, rounded up. The separate Sweet Escape by-weight calculator uses 5 oz scoops, an optional 4 oz Cookie Dough Base or Brownie Base, and $0.80 per weight ounce.
+- [Ice cream party calculator](https://www.sweetescapememphis.com/ice-cream-party-calculator/): Free planning tool for 1–1,000 guests. Quick scoop estimates in whole pints or gallons, plus an optional cup-based sundae bar planner with extra allowance, containers, dry toppings, supplies, and entered USD costs. Copy, print, share inputs, or embed the quick tool. The independent Sweet Escape estimator uses 5 weight oz scoops, an optional 4 oz Cookie Dough Base or Brownie Base, and $0.80 per weight ounce. Fluid volume and weight are separate.
 
 - [Home](https://www.sweetescapememphis.com/): Official Sweet Escape Memphis homepage.
 - [About](https://www.sweetescapememphis.com/about.html): Official business overview, website standards, and contact information.
