@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ice Cream Party Calculator | Free Embedded Tool</title>
+<meta name="description" content="Free ice cream party calculator: estimate whole pints or gallons for your guests.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://www.sweetescapememphis.com/ice-cream-party-calculator/">
+<link rel="stylesheet" href="/home.css?v=20260903-2"><link rel="stylesheet" href="/ice-cream-calculator.css?v=20261025-1"><link rel="stylesheet" href="/ice-cream-party-simple.css?v=20261025-1">
+<script type="module" src="/ice-cream-calculator.js?v=20261025-1"></script>
+</head><body class="ice-cream-page party-embed"><main class="party-main" id="main-content">    <div class="simple-party" id="simple-party-calculator">
+    <section class="party-hero" aria-labelledby="party-title">
+      <h1 id="party-title">Ice Cream Party Calculator: <span>How Much Ice Cream Do You Need?</span></h1>
+      <p>Free ice cream party calculator for gatherings of 1–1,000 guests. Estimate servings, pints, and gallons. Open the full planner for toppings, supplies, and costs.</p>
+    </section>
+    <div class="party-card">
+      <noscript><p>Turn on JavaScript to calculate your party. The example below is for 16 people with 2 scoops each.</p><style>#party-form { display: none; }</style></noscript>
+      <p id="simple-url-warning" class="field-error" role="status"></p>
+      <form id="party-form" novalidate>
+        <label class="guest-label" for="guests">How many people?</label>
+        <input id="guests" name="guests" type="number" min="1" max="1000" step="1" value="16" required inputmode="numeric" aria-describedby="guests-error">
+        <p id="guests-error" class="field-error"></p>
+        <fieldset class="serving-sizes">
+          <legend>Choose a serving size</legend>
+          <div class="size-options">
+            <label class="size-choice"><input type="radio" name="serving" value="small"><span><strong>1 scoop</strong> <small>(4 fl oz)</small></span></label>
+            <label class="size-choice"><input type="radio" name="serving" value="medium" checked><span><strong>2 scoops</strong> <small>(8 fl oz)</small></span></label>
+            <label class="size-choice"><input type="radio" name="serving" value="large"><span><strong>3 scoops</strong> <small>(12 fl oz)</small></span></label>
+          </div>
+        </fieldset>
+      </form>
+      <section class="result-card" id="plan-results" aria-labelledby="results-heading">
+        <h2 id="results-heading">You’ll need</h2>
+        <p class="result-amounts"><strong id="result-pints">8 pints</strong><span>or</span><strong id="result-gallons">1 gallon</strong></p>
+        <p class="result-note">Alternative purchases, each rounded up. One planned scoop = ½ cup (4 US fluid ounces). No extra allowance in this quick estimate.</p><p id="simple-assumptions">16 guests × 2 scoops (1 cup each); buy 8 pints or 1 gallon.</p>
+      </section>
+      <div class="party-actions simple-actions"><button type="button" class="home-button secondary" id="simple-copy" data-simple-action disabled>Copy results</button><button type="button" class="home-button secondary" id="simple-print" data-simple-action disabled>Print results</button><button type="button" class="home-button secondary" id="simple-share" data-simple-action disabled>Share results</button></div>
+      <p id="simple-action-status" class="party-status" role="status" aria-live="polite" aria-atomic="true"></p>
+      <p id="simple-share-output" hidden><a id="simple-share-link" href="/ice-cream-party-calculator/">Open your shared results</a></p>
+      <div id="simple-copy-fallback" hidden><label for="simple-copy-text">Text to copy manually</label><textarea id="simple-copy-text" readonly></textarea></div>
+      <p id="result-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+    </div>
+
+    </div>
+<p class="embed-full-link"><a href="https://www.sweetescapememphis.com/ice-cream-party-calculator/" target="_blank" rel="noopener">Open the full party planner</a></p></main></body></html>
