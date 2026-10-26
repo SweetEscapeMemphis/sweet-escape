@@ -286,3 +286,12 @@ Data and image assets:
 - Article external source-link checks found two background references unavailable to this client (Minnesota 403 and Illinois 503); replaced the customer-facing links with accessible corroborating PRI and NC State references, rather than publishing those failing links.
 - Corrected the outdated hours line in BLOG-PLAN.md to match the owner-approved October 21 site update (827f65a): 11 AM–10 PM daily. No new hours claim or external listing change.
 - Chrome's authenticated Search Console connection was unavailable in this run; no Google/Bing account change, repeated URL request or ordinary-blog Google Indexing API submission attempted. Public absence of a search result is not evidence of non-indexing. Current performance/field Core Web Vitals were not measured, so no scores are claimed.
+
+## Monday technical/live SEO check — October 26, 2026
+
+- All 299 pre-publication sitemap URLs returned HTTP 200 with matching canonicals and no accidental noindex directive.
+- New-article local SEO validation covers 300 unique titles, descriptions and canonicals, with zero errors. One pre-existing warning remains: the tasting-guide title is 73 characters.
+- All 26 tracked JS/module files passed syntax checks; calculator regression suite passed all 10 tests. Sitemap/RSS XML and article JSON-LD parse; RSS retains the newest 20 entries. Article local references resolve.
+- Desktop and 390 × 844 mobile visual checks passed. Mobile document width equals viewport width, 390 px; one H1, readable article/CTA/footer. Temporary viewport reset.
+- Owner-restored stock preserved. Item directory regenerated identically at 200 items.
+- GSC Wizard subscription remains blocked; authenticated Google/Bing browser discovery checks will be recorded in research/soda-foam-sources.md. No external account setting changes or Google Indexing API use. No field performance or universal indexing claim.
