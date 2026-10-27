@@ -23,4 +23,15 @@ Original prose; no copied third-party paragraphs. No unsupported single-inventor
 
 Prepublication checks: SEO audit covers 301 unique titles/descriptions/canonicals, zero errors; one existing 73-character tasting-guide title warning. All 26 tracked JS/module files pass syntax checks. XML, RSS newest 20, JSON-LD dates/canonical, one H1 and local article references pass. Desktop and 390 × 844 mobile layout reviewed; document width 390 px, readable CTA/footer; viewport reset. External references returned HTTP 200 except MoMA's command-line request (403); MoMA opened normally in authenticated Chrome and its collection metadata/exhibition references were confirmed. No account setting changed.
 
-Publication/discovery results pending. Submission does not guarantee indexing or AI inclusion.
+## Publication and discovery — October 27
+
+- Deployed: article commit f5ef7ab plus whitespace-only follow-up 5ca652c; GitHub Pages run 40538614034 completed successfully. Live article HTTP 200, matching self-canonical, one H1, valid BlogPosting JSON-LD, no HTTP/meta noindex. Linked from archive; included in sitemap, newest-20 RSS and llms.txt. Linked local menu/catalog/directory/visit/image URLs HTTP 200.
+- Crawlable: live robots permits all 20 search/AI crawlers specified in the workflow; only private stock-manager path excluded. Public discovery files verified. This supports Apple and AI discovery, not universal direct submission.
+- Submitted: established repository script verified the published key file and submitted exactly the new canonical plus blog archive. IndexNow HTTP 200 accepted both. Google Search Console confirmed “Indexing requested” and addition to a priority crawl queue. Bing Webmaster confirmed “Indexing requested.” Only one manual request per engine for this new URL; no repeat submission of old unchanged posts.
+- Existing sitemap confirmed successful in both authenticated browser sessions. Google showed 298 discovered URLs, last read October 25; Bing showed 299, October 25 crawl, zero errors/warnings. Counts are the browser records observed October 27, not current live sitemap counts (301). Neither existing sitemap was resubmitted.
+- Observed indexed: NOT confirmed for new article. Initial Google inspection: unknown to Google; Bing: discovered October 27 but not crawled. These are initial coverage observations, not proof of permanent exclusion or specific technical failure.
+- Recent-post check: soda-foam article still reported unknown to Google on October 27 inspection; no repeated submission. Monday's full technical/live audit was completed October 26 and is not due again today.
+- Previously reported GSC Wizard subscription block was not retried; authenticated browser fallback used. No API quota, tracker report or performance metrics refreshed, and no account settings changed. No Google Indexing API used.
+- Screenshots: /tmp/sweet-escape-scoop-triggers-published.png, /tmp/sweet-escape-scoop-triggers-google.png, /tmp/sweet-escape-scoop-triggers-bing.png.
+
+Submission does not guarantee crawling, indexing, ranking, citation or AI inclusion.
