@@ -27,4 +27,12 @@ Prepublication validation: 1,538 body words after header; 1,562 including articl
 
 Authenticated webmaster observations October 29: recent banana-browning article now says “URL is on Google” / “Page is indexed”; no resubmission. Google sitemap Success, last read October 25, 298 discovered pages. Bing sitemap Success, last crawl October 25, 299 URLs and feed Success20; zero errors/warnings. These are stored webmaster observations, not the new live sitemap303 count. Previously established GSC Wizard subscription restriction not retried; authenticated UI and existing verified IndexNow script used instead. Monday full safe audit completed October 26, not due again today.
 
-Deployment and new-URL discovery results pending.
+## Publication and discovery — October 29
+
+- Deployed: c5b15a3baa392d795267484268ac7e6e7777c92c, Pages run 40916239480 completed successfully. Live URL HTTP 200, intended self-canonical, one H1, correct BlogPosting, no HTTP/meta noindex; normal desktop rendering confirmed.
+- Crawlable: article linked from live archive and included in current sitemap303, newest-20 RSS first item, and llms.txt. All linked local catalog/specialties/menu/visit paths and social image HTTP 200. All 20 specified search/AI crawler agents allowed for this URL under live robots longest-path rules; private manager remains excluded.
+- Submitted: existing script verified the published key and submitted exactly the new canonical and https://www.sweetescapememphis.com/blog/ once to IndexNow; HTTP 200 accepted/key validated. Bing accepted one request and visibly confirmed “Indexing requested”; pre-request daily quota displayed100. No unchanged URLs or existing sitemaps resubmitted.
+- Google request attempted once after live verification; Search Console reported a submission error and failure connecting to reCAPTCHA. No bypass/retry loop; retained page for optional owner retry. Existing successful canonical sitemap and internal links remain discovery paths.
+- Observed indexed: not yet confirmed for this article. Initial Google state unknown; Bing discovered October29 but not crawled. Separately, October28 banana article is now observed indexed on Google, so no further manual retry of that older URL is needed.
+
+Screenshots saved: /tmp/sweet-escape-ice-cream-barge-published.png, /tmp/sweet-escape-ice-cream-barge-google.png and /tmp/sweet-escape-ice-cream-barge-bing.png. No Google Indexing API used, no account settings changed. AI/Apple discovery is supported by accessible original content, public links and discovery files—not a nonexistent universal submission API. Submission never guarantees crawling, indexing, ranking, citation or inclusion.
