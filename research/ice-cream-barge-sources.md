@@ -1,0 +1,30 @@
+# The Navy’s Concrete Ice-Cream Barge Was Real
+
+Date: October 29, 2026. First publication of the local day.
+Canonical: https://www.sweetescapememphis.com/blog/navy-concrete-ice-cream-barge.html
+Reader: curious Memphis dessert customers. Question: did the Navy really use a concrete ice-cream supply barge, and how did it work?
+Rationale: new maritime supply/engineering angle, distinct from pre-electric-freezer and astronaut articles; archive titles, relevant full articles and Git history reviewed. Owner explicitly requested at least 1,500 words.
+
+## Sources checked October 29
+
+- https://media.defense.gov/2019/Apr/10/2002112319/-1/-1/1/AH194509.pdf#page=54 — September 1945 All Hands, printed page 52 / PDF page 54. Original Navy photographs/caption visually inspected in Chrome: concrete barge, fresh/frozen supply to small units, five-gallon delivery, crew eating. Direct automated fetch returns 403, but normal Chrome PDF rendering works. No image reproduced, no invented vessel name, route, total vessel count or favorite flavor. The adjacent Melville article is a different vessel and is not conflated with the barge.
+- https://news.usni.org/2015/01/30/unique-ships-u-s-navy — independent Naval Institute historical account: 1945 Army Transportation Corps loan, towing/Pacific/smaller ships, rated ten gallons per seven minutes and 2,000-gallon storage. Rated capability is not asserted as daily actual production. No cost, alcohol-ban causal narrative, combat claim or universal first-ever claim used.
+- https://www.maritime.dot.gov/multimedia/concrete-ship — MARAD: steel-reinforced concrete hull shells, steel-bar versus plate availability, 1941 barge program, separate non-self-propelled barges and powered concrete vessels. General construction history, not a vessel-specific blueprint.
+- https://manoa.hawaii.edu/exploringourfluidearth/physical/navigation-and-transportation/transportation-and-ship-design — University of Hawai‘i: weight displacement/flotation, block-versus-bowl illustration, stability distinct from merely floating. No numerical vessel stability or dimensions invented.
+- https://www.nist.gov/pml/owm/metric-si/metric-kitchen/metric-kitchen-cooking-measurement-equivalencies — U.S. gallon/four quarts/sixteen measuring cups. 32 half-cup portions is a labeled illustrative arithmetic example, not an actual Navy or Sweet Escape serving size. No metric equivalent used.
+- https://www.dvidshub.net/video/779473/history-galley-ice-cream — NHHC first-party description of its 1945 Navy cookbook presentation: larger vessels' essential machines and smaller-vessel recipe context. Description read; no unviewed video-transcript claim, no historical recipe reproduced as modern instructions.
+- https://books.lib.uoguelph.ca/icecreamtechnologyebook/chapter/hardening/ — H. Douglas Goff, Guelph: packaged hardening, heat transfer, container dimensions, air circulation and packaging. General modern science; not reconstruction of 1945 equipment or Sweet Escape manufacturing.
+- https://www.fda.gov/consumers/consumer-updates/are-you-storing-food-safely — freezer 0°F/−18°C, thermometer, prompt storage/label directions, freezing not killing most bacteria and unreliable appearance/odor/taste. Current guidance, not historical safety approval.
+- Repository flavors.html, specialties.html, stock.html, visit.html, item-directory.html, product JS records and data/stock.json reviewed. General hand-dipped category and specialties connection only. No specific item newly covered. Milk/nut/other individual-product cautions not generalized; current labels/handling and shared-equipment/cross-contact caution retained.
+
+## Editorial safeguards and package
+
+Original article prose, primary historical photograph checked without copying the image. USNI supplements rather than replaces the contemporary Navy evidence; engineering claims rely on primary agency/university teaching material. No claim ice cream won the war, no naval affiliation, no made-up local recipe, taste, prices, availability or services. Sources/date visible. Three-plus natural internal links, one CTA, no redundant FAQ.
+
+Product/stock data unchanged; October 22 stock timestamp not presented as same-day availability. Directory remains 200 items, no regeneration needed. Original checkout remains untouched; clean synced clone used. Existing article dates preserved.
+
+Prepublication validation: 1,538 body words after header; 1,562 including article header. SEO audit passes 303 indexable pages with zero errors; one existing 73-character tasting-guide title warning. All 26 tracked JS/MJS files pass syntax checks. JSON-LD dates/organization/canonical, one H1, all local targets/anchors, XML sitemap303 and newest-20 RSS validated; existing post dates unchanged. Desktop and 390 × 844 mobile top/body/CTA/footer reviewed with no document overflow; temporary viewport reset. USNI, MARAD and Guelph automated requests returned 403 but normal Chrome showed their full relevant content; all other article source HTML URLs returned 200. Original Navy PDF page visually verified. No access challenge bypass, settings change or unlicensed image reuse.
+
+Authenticated webmaster observations October 29: recent banana-browning article now says “URL is on Google” / “Page is indexed”; no resubmission. Google sitemap Success, last read October 25, 298 discovered pages. Bing sitemap Success, last crawl October 25, 299 URLs and feed Success20; zero errors/warnings. These are stored webmaster observations, not the new live sitemap303 count. Previously established GSC Wizard subscription restriction not retried; authenticated UI and existing verified IndexNow script used instead. Monday full safe audit completed October 26, not due again today.
+
+Deployment and new-URL discovery results pending.
