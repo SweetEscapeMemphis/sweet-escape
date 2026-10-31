@@ -37,3 +37,12 @@ For browser QA, serve the repository on localhost port 8768 and run
 `PLAYWRIGHT_MODULE`, `CHROME_PATH`, and `CALCULATOR_PREVIEW_ORIGIN` support local
 runtimes and other origins. No application dependency was added. The existing
 GitHub Pages branch deployment remains in use.
+
+## Google Preferred Sources
+
+Public footers and blog article endings use Google's official Preferred Sources
+button. Each page includes `/preferred-source.css?v=20261031-1` and the async
+`https://news.google.com/swg/js/v1/publisher.js` script once in its head. The
+button container is `<div google-add-preferred-source-btn data-theme="light"></div>`.
+Keep this integration in new blog posts; both product-page generators retain it.
+A noscript link opens Google's source selector for `sweetescapememphis.com`.

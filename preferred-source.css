@@ -1,0 +1,44 @@
+/* Google renders the official button; these rules only arrange its container. */
+.preferred-source {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.preferred-source--footer {
+  grid-column: 1 / -1;
+  justify-self: stretch;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line, #ead8d0);
+}
+
+.preferred-source--article {
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 60rem;
+  margin: 0;
+  padding: 0 clamp(1.2rem, 7vw, 7rem) clamp(2rem, 4vw, 3rem);
+  color: var(--ink, #4b2418);
+}
+
+.preferred-source--article p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.preferred-source noscript a {
+  display: inline-block;
+  padding: 0.75rem;
+  color: inherit;
+  text-underline-offset: 0.2em;
+}
+
+@media print {
+  .preferred-source {
+    display: none;
+  }
+}
