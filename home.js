@@ -117,228 +117,247 @@
   }
 
   function createScrollFilm(root, prefersReducedMotion) {
-    if (!root) return null;
-
     const canvas = root.querySelector("canvas");
     const stage = root.querySelector(".scroll-film-stage");
     const loader = root.querySelector(".scroll-film-loader");
     const context = canvas?.getContext("2d", { alpha: false });
     const frameCount = Number(root.dataset.frameCount || 0);
-    const framePath = root.dataset.framePath || "assets/media/cookie-dough-frames/frame-";
-    const frameVersion = root.dataset.frameVersion || "1";
-
     if (!canvas || !stage || !context || frameCount < 2) return null;
 
-    const frames = new Array(frameCount);
-    const loadingFrames = new Array(frameCount);
+    const framePath = root.dataset.framePath;
+    const frameVersion = root.dataset.frameVersion || "1";
     const lastFrame = frameCount - 1;
-    let currentFrame = prefersReducedMotion ? lastFrame : 0;
+    const firstFrame = Number(root.dataset.frameStart || 0);
+    const sourceWidth = Number(canvas.getAttribute("width"));
+    const sourceHeight = Number(canvas.getAttribute("height"));
+    const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+    const still = prefersReducedMotion || Boolean(connection?.saveData) || /(?:^|-)2g$/.test(connection?.effectiveType || "");
+    const frames = new Map();
+    const loading = new Set();
+    const failures = new Set();
+    const cacheLimit = 36;
+    let queue = [];
+    let currentFrame = still ? lastFrame : firstFrame;
     let targetFrame = currentFrame;
     let renderedFrame = -1;
-    let pixelRatio = 1;
     let animationFrame = 0;
-    let ready = false;
+    let previousTime = 0;
     let started = false;
-    let filmObserver = null;
-    const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
-    const prefersReducedData = Boolean(connection?.saveData) || /(?:^|-)2g$/.test(connection?.effectiveType || "");
+    let nearby = false;
+    let direction = 1;
+    let decodeWidth = 0;
+    let generation = 0;
 
-    if (prefersReducedMotion) {
-      root.classList.add("is-reduced-motion");
+    if (still) root.classList.add("is-reduced-motion");
+    resizeCanvas();
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver((entries) => {
+        nearby = entries.some((entry) => entry.isIntersecting);
+        if (nearby) {
+          started = true;
+          updateFromScroll();
+        } else {
+          queue = [];
+          cancelAnimationFrame(animationFrame);
+          animationFrame = 0;
+          previousTime = 0;
+        }
+      }, { rootMargin: "75% 0px" });
+      observer.observe(stage);
+    } else {
+      nearby = started = true;
+      updateFromScroll();
+    }
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) {
+        cancelAnimationFrame(animationFrame);
+        animationFrame = 0;
+        previousTime = 0;
+      } else if (nearby) updateFromScroll();
+    });
+
+    return { resize: resizeCanvas, update: updateFromScroll };
+
+    function planFrames() {
+      // Always decode the actual playhead first. A sparse, nearest-frame cache
+      // caused visible jumps and could even display motion in reverse.
+      const wanted = [];
+      const addPair = (value) => wanted.push(Math.floor(value), Math.ceil(value));
+      addPair(currentFrame);
+      addPair(targetFrame);
+      if (!still) {
+        for (let offset = 1; offset <= 14; offset += 1) {
+          wanted.push(Math.round(currentFrame) + direction * offset);
+          wanted.push(Math.round(targetFrame) + direction * offset);
+          if (offset <= 5) wanted.push(Math.round(targetFrame) - direction * offset);
+        }
+      }
+      queue = [...new Set(wanted)].filter((index) => index >= firstFrame && index <= lastFrame
+        && !frames.has(index) && !loading.has(index) && !failures.has(index));
+      pumpQueue();
     }
 
-    resizeCanvas();
-    startWhenNearby();
-
-    return {
-      resize: resizeCanvas,
-      update: updateFromScroll,
-    };
-
-    async function initializeFrames() {
-      if (prefersReducedMotion) {
-        await loadFrame(lastFrame);
-        ready = true;
-        currentFrame = lastFrame;
-        targetFrame = lastFrame;
-        renderFrame(lastFrame);
-        root.classList.add("is-ready");
-        return;
-      }
-
-      await loadFrame(0);
-      ready = true;
-      renderFrame(0);
-      root.classList.add("is-ready");
-      if (loader) loader.setAttribute("aria-hidden", "true");
-      updateFromScroll();
-      scheduleCoarsePrefetch();
+    function pumpQueue() {
+      if (!nearby || document.hidden) return;
+      while (loading.size < 4 && queue.length) loadFrame(queue.shift());
     }
 
     function loadFrame(index) {
-      if (index < 0 || index >= frameCount) return Promise.resolve(null);
-      if (frames[index]) return Promise.resolve(frames[index]);
-      if (loadingFrames[index]) return loadingFrames[index];
-
-      loadingFrames[index] = new Promise((resolve) => {
-        const image = new Image();
-        image.decoding = "async";
-        image.onload = () => {
-          frames[index] = image;
-          resolve(image);
-        };
-        image.onerror = () => resolve(null);
-        image.src = `${framePath}${String(index).padStart(3, "0")}.webp?v=${frameVersion}`;
-      }).finally(() => {
-        loadingFrames[index] = null;
-      });
-
-      return loadingFrames[index];
-    }
-
-    function startWhenNearby() {
-      if (started) return;
-      if ("IntersectionObserver" in window) {
-        filmObserver = new IntersectionObserver((entries) => {
-          if (!entries.some((entry) => entry.isIntersecting)) return;
-          filmObserver.disconnect();
-          filmObserver = null;
-          startFilm();
-        }, { rootMargin: "20% 0px" });
-        filmObserver.observe(root);
-      } else {
-        startFilm();
-      }
-    }
-
-    function startFilm() {
-      if (started) return;
-      started = true;
-      initializeFrames();
-    }
-
-    function prefetchCoarseFrames() {
-      if (prefersReducedData) return;
-      const step = Math.max(12, Math.ceil(frameCount / 7));
-      const indices = [];
-      for (let index = step; index < lastFrame; index += step) indices.push(index);
-      indices.push(lastFrame);
-
-      const loadNext = async () => {
-        while (indices.length) await loadFrame(indices.shift());
-      };
-
-      Promise.all([loadNext(), loadNext()]).then(requestFilmUpdate);
-    }
-
-    function scheduleCoarsePrefetch() {
-      const queuePrefetch = () => {
-        if ("requestIdleCallback" in window) {
-          window.requestIdleCallback(prefetchCoarseFrames, { timeout: 2500 });
-        } else {
-          window.setTimeout(prefetchCoarseFrames, 500);
+      loading.add(index);
+      const version = generation;
+      const width = decodeWidth;
+      const image = new Image();
+      image.decoding = "async";
+      image.onload = async () => {
+        try {
+          // Decode outside the animation callback; cache display-sized surfaces
+          // instead of hundreds of full-resolution photographs.
+          if (image.decode) await image.decode();
+          if (version !== generation) return;
+          const surface = document.createElement("canvas");
+          surface.width = width;
+          surface.height = Math.round(width * sourceHeight / sourceWidth);
+          const paint = surface.getContext("2d", { alpha: false });
+          paint.fillStyle = "#fffdfb";
+          paint.fillRect(0, 0, surface.width, surface.height);
+          if (root.id === "cookie-dough-story") {
+            // A restrained contact shadow keeps the cup on a surface.
+            paint.save();
+            paint.translate(width * 0.5, surface.height * 0.947);
+            paint.scale(width * 0.31, surface.height * 0.025);
+            const shadow = paint.createRadialGradient(0, 0, 0, 0, 0, 1);
+            shadow.addColorStop(0, "rgba(77, 48, 30, 0.13)");
+            shadow.addColorStop(1, "rgba(77, 48, 30, 0)");
+            paint.fillStyle = shadow;
+            paint.fillRect(-1, -1, 2, 2);
+            paint.restore();
+          }
+          paint.imageSmoothingEnabled = true;
+          paint.imageSmoothingQuality = "high";
+          paint.drawImage(image, 0, 0, surface.width, surface.height);
+          frames.set(index, surface);
+          trimCache();
+          requestFilmUpdate();
+        } catch {
+          if (version === generation) failures.add(index);
+        } finally {
+          finish();
         }
       };
+      image.onerror = () => {
+        if (version === generation) failures.add(index);
+        finish();
+      };
+      image.src = `${framePath}${String(index).padStart(3, "0")}.webp?v=${frameVersion}`;
 
-      if (document.readyState === "complete") {
-        queuePrefetch();
-      } else {
-        window.addEventListener("load", queuePrefetch, { once: true });
+      function finish() {
+        image.onload = image.onerror = null;
+        loading.delete(index);
+        if (version !== generation) planFrames();
+        else pumpQueue();
+        // A failed frame leaves the last good picture/poster in place.
+        if (failures.size && loader) loader.textContent = "";
       }
     }
 
-    function prefetchFrameWindow(center) {
-      const nearby = [center, center + 1, center - 1, center + 2, center - 2, center + 3, center - 3];
-      Promise.all(nearby.map(loadFrame)).then(requestFilmUpdate);
+    function trimCache() {
+      const protectedFrames = new Set([
+        Math.floor(currentFrame), Math.ceil(currentFrame),
+        Math.floor(targetFrame), Math.ceil(targetFrame),
+      ]);
+      const candidates = [...frames.keys()].filter((index) => !protectedFrames.has(index))
+        .sort((a, b) => Math.abs(b - targetFrame) - Math.abs(a - targetFrame));
+      while (frames.size > cacheLimit && candidates.length) frames.delete(candidates.shift());
     }
 
     function updateFromScroll() {
-      if (prefersReducedMotion) return;
-      if (!started) return;
-
-      const bounds = root.getBoundingClientRect();
-      const stickyTop = Number.parseFloat(window.getComputedStyle(stage).top) || 0;
-      const travel = Math.max(1, root.offsetHeight - stage.offsetHeight);
-      const progress = Math.min(1, Math.max(0, (stickyTop - bounds.top) / travel));
-
-      root.style.setProperty("--film-progress", progress.toFixed(4));
-      targetFrame = progress * lastFrame;
-      prefetchFrameWindow(Math.round(targetFrame));
+      if (!started || !nearby) return;
+      if (!still) {
+        const bounds = root.getBoundingClientRect();
+        const stickyTop = Number.parseFloat(window.getComputedStyle(stage).top) || 0;
+        const travel = Math.max(1, root.offsetHeight - stage.offsetHeight);
+        const progress = Math.min(1, Math.max(0, (stickyTop - bounds.top) / travel));
+        // Reserve a brief finish so the completed dessert can be appreciated.
+        const assembly = Math.min(1, Math.max(0, (progress - 0.025) / 0.88));
+        const next = firstFrame + assembly * (lastFrame - firstFrame);
+        direction = next >= targetFrame ? 1 : -1;
+        targetFrame = next;
+        root.style.setProperty("--film-progress", progress.toFixed(4));
+      }
+      planFrames();
       requestFilmUpdate();
     }
 
     function requestFilmUpdate() {
-      if (!ready || animationFrame) return;
+      if (animationFrame || !nearby || document.hidden) return;
       animationFrame = requestAnimationFrame(animateToTarget);
     }
 
-    function animateToTarget() {
+    function animateToTarget(time) {
       animationFrame = 0;
+      const elapsed = previousTime ? Math.min(50, time - previousTime) : 1000 / 60;
+      previousTime = time;
       const distance = targetFrame - currentFrame;
-
-      if (Math.abs(distance) < 0.08) {
-        currentFrame = targetFrame;
-      } else {
-        currentFrame += distance * 0.24;
-      }
-
-      renderFrame(Math.round(currentFrame));
-
-      if (Math.abs(targetFrame - currentFrame) >= 0.08) {
-        requestFilmUpdate();
-      }
+      // Time-based damping behaves the same on 60 Hz and 120 Hz screens.
+      currentFrame = Math.abs(distance) < 0.015 ? targetFrame
+        : currentFrame + distance * (1 - Math.exp(-elapsed / 90));
+      if (Math.abs(targetFrame - currentFrame) < 0.015) currentFrame = targetFrame;
+      renderFrame(currentFrame);
+      planFrames();
+      if (Math.abs(targetFrame - currentFrame) >= 0.015) requestFilmUpdate();
+      else previousTime = 0;
     }
 
     function resizeCanvas() {
       const bounds = canvas.getBoundingClientRect();
       if (!bounds.width || !bounds.height) return;
-
-      pixelRatio = Math.min(2, window.devicePixelRatio || 1);
-      const nextWidth = Math.round(bounds.width * pixelRatio);
-      const nextHeight = Math.round(bounds.height * pixelRatio);
-
-      if (canvas.width !== nextWidth || canvas.height !== nextHeight) {
-        canvas.width = nextWidth;
-        canvas.height = nextHeight;
-        renderedFrame = -1;
+      const pixelRatio = Math.min(2, window.devicePixelRatio || 1);
+      const width = Math.round(bounds.width * pixelRatio);
+      const height = Math.round(bounds.height * pixelRatio);
+      if (canvas.width === width && canvas.height === height && decodeWidth) return;
+      canvas.width = width;
+      canvas.height = height;
+      renderedFrame = -1;
+      const nextDecodeWidth = Math.max(1, Math.min(720, Math.ceil(Math.min(width, height * sourceWidth / sourceHeight))));
+      if (nextDecodeWidth !== decodeWidth) {
+        decodeWidth = nextDecodeWidth;
+        generation += 1;
+        frames.clear();
+        failures.clear();
+        root.classList.remove("is-ready");
       }
-
-      renderFrame(Math.round(currentFrame));
+      renderFrame(currentFrame);
+      if (started) updateFromScroll();
     }
 
-    function renderFrame(index) {
-      const safeIndex = Math.min(lastFrame, Math.max(0, index));
-      const loadedFrame = findNearestLoadedFrame(safeIndex);
-      if (!loadedFrame || renderedFrame === loadedFrame.index) return;
-      const image = loadedFrame.image;
-
-      const width = canvas.width / pixelRatio;
-      const height = canvas.height / pixelRatio;
-      const scale = Math.min(width / image.naturalWidth, height / image.naturalHeight);
-      const drawWidth = image.naturalWidth * scale;
-      const drawHeight = image.naturalHeight * scale;
-      const x = (width - drawWidth) / 2;
-      const y = (height - drawHeight) / 2;
-
-      context.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
+    function renderFrame(value) {
+      const lower = Math.floor(value);
+      const upper = Math.ceil(value);
+      const first = frames.get(lower);
+      const second = frames.get(upper);
+      // Never substitute a distant frame: hold the picture until the correct
+      // adjacent pair arrives. Blend opaque surfaces to avoid alpha halos.
+      if (!first || (!second && upper !== lower) || renderedFrame === value) return;
+      const scale = Math.min(canvas.width / first.width, canvas.height / first.height);
+      const width = first.width * scale;
+      const height = first.height * scale;
+      const x = (canvas.width - width) / 2;
+      const y = (canvas.height - height) * 0.28;
+      context.globalAlpha = 1;
+      context.fillStyle = "#fffdfb";
+      context.fillRect(0, 0, canvas.width, canvas.height);
       context.imageSmoothingEnabled = true;
       context.imageSmoothingQuality = "high";
-      context.fillStyle = "#fffdfb";
-      context.fillRect(0, 0, width, height);
-      context.drawImage(image, x, y, drawWidth, drawHeight);
-      renderedFrame = loadedFrame.index;
-      canvas.dataset.renderedFrame = String(loadedFrame.index);
-    }
-
-    function findNearestLoadedFrame(index) {
-      if (frames[index]) return { image: frames[index], index };
-
-      for (let offset = 1; offset < frameCount; offset += 1) {
-        if (frames[index - offset]) return { image: frames[index - offset], index: index - offset };
-        if (frames[index + offset]) return { image: frames[index + offset], index: index + offset };
+      context.drawImage(first, x, y, width, height);
+      if (upper !== lower) {
+        context.globalAlpha = value - lower;
+        context.drawImage(second, x, y, width, height);
+        context.globalAlpha = 1;
       }
-
-      return null;
+      renderedFrame = value;
+      canvas.dataset.renderedFrame = value.toFixed(3);
+      root.classList.add("is-ready");
+      if (loader) loader.setAttribute("aria-hidden", "true");
     }
   }
 
