@@ -1,4 +1,5 @@
 # Sweet Escape item indexing and editorial plan
+- [x] 2026-11-01: /blog/peanuts-grow-underground-not-roots.html explains peanut geocarpy and seed/pod/root distinctions. Item ID peanut-butter-bullseye, already covered elsewhere; category and exact allergen/equipment notes only, no new standalone item URL or recipe/stock/cultivar/sourcing inference. Sources in research/peanut-geocarpy-sources.md. Current labels, facility/shared-equipment and cross-contact cautions retained. Latest owner stock update preserved; complete directory regenerated at 200 items with breadcrumb and Preferred Sources features retained. First November 1 post.
 - [x] 2026-10-31 PM: /blog/baked-alaska-ice-cream-hot-oven.html explains Baked Alaska’s insulating foam/cake and temporary temperature contrast. Brownie Base (brownie-base) linked only by its verified warm-brownie/one-scoop format; no new standalone item page, ingredients, recipe, handling, or availability claim. Current labels, facility/shared-equipment and cross-contact cautions retained. Sources in research/baked-alaska-sources.md. Product/stock data unchanged; 200-item directory remains current without regeneration. Second/final October 31 post.
 - [x] 2026-10-31: `/blog/why-dry-ice-is-dry.html` answers why dry ice seems to smoke without leaving a meltwater puddle. General dessert-category connection only; no inventory item newly covered and no claim about Sweet Escape equipment, manufacturing, shipping, or dry-ice use. Sources in `research/dry-ice-sources.md`. Strict dry-ice cautions included. Product/stock data unchanged; 200-item directory remains current and did not need regeneration.
 - [x] 2026-10-30: Can Music Change How Ice Cream Tastes? URL: /blog/can-music-change-ice-cream-flavor.html. Reader: curious Memphis dessert customers. Question: can sound change perceived flavor without changing the dessert? Rationale: distinct auditory angle after archive review. Sources: NIDCD and five original sensory studies, checked October 30; research/music-ice-cream-sources.md. General hand-dipped/gelato connection; no individual item coverage, recipe, health, ingredient, soundtrack or availability claim. Current-label/facility/shared-equipment/cross-contact caution retained. No unconfirmed facts asserted. Product/stock data unchanged; 200-item directory remains current, regeneration unnecessary. First October 30 post.
@@ -22,13 +23,13 @@
 
 Make every verified catalog item crawlable and discoverable, then earn standalone URLs only through useful, original content. Search-engine submission does not guarantee indexing or ranking.
 
-## Current inventory (2026-09-23)
+## Current inventory (verified 2026-11-01)
 
-- 87 hand-dipped ice cream and sherbet catalog items
+- 132 hand-dipped ice cream and sherbet catalog items
 - 29 frozen-yogurt and yogurt-menu sorbet items
 - 33 gelato and sorbetto catalog items
 - 6 specialty dessert formats
-- 155 total documented items exposed in `item-directory.html`
+- 200 total documented items exposed in `item-directory.html`
 
 ## Permanent copy standard
 
