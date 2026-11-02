@@ -1,21 +1,21 @@
 {
-  "updatedAt": "2026-10-31T23:32:58.744Z",
+  "updatedAt": "2026-11-02T20:25:53.485Z",
   "scoops": [
     "amaretto-cherry",
     "banana-pudding",
     "blue-moon",
+    "blueberry-burst",
     "chocolate",
     "cotton-candy-twist",
+    "cow-tippin",
     "mint-chip",
     "praline-pecan",
-    "superman",
+    "salty-jack",
     "vanilla-bean",
-    "cookie-monster",
     "cookies-cream",
     "dulce-de-leche",
     "mango-fiesta",
     "pina-coolada",
-    "sea-salt-caramel-truffle",
     "so-very-strawberry",
     "tiramisu",
     "banana",
@@ -34,9 +34,9 @@
     "watermelon-sorbet"
   ],
   "gelato": [
-    "maple-roasted-butter-pecan",
     "mint-chocolate-chip",
     "ny-strawberry-cheesecake",
-    "roasted-banana-dulce-de-leche"
+    "roasted-banana-dulce-de-leche",
+    "traditional-cookies-cream"
   ]
 }
