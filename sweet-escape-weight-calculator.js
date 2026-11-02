@@ -1,5 +1,5 @@
 import { track } from './ice-cream-party-events.js?v=20261025-1';
-import { WEIGHT_DEFAULTS, validateWeighted, calculateWeighted, weightedAssumptions, weightedPortion, weightedText, loadWeightedPlan, weightedShareURL, volume, weightVolume, usd } from './ice-cream-calculator-core.js?v=20261014-1';
+import { WEIGHT_DEFAULTS, validateWeighted, calculateWeighted, weightedAssumptions, weightedPortion, weightedText, loadWeightedPlan, weightedShareURL, volume, weightVolume, usd } from './ice-cream-calculator-core.js?v=20261102-1';
 const el = id => document.getElementById(id), form = el('weight-form'), fields = Object.keys(WEIGHT_DEFAULTS);
 let timer, current;
 const read = () => Object.fromEntries(fields.map(key => [key, el(key).value.trim()]));
@@ -49,10 +49,10 @@ el('weight-reset').addEventListener('click', () => {
   write(WEIGHT_DEFAULTS); update(); el('weight-url-warning').textContent = '';
   const url = new URL(window.location.href); fields.forEach(key => url.searchParams.delete(key)); url.searchParams.delete('weightOz');
   window.history.replaceState(null, '', url);
-  el('weight-action-status').textContent = 'Weight estimate reset to 20 guests, one 5 oz scoop each, no base, and 10% extra.';
+  el('weight-action-status').textContent = 'Weight estimate reset to 20 guests, one 5 oz scoop each, scoops only, and 10% extra.';
 });
 const loaded = loadWeightedPlan(window.location.search); write(loaded.raw); update(false);
 el('weight-reset').disabled = false;
-if (loaded.warnings.length) el('weight-url-warning').textContent = 'Some shared inputs were invalid, repeated, or used an older ounce portion that does not match 5 oz scoops. Defaults were used for those inputs; review the scoop and base selections.';
+if (loaded.warnings.length) el('weight-url-warning').textContent = 'Some shared inputs were invalid, repeated, or used an older ounce portion that does not match 5 oz scoops. Defaults were used for those inputs; review the scoop and sundae selections.';
 window.addEventListener('beforeprint', () => update(false));
 window.addEventListener('afterprint', () => { delete document.body.dataset.printPlan; });

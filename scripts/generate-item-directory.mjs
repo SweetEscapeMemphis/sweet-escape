@@ -18,7 +18,7 @@ const groups = [
   ["Gelato and sorbetto", "gelato", load("data/gelato-flavors.js")],
 ];
 const specialties = [
-  ["Warm cookie dough base", "cookie-dough-base"], ["Warm brownie base", "brownie-base"], ["Dubai Dream", "dubai-dream"],
+  ["Warm cookie dough sundae", "cookie-dough-base"], ["Warm brownie sundae", "brownie-base"], ["Dubai Dream", "dubai-dream"],
   ["Ice cream nachos", "ice-cream-nachos"], ["Cookie ice cream sandwich", "cookie-ice-cream-sandwich"], ["Self-serve frozen yogurt", "self-serve-frozen-yogurt"],
 ];
 const total = groups.reduce((sum, [, , items]) => sum + items.length, 0) + specialties.length;

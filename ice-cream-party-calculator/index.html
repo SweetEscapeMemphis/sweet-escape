@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="/ice-cream-party-simple.css?v=20261025-1">
   <script type="module" src="/ice-cream-calculator.js?v=20261025-1"></script>
   <script type="module" src="/ice-cream-party-planner.js?v=20261025-1"></script>
-  <script type="module" src="/sweet-escape-weight-calculator.js?v=20261025-1"></script>
+  <script type="module" src="/sweet-escape-weight-calculator.js?v=20261102-1"></script>
   <script defer src="/analytics.js?v=20261007-2"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-H90X0LXRD3"></script>
   <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-H90X0LXRD3');</script>
@@ -266,15 +266,15 @@
       <button type="button" id="copy-embed" class="home-button secondary">Copy embed code</button><p id="embed-status" role="status" aria-live="polite"></p>
     </section>
     <section class="party-card weight-card" id="sweet-escape-weight-calculator" aria-labelledby="weight-heading">
-      <div class="weight-heading"><div><p class="party-kicker">Specifically for Sweet Escape</p><h2 id="weight-heading">Plan your treat by weight</h2><p>Estimate your Sweet Escape budget at <strong>$0.80 per ounce</strong> (80 cents/oz). Plan with <strong>5 oz per scoop</strong>. Add Cookie Dough Base or Brownie Base for <strong>4 oz per guest</strong>.</p></div><span class="weight-rate">$0.80<span>per weight oz</span></span></div>
-      <noscript><p>Enable JavaScript to customize this estimate. The default is 20 guests × one 5 oz scoop each × 10% extra, with no base: 110 oz and $88.00 total, before tax and other expenses.</p></noscript>
+      <div class="weight-heading"><div><p class="party-kicker">Specifically for Sweet Escape</p><h2 id="weight-heading">Plan your treat by weight</h2><p>Estimate your Sweet Escape budget at <strong>$0.80 per ounce</strong> (80 cents/oz). Plan with <strong>5 oz per scoop</strong>. For a Cookie Dough Sundae or Brownie Sundae, add a <strong>4 oz cookie or brownie portion per guest</strong>.</p></div><span class="weight-rate">$0.80<span>per weight oz</span></span></div>
+      <noscript><p>Enable JavaScript to customize this estimate. The default is 20 guests × one 5 oz scoop each × 10% extra, with scoops only: 110 oz and $88.00 total, before tax and other expenses.</p></noscript>
       <p id="weight-url-warning" class="field-error" role="status"></p>
       <div class="weight-layout">
         <form id="weight-form" novalidate>
           <div class="field-grid">
             <div class="party-field"><label for="weightGuests">Number of guests</label><input type="number" id="weightGuests" name="weightGuests" value="20" min="1" max="1000" step="1" required inputmode="numeric" aria-describedby="weightGuests-help weightGuests-error"><p class="field-help" id="weightGuests-help">1–1,000 people</p><p class="field-error" id="weightGuests-error"></p></div>
             <div class="party-field"><label for="weightScoops">Scoops per guest</label><input type="number" id="weightScoops" name="weightScoops" value="1" min="1" max="12" step="1" required inputmode="numeric" aria-describedby="weightScoops-help weightScoops-error"><p class="field-help" id="weightScoops-help">Each scoop adds 5 oz. Choose 1–12 scoops.</p><p class="field-error" id="weightScoops-error"></p></div>
-            <div class="party-field"><label for="weightBase">Add a base</label><select id="weightBase" name="weightBase" aria-describedby="weightBase-help weightBase-error"><option value="none" selected>No base</option><option value="cookie-dough">Cookie Dough Base (+4 oz)</option><option value="brownie">Brownie Base (+4 oz)</option></select><p class="field-help" id="weightBase-help">Adds one 4 oz base per guest, regardless of scoop count. Included at $0.80/oz.</p><p class="field-error" id="weightBase-error"></p></div>
+            <div class="party-field"><label for="weightBase">Make it a sundae</label><select id="weightBase" name="weightBase" aria-describedby="weightBase-help weightBase-error"><option value="none" selected>Scoops only</option><option value="cookie-dough">Cookie Dough Sundae (+4 oz)</option><option value="brownie">Brownie Sundae (+4 oz)</option></select><p class="field-help" id="weightBase-help">Adds one 4 oz cookie or brownie portion per guest; ice cream scoops are counted separately above. Included at $0.80/oz.</p><p class="field-error" id="weightBase-error"></p></div>
             <div class="party-field"><label for="weightExtra">Extra allowance (%)</label><input type="number" id="weightExtra" name="weightExtra" value="10" min="0" max="30" step="1" required inputmode="numeric" aria-describedby="weightExtra-help weightExtra-error"><p class="field-help" id="weightExtra-help">0–30% extra, included in weight and cost.</p><p class="field-error" id="weightExtra-error"></p></div>
           </div>
           <p id="weight-validation" class="field-error"></p>

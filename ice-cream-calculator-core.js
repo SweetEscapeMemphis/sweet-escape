@@ -79,14 +79,14 @@ export function shareURL(raw, base) {
 export const WEIGHT_RATE_CENTS = 80;
 export const SCOOP_WEIGHT_OZ = 5;
 export const BASE_WEIGHT_OZ = 4;
-export const WEIGHT_BASES = Object.freeze({ none: 'No base', 'cookie-dough': 'Cookie Dough Base', brownie: 'Brownie Base' });
+export const WEIGHT_BASES = Object.freeze({ none: 'Scoops only', 'cookie-dough': 'Cookie Dough Sundae', brownie: 'Brownie Sundae' });
 export const weightVolume = value => new Intl.NumberFormat('en-US', { maximumFractionDigits: 4 }).format(value);
 export const WEIGHT_DEFAULTS = Object.freeze({ weightGuests: '20', weightScoops: '1', weightBase: 'none', weightExtra: '10' });
 export function validateWeighted(raw) {
   const errors = {};
   if (!integer(raw.weightGuests, 1, 1000)) errors.weightGuests = 'Enter a whole guest count from 1 to 1,000.';
   if (!integer(raw.weightScoops, 1, 12)) errors.weightScoops = 'Enter 1 to 12 whole scoops per guest. Each scoop weighs 5 oz for this plan.';
-  if (!own(WEIGHT_BASES, raw.weightBase)) errors.weightBase = 'Choose no base, Cookie Dough Base, or Brownie Base.';
+  if (!own(WEIGHT_BASES, raw.weightBase)) errors.weightBase = 'Choose scoops only, Cookie Dough Sundae, or Brownie Sundae.';
   if (!integer(raw.weightExtra, 0, 30)) errors.weightExtra = 'Enter a whole percentage from 0 to 30.';
   return errors;
 }
@@ -105,11 +105,11 @@ export function calculateWeighted(raw) {
 export function weightedPortion(raw) {
   const r = calculateWeighted(raw);
   const iceCream = `${volume(r.scoops)} ${r.scoops === 1 ? 'scoop' : 'scoops'} × 5 oz = ${volume(r.scoopOzPerGuest)} oz`;
-  return `${iceCream}${r.baseOzPerGuest ? ` + ${r.baseLabel} (4 oz)` : ', no base'}: ${volume(r.ozPerGuest)} oz per guest before the extra allowance.`;
+  return `${iceCream}${r.baseOzPerGuest ? ` + ${r.baseLabel} baked portion (4 oz)` : ', scoops only'}: ${volume(r.ozPerGuest)} oz per guest before the extra allowance.`;
 }
 export function weightedAssumptions(raw) {
   const r = calculateWeighted(raw);
-  return `${volume(r.guests)} guests × ${volume(r.ozPerGuest)} oz per guest × ${volume(1 + r.extra / 100)} = ${weightVolume(r.totalOz)} oz planned. ${r.extra}% extra included. Plan uses 5 oz per scoop and 4 oz for the selected base per guest; actual serving weights can vary.`;
+  return `${volume(r.guests)} guests × ${volume(r.ozPerGuest)} oz per guest × ${volume(1 + r.extra / 100)} = ${weightVolume(r.totalOz)} oz planned. ${r.extra}% extra included. Plan uses 5 oz per scoop and 4 oz for the selected sundae’s baked portion per guest; actual serving weights can vary.`;
 }
 export function weightedText(raw) {
   const r = calculateWeighted(raw);

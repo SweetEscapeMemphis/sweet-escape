@@ -23,7 +23,7 @@ const pngScoops = new Set(["rocky-road", "udderly-chocolate"]);
 const specialties = [
   {
     id: "cookie-dough-base",
-    name: "Cookie Dough Base",
+    name: "Cookie Dough Sundae",
     category: "Warm specialty",
     description: "Freshly baked chocolate-chip cookie dough with your choice of one ice cream scoop on top.",
     image: "assets/specialties/cookie-dough-base.webp",
@@ -33,9 +33,9 @@ const specialties = [
   },
   {
     id: "brownie-base",
-    name: "Brownie Base",
+    name: "Brownie Sundae",
     category: "Warm specialty",
-    description: "A warm brownie base finished with your choice of one ice cream scoop.",
+    description: "A warm brownie topped with your choice of one ice cream scoop.",
     image: "assets/specialties/brownie-base.webp",
     alt: "Warm fudgy brownie topped with a scoop of vanilla ice cream",
     width: 1000,

@@ -1,7 +1,7 @@
 # Sweet Escape Memphis
 - [Did people really make Parmesan ice cream?](https://www.sweetescapememphis.com/blog/parmesan-ice-cream-history.html): Nutt's actual 1789 recipe, syrup alongside cheese, long-s print, molded iced-cheese terminology and museum objects, with a separate NY Strawberry Cheesecake gelato connection; no Parmesan offering or historical-lineage claim.
 - [Peanuts grow underground, not on roots](https://www.sweetescapememphis.com/blog/peanuts-grow-underground-not-roots.html): Aboveground flowers, pegs, underground pods, seed coats and kernels; a peanut-butter ice-cream connection with exact product cautions and no availability, cultivar or dietary-safety inference.
-- [Ice cream in a hot oven](https://www.sweetescapememphis.com/blog/baked-alaska-ice-cream-hot-oven.html): Baked Alaska’s meringue and cake slow heat transfer; time, geometry, cold starting conditions, and food safety matter. Includes a separate verified Brownie Base connection, not a Baked Alaska offering.
+- [Ice cream in a hot oven](https://www.sweetescapememphis.com/blog/baked-alaska-ice-cream-hot-oven.html): Baked Alaska’s meringue and cake slow heat transfer; time, geometry, cold starting conditions, and food safety matter. Includes a separate verified Brownie Sundae connection, not a Baked Alaska offering.
 - [Why dry ice is “dry”](https://www.sweetescapememphis.com/blog/why-dry-ice-is-dry.html): Solid carbon dioxide sublimates under ordinary pressure; the visible fog is condensed water droplets, and dry ice requires strict handling precautions. No Sweet Escape production or shipping claim.
 - [Can music change how ice cream tastes?](https://www.sweetescapememphis.com/blog/can-music-change-ice-cream-flavor.html): Primary sensory studies distinguish flavor dominance, intensity and enjoyment, with a practical listening comparison; no recipe, sugar-content or universal soundtrack claim.
 - [The Navy’s concrete ice-cream barge](https://www.sweetescapememphis.com/blog/navy-concrete-ice-cream-barge.html): A documented 1945 photograph, rated output versus storage, reinforced-concrete hulls, flotation, volume units and cold-storage logistics; no shop manufacturing inference.
@@ -30,7 +30,7 @@ Live menu and current availability: https://www.sweetescapememphis.com/stock.htm
 
 ## Primary pages
 
-- [Ice cream party calculator](https://www.sweetescapememphis.com/ice-cream-party-calculator/): Free planning tool for 1–1,000 guests. Quick scoop estimates in whole pints or gallons, plus an optional cup-based sundae bar planner with extra allowance, containers, dry toppings, supplies, and entered USD costs. Copy, print, share inputs, or embed the quick tool. The independent Sweet Escape estimator uses 5 weight oz scoops, an optional 4 oz Cookie Dough Base or Brownie Base, and $0.80 per weight ounce. Fluid volume and weight are separate.
+- [Ice cream party calculator](https://www.sweetescapememphis.com/ice-cream-party-calculator/): Free planning tool for 1–1,000 guests. Quick scoop estimates in whole pints or gallons, plus an optional cup-based sundae bar planner with extra allowance, containers, dry toppings, supplies, and entered USD costs. Copy, print, share inputs, or embed the quick tool. The independent Sweet Escape estimator uses 5 weight oz scoops, an optional Cookie Dough Sundae or Brownie Sundae with a 4 oz baked portion, and $0.80 per weight ounce. Fluid volume and weight are separate.
 
 - [Home](https://www.sweetescapememphis.com/): Official Sweet Escape Memphis homepage.
 - [About](https://www.sweetescapememphis.com/about.html): Official business overview, website standards, and contact information.
@@ -142,7 +142,7 @@ These 45 standalone product pages contain the published flavor description and n
 - [Current gelato and sorbetto flavors](https://www.sweetescapememphis.com/blog/current-gelato-sorbetto-flavors.html)
 - [Nutrition and allergen information](https://www.sweetescapememphis.com/blog/nutrition-allergen-guide.html)
 - [Cookie desserts](https://www.sweetescapememphis.com/blog/cookie-desserts-memphis.html)
-- [Cookie Dough Base vs. Brownie Base](https://www.sweetescapememphis.com/blog/cookie-dough-vs-brownie-base.html)
+- [Cookie Dough Sundae vs. Brownie Sundae](https://www.sweetescapememphis.com/blog/cookie-dough-vs-brownie-base.html)
 - [No Sugar Added guide](https://www.sweetescapememphis.com/blog/no-sugar-added-guide.html)
 - [Kids' first visit guide](https://www.sweetescapememphis.com/blog/kids-first-ice-cream-visit.html)
 - [What is sorbetto?](https://www.sweetescapememphis.com/blog/what-is-sorbetto.html)

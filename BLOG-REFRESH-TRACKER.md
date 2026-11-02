@@ -81,7 +81,7 @@ Source: repository scoop/yogurt/gelato records and specialties descriptions. FDA
 
 ## Fourth-batch scope and evidence
 
-Three product and format guides: Brownie Base, self-serve frozen yogurt cup planning, and the Cookie Dough Base/Cookie Ice Cream Sandwich comparison. Claims verified against current specialties descriptions, catalogs, and live stock source. Component ingredient limitations retained; no prices or substitutions inferred.
+Three product and format guides: Brownie Sundae, self-serve frozen yogurt cup planning, and the Cookie Dough Sundae/Cookie Ice Cream Sandwich comparison. Claims verified against current specialties descriptions, catalogs, and live stock source. Component ingredient limitations retained; no prices or substitutions inferred.
 
 ## Fifth-batch scope and evidence
 
@@ -137,8 +137,8 @@ The gelato catalog guide documents the actual search fields, Gelato/Sorbetto/Veg
 
 ## Eighteenth-batch scope and evidence
 
-The Cookie Ice Cream Sandwich guide was expanded using the exact specialty description (chosen scoop pressed between two chocolate-chip cookies) and compared only with the published structures of Cookie Dough Base, Brownie Base, and Ice Cream Nachos. It retains current-label and cross-contact cautions for the multi-component dessert and preserves the original September 12 publication date.
+The Cookie Ice Cream Sandwich guide was expanded using the exact specialty description (chosen scoop pressed between two chocolate-chip cookies) and compared only with the published structures of Cookie Dough Sundae, Brownie Sundae, and Ice Cream Nachos. It retains current-label and cross-contact cautions for the multi-component dessert and preserves the original September 12 publication date.
 
 ## Nineteenth-batch scope and evidence
 
-The six-specialty guide was rebuilt as a format comparison using the current first-party descriptions on `specialties.html`: Cookie Dough Base, Brownie Base, Dubai Dream, Ice Cream Nachos, Cookie Ice Cream Sandwiches, and self-serve frozen yogurt with toppings. It distinguishes each structure, links to the relevant product catalogs and guides, and keeps changing availability separate from the documented menu. Ingredient, nutrition, and allergen cautions remain component-specific; no price, portion, or dietary-safety claim was added. The original September 12 publication date and URL remain unchanged.
+The six-specialty guide was rebuilt as a format comparison using the current first-party descriptions on `specialties.html`: Cookie Dough Sundae, Brownie Sundae, Dubai Dream, Ice Cream Nachos, Cookie Ice Cream Sandwiches, and self-serve frozen yogurt with toppings. It distinguishes each structure, links to the relevant product catalogs and guides, and keeps changing availability separate from the documented menu. Ingredient, nutrition, and allergen cautions remain component-specific; no price, portion, or dietary-safety claim was added. The original September 12 publication date and URL remain unchanged.
