@@ -118,6 +118,11 @@
   object-fit: cover;
 }
 
+.specialty-image-cookie img,
+.specialty-image-brownie img {
+  object-fit: contain;
+}
+
 .specialty-image-sandwich {
   background: #f5ecff;
 }
