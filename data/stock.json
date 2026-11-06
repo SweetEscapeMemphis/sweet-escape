@@ -1,8 +1,9 @@
 {
-  "updatedAt": "2026-11-02T20:25:53.485Z",
+  "updatedAt": "2026-11-06T22:26:33.428Z",
   "scoops": [
     "amaretto-cherry",
     "banana-pudding",
+    "bear-claw",
     "blue-moon",
     "blueberry-burst",
     "chocolate",
@@ -12,31 +13,30 @@
     "praline-pecan",
     "salty-jack",
     "vanilla-bean",
-    "cookies-cream",
     "dulce-de-leche",
     "mango-fiesta",
     "pina-coolada",
     "so-very-strawberry",
-    "tiramisu",
     "banana",
-    "oregon-strawberry"
+    "oregon-strawberry",
+    "peaches-and-cream"
   ],
   "yogurt": [
     "cheesecake",
-    "southern-butter-pecan",
+    "cookie-monster",
+    "cookies-n-cream",
     "french-vanilla",
     "ooey-gooey-cinnamon-bun",
     "pumpkin-pie",
-    "sea-salt-caramel-pretzel",
     "strawberry-sensations",
     "triple-chocolate",
-    "pink-lemonade-sorbet",
+    "valencia-orange-sorbet",
     "watermelon-sorbet"
   ],
   "gelato": [
+    "piemonte-hazelnut-chocolate-crunch",
     "mint-chocolate-chip",
     "ny-strawberry-cheesecake",
-    "roasted-banana-dulce-de-leche",
-    "traditional-cookies-cream"
+    "roasted-banana-dulce-de-leche"
   ]
 }
