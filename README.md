@@ -46,3 +46,20 @@ button. Each page includes `/preferred-source.css?v=20261031-1` and the async
 button container is `<div google-add-preferred-source-btn data-theme="light"></div>`.
 Keep this integration in new blog posts; both product-page generators retain it.
 A noscript link opens Google's source selector for `sweetescapememphis.com`.
+
+## DoorDash Direct Ordering
+
+The homepage, main navigation, mobile actions, stock page, and specialties page
+link to Sweet Escape's active Direct Ordering checkout:
+https://order.online/business/sweet-escape-25354478. This URL was verified in
+the signed-in DoorDash Merchant Portal in Safari on November 6, 2026 (business
+25354478, store 52781043). Customers order from Sweet Escape's branded page;
+secure checkout is hosted on order.online and delivery is fulfilled by DoorDash.
+This is separate from the DoorDash Marketplace listing and from Clover's hosted
+store. Menu, price, availability, delivery eligibility, and ordering hours come
+from the existing Clover–DoorDash setup; website stock is maintained separately.
+
+Order links emit `order_online_click` through the existing analytics handler.
+These clicks do not confirm purchases. The delivery address prompt and available
+products were checked; no paid order was submitted, so order receipt in Clover,
+printer routing, and completed delivery still require a real operational test.

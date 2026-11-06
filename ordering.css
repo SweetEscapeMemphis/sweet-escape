@@ -1,0 +1,34 @@
+.home-nav .order-online-link,
+.site-nav .order-online-link {
+  background: #b82f69;
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.65rem 1rem;
+  font-weight: 800;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.order-online-link:focus-visible {
+  outline: 3px solid #38b6ff;
+  outline-offset: 3px;
+}
+.ordering-callout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+}
+.ordering-callout span,
+.ordering-note {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+@media (max-width: 760px) {
+  .mobile-action-bar:has(.order-online-link) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .mobile-action-bar .order-online-link {
+    background: #b82f69;
+    color: #fff;
+  }
+}
