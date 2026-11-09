@@ -1,0 +1,35 @@
+# Blueberry wax color — source and publication record
+
+Checked November 9, 2026 for /blog/why-blueberries-look-blue.html.
+
+## Editorial scope
+
+Reader question: why can a blueberry look blue outside while its released juice does not match? Original surface-optics versus pigment-liquid explanation; archive reviewed. Distinct from the botanical berry classification, pistachio pigment article, fruit-menu navigation and Nobel blueberry-menu mention. Blueberry Burst was already covered; this is an educational connection, not a new product page or newly covered inventory item. First November 9 post.
+
+## Primary and institutional sources
+
+- NASA Science, https://science.nasa.gov/ems/03_behaviors/ — light reflection, absorption, transmission, scattering and dependence on wavelength/structure. Relevant full HTML section checked. No new claim about the shop’s lighting or a particular photographic color.
+- University of Bristol, February 7, 2024, https://www.bristol.ac.uk/wolfson-bioimaging/news/2024/scientists-reveal-why-blueberries-are-blue.html — researchers’ own account of wax-crystal scattering, blue/UV signal and recreation of a fruit-wax coating on card. Checked HTML. Intro plus derived explanation kept within source budget. No proposed commercial coating is described as available or used in food.
+- Middleton et al., 2024, Science Advances 10(6):eadk4219, DOI 10.1126/sciadv.adk4219, https://pmc.ncbi.nlm.nih.gov/articles/PMC10849586/ — primary indexed paper text/figure description: highbush blueberry wax intact versus mechanically removed; water comparison; dark skin pigment, red released pigment over pale flesh. Direct PMC retrieval showed a browser check; primary indexed text was available. No attempt to bypass it. https://pubmed.ncbi.nlm.nih.gov/38324684/ confirms bibliographic record through indexed text. No solvent names, concentrations or procedures in the customer article. Not a home extraction activity.
+- Yan et al., 2023, Plants, People, Planet 5:736–751, https://nph.onlinelibrary.wiley.com/doi/10.1002/ppp3.10368 — full relevant primary HTML: twelve genotypes, two commercial picks, glossiness/lightness changes, wax/pigment comparison, CIELAB measurement dimensions. Original study boundaries retained; no universal cultivar rule or claim pigments never matter.
+- Chu et al., 2018, Food Chemistry 240:68–74, DOI 10.1016/j.foodchem.2017.06.024, https://pubmed.ncbi.nlm.nih.gov/28873622/ — primary indexed abstract: wax removal accelerated water loss/decay and shortened shelf life in the experiment. Direct PubMed response lacked article text, publisher direct page returned 403; indexed primary abstract was available. No numeric shelf-life promise, food-safety test or instruction to avoid washing.
+- American Chemical Society, https://www.acs.org/education/activities/color-changing-liquid.html — full relevant activity HTML: anthocyanin acid/base behavior; explicit do-not-eat/drink and adult/PPE directions. Article explains concept only, does not reproduce chemical procedure; preserves activity-not-food warning.
+- U.S. Highbush Blueberry Council, https://blueberry.org/baking/ — first-party baking guidance on streaking and gentle folding. Only those bounded baking claims used. Other marketing, nutrition and health claims and blanket pH/formula advice omitted. Not evidence for a shop recipe.
+- Kew scientist Paula Rudall, October 23, 2017, https://www.kew.org/read-and-watch/plant-colours-not-pigments — primary collaborator account of Pollia/Margaritaria layered cell-wall structural color and preserved Pollia collected in Ethiopia in 1974. Checked full HTML. No “brightest fruit” ranking, edible-use or plant-foraging recommendation. Cambridge related page direct retrieval failed 403; not needed for claims.
+- FDA, https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-produce-safely — full relevant consumer HTML: clean hands/equipment, running-water washing, no soap/detergent/commercial produce wash, washing reduces but does not eliminate bacteria. Only bounded handling guidance, no medical advice.
+
+All fresh prose, no source images or long quotations copied; per-source derived text below 200 words, counting repeated references together. No claims of health benefit, dietary safety or guaranteed color.
+
+## Sweet Escape verification
+
+data/flavors.js and /scoops/blueberry-burst/ verify Ice Cream category and exact description: creamy mascarpone-style ice cream with blueberry swirl and blueberry pieces. Mascarpone-style retained; no complete recipe, cheese amount, cultivar, supplier, wax treatment, colorant, pigment amount or finished-product color mechanism inferred.
+
+Published reference declares Milk; equipment note names peanuts, tree nuts, wheat, soy and eggs. Source date Thursday, November 4, 2021. Article preserves nutrition/ingredients/current container/facility/handling/cross-contact checks. Numeric nutrition not repeated, no health or dietary-safety claim.
+
+Current stock data last updated 2026-11-09T00:40:36.676Z. Catalog presence not used as evidence of same-day availability. /stock.html and /visit.html linked naturally with fruit guide and exact item. Owner stock commit aefdafd732be6825d076e386df548b89568046f6 preserved; only timestamp changed. scripts/generate-item-directory.mjs rerun after sync; identical 200-entry output. Product counts: 132 scoop, 29 yogurt, 33 gelato plus six specialties. Existing actual catalog social asset: /assets/scoops/responsive/blueberry-burst-600.webp.
+
+## Monday checks and authenticated limits
+
+Full safe technical/live review in research/technical-seo-audit-2026-11-09.md. Preflight passed: 322 unique indexable sitemap pages with no SEO errors; only the existing tasting-guide long-title warning. XML valid; 26 JS/MJS syntax checks, ten calculator tests and 489 new-article/index/directory link/fragment checks passed. RSS newest 20; one November 9 article card; valid BlogPosting and BreadcrumbList JSON-LD, one H1, intended canonical and 1400/1700 long-form attributes. Desktop 1280px and mobile 390×844 visually inspected with no horizontal document overflow; footer/CTA readable, viewport reset. Rendered article 1,569 words; main paragraphs including CTA 1,455. Diff whitespace clean. Deployment receipts pending.
+
+IndexNow/indexing-health/on-page audit skills used. One GSC Wizard tracker read returned payment_required/subscription_required; every call blocked without active plan/trial. Did not repeat blocked API calls, buy a subscription or change accounts. Existing Search Console browser tab located; normal and supported alternate state readers both failed at integration level before inspection. No coverage verdict or authenticated sitemap confirmation obtained. An active GSC Wizard plan/trial and connected Search Console account (reconnected through app settings if required) would be needed to restore that connector workflow. Public checks and published-key IndexNow fallback remain available. No ordinary-blog Google Indexing API use.
