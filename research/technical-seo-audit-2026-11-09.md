@@ -26,3 +26,7 @@ These public HTTP/on-page checks do not establish observed indexing, Core Web Vi
 ## Follow-up
 
 Continue scheduled recent-post crawl/index evidence checks; inspect authenticated coverage when access works. Investigate the Tennessee Toffee endpoint only if 5xx recurs; one transient response resolved without a site change. Existing title-length warning is nonblocking housekeeping. Next full scheduled Monday review November 16, or sooner if a material technical issue appears.
+
+## Publication follow-through
+
+The new blueberry article's initial deployment timed out during file sync, and its failed-jobs retry remained stuck pending. On the owner’s later “deploy” request, a fresh supported Pages build of the same commit succeeded (run 42678718282, 18:58:12Z). Live article and discovery files passed at 18:58:40Z; sitemap now 322 URLs, RSS still newest 20, all 20 named search/AI user-agent probes returned 200. Article and changed blog index submitted once through IndexNow, HTTP 200 at approximately 18:58:41Z. No account/source/security settings changed. Details in blueberry-blue-sources.md. No observed indexing claimed.
