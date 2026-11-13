@@ -3,7 +3,7 @@ window.SWEET_ESCAPE_FLAVORS = {
   "sourceUrl": "assets/sweet-escape-nutrition-facts.pdf",
   "sourceFile": "assets/sweet-escape-nutrition-facts.pdf",
   "extractedOn": "2026-05-13",
-  "count": 132,
+  "count": 133,
   "flavors": [
     {
       "id": "amaretto-cherry",
@@ -4007,3 +4007,24 @@ window.SWEET_ESCAPE_FLAVORS.flavors.push(
     sourceDate: "User-provided nutrition table"
   }))
 );
+
+window.SWEET_ESCAPE_FLAVORS.flavors.push({
+  "id": "pumpkin-pie",
+  "name": "Pumpkin Pie",
+  "sourceName": "Pumpkin Pie",
+  "category": "Ice Cream",
+  "manufacturer": "San Bernardo",
+  "productLine": "Premium",
+  "description": "Pumpkin Pie ice cream from San Bernardo, with a warm, spiced pumpkin flavor.",
+  "nutritionSource": "San Bernardo Ice Cream",
+  "productSourceUrl": "https://sbicecream.com/documents/sell-sheets/12-percent-sell-sheet-2024.pdf",
+  "productCode": "1122325",
+  "nutritionStatus": "unverified",
+  "pageUpdated": "2026-11-13",
+  "allergens": {
+    "contains": "Please ask us to check the current container label.",
+    "equipment": "Please ask us to check the current container label.",
+    "containsFlags": [],
+    "crossContactFlags": []
+  }
+});

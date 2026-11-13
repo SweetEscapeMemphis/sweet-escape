@@ -165,6 +165,7 @@
     const contains = escapeHTML(allergens.contains || "See manufacturer label");
     const equipment = escapeHTML(allergens.equipment || "See manufacturer label");
     const sourceDetails = [nutrition.servingSize ? `Serving: ${nutrition.servingSize}` : flavor.productLine].filter(Boolean);
+    if (flavor.manufacturer) sourceDetails.push(`Made by ${flavor.manufacturer}`);
     if (nutrition.sodiumMg) sourceDetails.push(`Sodium ${nutrition.sodiumMg}mg`);
     if (nutrition.addedSugarsG) sourceDetails.push(`Added sugars ${nutrition.addedSugarsG}g`);
     const pagePill = flavor.pdfPage
