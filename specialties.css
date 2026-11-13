@@ -5,9 +5,10 @@
 
 .specialties-hero {
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: center;
-  min-height: min(620px, calc(100svh - 180px));
+  min-height: 620px;
   overflow: hidden;
   border-bottom: 1px solid rgba(38, 22, 34, 0.12);
   background: #fff5f8;
@@ -15,8 +16,9 @@
 
 .specialties-hero-copy {
   z-index: 2;
-  width: min(55%, 720px);
-  padding: clamp(2.5rem, 4vw, 3.5rem) clamp(1rem, 7vw, 6rem);
+  width: 100%;
+  min-width: 0;
+  padding: clamp(2.5rem, 4vw, 3.5rem) clamp(1rem, 5vw, 4.5rem);
 }
 
 .specialties-hero-copy h1,
@@ -30,8 +32,8 @@
 }
 
 .specialties-hero-copy h1 {
-  max-width: 9ch;
-  font-size: clamp(4.2rem, 8vw, 7.8rem);
+  max-width: 11ch;
+  font-size: clamp(3.4rem, 6.5vw, 6.2rem);
 }
 
 .specialties-hero-copy > p:not(.eyebrow) {
@@ -43,21 +45,19 @@
 }
 
 .specialties-hero-art {
-  position: absolute;
-  inset: 0 0 0 auto;
+  position: relative;
   display: grid;
   place-items: center;
-  width: 54%;
+  width: 100%;
   padding: clamp(1.5rem, 4vw, 3.5rem);
 }
 
 .specialties-hero-art img {
   width: min(100%, 620px);
+  height: auto;
   aspect-ratio: 1;
-  border: 2px solid rgba(38, 22, 34, 0.12);
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 28px 60px rgba(96, 55, 79, 0.14);
+  object-fit: contain;
+  filter: drop-shadow(0 18px 22px rgba(96, 55, 79, 0.12));
 }
 
 .specialties-menu {
@@ -119,7 +119,10 @@
 }
 
 .specialty-image-cookie img,
-.specialty-image-brownie img {
+.specialty-image-brownie img,
+.specialty-image-dubai img,
+.specialty-image-froyo img,
+.specialty-image-cinnamon img {
   object-fit: contain;
 }
 
@@ -246,14 +249,14 @@
 
 @media (max-width: 900px) {
   .specialties-hero {
-    align-items: flex-start;
-    min-height: min(620px, calc(100svh - 180px));
+    grid-template-columns: 1fr;
+    min-height: 0;
   }
 
   .specialties-hero-copy {
     width: 100%;
     padding-top: 3.25rem;
-    padding-bottom: 18rem;
+    padding-bottom: 1rem;
     text-align: center;
   }
 
@@ -264,10 +267,9 @@
   }
 
   .specialties-hero-art {
-    inset: auto -10% -15% auto;
-    width: 82%;
-    height: 55%;
-    padding: 0;
+    width: min(100%, 560px);
+    margin-inline: auto;
+    padding: 0 1.5rem 2rem;
   }
 }
 
