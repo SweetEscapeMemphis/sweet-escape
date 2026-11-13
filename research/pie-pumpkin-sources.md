@@ -10,3 +10,10 @@ Checked November 13, 2026. Canonical: https://www.sweetescapememphis.com/blog/pu
 - Synced owner stock and product updates through 46c3495, including new scoop ddd4d66. Directory generator identical at 201 entries. Reviewed archive and differentiated the existing Pumpkin Pie yogurt and cinnamon topics. November 9 full audit still current. GSC Wizard setup check returned subscription_required; no account changes. Use existing verified-key workflow.
 
 Prepublication: 332 unique titles, descriptions and canonicals; SEO passed with the existing tasting-guide title warning. JS syntax (26 files), 762 internal references, JSON-LD, XML, 20 RSS items, ten calculator tests and clean diff passed. Chrome opening and CTA checked at 1440 and 390 pixels; 1,486 rendered article words, no horizontal page overflow.
+
+## Deployment and discovery — November 13, 2026
+
+- **Deployed:** `24d21986278b85abad7af5f85d2b0985128e8b72`, [Pages run 43515879660](https://github.com/SweetEscapeMemphis/sweet-escape/actions/runs/43515879660) succeeded at 22:02:55 UTC.
+- **Crawlable:** HTTP 200, byte-identical article, self-canonical, one H1, no noindex, blog-index link, 332-URL sitemap, 20-entry RSS and llms.txt. All 20 requested agents allowed on the article; private stock manager excluded. Both Pumpkin Pie item pages and social image respond 200; stock and 201-item directory match synced files. Sandy ice cream and ice cream stick posts remain live with self-canonicals and no noindex.
+- **Submitted:** IndexNow accepted exactly the new canonical and changed blog index, HTTP 200 at 22:03:10 UTC. No old post resubmitted. Authenticated Google/Bing coverage unavailable; no Google Indexing API or direct Apple/AI submission.
+- **Observed indexed:** not confirmed; public title searches did not return the new article or the two recent posts checked. That is not an index-coverage verdict.
