@@ -12,3 +12,10 @@ Checked November 13, 2026. Canonical: https://www.sweetescapememphis.com/blog/wh
 Synced owner stock changes c5e7ff0/d824aff/0769e32 (snapshot 2026-11-12T22:38:27.287Z); directory generator output unchanged at 200. Compared archive's icy-texture, tomography and butter-churning coverage. November 9 full audit still current. No account settings changed.
 
 Prepublication: SEO audit passed for 330 pages, with only the existing tasting-guide title warning. Validated 26 JS files, 758 internal URL references, JSON-LD, sitemap and RSS XML, newest 20 entries, ten calculator tests, and diff. Inspected opening and CTA in Chrome at 1440 and 390 pixels; 1,513 rendered article words, no horizontal page overflow.
+
+## Deployment and discovery — November 13, 2026
+
+- **Deployed:** commit `b5e269380984b9d435909f594a30ebbb092aca0c`, [Pages run 43469951957](https://github.com/SweetEscapeMemphis/sweet-escape/actions/runs/43469951957) succeeded at 17:10:06 UTC.
+- **Crawlable:** HTTP 200, checked article bytes, self-canonical, one H1, no noindex, blog index link, 330 sitemap URLs, 20 RSS items and llms.txt listing. All 20 requested agents allowed on the article; private stock manager remains excluded. Directory and social image reachable; live stock matched synced repository snapshot. Tea and ice cream stick articles still returned HTTP 200 with self-canonicals and no noindex.
+- **Submitted:** IndexNow HTTP 200 at 17:10:22 UTC, new article and changed blog index only. No authenticated Google/Bing coverage available; no Google Indexing API or direct Apple/AI submission.
+- **Observed indexed:** not confirmed. Public searches did not return the new article or the two recent exact URLs; other site results do not establish those pages' coverage.
