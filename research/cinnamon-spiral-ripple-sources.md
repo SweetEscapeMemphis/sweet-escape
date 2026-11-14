@@ -1,0 +1,13 @@
+# Cinnamon roll spirals and ice cream ribbons — source record
+
+Checked November 14, 2026. Canonical: https://www.sweetescapememphis.com/blog/cinnamon-roll-spiral-ice-cream-ripple.html
+
+- [Test-kitchen cinnamon rolls](https://www.kingarthurbaking.com/recipes/perfectly-pillowy-cinnamon-rolls-recipe): rectangle, bare strip, log, floss cut, tuck and proof. [Carl’s Cinnamon Rolls](https://www.kingarthurbaking.com/recipes/carls-cinnamon-rolls-recipe): winding caution. Readers get a paper illustration, not a copy of the recipe.
+- [Five shapes](https://www.kingarthurbaking.com/blog/2019/01/14/making-cinnamon-rolls-at-home): portion thickness, double spiral and layered pull-apart. [Croissant recipe](https://www.kingarthurbaking.com/recipes/bakers-croissants-recipe): folded butter packet versus rolled-up filling. [Exploratorium bread demonstration](https://annex.exploratorium.edu/cooking/bread/recipe-basicbread.html): gluten and yeast gas, not a shop-specific claim.
+- [US2409339A](https://patents.google.com/patent/US2409339A/en), 1946: flowing streams of thick ice cream and a rotating vane. [US3014437A](https://patents.google.com/patent/US3014437A/en), 1961: injected stripes, twisting and uneven fudge thickness in a reported example. [US3129673A](https://patents.google.com/patent/US3129673A/en), 1964: alternating ribbons from two sets of stationary tubes. Historical examples only; no priority, present commercial adoption, recipe or shop manufacturing claim.
+- Repository: /specialties/cinnamon-roll-sundae/ and /specialties.html document warm cinnamon roll, creamy icing, one scoop and finishing drizzle; no specific component name, formulation, options or availability inferred. Existing catalog image for social metadata; order link goes to live menu, and ingredient/nutrition/allergen/facility/handling/cross-contact guidance stays intact.
+- Synced through 3c2470f (stock timestamp 2026-11-14T00:46:18.790Z); specialty launch 91686e8 included. Generator confirms 202-item directory unchanged. Archive checked for angle overlap. Full audit November 9, still current. GSC Wizard's IndexNow setup check returned subscription_required; use existing verified-key workflow, no account changes.
+
+Prepublication: 334 sitemap entries and unique metadata, existing tasting-guide title warning only. Checked 26 JS files, 765 internal references, JSON-LD, 20 RSS entries, XML, diff and 10 calculator tests. Chrome at 1440 and 390 pixels rendered 1,467 article words with no horizontal overflow; opening and CTA inspected.
+
+Final sync preserved stock-only update eb33a11 (2026-11-14T17:51:20.725Z); directory regenerated identically again.
