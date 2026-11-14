@@ -11,3 +11,10 @@ Checked November 14, 2026. Canonical: https://www.sweetescapememphis.com/blog/ci
 Prepublication: 334 sitemap entries and unique metadata, existing tasting-guide title warning only. Checked 26 JS files, 765 internal references, JSON-LD, 20 RSS entries, XML, diff and 10 calculator tests. Chrome at 1440 and 390 pixels rendered 1,467 article words with no horizontal overflow; opening and CTA inspected.
 
 Final sync preserved stock-only update eb33a11 (2026-11-14T17:51:20.725Z); directory regenerated identically again.
+
+## Deployment and discovery — November 14, 2026
+
+- **Deployed:** commit `f96d9f3c1e33837ffe5abe211566e68d38350eb2` succeeded in [Pages run 43623610257](https://github.com/SweetEscapeMemphis/sweet-escape/actions/runs/43623610257) at 17:54:46 UTC.
+- **Crawlable:** HTTP 200, byte-identical post with self-canonical, one H1 and no noindex. Linked from blog index, included in 334-URL sitemap, newest-20 RSS and llms.txt. All 20 requested agents allowed on the article; private stock manager excluded. Stock and directory match repository, specialty and social image accessible. Two preceding articles still return 200, self-canonical and no noindex.
+- **Submitted:** IndexNow HTTP 200, 17:55:21 UTC, new canonical and changed blog index only. No authenticated Google/Bing coverage available, no account changes, no Google Indexing API or direct Apple/AI submission.
+- **Observed indexed:** not confirmed. Public title searches did not show this article or the prior two tested; that does not establish absence from any index.
