@@ -1,0 +1,10 @@
+# Ice melting on metal — sources
+
+Checked November 16, 2026. Canonical: https://www.sweetescapememphis.com/blog/why-ice-melts-faster-on-metal.html
+
+- [American Physical Society’s Getting Warmer/Getting Colder](https://www.aps.org/learning-resources/getting-warmer-colder): energy transfer between room-temperature material and fingers, contrasting spoon/conduction activity and same-temperature starting conditions.
+- [Institute of Physics](https://spark.iop.org/thermal-conductivity-metal-v-plastic) and [Purdue Physics](https://www.physics.purdue.edu/demos/display_page.php?item=3B-05): original demonstrations, plastic/aluminum block and ice contrast; measured drop in metal block temperature; roles of heat capacity and conductivity.
+- [American Chemical Society melting lesson](https://www.acs.org/middleschoolchemistry/lessonplans/chapter2/lesson5.html): classroom aluminum/plastic comparison. Matched starting temperatures, flat contact and swapping positions are practical controls; no guaranteed difference for arbitrary objects, no hot-surface tests.
+- [Ho and Jones 2006](https://pubmed.ncbi.nlm.nih.gov/16617836/): comparative coolness and localization using fingertips, smaller measured skin temperature changes than model predictions. [Thermosensory reversal study](https://www.sciencedirect.com/science/article/pii/S0001691806001594): room-temperature versus warm copper/wood comparison. No unsupported sensory thresholds or guidance to handle heated samples.
+- [Experimental data and modelling of thermal properties of ice creams](https://www.sciencedirect.com/science/article/pii/S0260877402003965): measured thermal properties, temperature, ice content and air fraction, with no extrapolation to a named scoop, material ranking or service temperature.
+- Shop: documented scoop catalog, live menu and visit page only. Generic thermal example does not assert bowl, utensil, handling or process used by Sweet Escape. Existing Vanilla Bean scoop photo for social; no current availability claim.
