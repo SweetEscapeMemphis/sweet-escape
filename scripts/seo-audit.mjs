@@ -55,6 +55,9 @@ const descriptions = new Map();
 const canonicals = new Map();
 
 for (const [index, file] of sitemapFiles.entries()) {
+  if (!sitemapUrls[index].startsWith(`${origin}/`)) {
+    errors.push(`sitemap.xml: expected a URL on ${origin}: ${sitemapUrls[index]}`);
+  }
   const absolute = path.join(root, file);
   if (!fs.existsSync(absolute)) {
     errors.push(`${file}: sitemap target does not exist`);
@@ -130,8 +133,17 @@ for (const [index, file] of sitemapFiles.entries()) {
   }
 
   const references = [];
-  for (const tag of html.match(/<(?:a|link|script|img|source)\b[^>]*>/gi) ?? []) {
-    for (const attribute of ["href", "src"]) {
+  for (const meta of metas) {
+    const name = (getAttr(meta, "property") || getAttr(meta, "name")).toLowerCase();
+    if (/^(?:og:(?:url|image(?::(?:url|secure_url))?)|twitter:image(?::src)?)$/.test(name)) {
+      const value = getAttr(meta, "content");
+      if (value) references.push(value);
+    }
+  }
+  for (const tag of html.match(/<(?:a|area|base|link|script|img|source|iframe|video|audio|track|form|button|input|object|embed)\b[^>]*>/gi) ?? []) {
+    const attributes = ["href", "src", "poster", "action", "formaction"];
+    if (/^<object\b/i.test(tag)) attributes.push("data");
+    for (const attribute of attributes) {
       const value = getAttr(tag, attribute);
       if (value) references.push(value);
     }
@@ -146,6 +158,10 @@ for (const [index, file] of sitemapFiles.entries()) {
       resolved = new URL(reference, pageUrl(file));
     } catch {
       errors.push(`${file}: invalid URL ${reference}`);
+      continue;
+    }
+    if (resolved.protocol === "http:") {
+      errors.push(`${file}: HTTP reference must use HTTPS: ${reference}`);
       continue;
     }
     if (resolved.origin !== origin) continue;
