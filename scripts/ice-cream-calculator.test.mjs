@@ -115,10 +115,12 @@ test('crawlable reference table exactly matches the quick calculator and unchang
   assert.match(html, /<link rel="canonical" href="https:\/\/www.sweetescapememphis.com\/ice-cream-party-calculator\/">/);
   assert.match(html, /<meta name="robots" content="index, follow">/);
   const graph = JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1])['@graph'];
-  assert.deepEqual(graph.map(node => node['@type']), ['WebPage', 'WebApplication', 'BreadcrumbList', 'Organization']);
-  assert.equal(graph[1].offers.price, '0');
-  assert.equal(graph[1].isAccessibleForFree, true);
-  assert.equal(graph[1].url, graph[0].url);
+  const [page, breadcrumbs, publisher] = graph;
+  assert.deepEqual(graph.map(node => node['@type']), ['WebPage', 'BreadcrumbList', 'Organization']);
+  assert.equal(page.isAccessibleForFree, true);
+  assert.equal(page.breadcrumb['@id'], breadcrumbs['@id']);
+  assert.equal(breadcrumbs.itemListElement.at(-1).item, page.url);
+  assert.equal(page.publisher['@id'], publisher['@id']);
   assert.doesNotMatch(JSON.stringify(graph), /aggregateRating|review|FAQPage/);
   const embed = fs.readFileSync(new URL('../ice-cream-party-calculator/embed.html', import.meta.url), 'utf8');
   assert.doesNotMatch(embed, /googletagmanager|analytics\.js|chat\.js/);
