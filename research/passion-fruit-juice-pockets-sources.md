@@ -1,0 +1,17 @@
+# What’s Inside a Passion Fruit? Tiny Pockets of Juice — verification notes
+
+- Canonical: https://www.sweetescapememphis.com/blog/passion-fruit-juice-pockets.html
+- November 20, 2026 PM America/Chicago run. Archive and plans checked: earlier sorbetto guide mentions the listing; no focused aril anatomy, within-sac differences or seed-separation article. The cactus pear and other fruit stories cover different questions. No earlier November 20 blog entry on main prior to this run.
+
+## Sources checked November 20, 2026
+
+- [UF/IFAS passion fruit anatomy](https://ask.ifas.ufl.edu/publication/HS1527), Figures 4–5: colored peel, white spongy layer, seed with and without its pulp covering. [Home-landscape problems](https://ask.ifas.ufl.edu/publication/HS1397): poorly filled or missing arils. [USDA pollination handbook](https://www.ars.usda.gov/arsuserfiles/20220500/onlinepollinationhandbook.pdf), passionfruit section: seed set and aril fill. No growing instructions or site sourcing claims.
+- [Kondo and Higuchi, Horticulture Journal (2024)](https://www.jstage.jst.go.jp/article/hortj/93/1/93_QH-093/_html/-char/en): Figures 1–2 and Tables 1–2 support membrane anatomy, pooling and separation, cultivar-specific proportions of juice by weight (purple outer ~42%; yellow inner near seed ~41%, outer ~26%; Summer Queen closer to even), higher citric acid near seed in all three with malic acid not tracking the same spatial result, separate soluble-solids and sugar measurements, and a hypothesis about extraction. Five fruits per type in this sample; not a home pressing test or universal thresholds.
+- [Pongener et al., Fruits (2014)](https://fruits.edpsciences.org/articles/fruits/pdf/2014/01/fruits130097.pdf), §3.5: whole-fruit weight loss, peel water loss and relative pulp yield; late decline in pulp yield. No shelf-life, ripeness, safety or storage guarantee from wrinkles.
+- [Saura-Cayuela et al., Flavour and Fragrance Journal (2025)](https://onlinelibrary.wiley.com/doi/10.1002/ffj.3840), §3.5: headspace volatile comparisons across Tenerife juice samples. Not a direct sensory rating or dessert formulation measurement.
+- [Rory Macdonald, Institute of Culinary Education](https://www.ice.edu/blog/banana-passionfruit-gelato-recipe): uses juice in banana–passion fruit gelato; keeps seeds for garnish. [David Lebovitz’s passion fruit–tangerine sorbet](https://www.epicurious.com/recipes/food/views/passion-fruit-tangerine-sorbet-379602): strained pulp or frozen purée, optional seeds folded in after churning. No borrowed recipe quantities or Sweet Escape preparation inference.
+
+## Sweet Escape and scope
+
+- `data/gelato-flavors.js` and `gelato/passion-fruit/index.html` confirm the Sorbetto category, published tangy/tropical description and image `/assets/gelato/scoops-webp/passion-fruit.webp`, lack of complete numerical nutrition and major-allergen statement, and current container-label caution. No variety, seeds, ingredient composition, taste guarantee, manufacturing or stock claims. Retains nutrition, ingredients, actual container label, facility/shared equipment, handling and cross-contact cautions.
+- Current stock file was reviewed and preserved, no dated inventory snapshot in the article. New content links the existing canonical item, menu, main catalog, and two related articles. Existing item directory rebuilt unchanged at 202 entries; no product data changes. Prior full audit 2026-11-16, so this run focuses on deployment and discovery.
