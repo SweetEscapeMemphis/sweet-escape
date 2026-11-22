@@ -14,4 +14,11 @@
 ## Sweet Escape and scope
 
 - `specialties.html`, `specialties/ice-cream-nachos/index.html`, catalog files, live stock data and item directory checked. Exact published format: two scoops of choice with crisp round waffle chips for dipping. Existing image `/assets/specialties/ice-cream-nachos.webp` and product link; no claim about chip recipe, flavor stock, equipment, measurements, ingredients, or dietary suitability. Specialty combines components, so current nutrition/ingredient/allergen and container labels for each, facility/equipment/handling and cross-contact should be checked. The dry/dipped comparison is a tasting suggestion, not a reproduction of the lab procedure.
-- No new item page or data changes. Previous full live audit November 16; focused publication checks for this run.
+- No new item page or product data changes from this article. Concurrent owner stock updates through 154bb34 were synced before publication; directory regenerated unchanged at 202 entries. Previous full live audit November 16; focused publication checks for this run.
+
+## Deployment and discovery
+
+- **Deployed:** `75510f631189886ceadd8309f9c7bd8f99657707`, [GitHub Pages run 45082341593](https://github.com/SweetEscapeMemphis/sweet-escape/actions/runs/45082341593), successful November 22 at 23:16:57 UTC. Browser count 1,501 rendered words. Validated one H1, canonical, FAQ/schema match, internal links/fragments, JS syntax, all 10 calculator tests, XML and diff. Desktop and mobile renders inspected, including the mobile CTA. SEO audit passed on 349 URLs with the unchanged legacy title warning.
+- **Crawlable:** Live HTTP 200 at 23:19:09 UTC; bytes matched the approved commit, self-canonical correct and no noindex in HTML or headers. Blog index linked the URL, and sitemap, 20-item feed and llms.txt included it. Robots rules permitted all 20 named agents for the article and continued to exclude the private stock manager. Existing specialty item and social image returned 200.
+- **Submitted:** Repository IndexNow script verified the published key and received HTTP 200 at 23:19:10 UTC for exactly the new canonical and updated blog index. GSC Wizard returned `subscription_required`, so no authenticated console action or account settings change; Apple and AI discovery rely on crawler access and public discovery files.
+- **Observed indexed:** Not confirmed for the new article. Recent pecan, waffle cone, and passion fruit posts returned 200; public exact-title searches did not establish indexing. Absence of an exact result does not prove exclusion.
