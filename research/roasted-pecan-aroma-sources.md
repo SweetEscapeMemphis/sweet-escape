@@ -1,0 +1,17 @@
+# Why Do Roasted Pecans Smell Different? — verification notes
+
+- Canonical: https://www.sweetescapememphis.com/blog/why-roasted-pecans-smell-different.html
+- November 22, 2026 AM America/Chicago. Archive review: the existing butter pecan guide compares local flavor records; the caramel story explains browning reactions; the vanilla story focuses on odor and sweetness. This article uses pecan-specific roasting measurements, panel methods and processing choices, not a repeated catalog comparison.
+
+## Sources checked November 22, 2026
+
+- [Gong et al., Journal of Food Science (2018)](https://ift.onlinelibrary.wiley.com/doi/abs/10.1111/1750-3841.14365): Desirable cultivar, raw and three durations at fixed temperature, measured headspace comparison, 63 compounds including nine not detected raw, pyrazine trend. Not a roasting-time recommendation or detection guarantee. [Wang & Odell (1972)](https://pubs.acs.org/doi/10.1021/jf60180a034): early roasted-sample characterization; presence in a roasted sample does not establish the compound formed during roasting.
+- [Yale–New Haven Teachers Institute chemistry curriculum](https://teachersinstitute.yale.edu/curriculum/units/2020/2/20.02.03/2): reducing sugar/amino compound Maillard reactions distinct from caramelization.
+- [Cadwallader group, ACS presentation](https://acs.digitellinc.com/p/s/identification-of-key-odorants-in-roasted-pecan-oil-603456) and [University of Illinois thesis record](https://www.ideals.illinois.edu/items/134513): oil/fat and Maillard contributions, sensory-directed chromatography, buttery 2,3-butanedione, roasted 2-acetyl-1-pyrroline, concentration relative to odor threshold. Kernel roasting before oil extraction, not butter addition or a dairy-free claim.
+- [Magnuson et al., Journal of Food Science (2016)](https://ift.onlinelibrary.wiley.com/doi/10.1111/1750-3841.13289), [author paper with methods and tables](https://ilovepecans.org/wp-content/uploads/2016/05/Magnuson_et_al-2016-Journal_of_Food_Science.pdf): eight cultivars/two seasons and 20 attributes, roasted samples cooled before scoring, table 1 macadamia and wheat-germ references, table 3 treatment/significance notes including Chetopa bitterness. Intensity is not preference, formula, or nutrition.
+- [Gourmet recipe](https://www.epicurious.com/recipes/food/views/butter-pecan-ice-cream-107380): toasts pecans before adding butter and folds them in after churning. [Williams Sonoma recipe](https://www.williams-sonoma.com/recipe/butter-pecan-ice-cream.html): one portion steeps in dairy and is strained out, a separate butter-toasted and brown-sugar-glazed portion is mixed in. These are their documented methods, not Sweet Escape’s; no copied quantities or instructions.
+
+## Sweet Escape and scope
+
+- `data/gelato-flavors.js` and `gelato/maple-roasted-butter-pecan/index.html`: Gelato, published butter-pecan/candied-pecan/maple-syrup-ribbon description, Milk and Tree nut (pecan), no complete numeric nutrition label and current container-label verification. Existing catalog image `/assets/gelato/scoops-webp/maple-roasted-butter-pecan.webp` used for social metadata. No local variety, source, processing, formulation, measured aroma or dietary-safety inference; current label, ingredients, nutrition, facility, shared equipment, handling, and cross-contact cautions retained.
+- Stock data checked; no time-sensitive inventory claim. Item directory verified current; no new item page or product changes. Previous full audit November 16, so focused publication checks this run.
