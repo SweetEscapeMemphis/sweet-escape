@@ -1,4 +1,6 @@
 # Sweet Escape item indexing and editorial plan
+- [x] 2026-11-24 AM: Why Does Chocolate Shell Harden on Ice Cream? Existing Stracciatella record illustrates chocolate in slivers rather than a continuous shell. Preserves milk, possible soy, incomplete numeric nutrition and current-label cautions.
+- Item coverage ledger: existing `stracciatella` (/gelato/stracciatella/) linked from /blog/why-chocolate-shell-hardens-on-ice-cream.html as a separate format only. No new product URL or changes to product data. See research/chocolate-shell-sources.md.
 - [x] 2026-11-23 PM: Why Does Frozen Custard Have Egg Yolks? Science and food-name explainer; French Vanilla flavor words are not a custard category or ingredient statement. See research/frozen-custard-egg-yolk-sources.md.
 - Item coverage ledger: existing `french-vanilla` scoop (/scoops/french-vanilla/) and separately categorized `french-vanilla` yogurt (/yogurt/french-vanilla/) linked from /blog/why-frozen-custard-has-egg-yolks.html. Prior vanilla picker retained. No new product page or inventory edits from the post.
 - [x] 2026-11-23 AM: What Is a Marionberry? From Oregon Blackberry to Ice Cream. Why two names can refer to the same cultivated fruit without being the same scoop listing. Preserves each distinct serving, allergen, equipment and current-label caution. See research/marionberry-sources.md.
