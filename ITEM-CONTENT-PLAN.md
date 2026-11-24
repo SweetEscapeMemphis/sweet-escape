@@ -1,4 +1,6 @@
 # Sweet Escape item indexing and editorial plan
+- [x] 2026-11-24 PM: Evaporated or Condensed Milk? Why Ice Cream Cares. Existing Roasted Banana Dulce De Leche item brings a contrast to sweetener mixed throughout a base; label/ingredient limits preserved. See research/concentrated-milk-ice-cream-sources.md.
+- Item coverage ledger: existing `roasted-banana-dulce-de-leche` (/gelato/roasted-banana-dulce-de-leche/) linked from /blog/evaporated-vs-condensed-milk-ice-cream.html. No new item URL, catalog record or stock change. Neither canned dairy ingredient inferred for the product.
 - [x] 2026-11-24 AM: Why Does Chocolate Shell Harden on Ice Cream? Existing Stracciatella record illustrates chocolate in slivers rather than a continuous shell. Preserves milk, possible soy, incomplete numeric nutrition and current-label cautions.
 - Item coverage ledger: existing `stracciatella` (/gelato/stracciatella/) linked from /blog/why-chocolate-shell-hardens-on-ice-cream.html as a separate format only. No new product URL or changes to product data. See research/chocolate-shell-sources.md.
 - [x] 2026-11-23 PM: Why Does Frozen Custard Have Egg Yolks? Science and food-name explainer; French Vanilla flavor words are not a custard category or ingredient statement. See research/frozen-custard-egg-yolk-sources.md.
