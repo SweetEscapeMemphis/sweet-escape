@@ -1,4 +1,6 @@
 # Sweet Escape item indexing and editorial plan
+- [x] 2026-11-26 AM: Why Do Marshmallows Puff Up When Heated? Existing s’mores label guide retained. Science article contrasts the published preparations with the existing S’Mores with Toasted Coconut description; no marshmallow presence or absence inferred.
+- Item coverage ledger: existing `s-mores-with-toasted-coconut` (/scoops/s-mores-with-toasted-coconut/) linked from /blog/why-marshmallows-puff-up.html. No new item URL, product data change or stock change. See research/marshmallow-puff-sources.md.
 - [x] 2026-11-25 PM: How Does a Soft-Serve Twist Get Its Stripes? Explains visible shapes; verified Self-Serve Froyo & Toppings format linked, with current component label, equipment and handling cautions.
 - Item coverage ledger: existing `self-serve-frozen-yogurt` (/specialties/self-serve-frozen-yogurt/) linked in /blog/how-soft-serve-twist-gets-its-stripes.html; no new item URL or product or stock changes. No machine, flavor pairing or composition inferred from the existing photograph. See research/soft-serve-twist-sources.md.
 - [x] 2026-11-25 AM: Why Are Persian Limes Usually Seedless? Named lime types and zest versus juice explain why a frozen dessert name is not a recipe. Separately dated archived scoop-label details; current-container and cross-contact cautions retained.
