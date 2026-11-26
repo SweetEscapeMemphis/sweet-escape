@@ -1,4 +1,6 @@
 # Sweet Escape item indexing and editorial plan
+- [x] 2026-11-26 PM: Why Do Ice Cream Trucks Play the Same Tune? History and acoustics; documented hand-dipped scoop catalog and Whitten Road visit information give an in-person contrast.
+- Item coverage ledger: no individual item or new item URL. The existing shop catalog, visit and live-menu links are used in /blog/why-ice-cream-trucks-play-music.html. The two owner stock commits were preserved; no stock or catalog edit by this article. See research/ice-cream-truck-chimes-sources.md.
 - [x] 2026-11-26 AM: Why Do Marshmallows Puff Up When Heated? Existing s’mores label guide retained. Science article contrasts the published preparations with the existing S’Mores with Toasted Coconut description; no marshmallow presence or absence inferred.
 - Item coverage ledger: existing `s-mores-with-toasted-coconut` (/scoops/s-mores-with-toasted-coconut/) linked from /blog/why-marshmallows-puff-up.html. No new item URL, product data change or stock change. See research/marshmallow-puff-sources.md.
 - [x] 2026-11-25 PM: How Does a Soft-Serve Twist Get Its Stripes? Explains visible shapes; verified Self-Serve Froyo & Toppings format linked, with current component label, equipment and handling cautions.
