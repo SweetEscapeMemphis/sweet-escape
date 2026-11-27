@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T18:14:18.400Z",
+  "updatedAt": "2026-11-27T20:39:29.413Z",
   "scoops": [
     "amaretto-cherry",
     "bear-claw",
@@ -33,6 +33,28 @@
     "pink-lemonade-sorbet",
     "valencia-orange-sorbet",
     "watermelon-sorbet"
+  ],
+  "yogurtPairs": [
+    [
+      "cheesecake",
+      "strawberry-sensations"
+    ],
+    [
+      "chocolate",
+      "tahitian-vanilla-nsa"
+    ],
+    [
+      "cookie-monster",
+      "cookies-n-cream"
+    ],
+    [
+      "home-churn-vanilla",
+      "valencia-orange-sorbet"
+    ],
+    [
+      "pink-lemonade-sorbet",
+      "watermelon-sorbet"
+    ]
   ],
   "gelato": [
     "piemonte-hazelnut-chocolate-crunch",
