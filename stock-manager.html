@@ -8,12 +8,12 @@
     <meta name="robots" content="noindex, nofollow, noarchive">
     <title>Stock Manager | Sweet Escape</title>
     <link rel="stylesheet" href="home.css?v=20260822-7">
-    <link rel="stylesheet" href="stock.css?v=20260826-2">
+    <link rel="stylesheet" href="stock.css?v=20261127-pairs-2">
     <script defer src="data/flavors.js?v=20261113-1"></script>
     <script defer src="data/yogurt-flavors.js?v=20260808-2"></script>
     <script defer src="data/gelato-flavors.js?v=20260827-1"></script>
-    <script defer src="stock-store.js?v=20260827-1"></script>
-    <script defer src="stock-manager.js?v=20260930-1"></script>
+    <script defer src="stock-store.js?v=20261127-pairs"></script>
+    <script defer src="stock-manager.js?v=20261127-pairs"></script>
   </head>
   <body class="manager-body">
     <a class="skip-link" href="#manager-list">Skip to stock controls</a>
@@ -24,6 +24,7 @@
       </a>
       <nav class="home-nav" aria-label="Stock manager navigation">
         <a href="index.html">Home</a>
+        <a href="#manager-yogurt-pairs">Yogurt pairings</a>
         <a href="stock.html">View in-stock menu</a>
       </nav>
     </header>
@@ -76,6 +77,20 @@
             <input id="manager-search" type="search" placeholder="Search scoop, yogurt, or gelato flavors" autocomplete="off">
           </label>
         </div>
+
+        <section class="manager-yogurt-pairs" id="manager-yogurt-pairs" aria-labelledby="manager-yogurt-pairs-title">
+          <h3 id="manager-yogurt-pairs-title">Frozen yogurt twist pairings</h3>
+          <p>Choose the two flavors in the same machine. Each flavor can be served on its own, and the twist mixes the pair.</p>
+          <form id="yogurt-pair-form" class="manager-pair-form">
+            <label>Flavor 1 <select id="yogurt-pair-first" required></select></label>
+            <label>Flavor 2 <select id="yogurt-pair-second" required></select></label>
+            <button type="submit">Add twist pairing</button>
+          </form>
+          <ul id="manager-yogurt-pair-list" class="manager-pair-list" aria-label="Configured twist pairings"></ul>
+          <p id="manager-yogurt-singles"></p>
+          <a id="preview-yogurt-pairs" class="home-button secondary" href="stock.html?type=yogurt&amp;preview=yogurt#stock-list" target="_blank" rel="noopener">Preview yogurt menu</a>
+          <p id="manager-pair-status" role="status"></p>
+        </section>
 
         <div class="manager-group-heading">
           <div><h3>Scoop flavors</h3><span id="manager-scoop-count">0 selected</span></div>

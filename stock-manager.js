@@ -7,7 +7,13 @@
   const yogurtFlavors = window.SWEET_ESCAPE_YOGURT_FLAVORS?.flavors || [];
   const gelatoFlavors = window.SWEET_ESCAPE_GELATO_FLAVORS?.flavors || [];
   const pngScoopIds = new Set(["udderly-chocolate", "rocky-road"]);
-  const currentStock = await window.SweetEscapeStock.load({ fresh: true });
+  const stockStore = window.SweetEscapeStock;
+  const isLocalPreview = ["127.0.0.1", "localhost", "[::1]"].includes(window.location.hostname);
+  const publishedStock = await stockStore.load({ fresh: true });
+  const draft = isLocalPreview ? stockStore.readYogurtPreview() : null;
+  const currentStock = { ...publishedStock, ...draft };
+  const yogurtById = new Map(yogurtFlavors.map((flavor) => [flavor.id, flavor]));
+  const yogurtPairs = (currentStock.yogurtPairs ?? []).filter((pair) => pair.every((id) => yogurtById.has(id)));
   const selected = {
     scoops: window.SweetEscapeStock.idsFor(
       currentStock,
@@ -34,12 +40,24 @@
   const scoopGrid = document.querySelector("#manager-scoop-grid");
   const yogurtGrid = document.querySelector("#manager-yogurt-grid");
   const gelatoGrid = document.querySelector("#manager-gelato-grid");
+  const pairForm = document.querySelector("#yogurt-pair-form");
+  const firstFlavor = document.querySelector("#yogurt-pair-first");
+  const secondFlavor = document.querySelector("#yogurt-pair-second");
+  const pairList = document.querySelector("#manager-yogurt-pair-list");
+  const singlesList = document.querySelector("#manager-yogurt-singles");
+  const pairStatus = document.querySelector("#manager-pair-status");
   let query = "";
   let tokenSaveTimer;
 
-  restoreSavedToken();
+  if (isLocalPreview) {
+    publishButton.closest(".manager-publish").hidden = true;
+    document.querySelector(".manager-intro > p:last-child").textContent = "Local preview. Try your twist pairings and preview the customer menu here.";
+  } else {
+    restoreSavedToken();
+  }
   renderAll();
   updateCounts();
+  renderYogurtPairs();
 
   searchInput.addEventListener("input", () => {
     query = searchInput.value.trim().toLowerCase();
@@ -54,6 +72,7 @@
     else selected[group].delete(input.value);
     input.closest(".manager-item").classList.toggle("is-selected", input.checked);
     updateCounts();
+    if (group === "yogurt") renderYogurtPairs();
   });
 
   document.querySelector("#manager-list").addEventListener("click", (event) => {
@@ -67,6 +86,43 @@
     }
     renderAll();
     updateCounts();
+    if (group === "yogurt") renderYogurtPairs();
+  });
+
+  pairForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const pair = [firstFlavor.value, secondFlavor.value];
+    if (!pair.every((id) => selected.yogurt.has(id)) || pair[0] === pair[1]) {
+      pairStatus.textContent = "Choose two different in-stock flavors.";
+      return;
+    }
+    if (yogurtPairs.some((existing) => pair.every((id) => existing.includes(id)))) {
+      pairStatus.textContent = "These flavors are already paired.";
+      return;
+    }
+    yogurtPairs.push(pair);
+    pairForm.reset();
+    renderYogurtPairs();
+    pairStatus.textContent = "Twist pairing added.";
+  });
+
+  pairList.addEventListener("click", (event) => {
+    const button = event.target.closest("button[data-remove-pair]");
+    if (!button) return;
+    yogurtPairs.splice(Number(button.dataset.removePair), 1);
+    renderYogurtPairs();
+    pairStatus.textContent = "Twist pairing removed.";
+    firstFlavor.focus();
+  });
+
+  document.querySelector("#preview-yogurt-pairs").addEventListener("click", (event) => {
+    try {
+      stockStore.saveYogurtPreview([...selected.yogurt], yogurtPairs);
+      pairStatus.textContent = "Preview saved on this browser.";
+    } catch {
+      event.preventDefault();
+      pairStatus.textContent = "The browser couldn’t save a preview. Check that local storage is available.";
+    }
   });
 
   publishButton.addEventListener("click", publishStock);
@@ -84,6 +140,39 @@
     renderGroup(scoopGrid, scoopFlavors, "scoops");
     renderGroup(yogurtGrid, yogurtFlavors, "yogurt");
     renderGroup(gelatoGrid, gelatoFlavors, "gelato");
+  }
+
+  function renderYogurtPairs() {
+    const available = yogurtFlavors.filter((flavor) => selected.yogurt.has(flavor.id));
+    pairForm.querySelector("button").disabled = available.length < 2;
+    for (const select of [firstFlavor, secondFlavor]) {
+      const previous = select.value;
+      select.replaceChildren(new Option("Choose a flavor", ""));
+      for (const { id, name } of available) select.add(new Option(name, id));
+      if (selected.yogurt.has(previous)) select.value = previous;
+      select.disabled = available.length < 2;
+    }
+
+    const paired = new Set();
+    pairList.replaceChildren();
+    yogurtPairs.forEach((pair, index) => {
+      const active = pair.every((id) => selected.yogurt.has(id));
+      if (active) for (const id of pair) paired.add(id);
+      const names = pair.map((id) => yogurtById.get(id).name).join(" + ");
+      const row = document.createElement("li");
+      const copy = document.createElement("span");
+      copy.textContent = active ? `${names} twist` : `${names} — twist unavailable`;
+      const remove = document.createElement("button");
+      remove.type = "button";
+      remove.dataset.removePair = String(index);
+      remove.textContent = "Remove";
+      remove.setAttribute("aria-label", `Remove ${names} pairing`);
+      row.append(copy, remove);
+      pairList.append(row);
+    });
+
+    const singles = available.filter((flavor) => !paired.has(flavor.id)).map((flavor) => flavor.name);
+    singlesList.textContent = singles.length ? `No twist listed: ${singles.join(", ")}` : "";
   }
 
   function renderGroup(container, flavors, group) {
@@ -123,6 +212,7 @@
   }
 
   async function publishStock() {
+    if (isLocalPreview) return;
     const token = tokenInput.value.trim();
     if (!token) {
       setStatus("Enter your GitHub access token before publishing.", "error");
@@ -150,6 +240,7 @@
         updatedAt: new Date().toISOString(),
         scoops: scoopFlavors.map((flavor) => flavor.id).filter((id) => selected.scoops.has(id)),
         yogurt: yogurtFlavors.map((flavor) => flavor.id).filter((id) => selected.yogurt.has(id)),
+        yogurtPairs,
         gelato: gelatoFlavors.map((flavor) => flavor.id).filter((id) => selected.gelato.has(id)),
       };
       const content = encodeBase64(`${JSON.stringify(nextStock, null, 2)}\n`);

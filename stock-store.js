@@ -1,6 +1,7 @@
 (function () {
   const stockUrl = "data/stock.json";
   const fallbackStock = { updatedAt: null, scoops: "*", yogurt: "*", gelato: "*" };
+  const yogurtPreviewKey = "sweetEscapeYogurtPreview";
   let stockPromise = null;
 
   function load(options = {}) {
@@ -25,6 +26,7 @@
       updatedAt: typeof value?.updatedAt === "string" ? value.updatedAt : null,
       scoops: normalizeGroup(value?.scoops),
       yogurt: normalizeGroup(value?.yogurt),
+      yogurtPairs: normalizeYogurtPairs(value?.yogurtPairs),
       gelato: value?.gelato === undefined ? "*" : normalizeGroup(value.gelato),
     };
   }
@@ -39,5 +41,36 @@
     return new Set(value === "*" ? allIds : Array.isArray(value) ? value : []);
   }
 
-  window.SweetEscapeStock = { load, idsFor };
+  function normalizeYogurtPairs(value) {
+    const pairs = [];
+    const seen = new Set();
+    for (const pair of Array.isArray(value) ? value : []) {
+      if (!Array.isArray(pair) || pair.length !== 2) continue;
+      const [first, second] = pair;
+      if (typeof first !== "string" || typeof second !== "string" || !first || !second || first === second) continue;
+      const key = JSON.stringify([first, second].sort());
+      if (seen.has(key)) continue;
+      seen.add(key);
+      pairs.push([first, second]);
+    }
+    return pairs;
+  }
+
+  function saveYogurtPreview(yogurt, yogurtPairs) {
+    localStorage.setItem(yogurtPreviewKey, JSON.stringify({ yogurt, yogurtPairs }));
+  }
+
+  function readYogurtPreview() {
+    try {
+      const draft = JSON.parse(localStorage.getItem(yogurtPreviewKey));
+      if (Array.isArray(draft?.yogurt)) {
+        return { yogurt: normalizeGroup(draft.yogurt), yogurtPairs: normalizeYogurtPairs(draft.yogurtPairs) };
+      }
+    } catch {
+      // Storage may be disabled or contain an older draft format.
+    }
+    return null;
+  }
+
+  window.SweetEscapeStock = { load, idsFor, saveYogurtPreview, readYogurtPreview };
 })();
